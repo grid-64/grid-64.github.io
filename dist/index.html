@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="GRID/64 — an independent digital archive of 1:64 racing miniatures.">
+<title>GRID/64 — A miniature motorsport archive</title>
+<link rel="stylesheet" href="style.css?v=5">
+<script defer src="language.js?v=5"></script>
+<script defer src="records.js?v=5"></script>
+<script defer src="collection.js?v=5"></script>
+<script defer src="archive.js?v=5"></script>
+<script defer src="editor.js?v=5"></script>
+</head>
+<body>
+<a class="skip" href="#archive"><span data-i18n="Skip to archive">Skip to archive</span></a>
+<header class="top" id="top">
+<a class="brand" href="#top" aria-label="GRID 64 home" data-label="GRID 64 home"><i></i> GRID<span>/</span>64</a>
+<nav aria-label="Main navigation" data-label="Main navigation"><a href="#archive"><span data-i18n="Index">Index</span></a><a href="#study"><span data-i18n="Field notes">Field notes</span></a></nav>
+<div class="header-tools"><button type="button" id="open-editor" data-i18n="Add collection item">Add collection item</button><button type="button" id="language" lang="zh-Hans" aria-label="切换到中文">中文</button></div>
+</header>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-grid" aria-hidden="true"></div>
+<div class="hero-info">
+<p class="eyebrow"><b>03</b> / <span data-i18n="TO GATHER — PUBLISHING &amp; NARRATIVE">TO GATHER — PUBLISHING &amp; NARRATIVE</span></p>
+<h1 id="hero-title">GRID<span>/</span>64</h1>
+<p class="hero-sub"><span data-i18n="A miniature motorsport archive.">A miniature motorsport archive.</span></p>
+<a class="primary" href="#archive"><span data-i18n="Explore the index">Explore the index</span> <span aria-hidden="true">↘</span></a>
+</div>
+<div class="hero-diagram">
+<div class="plate-label"><span><span data-i18n="PLATE 01">PLATE 01</span></span><span><span data-i18n="PLAN VIEW / ILLUSTRATION">PLAN VIEW / ILLUSTRATION</span></span></div>
+<div id="hero-car" aria-hidden="true"></div>
+<div class="plate-label lower"><span>+</span><span><span data-i18n="OPEN WHEEL / STUDY 01">OPEN WHEEL / STUDY 01</span></span><span>+</span></div>
+</div>
+<div class="hero-strip"><span><span data-i18n="FIG. 01 / SCALE STUDY">FIG. 01 / SCALE STUDY</span></span><span>FORMULA 1 <em>·</em> GT3 <em>·</em> SUPER GT</span><span><span data-i18n="CURATED BY SU YIHONG">CURATED BY SU YIHONG</span></span></div>
+</section>
+<section class="archive section" id="archive" aria-labelledby="archive-title">
+<div class="section-head"><p class="eyebrow"><b>01</b> / <span data-i18n="OBJECT RECORDS">OBJECT RECORDS</span></p><h2 id="archive-title" tabindex="-1"><span data-i18n="The grid">The grid</span><span>.</span></h2><p><span data-i18n="One scale, different racing worlds. Find a miniature by chassis, team, race number or model code.">One scale, different racing worlds. Find a miniature by chassis, team, race number or model code.</span></p></div>
+<div class="controls">
+<div class="tabs" role="group" aria-label="Archive view" data-label="Archive view">
+<button type="button" data-mode="all" aria-pressed="true"><span data-i18n="All">All</span></button><button type="button" data-mode="f1" aria-pressed="false"><span data-i18n="Formula 1">Formula 1</span></button><button type="button" data-mode="gt3" aria-pressed="false">GT3</button><button type="button" data-mode="sgt" aria-pressed="false">Super GT</button>
+</div>
+<label class="search"><span aria-hidden="true">⌕</span><input id="query" type="search" aria-label="Search the archive" data-label="Search the archive" placeholder="Search the archive" data-placeholder="Search the archive"></label>
+</div>
+<div class="filter-line">
+<label><span data-i18n="Group by">Group by</span> <select id="group"><option value="" data-i18n="No grouping">No grouping</option><option value="maker" data-i18n="Model brand">Model brand</option><option value="series" data-i18n="Race series">Race series</option><option value="spec" data-i18n="Race category">Race category</option></select></label>
+<label><span data-i18n="Series">Series</span> <select id="series"><option value="" data-i18n="Any series">Any series</option><option value="Formula 1">Formula 1</option><option value="IMSA">IMSA</option><option value="Super GT">Super GT</option></select></label>
+<label><span data-i18n="Class / spec">Class / spec</span> <select id="spec"><option value="" data-i18n="Any class / spec">Any class / spec</option><option value="Formula 1">Formula 1</option><option value="GT3">GT3</option><option value="GT500">GT500</option><option value="GT300">GT300</option></select></label>
+<label><span data-i18n="Sort">Sort</span> <select id="order"><option value="index" data-i18n="Archive ID">Archive ID</option><option value="year" data-i18n="Newest race year">Newest race year</option></select></label>
+</div>
+<div class="active-tag" id="active-tag" hidden><span id="active-tag-name"></span><a href="#archive" aria-label="Clear related-objects filter" data-label="Clear related-objects filter"><span data-i18n="Clear ×">Clear ×</span></a></div>
+<div class="result-line"><p id="result-count" aria-live="polite"></p><p id="record-status"><span data-i18n="REFERENCE RECORDS / OWNERSHIP UNCONFIRMED">REFERENCE RECORDS / OWNERSHIP UNCONFIRMED</span></p></div>
+<div id="cards"></div>
+<div class="empty" id="empty" hidden><p><span data-i18n="No records match those filters.">No records match those filters.</span></p><button type="button" id="clear"><span data-i18n="Clear filters">Clear filters</span></button></div>
+</section>
+<section class="study section" id="study" aria-labelledby="study-title">
+<div class="section-head"><p class="eyebrow"><b>02</b> / <span data-i18n="CURATORIAL NOTES">CURATORIAL NOTES</span></p><h2 id="study-title"><span data-i18n="Field notes">Field notes</span><span>.</span></h2><p><span data-i18n="What survives when a racing car becomes a model? Number, colour, wing and silhouette are the starting points for reading each object.">What survives when a racing car becomes a model? Number, colour, wing and silhouette are the starting points for reading each object.</span></p></div>
+<article class="essay"><div><p class="eyebrow"><span data-i18n="COLLECTION METHOD">COLLECTION METHOD</span></p><h3><span data-i18n="One scale. Different rules.">One scale. Different rules.</span></h3></div><div><p><span data-i18n="Keep the scale constant and place the models next to one another. Start with the overall silhouette, then look for what identifies a specific race entry: the number panel, livery or small changes to the body.">Keep the scale constant and place the models next to one another. Start with the overall silhouette, then look for what identifies a specific race entry: the number panel, livery or small changes to the body.</span></p><p><span data-i18n="The archive keeps the full-size car and the physical miniature in separate records within each entry. A racing season is not the model’s release date; a manufacturer’s catalogue number is not the number printed on the car.">The archive keeps the full-size car and the physical miniature in separate records within each entry. A racing season is not the model’s release date; a manufacturer’s catalogue number is not the number printed on the car.</span></p><button type="button" class="text-btn" id="crosslink"><span data-i18n="See GT3 entries within Super GT">See GT3 entries within Super GT</span> <span aria-hidden="true">↗</span></button></div></article>
+<div class="source-title"><h3><span data-i18n="Design references">Design references</span></h3><span><span data-i18n="04 READINGS">04 READINGS</span></span></div>
+<div class="sources">
+<a href="https://www.itsoffbrand.com/our-work/lando-norris"><b><span data-i18n="01 / VISUAL RHYTHM">01 / VISUAL RHYTHM</span></b><h4>Lando Norris</h4><p><span data-i18n="OFF+BRAND’s case study informed the oversized type and short, race-inspired transitions.">OFF+BRAND’s case study informed the oversized type and short, race-inspired transitions.</span></p><span aria-hidden="true">↗</span></a>
+<a href="https://www.vam.ac.uk/info/explore-the-collections"><b><span data-i18n="02 / ACCESS">02 / ACCESS</span></b><h4>V&amp;A Collections</h4><p><span data-i18n="Search and browsing lead to a stable object record. GRID/64 pairs quick filters with a detail view.">Search and browsing lead to a stable object record. GRID/64 pairs quick filters with a detail view.</span></p><span aria-hidden="true">↗</span></a>
+<a href="https://minigt.tsm-models.com/index.php?action=product-detail&amp;b_id=64&amp;id=2098"><b><span data-i18n="03 / OBJECT DATA">03 / OBJECT DATA</span></b><h4>MINI GT</h4><p><span data-i18n="Separate the model code and scale from the race car, season and event represented.">Separate the model code and scale from the race car, season and event represented.</span></p><span aria-hidden="true">↗</span></a>
+<a href="https://www.menil.org/index.php/exhibition/francis-alys-the-fabiola-project"><b><span data-i18n="04 / COMPARISON">04 / COMPARISON</span></b><h4>The Fabiola Project</h4><p><span data-i18n="Francis Alÿs’s collection of reproductions suggests how repetition can help viewers notice variation.">Francis Alÿs’s collection of reproductions suggests how repetition can help viewers notice variation.</span></p><span aria-hidden="true">↗</span></a>
+</div>
+<p class="method-note"><span data-i18n="Classification reference:">Classification reference:</span> <a href="https://supergt.net/en/about-super-gt/regulation/technical_regulations"><span data-i18n="SUPER GT technical regulations">SUPER GT technical regulations</span></a>. GT300 can include FIA GT3 machinery, so series and specification are separate filters.</p>
+</section>
+</main>
+<footer class="footer"><a class="brand" href="#top"><i></i> GRID<span>/</span>64</a><p><span data-i18n="SU YIHONG · PUBLISHING &amp; NARRATIVE · PROJECT 03">SU YIHONG · PUBLISHING &amp; NARRATIVE · PROJECT 03</span></p><a href="#top"><span data-i18n="Back to top">Back to top</span> ↑</a></footer>
+<dialog id="record" aria-labelledby="record-title">
+<div class="dialog-bar"><span id="record-id"></span><button type="button" id="close-record" aria-label="Close object record" data-label="Close object record">✕</button></div>
+<div id="record-content"></div>
+</dialog>
+<dialog id="editor" aria-labelledby="editor-title">
+<div class="dialog-bar"><span data-i18n="Collection editor">Collection editor</span><button type="button" id="close-editor" aria-label="Close editor" data-label="Close editor">✕</button></div>
+<form id="collection-form">
+<div class="editor-intro"><h2 id="editor-title" data-i18n="New collection item">New collection item</h2><label id="edit-existing" hidden><span data-i18n="Choose an existing item to edit">Choose an existing item to edit</span><select id="edit-record"><option value="" data-i18n="New item">New item</option></select></label></div>
+<div class="editor-grid">
+<label class="photo-field"><span data-i18n="Photo">Photo</span><input type="file" name="photo" accept="image/*" aria-describedby="photo-help"><span id="photo-help" data-i18n="Choose a JPG, PNG, WebP or a photo your browser can open.">Choose a JPG, PNG, WebP or a photo your browser can open.</span><img id="draft-photo" alt="" hidden></label>
+<label><span data-i18n="Model name">Model name</span><input name="car" required maxlength="100"></label>
+<label><span data-i18n="Chinese name (optional)">Chinese name (optional)</span><input name="carZh" maxlength="100" lang="zh-Hans"></label>
+<label><span data-i18n="Model brand">Model brand</span><input name="maker" required maxlength="80" list="model-brands"><datalist id="model-brands"></datalist></label>
+<label><span data-i18n="Scale">Scale</span><input name="scale" required maxlength="20" value="1:64"></label>
+<label><span data-i18n="Race series">Race series</span><input name="series" required maxlength="80" list="race-series"><datalist id="race-series"><option value="Formula 1"></option><option value="Super GT"></option><option value="IMSA"></option></datalist></label>
+<label><span data-i18n="Specification">Specification</span><input name="spec" maxlength="80" list="race-specs"><datalist id="race-specs"><option value="Formula 1"></option><option value="GT3"></option><option value="GT500"></option><option value="GT300"></option></datalist></label>
+<label><span data-i18n="Series class">Series class</span><input name="className" maxlength="80"></label>
+<label><span data-i18n="Race year">Race year</span><input name="year" type="number" inputmode="numeric" min="1886" max="2100"></label>
+<label><span data-i18n="Race number">Race number</span><input name="number" maxlength="16"></label>
+<label><span data-i18n="Race / event">Race / event</span><input name="event" maxlength="120"></label>
+<label><span data-i18n="Team">Team</span><input name="team" maxlength="100"></label>
+<label><span data-i18n="Driver">Driver</span><input name="driver" maxlength="100"></label>
+<label><span data-i18n="Catalogue code">Catalogue code</span><input name="item" maxlength="80"></label>
+<label class="wide"><span data-i18n="Acquired">Acquired</span><input name="acquired" maxlength="80" data-placeholder="e.g. 2024 or October 2024" placeholder="e.g. 2024 or October 2024"></label>
+<label class="wide"><span data-i18n="Why I collected it">Why I collected it</span><textarea name="collectionReason" required maxlength="2000" rows="4"></textarea><small data-i18n="Use the language you prefer; this note is kept as written.">Use the language you prefer; this note is kept as written.</small></label>
+<label class="wide"><span data-i18n="Why I collected it (Chinese, optional)">Why I collected it (Chinese, optional)</span><textarea name="collectionReasonZh" maxlength="2000" rows="3" lang="zh-Hans"></textarea></label>
+</div>
+<div class="editor-actions"><button type="button" id="save-draft" data-i18n="Save draft">Save draft</button><button type="button" id="discard-draft" data-i18n="Discard draft" hidden>Discard draft</button><button type="button" id="preview-draft" data-i18n="Preview draft">Preview draft</button><button type="button" id="show-publish" class="publish-button" data-i18n="Publish to GitHub">Publish to GitHub</button></div>
+<section class="publish-panel" id="publish-panel" hidden aria-labelledby="publish-title">
+<h3 id="publish-title" data-i18n="GitHub publishing">GitHub publishing</h3>
+<p data-i18n="Drafts stay on this device. Publishing makes the record and its photo public.">Drafts stay on this device. Publishing makes the record and its photo public.</p>
+<p><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer" data-i18n="Create a token on GitHub">Create a token on GitHub</a> · <a id="repo-link" target="_blank" rel="noopener noreferrer"></a></p>
+<p data-i18n="Use a fine-grained token for this repository only, with Contents: Read and write. Paste it here for this publish; it is never saved.">Use a fine-grained token for this repository only, with Contents: Read and write. Paste it here for this publish; it is never saved.</p>
+<label><span data-i18n="GitHub access token">GitHub access token</span><input id="github-token" type="password" autocomplete="off" spellcheck="false"></label>
+<div class="editor-actions"><button type="button" id="cancel-publish" data-i18n="Cancel">Cancel</button><button type="button" id="confirm-publish" class="publish-button" data-i18n="Publish this photo and record publicly">Publish this photo and record publicly</button></div>
+</section>
+<p id="editor-status" role="status" aria-live="polite"></p><a id="published-link" target="_blank" rel="noopener noreferrer" hidden>GitHub ↗</a>
+</form>
+</dialog>
+<noscript><p><span data-i18n="Turn on JavaScript to browse and filter the object index.">Turn on JavaScript to browse and filter the object index.</span></p></noscript>
+</body></html>
