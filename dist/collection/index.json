@@ -1,7 +1,7 @@
 [
   {
     "id": "51d4caf9-665a-51d1-a1c0-fb503ca9ff3e",
-    "revision": "d10928d8-ceee-4568-abd7-e28404af3e33",
+    "revision": "8b7f2240-f997-4c27-80b2-05ef4a6ba076",
     "catalogId": "F1-001",
     "car": "Ferrari SF90",
     "carZh": "法拉利 SF90",
@@ -84,16 +84,19 @@
         "label": "F1 · 2019 constructors’ standings",
         "labelZh": "F1 · 2019 车队积分榜"
       }
-    ]
+    ],
+    "maker": "Bburago",
+    "makerZh": "比美高",
+    "acquired": "2025-08"
   },
   {
     "id": "88d7f598-959b-5117-b130-7399c7c4aade",
-    "revision": "c036da2e-1396-5533-88e7-96d52baa6e71",
+    "revision": "278ced69-6177-412e-a07c-b6bc1adef270",
     "catalogId": "F1-002",
-    "car": "F1 model 02",
-    "carZh": "F1 模型 02",
+    "car": "Ferrari F1-75",
+    "carZh": "法拉利 F1-75",
     "series": "Formula 1",
-    "scale": "1:64",
+    "scale": "1:24",
     "status": "collected",
     "photo": "collection/photos/d5ea8d99-4da4-5e2d-809f-3bd180a511c3.jpg",
     "thumbnail": "collection/photos/4af2ae55-b341-5de3-a0ba-9034842f228e.jpg",
@@ -101,16 +104,74 @@
       "collection/photos/8314b3f5-8602-58de-a5a6-b5d0c2260071.jpg",
       "collection/photos/42c098da-1833-5c88-9f44-6a9d351fa4a3.jpg",
       "collection/photos/529817e5-31ee-57e5-88e0-c0795f8012d1.jpg"
+    ],
+    "driver": "Charles Leclerc",
+    "driverZh": "夏尔·勒克莱尔",
+    "driverCountry": "MC",
+    "number": "16",
+    "spec": "Formula 1",
+    "team": "Scuderia Ferrari",
+    "teamZh": "法拉利车队",
+    "maker": "Bburago",
+    "makerZh": "比美高",
+    "year": 2022,
+    "event": "Italian Grand Prix · Monza",
+    "eventZh": "意大利大奖赛 · 蒙扎",
+    "acquired": "2025-06",
+    "photoAlt": "Bburago 1:24 Ferrari F1-75 model with the red and yellow Monza livery",
+    "photoAltZh": "比美高 1:24 法拉利 F1-75 模型，蒙扎红黄特别涂装",
+    "collectionReason": "This was my first 1:24 Formula 1 model. I chose it because Charles Leclerc is my favourite driver and I love the yellow accents Ferrari used for its home race at Monza.",
+    "collectionReasonZh": "这是我的第一台 1:24 F1 车模。我最喜欢的车手是勒克莱尔，也很喜欢法拉利在蒙扎主场用的红黄特别涂装，所以选了这一辆。",
+    "seasonSummary": "Ferrari added Modena yellow to the F1-75 for the 2022 Italian Grand Prix, marking 75 years since its first car. At Monza, Leclerc took pole and finished second. He ended the season second in the drivers’ standings with 308 points, three wins, nine poles and 11 podiums.",
+    "seasonSummaryZh": "2022 年意大利大奖赛，法拉利在 F1-75 上加入了摩德纳黄，纪念首辆法拉利问世 75 周年。勒克莱尔在蒙扎拿到杆位，正赛获得第二。他全年收获 3 胜、9 个杆位和 11 次领奖台，以 308 分获得车手亚军。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-002-ref-01.jpg",
+        "caption": "Overhead view of Leclerc’s No. 16 F1-75 with its yellow anniversary graphics.",
+        "captionZh": "从上方看勒克莱尔的 16 号 F1-75，可见黄色周年涂装。"
+      },
+      {
+        "src": "collection/photos/f1-002-ref-02.jpg",
+        "caption": "Side view of the red and yellow F1-75 on track.",
+        "captionZh": "赛道上的红黄涂装 F1-75 侧面。"
+      },
+      {
+        "src": "collection/photos/f1-002-ref-03.jpg",
+        "caption": "Leclerc in Ferrari’s yellow anniversary race suit.",
+        "captionZh": "勒克莱尔穿着法拉利黄色周年版赛车服。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.formula1.com/en/latest/article/ferrari-unveil-special-livery-with-a-splash-of-yellow-for-home-grand-prix-at.2ESWiN8Qv3SMH1pHKIqIBM",
+        "label": "F1 · Monza anniversary livery",
+        "labelZh": "F1 · 蒙扎周年涂装"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/verstappen-takes-his-first-ever-italian-grand-prix-win-behind-the-safety-car.3Jo49yrxzyLb1G4FPtePdV",
+        "label": "F1 · Italian Grand Prix race report",
+        "labelZh": "F1 · 意大利大奖赛战报"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2022/drivers",
+        "label": "F1 · 2022 drivers’ standings",
+        "labelZh": "F1 · 2022 车手积分榜"
+      },
+      {
+        "url": "https://www.formula1.com/en/drivers/charles-leclerc",
+        "label": "F1 · Charles Leclerc biography",
+        "labelZh": "F1 · 夏尔·勒克莱尔车手资料"
+      }
     ]
   },
   {
     "id": "d0bb5ae5-7085-5b97-a4fd-0a26d90a137d",
-    "revision": "451e9f60-d175-5f0a-9c9c-43a7a2fcf253",
+    "revision": "1378cf95-29de-4ab2-9613-ec7c5d065636",
     "catalogId": "F1-003",
-    "car": "F1 model 03",
-    "carZh": "F1 模型 03",
+    "car": "Ferrari SF-24",
+    "carZh": "法拉利 SF-24",
     "series": "Formula 1",
-    "scale": "1:64",
+    "scale": null,
     "status": "collected",
     "photo": "collection/photos/67a896c9-6743-57f2-9a7d-00639a1af7f6.jpg",
     "thumbnail": "collection/photos/a6b1b594-c0f1-5d49-a183-43ab6ad3a9ff.jpg",
@@ -118,16 +179,79 @@
       "collection/photos/b919cd7f-a5ea-5dd7-a89a-d9b9c14e674f.jpg",
       "collection/photos/96e274c4-8116-5576-8610-7e9cafffbe55.jpg",
       "collection/photos/168e2bfd-d850-501c-b342-8920e71b4c0f.jpg"
+    ],
+    "driver": "Charles Leclerc",
+    "driverZh": "夏尔·勒克莱尔",
+    "driverCountry": "MC",
+    "number": "16",
+    "spec": "Formula 1",
+    "team": "Scuderia Ferrari",
+    "teamZh": "法拉利车队",
+    "maker": "Bburago",
+    "makerZh": "比美高",
+    "year": 2024,
+    "event": "Monaco Grand Prix",
+    "eventZh": "摩纳哥大奖赛",
+    "acquired": "2025-11",
+    "photoAlt": "Ferrari SF-24 No. 16 model with Charles Leclerc’s red-and-white helmet",
+    "photoAltZh": "法拉利 SF-24 16 号模型，车内是勒克莱尔的红白头盔",
+    "collectionReason": "The special helmet in the cockpit is what makes this model stand out for me. It reminds me of when Leclerc finally won his home Grand Prix, becoming the first Monegasque driver to win it in the Formula 1 World Championship era.",
+    "collectionReasonZh": "这台车最吸引我的细节是驾驶舱里的摩纳哥站特别版头盔。它让我想起勒克莱尔第一次在家乡夺冠，也成为 F1 世界锦标赛历史上首位赢得摩纳哥大奖赛的本土车手。",
+    "seasonSummary": "Leclerc won from pole in Monaco on 26 May 2024. He was the first Monegasque winner there in the F1 World Championship era and the first since Louis Chiron won the pre-championship race in 1931. He also won at Monza and in Austin, finishing third in the 2024 drivers’ standings with 356 points.",
+    "seasonSummaryZh": "2024 年 5 月 26 日，勒克莱尔从杆位出发，赢得摩纳哥大奖赛。他是 F1 世界锦标赛创立以来首位在这里夺冠的摩纳哥车手，也是继 1931 年路易·希龙之后首位夺冠的本土车手。该赛季他还赢了蒙扎和奥斯汀两站，以 356 分排名车手积分榜第三。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-003-ref-01.jpg",
+        "caption": "Leclerc stands on the SF-24 after winning in Monaco, still wearing his red-and-white helmet.",
+        "captionZh": "勒克莱尔在摩纳哥夺冠后站在 SF-24 上，仍戴着红白特别版头盔。"
+      },
+      {
+        "src": "collection/photos/f1-003-ref-02.jpg",
+        "caption": "Leclerc raises the trophy as Ferrari celebrates its Monaco result.",
+        "captionZh": "勒克莱尔高举奖杯，与法拉利车队一同庆祝摩纳哥站赛果。"
+      },
+      {
+        "src": "collection/photos/f1-003-ref-03.jpg",
+        "caption": "A Ferrari SF-24 passes the Monaco harbour.",
+        "captionZh": "驶过摩纳哥港口的法拉利 SF-24。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz",
+        "label": "FIA · Monaco Grand Prix race report",
+        "labelZh": "FIA · 摩纳哥大奖赛战报"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/facts-and-stats-first-monegasque-winner-in-monaco-since-1931-as-leclerc.4iQxLmf1Hz5i9OLxtuXdDt",
+        "label": "F1 · Monaco race facts",
+        "labelZh": "F1 · 摩纳哥站数据"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/six-wheelers-outrageous-trophies-and-a-pound-coin-8-museum-worthy-items-from-f1.1KdvUthwJkWEHXIA7bbaj3",
+        "label": "F1 · Leclerc’s 2024 Monaco helmet",
+        "labelZh": "F1 · 勒克莱尔的 2024 摩纳哥站头盔"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2024/drivers",
+        "label": "F1 · 2024 drivers’ standings",
+        "labelZh": "F1 · 2024 车手积分榜"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2024/races",
+        "label": "F1 · 2024 race results",
+        "labelZh": "F1 · 2024 赛季分站成绩"
+      }
     ]
   },
   {
     "id": "15e9295c-38a7-5deb-9f01-4d258ead90d5",
-    "revision": "04f47656-cf3c-5a6c-9ab0-568b6b4af20f",
+    "revision": "9fac4d5a-c228-4826-bbc8-1e542c4562f2",
     "catalogId": "F1-004",
-    "car": "F1 model 04",
-    "carZh": "F1 模型 04",
+    "car": "Sauber C37",
+    "carZh": "索伯 C37",
     "series": "Formula 1",
-    "scale": "1:64",
+    "scale": "1:43",
     "status": "collected",
     "photo": "collection/photos/9ed68fe9-87f8-53cb-8268-d8c0ffac0d15.jpg",
     "thumbnail": "collection/photos/60051d79-b2dd-5cf7-8e30-5ea57096e5c2.jpg",
@@ -135,6 +259,56 @@
       "collection/photos/eaf296ad-e550-5fde-9fb2-006c2ced9d99.jpg",
       "collection/photos/22555328-092f-5833-825e-7cd0dd7327fb.jpg",
       "collection/photos/abef53bb-47cd-5e78-b9f5-9e1e6a1bf114.jpg"
+    ],
+    "driver": "Charles Leclerc",
+    "driverZh": "夏尔·勒克莱尔",
+    "driverCountry": "MC",
+    "number": "16",
+    "spec": "Formula 1",
+    "year": 2018,
+    "team": "Alfa Romeo Sauber F1 Team",
+    "teamZh": "阿尔法·罗密欧索伯 F1 车队",
+    "maker": "IXO",
+    "acquired": "2026-01",
+    "photoAlt": "1:43 Sauber C37 model in Charles Leclerc’s No. 16 livery",
+    "photoAltZh": "夏尔·勒克莱尔 16 号索伯 C37 的 1:43 模型",
+    "collectionReason": "I collected the C37 because it marks the start of Leclerc’s F1 career. It’s the car he made his Grand Prix debut in and the car he drove to his first championship points.",
+    "collectionReasonZh": "我收藏 C37，是因为它见证了勒克莱尔 F1 生涯的起点。他驾驶这款车完成第一场 F1 正赛，也用它拿到了生涯首批积分。",
+    "seasonSummary": "Leclerc finished 13th on his Formula 1 debut in Australia on 25 March 2018. In his fourth race, at Baku on 29 April, he finished sixth and earned his first eight championship points. He finished his rookie season 13th overall with 39 points.",
+    "seasonSummaryZh": "2018 年 3 月 25 日，勒克莱尔在澳大利亚大奖赛完成 F1 首秀，正赛排名第 13。4 月 29 日，他在生涯第四场比赛巴库站拿到第六，获得 F1 生涯首批 8 个积分。那个新秀赛季，他以 39 分排名车手积分榜第 13。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-004-ref-01.jpg",
+        "caption": "Leclerc wearing the Alfa Romeo Sauber team’s race suit.",
+        "captionZh": "勒克莱尔身穿阿尔法·罗密欧索伯车队赛车服。"
+      },
+      {
+        "src": "collection/photos/f1-004-ref-02.jpg",
+        "caption": "Studio view of the Alfa Romeo Sauber C37 in its white and burgundy livery.",
+        "captionZh": "白色与酒红色涂装的阿尔法·罗密欧索伯 C37 棚拍图。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.media.stellantis.com/ie-en/alfa-romeo/press/the-alfa-romeo-sauber-f1-team-reveals-the-c37",
+        "label": "Alfa Romeo Sauber · C37 launch",
+        "labelZh": "阿尔法·罗密欧索伯 · C37 发布"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2018/drivers/CHALEC01/charles-leclerc",
+        "label": "F1 · Leclerc’s 2018 race results",
+        "labelZh": "F1 · 勒克莱尔 2018 年分站成绩"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/sixth-like-a-win-first-time-points-scorer-leclerc.y3pnYEGtQ402eecAIsc44",
+        "label": "F1 · Leclerc’s first points",
+        "labelZh": "F1 · 勒克莱尔首获积分"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2018/drivers",
+        "label": "F1 · 2018 drivers’ standings",
+        "labelZh": "F1 · 2018 车手积分榜"
+      }
     ]
   },
   {

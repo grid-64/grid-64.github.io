@@ -52,7 +52,7 @@ async function populate(key){
   $("discard-draft").hidden=!draft;
   draftId=draft?.entry.id||record.id||null;
   pendingPhoto=draft?.photo||null;
-  fields.forEach(f=>form.elements[f].value=(draft?.entry||record)[f]??(f==="scale"?"1:64":""));
+  fields.forEach(f=>form.elements[f].value=(draft?.entry||record)[f]??(f==="scale"&&!key?"1:64":""));
   showPhoto(pendingPhoto,sessionPhotos.get(record.id)||record.photo);
   $("editor-title").dataset.i18n=key?"Edit collection item":"New collection item";
   $("editor-title").textContent=t($("editor-title").dataset.i18n);

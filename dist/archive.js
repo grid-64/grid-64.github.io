@@ -69,7 +69,7 @@ const tags = {
   team: ["Team", x => x.team],
   driver: ["Driver", x => x.driver],
   event: ["Race / season", x => x.event],
-  scale: ["Scale", x => x.scale || "1:64"]
+  scale: ["Scale", x => x.scale]
 };
 const tagHref = (key, value) => "#archive?" + new URLSearchParams({[key]: value}).toString();
 const recordHref = id => "#" + new URLSearchParams({record:id}).toString();
@@ -87,7 +87,7 @@ const objectImage = (x, preview = false) => x.photo
 function displayName(x) {return LANG==="zh" && x.carZh ? x.carZh : x.car;}
 function localized(x, field) {return LANG==="zh" && x[field+"Zh"] ? x[field+"Zh"] : x[field];}
 function tagLabel(key,value) {
-  if (LANG==="zh" && (key==="team" || key==="driver")) {
+  if (LANG==="zh" && ["team","driver","maker","event"].includes(key)) {
     const translation=archiveRecords().find(x=>x[key]===value && x[key+"Zh"]);
     if (translation) return translation[key+"Zh"];
   }
@@ -122,10 +122,10 @@ function toggleFavorite(id, button) {
 function card(x) {
   const caption=x.photo ? "MODEL PHOTOGRAPH" : "PLAN VIEW / ILLUSTRATION";
   const meta=[t(x.series),x.spec===x.series?"":t(x.spec),x.year].filter(Boolean).map(esc).join(" · ");
-  const secondary=[localized(x,"team") || x.maker,raceNumber(x)].filter(Boolean).map(esc).join(" / ");
+  const secondary=[localized(x,"team") || localized(x,"maker"),raceNumber(x)].filter(Boolean).map(esc).join(" / ");
   return `<article class="card">
   <button type="button" data-record="${esc(x.id)}" aria-label="${esc(t("Open")+" "+displayName(x)+(x.number?", "+t("number")+" "+x.number:""))}">
-    <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(catalogNumber(x))}</span><span>${esc(x.scale || "1:64")}</span></div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true)}<span class="card-figure">${t(caption)}</span></div>
+    <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(catalogNumber(x))}</span>${x.scale?`<span>${esc(x.scale)}</span>`:""}</div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true)}<span class="card-figure">${t(caption)}</span></div>
     <div class="card-info"><div><p>${meta}</p><h3>${esc(displayName(x))}</h3><p class="team">${secondary}</p></div><span class="arrow" aria-hidden="true">↗</span></div>
   </button>${favoriteButton(x)}</article>`;
 }
@@ -141,7 +141,7 @@ function renderGroups(list, field) {
   }
   return [...groups].sort(([a], [b]) => a.localeCompare(b)).map(([name, items], index) =>
     `<section class="record-group" aria-labelledby="group-heading-${index}">
-      <div class="group-heading"><h3 id="group-heading-${index}">${esc(t(name))}</h3><span>${items.length} ${t(items.length === 1 ? "record" : "records")}</span></div>
+      <div class="group-heading"><h3 id="group-heading-${index}">${esc(tagLabel(field,name))}</h3><span>${items.length} ${t(items.length === 1 ? "record" : "records")}</span></div>
       ${grid(items)}
     </section>`).join("");
 }
@@ -149,7 +149,7 @@ function update() {
   const records=archiveRecords();
   $("crosslink").hidden=!records.some(x=>x.series==="Super GT"&&x.spec==="GT3");
   const q = $("query").value.toLowerCase().trim().split(/\s+/).filter(Boolean), series = $("series").value, spec = $("spec").value;
-  const list = records.filter(x => (!favoritesOnly || favorites.has(x.id)) && (!activeTag || tags[activeTag[0]][1](x) === activeTag[1]) && matchesMode(x,mode) && (!series || x.series === series) && (!spec || x.spec === spec || x.className === spec) && q.every(word => [x.car,x.carZh,x.team,x.teamZh,x.id,x.catalogId,x.item,x.maker,x.driver,x.driverZh,x.event,x.number,"#"+Number(x.number),x.series,x.year,x.spec,x.className,t(x.series)].join(" ").toLowerCase().includes(word)));
+  const list = records.filter(x => (!favoritesOnly || favorites.has(x.id)) && (!activeTag || tags[activeTag[0]][1](x) === activeTag[1]) && matchesMode(x,mode) && (!series || x.series === series) && (!spec || x.spec === spec || x.className === spec) && q.every(word => [x.car,x.carZh,x.team,x.teamZh,x.id,x.catalogId,x.item,x.maker,x.makerZh,x.driver,x.driverZh,x.event,x.eventZh,x.number,"#"+Number(x.number),x.series,x.year,x.spec,x.className,t(x.series)].join(" ").toLowerCase().includes(word)));
   if ($("order").value === "year") list.sort((a,b) => b.year-a.year || a.id.localeCompare(b.id));
   $("cards").innerHTML = renderGroups(list, $("group").value);
   $("empty").hidden = list.length !== 0;
@@ -200,12 +200,19 @@ function rows(items, links = true) {
     return `<div><dt>${t(label)}</dt><dd>${content}</dd></div>`;
   }).join("");
 }
+function acquiredLabel(value) {
+  if (!value) return t("Not yet recorded");
+  const month = typeof value === "string" && /^(\d{4})-(0[1-9]|1[0-2])$/.exec(value);
+  if (!month) return value;
+  const date = new Date(value + "-01T00:00:00Z");
+  return new Intl.DateTimeFormat(LANG==="zh"?"zh-Hans":"en",{year:"numeric",month:"long",timeZone:"UTC"}).format(date);
+}
 function collectorNote(x) {
   const reason = (LANG==="zh" && x.collectionReasonZh || x.collectionReason)?.trim();
   return `<section class="collector-note" aria-label="${t("Collector’s note")}">
     <h3>${t("Why I collected it")}</h3>
     <p${reason ? "" : ' class="note-pending"'}>${reason ? esc(reason) : t("Personal note not yet recorded.")}</p>
-    <dl>${rows([["Acquired", x.acquired || t("Not yet recorded")]])}</dl>
+    <dl>${rows([["Acquired", acquiredLabel(x.acquired)]])}</dl>
   </section>`;
 }
 const dialog = $("record");
@@ -276,8 +283,8 @@ function openRecord(id, previewRecord=null) {
   const links=x.status!=="draft";
   $("record-id").textContent=t("OBJECT")+" "+catalogNumber(x)+" / "+t(x.status==="draft"?"DRAFT PREVIEW":isCollected(x)?"PERSONAL COLLECTION":"REFERENCE RECORD");
   const details = `<div class="metadata">
-    <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Team",x.team,"team",null,localized(x,"team")],["Driver",x.driver,"driver",x.driverCountry,localized(x,"driver")],["Race / season",x.event,"event"],["Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
-    <section><h3>${t("Miniature")}</h3><dl>${rows([["Scale",x.scale || "1:64","scale"],["Model brand",x.maker,"maker"],["Catalogue code",x.item]],links)}</dl>${x.source ? `<a href="${esc(x.source)}">${t("Maker’s reference")} ↗</a>` : ""}</section>
+    <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Team",x.team,"team",null,localized(x,"team")],["Driver",x.driver,"driver",x.driverCountry,localized(x,"driver")],["Race / season",x.event,"event",null,localized(x,"event")],["Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
+    <section><h3>${t("Miniature")}</h3><dl>${rows([["Scale",x.scale || t("To be confirmed"),x.scale?"scale":null],["Model brand",x.maker,"maker",null,localized(x,"maker")],["Catalogue code",x.item]],links)}</dl>${x.source ? `<a href="${esc(x.source)}">${t("Maker’s reference")} ↗</a>` : ""}</section>
   </div>`;
   const extra = `${x.look ? `<p class="eyebrow">${t("LOOK CLOSER")}</p><p>${esc(x.look)}</p>` : ""}${related ? `<button type="button" class="text-btn" data-related="${related.id}">${t("Compare with")} ${esc(displayName(related))} ↗</button>` : ""}${isCollected(x) || x.status==="draft" ? "" : `<p class="disclosure">${t("Catalogue example. Ownership is unconfirmed; the illustration is not an object photograph.")}</p>`}`;
   $("record-content").innerHTML=`<div class="detail-grid">

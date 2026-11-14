@@ -33,3 +33,4 @@ Object.assign(ZH,{"Complete the required fields.":"请填写所有必填项。",
 Object.assign(ZH,{"Discard draft":"丢弃草稿","Discard this local draft?":"确定丢弃这份本机草稿？","This browser could not remove the draft.":"浏览器无法删除这份草稿。"});
 Object.assign(ZH,{"Favorite":"收藏","Favorites only":"只看收藏","Add to favorites":"添加到收藏","Saved to favorites":"已收藏","Remove from favorites":"取消收藏","No favorites in this view. Select the heart on a car to save it.":"当前分类没有收藏。点按车型卡片上的爱心即可收藏。","Model photos":"模型照片","Record link":"档案链接"});
 Object.assign(ZH,{"RACE CONTEXT":"赛事背景","Full-size car reference":"实车参考","Full-size car photograph":"实车照片","Image source":"图片来源","Official sources":"官方资料","Official source":"官方来源"});
+Object.assign(ZH,{"To be confirmed":"待确认"});
