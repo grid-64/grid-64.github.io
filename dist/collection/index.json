@@ -929,10 +929,10 @@
   },
   {
     "id": "cdb79d1f-a1a8-5ad1-9268-a714ca511909",
-    "revision": "a93833f7-9b0c-52ae-87e6-8ae2f7f3d24c",
+    "revision": "0c948a57-e443-4c0e-a5fc-aec734524519",
     "catalogId": "F1-014",
-    "car": "F1 model 14",
-    "carZh": "F1 模型 14",
+    "car": "Red Bull Racing RB21",
+    "carZh": "红牛车队 RB21",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -942,14 +942,74 @@
       "collection/photos/7b6e0e4c-3848-567a-9135-cd49cf38c9ca.jpg",
       "collection/photos/ce6ccbab-fda2-5a52-8d17-805508febe02.jpg",
       "collection/photos/5a310b2f-a8f4-5451-af3e-6321d48bfff9.jpg"
+    ],
+    "spec": "Formula 1",
+    "year": 2025,
+    "number": "1",
+    "driver": "Max Verstappen",
+    "driverZh": "马克斯·维斯塔潘",
+    "driverCountry": "NL",
+    "team": "Oracle Red Bull Racing",
+    "teamZh": "甲骨文红牛车队",
+    "maker": "Spark",
+    "acquired": "2026-04",
+    "event": "Japanese Grand Prix · Suzuka",
+    "eventZh": "日本大奖赛 · 铃鹿",
+    "collectionReason": "I collected the Suzuka RB21 because I love its white-and-red Honda tribute livery, and because Verstappen won the race in it. The design feels like a fitting farewell to Red Bull’s partnership with Honda.",
+    "collectionReasonZh": "我收藏铃鹿版 RB21，一是因为我很喜欢这套红白致敬涂装，二是因为维斯塔潘开着它赢下了那场比赛。我觉得用这套设计告别红牛和本田多年的合作很有纪念意义。",
+    "seasonSummary": "Red Bull ran the white-and-red RB21 at Suzuka in the final season of its Honda partnership. The livery recalled the RA272, which gave Honda its first Formula 1 win in Mexico in 1965. Verstappen won from pole on 6 April 2025, his fourth consecutive Japanese Grand Prix victory. Red Bull partnered with Ford for the new power-unit era in 2026.",
+    "seasonSummaryZh": "2025 年是红牛与本田合作的最后一个赛季。铃鹿站的红白涂装致敬了 RA272，它曾在 1965 年墨西哥站为本田赢得 F1 首胜。2025 年 4 月 6 日，维斯塔潘从杆位出发夺冠，连续第四次赢下日本大奖赛。进入 2026 年新动力单元时代后，红牛转而与福特合作。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-014-ref-01.jpg",
+        "caption": "Verstappen’s No. 1 RB21 during the 2025 Japanese Grand Prix at Suzuka.",
+        "captionZh": "维斯塔潘的 1 号 RB21，拍摄于 2025 年铃鹿日本大奖赛正赛。",
+        "source": "https://commons.wikimedia.org/wiki/File:2025_Japan_GP_-_Red_Bull_-_Max_Verstappen_-_Race.jpg",
+        "credit": "Liauzh",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0 · resized",
+        "licenseLabelZh": "CC BY-SA 4.0 · 已缩放"
+      },
+      {
+        "src": "collection/photos/f1-014-ref-02.jpg",
+        "caption": "The same Honda tribute livery in third practice at Suzuka.",
+        "captionZh": "铃鹿第三节自由练习中的同款本田致敬涂装。",
+        "source": "https://commons.wikimedia.org/wiki/File:2025_Japan_GP_-_Red_Bull_-_Max_Verstappen_-_FP3.jpg",
+        "credit": "Liauzh",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0 · resized",
+        "licenseLabelZh": "CC BY-SA 4.0 · 已缩放"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://honda.racing/features/rbr-to-participate-in-f1-japanese-grand-prix",
+        "label": "Honda · Suzuka tribute livery",
+        "labelZh": "本田 · 铃鹿致敬涂装"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2025/races/1256/japan/race-result",
+        "label": "F1 · 2025 Japanese Grand Prix result",
+        "labelZh": "F1 · 2025 年日本大奖赛成绩"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/verstappen-surges-to-fourth-consecutive-japanese-gp-victory-ahead-of-norris.1MOpqos1ljTyhFILJKiHZD",
+        "label": "F1 · Fourth consecutive Japanese GP win",
+        "labelZh": "F1 · 连续第四次赢下日本站"
+      },
+      {
+        "url": "https://www.redbullracing.com/int-en/season-launch-2026-red-bull-and-ford-power-up-for-2026-with-a-joint-season-launch-in-the-usa",
+        "label": "Red Bull Racing · Ford partnership",
+        "labelZh": "红牛车队 · 福特合作"
+      }
     ]
   },
   {
     "id": "f8912023-a729-5825-9390-292371349745",
-    "revision": "2c4a2d74-d7ca-507a-b1b8-6fe89ffad46c",
+    "revision": "2c4277dc-ae4f-4835-8401-951adaf80843",
     "catalogId": "F1-015",
-    "car": "F1 model 15",
-    "carZh": "F1 模型 15",
+    "car": "McLaren-Honda MP4/4",
+    "carZh": "迈凯伦-本田 MP4/4",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -959,14 +1019,72 @@
       "collection/photos/e8ad30e9-962f-52bb-ad5b-d86dd97d272d.jpg",
       "collection/photos/558fd1aa-e0f3-5ec2-8a01-f7d38a1496e9.jpg",
       "collection/photos/dac1ef73-bcb1-5071-af62-90f1688d1963.jpg"
+    ],
+    "spec": "Formula 1",
+    "year": 1988,
+    "number": "12",
+    "driver": "Ayrton Senna",
+    "driverZh": "埃尔顿·塞纳",
+    "driverCountry": "BR",
+    "team": "McLaren",
+    "teamZh": "迈凯伦车队",
+    "maker": "MINI GT",
+    "acquired": "2026-02",
+    "collectionReason": "I wanted a model of Senna’s MP4/4 because of how dominant it was. It’s hard to look past a car that won 15 of 16 Grands Prix in a season.",
+    "collectionReasonZh": "我想收藏塞纳的 MP4/4，因为这款车在赛场上极具统治力。一个赛季 16 场正赛赢下 15 场，让它在我心里特别有分量。",
+    "seasonSummary": "McLaren’s Honda-powered MP4/4 won 15 of 16 Grands Prix in 1988. Senna won eight races in the No. 12 car and clinched the first of his three world titles by winning the Japanese Grand Prix at Suzuka. His teammate Alain Prost took the other seven McLaren wins.",
+    "seasonSummaryZh": "1988 年，搭载本田引擎的迈凯伦 MP4/4 在 16 场大奖赛正赛中赢下 15 场。塞纳驾驶 12 号车拿到 8 胜，并在铃鹿赢得日本大奖赛，锁定自己三个世界冠军中的第一个。队友阿兰·普罗斯特包办了迈凯伦另外 7 场胜利。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-015-ref-01.jpg",
+        "caption": "Senna’s 1988 McLaren-Honda MP4/4 on display at the Honda Racing Gallery in Suzuka.",
+        "captionZh": "塞纳的 1988 年迈凯伦-本田 MP4/4，展出于铃鹿本田赛车展馆。",
+        "source": "https://commons.wikimedia.org/wiki/File:Honda_RACING_Gallery_1988_McLaren_MP4-4_Ayrton_Senna.jpg",
+        "credit": "BWard 1997",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseLabel": "CC BY 4.0 · resized",
+        "licenseLabelZh": "CC BY 4.0 · 已缩放"
+      },
+      {
+        "src": "collection/photos/f1-015-ref-02.jpg",
+        "caption": "A McLaren-Honda MP4/4 on display at Autosport International in 2020.",
+        "captionZh": "2020 年 Autosport International 展出的迈凯伦-本田 MP4/4。",
+        "source": "https://commons.wikimedia.org/wiki/File:1988_Mclaren_MP4_4_Honda_(49379465513).jpg",
+        "credit": "David Merrett",
+        "license": "https://creativecommons.org/licenses/by/2.0/",
+        "licenseLabel": "CC BY 2.0 · resized",
+        "licenseLabelZh": "CC BY 2.0 · 已缩放"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.mclaren.com/racing/heritage/formula-1/cars/1988-formula-1-mclaren-mp4-4/",
+        "label": "McLaren · MP4/4 heritage",
+        "labelZh": "迈凯伦 · MP4/4 历史档案"
+      },
+      {
+        "url": "https://global.honda/en/F1/machine/1988_McLarenHondaMP44/",
+        "label": "Honda · MP4/4 technical history",
+        "labelZh": "本田 · MP4/4 技术史"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/1988/races/541/japan/race-result",
+        "label": "F1 · 1988 Japanese Grand Prix result",
+        "labelZh": "F1 · 1988 年日本大奖赛成绩"
+      },
+      {
+        "url": "https://www.formula1.com/en/information/drivers-hall-of-fame-ayrton-senna.FLD7ZtO0nUn7JzLEn5rOJ",
+        "label": "F1 · Ayrton Senna",
+        "labelZh": "F1 · 埃尔顿·塞纳"
+      }
     ]
   },
   {
     "id": "ad7650a3-2509-5469-94a5-a7145a5961d8",
-    "revision": "684056d3-9a32-5c39-bb78-2246d1213b0b",
+    "revision": "87309805-0eba-4384-86cf-63b03cb69db1",
     "catalogId": "F1-016",
-    "car": "F1 model 16",
-    "carZh": "F1 模型 16",
+    "car": "Ferrari SF-25",
+    "carZh": "法拉利 SF-25",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -976,14 +1094,75 @@
       "collection/photos/c870a33a-1f4f-54d8-8d7b-05247f2fd721.jpg",
       "collection/photos/21a87037-4500-523a-a8da-91d773e9df43.jpg",
       "collection/photos/67fe73af-ca48-530e-b0fe-3aebf16da92d.jpg"
+    ],
+    "spec": "Formula 1",
+    "year": 2025,
+    "number": "16",
+    "driver": "Charles Leclerc",
+    "driverZh": "夏尔·勒克莱尔",
+    "driverCountry": "MC",
+    "team": "Scuderia Ferrari",
+    "teamZh": "法拉利车队",
+    "maker": "Bburago",
+    "makerZh": "比美高",
+    "acquired": "2026-01",
+    "event": "Chinese Grand Prix · Shanghai",
+    "eventZh": "中国大奖赛 · 上海",
+    "collectionReason": "The 2025 Chinese Grand Prix in Shanghai was the first Formula 1 race I attended in person. As a Leclerc and Ferrari fan, seeing the SF-25 on track for the first time is what makes this model special to me.",
+    "collectionReasonZh": "2025 年上海中国大奖赛，是我第一次去现场看 F1。作为勒克莱尔和法拉利的车迷，第一次亲眼看见 SF-25 在赛道上跑，就是这台模型对我特别有意义的原因。",
+    "seasonSummary": "Ferrari went through 2025 without a Grand Prix win, though Lewis Hamilton won the Shanghai Sprint. Leclerc finished fifth in that Sprint. On Sunday he crossed the line fifth in the Grand Prix and was later disqualified after his car fell below the minimum weight.",
+    "seasonSummaryZh": "法拉利在 2025 赛季没有赢得大奖赛正赛，但汉密尔顿赢下了上海站冲刺赛。勒克莱尔在那场冲刺赛获得第五，周日正赛第五个冲线，赛后因赛车低于最低重量要求被取消成绩。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-016-ref-01.jpg",
+        "caption": "Leclerc’s No. 16 Ferrari SF-25 at Suzuka in first practice, 4 April 2025.",
+        "captionZh": "勒克莱尔的 16 号法拉利 SF-25，拍摄于 2025 年 4 月 4 日铃鹿第一节自由练习。",
+        "source": "https://commons.wikimedia.org/wiki/File:2025_Japan_GP_-_Ferrari_-_Charles_Leclerc_-_FP1.jpg",
+        "credit": "Liauzh",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0 · resized",
+        "licenseLabelZh": "CC BY-SA 4.0 · 已缩放"
+      },
+      {
+        "src": "collection/photos/f1-016-ref-02.jpg",
+        "caption": "Leclerc’s SF-25 at Imola during the 2025 Emilia-Romagna Grand Prix weekend.",
+        "captionZh": "勒克莱尔的 SF-25，拍摄于 2025 年艾米利亚-罗马涅大奖赛周末的伊莫拉赛道。",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Imola_2025_No._16_Leclerc.jpg",
+        "credit": "Jen_ross83",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseLabel": "CC BY 4.0 · resized",
+        "licenseLabelZh": "CC BY 4.0 · 已缩放"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.formula1.com/en/latest/article/first-look-ferrari-unveil-new-2025-car-after-sf-25-livery-reveal-during-f1.1IvvOTzHsJr2KsZoPPJNjE",
+        "label": "F1 · SF-25 launch",
+        "labelZh": "F1 · SF-25 发布"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2025/races/1255/china/sprint-results",
+        "label": "F1 · Shanghai Sprint result",
+        "labelZh": "F1 · 上海冲刺赛成绩"
+      },
+      {
+        "url": "https://www.fia.com/system/files/decision-document/2025_chinese_grand_prix_-_infringement_-_car_16_-_technical_non-compliance_weight.pdf",
+        "label": "FIA · Shanghai stewards’ decision",
+        "labelZh": "FIA · 上海正赛车辆称重裁决"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2025/races",
+        "label": "F1 · 2025 race winners",
+        "labelZh": "F1 · 2025 年分站正赛冠军"
+      }
     ]
   },
   {
     "id": "c983eda5-02e8-53c1-bc14-4f9f343a14cf",
-    "revision": "fa970514-a67f-5f92-98bd-7572d198b834",
+    "revision": "9d704bbc-1918-498f-8aeb-95c35a001d1d",
     "catalogId": "F1-017",
-    "car": "F1 model 17",
-    "carZh": "F1 模型 17",
+    "car": "Ferrari F2004",
+    "carZh": "法拉利 F2004",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -993,14 +1172,73 @@
       "collection/photos/eafa3296-8f55-5373-b2db-4cc880083dcb.jpg",
       "collection/photos/59da259d-6ff1-5941-9c9e-4601ea6e888a.jpg",
       "collection/photos/dc72209c-b21d-538f-936f-e27d296002f3.jpg"
+    ],
+    "spec": "Formula 1",
+    "year": 2004,
+    "number": "1",
+    "driver": "Michael Schumacher",
+    "driverZh": "迈克尔·舒马赫",
+    "driverCountry": "DE",
+    "team": "Scuderia Ferrari",
+    "teamZh": "法拉利车队",
+    "maker": "Hot Wheels",
+    "makerZh": "风火轮",
+    "acquired": "2026-10",
+    "collectionReason": "As a Ferrari fan, I wanted this model because the F2004 was so dominant and because it raced at the first Chinese Grand Prix. I started with a Hot Wheels model and added much of the paintwork and markings by hand, so this one is partly my own work.",
+    "collectionReasonZh": "作为法拉利车迷，我很想收藏这辆统治力十足、也参加过首届中国大奖赛的 F2004。我用风火轮车模作底，自己手工补上了不少颜色和标识，所以这辆也算是半自制的。",
+    "seasonSummary": "Schumacher won 13 of 18 Grands Prix in the F2004 and took his seventh world title with 148 points. At the inaugural Chinese Grand Prix in Shanghai, he finished 12th and set the fastest lap. His Ferrari teammate Rubens Barrichello won the race.",
+    "seasonSummaryZh": "舒马赫驾驶 F2004 在 18 场大奖赛中赢下 13 场，以 148 分拿到个人第七冠。首届上海中国大奖赛，他获得第十二并跑出全场最快圈，队友鲁本斯·巴里切罗为法拉利赢下正赛。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-017-ref-01.jpg",
+        "caption": "Schumacher’s Ferrari F2004 at the 2004 United States Grand Prix in Indianapolis.",
+        "captionZh": "舒马赫的法拉利 F2004，拍摄于 2004 年美国大奖赛印第安纳波利斯站。",
+        "source": "https://commons.wikimedia.org/wiki/File:Michael_Schumacher_Ferrari_2004.jpg",
+        "credit": "Rick Dikeman",
+        "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "licenseLabel": "CC BY-SA 3.0 · resized",
+        "licenseLabelZh": "CC BY-SA 3.0 · 已缩放"
+      },
+      {
+        "src": "collection/photos/f1-017-ref-02.jpg",
+        "caption": "Schumacher driving the F2004 at the 2004 Monaco Grand Prix.",
+        "captionZh": "舒马赫在 2004 年摩纳哥大奖赛驾驶 F2004。",
+        "source": "https://commons.wikimedia.org/wiki/File:Schumacher_at_Monaco_2004.jpg",
+        "credit": "Cord Rodefeld",
+        "license": "https://creativecommons.org/licenses/by/2.0/",
+        "licenseLabel": "CC BY 2.0 · resized",
+        "licenseLabelZh": "CC BY 2.0 · 已缩放"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.formula1.com/en/results/2004/races/768/china/race-result",
+        "label": "F1 · First Chinese Grand Prix result",
+        "labelZh": "F1 · 首届中国大奖赛成绩"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/for-the-record-the-stories-behind-the-f1-calendars-quickest-laps.48fIV6ZLRCosOk46UUKUyA",
+        "label": "F1 · Shanghai fastest lap and race photo",
+        "labelZh": "F1 · 上海最快圈及赛事照片"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2004/drivers",
+        "label": "F1 · 2004 drivers’ standings",
+        "labelZh": "F1 · 2004 年车手积分榜"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/6-times-the-best-f1-drivers-and-best-cars-combined-to-produce-relentless.1CTkcvRroW9ejeyjnKDTTU",
+        "label": "F1 · The F2004 and Schumacher’s 13 wins",
+        "labelZh": "F1 · F2004 与舒马赫的 13 胜"
+      }
     ]
   },
   {
     "id": "d2289b96-ce8e-5ec9-99f2-8bdefca10855",
-    "revision": "d711ea26-1902-5939-ab64-b6b88168cd43",
+    "revision": "c4ec4cf6-56a9-4d5f-8328-6ddb4bacf87d",
     "catalogId": "F1-018",
-    "car": "F1 model 18",
-    "carZh": "F1 模型 18",
+    "car": "Williams FW47",
+    "carZh": "威廉姆斯 FW47",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -1010,14 +1248,78 @@
       "collection/photos/36daf43a-8785-5b0c-8fbe-b43bdad1b5f7.jpg",
       "collection/photos/e93da330-865e-5049-b0e7-6993b94fccae.jpg",
       "collection/photos/8a505d7a-33ae-55c0-8114-1e21559b0bf5.jpg"
+    ],
+    "spec": "Formula 1",
+    "year": 2025,
+    "number": "23",
+    "driver": "Alex Albon",
+    "driverZh": "亚历克斯·阿尔本",
+    "driverCountry": "TH",
+    "team": "Atlassian Williams Racing",
+    "teamZh": "Atlassian 威廉姆斯车队",
+    "maker": "Hot Wheels",
+    "makerZh": "风火轮",
+    "acquired": "2026-02",
+    "collectionReason": "I’ve always had a soft spot for Albon. One of the reasons I feel a connection to him is that his fiancée, Lily Muni He, is a Chinese professional golfer.",
+    "collectionReasonZh": "我一直对阿尔本挺有好感。他的未婚妻是中国职业高尔夫球员何沐妮，这也是我觉得和这位车手有一点亲近感的原因。",
+    "seasonSummary": "Albon raced the No. 23 FW47 under the Thai flag in 2025 and finished eighth in the drivers’ championship with 73 points. Williams finished fifth in the constructors’ standings with 137 points. Albon and Lily Muni He announced their engagement in January 2026.",
+    "seasonSummaryZh": "2025 年，阿尔本代表泰国驾驶 23 号 FW47，以 73 分位列车手积分榜第八。威廉姆斯以 137 分拿到车队第五。阿尔本与何沐妮于 2026 年 1 月宣布订婚。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-018-ref-01.jpg",
+        "caption": "Alex Albon’s No. 23 Williams FW47 in second practice at Suzuka in 2025.",
+        "captionZh": "阿尔本的 23 号威廉姆斯 FW47，拍摄于 2025 年铃鹿第二节自由练习。",
+        "source": "https://commons.wikimedia.org/wiki/File:2025_Japan_GP_-_Williams_-_Alex_Albon_-_FP2.jpg",
+        "credit": "Liauzh",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0 · resized",
+        "licenseLabelZh": "CC BY-SA 4.0 · 已缩放"
+      },
+      {
+        "src": "collection/photos/f1-018-ref-02.jpg",
+        "caption": "Albon’s No. 23 FW47 at the 2025 Austrian Grand Prix.",
+        "captionZh": "阿尔本的 23 号 FW47，拍摄于 2025 年奥地利大奖赛。",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2025_Nr._23_Albon.jpg",
+        "credit": "Lukas Raich",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0 · resized",
+        "licenseLabelZh": "CC BY-SA 4.0 · 已缩放"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.williamsf1.com/articles/8576c1c3-5ef0-44f3-bc6f-7e2b0073599f/atlassian-williams-racing-unveils-its-2025-formula-1-livery-and-celebrates-new-title-partner",
+        "label": "Williams · FW47 livery",
+        "labelZh": "威廉姆斯 · FW47 涂装"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2025/drivers",
+        "label": "F1 · 2025 drivers’ standings",
+        "labelZh": "F1 · 2025 年车手积分榜"
+      },
+      {
+        "url": "https://www.williamsf1.com/articles/08c224ae-9d6a-4dfc-a53d-7021c9f7d3b7/2025-abu-dhabi-gp-report",
+        "label": "Williams · 2025 season finish",
+        "labelZh": "威廉姆斯 · 2025 年赛季成绩"
+      },
+      {
+        "url": "https://www.williamsf1.com/articles/16e61104-de69-43e1-acd0-74a134162760",
+        "label": "Williams · Albon and He’s engagement",
+        "labelZh": "威廉姆斯 · 阿尔本与何沐妮订婚"
+      },
+      {
+        "url": "https://www.lpga.com/athletes/muni-he/98620/results",
+        "label": "LPGA · Lily Muni He",
+        "labelZh": "LPGA · 何沐妮"
+      }
     ]
   },
   {
     "id": "bac04856-6584-5a25-bdbe-969c7e328e05",
-    "revision": "8eb19dfb-c89e-52de-b534-c13196a7f1c5",
+    "revision": "c0e5009b-8588-4f68-b7d6-568d618a52ed",
     "catalogId": "F1-019",
-    "car": "F1 model 19",
-    "carZh": "F1 模型 19",
+    "car": "McLaren MCL39",
+    "carZh": "迈凯伦 MCL39",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -1027,6 +1329,60 @@
       "collection/photos/35503a1d-659c-5b09-b62c-f29cf6580f41.jpg",
       "collection/photos/ae0dfa6a-54e0-5a03-9daf-29385fca3bc4.jpg",
       "collection/photos/96d4bad6-9e5e-505f-8fa2-f8710656ae65.jpg"
+    ],
+    "spec": "Formula 1",
+    "year": 2025,
+    "number": "4",
+    "driver": "Lando Norris",
+    "driverZh": "兰多·诺里斯",
+    "driverCountry": "GB",
+    "team": "McLaren",
+    "teamZh": "迈凯伦车队",
+    "maker": "Hot Wheels",
+    "makerZh": "风火轮",
+    "acquired": "2026-04",
+    "collectionReason": "I collected the MCL39 because it’s the car in which Norris won his first world title. To me it also marks the end of the 2022–25 ground-effect rules, which gives the model an extra reason to keep.",
+    "collectionReasonZh": "我收藏 MCL39，是因为诺里斯驾驶它拿到了自己的第一个世界冠军。这台车也代表了 2022–2025 年这套地效规则的最后一个赛季，所以对我来说更有纪念意义。",
+    "seasonSummary": "Norris won seven races and took 18 podiums and seven poles in 2025. Third place in Abu Dhabi secured his first world drivers’ title with 423 points, two ahead of Max Verstappen. The championship closed the 2022–25 regulation cycle before Formula 1 introduced its new cars in 2026.",
+    "seasonSummaryZh": "2025 年，诺里斯拿下 7 胜、18 次领奖台和 7 个杆位。他在阿布扎比以第三名完赛，最终拿到 423 分，以 2 分优势领先维斯塔潘，赢得个人首个车手世界冠军。这个赛季是 2022–2025 年规则周期的最后一年，F1 在 2026 年迎来新一代赛车。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-019-ref-02.jpg",
+        "caption": "Lando Norris in the No. 4 McLaren MCL39 at the 2025 Austrian Grand Prix.",
+        "captionZh": "诺里斯驾驶 4 号迈凯伦 MCL39 参加 2025 年奥地利大奖赛。",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2025_Nr._4_Norris.jpg",
+        "credit": "Lukas Raich",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0 · resized",
+        "licenseLabelZh": "CC BY-SA 4.0 · 已缩放"
+      },
+      {
+        "src": "collection/photos/f1-019-ref-01.jpg",
+        "caption": "Norris’s No. 4 MCL39 during the first practice session at Suzuka in 2025.",
+        "captionZh": "诺里斯的 4 号 MCL39，拍摄于 2025 年铃鹿第一节自由练习。",
+        "source": "https://commons.wikimedia.org/wiki/File:2025_Japan_GP_-_McLaren_-_Lando_Norris_-_FP1_(3).jpg",
+        "credit": "Liauzh",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0 · resized",
+        "licenseLabelZh": "CC BY-SA 4.0 · 已缩放"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.mclaren.com/racing/formula-1/2025/abu-dhabi-grand-prix/lando-norris-world-championship-reaction/",
+        "label": "McLaren · Norris’s first world championship",
+        "labelZh": "迈凯伦 · 诺里斯的首个世界冠军"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2025/drivers",
+        "label": "F1 · 2025 drivers’ standings",
+        "labelZh": "F1 · 2025 年车手积分榜"
+      },
+      {
+        "url": "https://corp.formula1.com/f1-2026-regulations-terminology-update/",
+        "label": "F1 · 2026 rules change",
+        "labelZh": "F1 · 2026 年规则更迭"
+      }
     ]
   },
   {
