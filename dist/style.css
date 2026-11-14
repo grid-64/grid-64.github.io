@@ -65,6 +65,28 @@ dialog{width:min(890px,calc(100% - 24px));max-height:calc(100dvh - 30px);backgro
 #editor-status{font-size:13px;color:var(--accent);margin-top:12px}
 #editor .dialog-bar,#record .dialog-bar{min-height:55px}
 .card-info h3,.card-info p,.detail-main h2,.metadata dd{overflow-wrap:anywhere}
+.card{position:relative}
+.favorite-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:44px;min-height:44px;padding:8px 12px;border:1px solid #62717d;border-radius:4px;background:#121a21;color:#f4f8fb;cursor:pointer}
+.card .favorite-button{position:absolute;z-index:3;right:8px;top:34px;display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #65727b;background:#121a21;color:#f4f8fb}
+.favorite-button:hover,.card .favorite-button:hover{background:#243947;border-color:var(--accent)}
+.favorite-button[aria-pressed="true"],.card .favorite-button[aria-pressed="true"]{color:#101619;background:var(--accent);border-color:var(--accent)}
+.favorite-button[aria-pressed="true"] svg{fill:currentColor}
+.card .favorite-button svg,.card .favorite-button:hover svg{width:18px;height:18px;transform:none}
+.favorites-filter{display:inline-flex;align-items:center;gap:5px;min-height:34px;padding:4px 8px;border:1px solid #737e80;background:transparent;color:var(--ink);font:700 11px var(--sans)}
+.favorites-filter span:first-child{font-size:16px;line-height:1}
+.favorites-filter[aria-pressed="true"]{color:#103346;background:#cceefb;border-color:#1c667f}
+.record-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 15px}
+.favorite-detail,.record-permalink{font:600 12px var(--sans)}
+.record-permalink{text-underline-offset:3px}
+.gallery-main{display:grid;place-items:center;min-width:0;aspect-ratio:4/3;background:#1c2227}
+.detail-plate .gallery-main .object-photo{width:100%;height:100%;max-height:100%;object-fit:contain}
+.detail-plate .gallery-caption{margin:10px 0 5px}
+.gallery-thumbs{display:flex;gap:6px;overflow-x:auto;padding:4px;scroll-snap-type:x proximity}
+.gallery-thumbs button{display:grid;place-items:center;flex:0 0 58px;min-height:48px;padding:3px;border:1px solid #6b747a;background:#1a1f23;scroll-snap-align:start}
+.gallery-thumbs button[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.gallery-thumbs img{display:block;width:100%;height:40px;object-fit:contain}
+.driver-flag{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+@media(max-width:370px){.card .favorite-button{top:27px;right:4px}}
 @media(max-width:850px){.editor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:670px){.top{grid-template-columns:1fr auto;grid-template-rows:53px auto;height:auto;padding-bottom:7px;row-gap:0}.top nav{grid-row:2;grid-column:1/-1;justify-content:flex-start}.top nav a{padding:5px 0}.header-tools{grid-row:1;grid-column:2}.header-tools button{padding:6px 8px}.detail-main .metadata{gap:10px}}
 @media(max-width:370px){.editor-grid{grid-template-columns:minmax(0,1fr)}.header-tools button{font-size:11px}.card-info{align-items:flex-start}}

@@ -29,3 +29,4 @@ function translatePage() {
 }
 Object.assign(ZH,{"Complete the required fields.":"请填写所有必填项。","Open the HTTPS website to publish.":"请打开 HTTPS 网站进行发布。","Collector’s note":"收藏者笔记"});
 Object.assign(ZH,{"Discard draft":"丢弃草稿","Discard this local draft?":"确定丢弃这份本机草稿？","This browser could not remove the draft.":"浏览器无法删除这份草稿。"});
+Object.assign(ZH,{"Favorite":"收藏","Favorites only":"只看收藏","Add to favorites":"添加到收藏","Saved to favorites":"已收藏","Remove from favorites":"取消收藏","No favorites in this view. Select the heart on a car to save it.":"当前分类没有收藏。点按车型卡片上的爱心即可收藏。","Model photos":"模型照片","Record link":"档案链接"});

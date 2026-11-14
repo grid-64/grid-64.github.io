@@ -1,7 +1,7 @@
 "use strict";
 const editor=$("editor"), form=$("collection-form"), photoInput=form.elements.photo;
 const editSelect=$("edit-record"), preview=$("draft-photo"), tokenInput=$("github-token");
-const fields=["car","carZh","maker","scale","series","spec","className","year","number","event","team","driver","item","acquired","collectionReason","collectionReasonZh"];
+const fields=EDITABLE_RECORD_FIELDS;
 const draftKey=()=>editSelect.value||"new";
 let pendingPhoto=null,photoURL="",dirty=false,working=false,photoGeneration=0,loadingPhoto=false,draftId=null,draftRecord=null;
 function status(message){$("editor-status").textContent=t(message);}
@@ -100,7 +100,7 @@ $("discard-draft").addEventListener("click",async()=>{
 });
 $("preview-draft").addEventListener("click",()=>{
   const draft=readEntry();if(!draft)return;
-  draftRecord={...draft.entry,status:"draft",photo:photoURL||draft.entry.photo};
+  draftRecord={...mergeCollectionEdit(publicRecords.get(editSelect.value),draft.entry),status:"draft",photo:photoURL||draft.entry.photo};
   editor.close();openRecord(draftRecord.id,draftRecord);
   dialog.addEventListener("close",()=>{draftRecord=null;editor.showModal();$("preview-draft").focus();},{once:true});
 });

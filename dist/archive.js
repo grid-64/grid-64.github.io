@@ -51,6 +51,16 @@ function diagram(o, hero = false) {
 $("hero-car").innerHTML = diagram({kind:"f1",color:"#4dc7f2",trim:"#bcf0ff",number:"64"},true);
 let mode = "all";
 let activeTag = null;
+let favoritesOnly = false;
+const FAVORITES_KEY = "grid64:favorites:v1";
+function readFavorites() {
+  try {
+    const stored=JSON.parse(localStorage.getItem(FAVORITES_KEY) || "[]");
+    return new Set(Array.isArray(stored) ? stored.filter(id=>typeof id==="string") : []);
+  } catch {return new Set();}
+}
+let favorites = readFavorites();
+const heartIcon = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 8.8c0 3.4-4.4 6.8-8.8 10.2-4.4-3.4-8.8-6.8-8.8-10.2a4.55 4.55 0 0 1 8.8-1.6 4.55 4.55 0 0 1 8.8 1.6Z"/></svg>';
 const tags = {
   series: ["Race series", x => x.series],
   maker: ["Model brand", x => x.maker],
@@ -62,6 +72,8 @@ const tags = {
   scale: ["Scale", x => x.scale || "1:64"]
 };
 const tagHref = (key, value) => "#archive?" + new URLSearchParams({[key]: value}).toString();
+const recordHref = id => "#" + new URLSearchParams({record:id}).toString();
+const routeRecordId = () => location.hash.startsWith("#record=") ? new URLSearchParams(location.hash.slice(1)).get("record") : null;
 const readTag = () => {
   if (!location.hash.startsWith("#archive?")) return null;
   const pair = [...new URLSearchParams(location.hash.slice(9))][0];
@@ -74,15 +86,40 @@ const objectImage = (x, preview = false) => x.photo
   : diagram(x);
 function displayName(x) {return LANG==="zh" && x.carZh ? x.carZh : x.car;}
 function raceNumber(x) {return x.number ? "#"+x.number : "";}
+function catalogNumber(x) {return x.catalogId || (x.id.startsWith("064-") ? x.id : x.id.slice(0,8).toUpperCase());}
+function favoriteButton(x, detail=false) {
+  const saved=favorites.has(x.id);
+  return `<button type="button" class="favorite-button${detail?" favorite-detail":""}" data-favorite="${esc(x.id)}" aria-label="${esc(t("Favorite")+": "+displayName(x))}" aria-pressed="${saved}" title="${t(saved?"Remove from favorites":"Add to favorites")}">${heartIcon}${detail?'<span>'+t(saved?"Saved to favorites":"Add to favorites")+'</span>':""}</button>`;
+}
+function syncFavorites() {
+  document.querySelectorAll("[data-favorite]").forEach(button=>{
+    const saved=favorites.has(button.dataset.favorite);
+    button.setAttribute("aria-pressed",String(saved));
+    button.title=t(saved?"Remove from favorites":"Add to favorites");
+    if(button.classList.contains("favorite-detail")) button.querySelector("span").textContent=t(saved?"Saved to favorites":"Add to favorites");
+  });
+}
+function toggleFavorite(id, button) {
+  if(favorites.has(id)) favorites.delete(id); else favorites.add(id);
+  try {localStorage.setItem(FAVORITES_KEY,JSON.stringify([...favorites]));} catch {}
+  if(favoritesOnly) {
+    update();
+    if(!button?.classList.contains("favorite-detail")) {
+      const next=$("cards").querySelector("[data-favorite]");
+      (next || $("favorites-only")).focus({preventScroll:true});
+    }
+  }
+  syncFavorites();
+}
 function card(x) {
   const caption=x.photo ? "MODEL PHOTOGRAPH" : "PLAN VIEW / ILLUSTRATION";
   const meta=[t(x.series),x.spec===x.series?"":t(x.spec),x.year].filter(Boolean).map(esc).join(" · ");
   const secondary=[x.team || x.maker,raceNumber(x)].filter(Boolean).map(esc).join(" / ");
   return `<article class="card">
   <button type="button" data-record="${esc(x.id)}" aria-label="${esc(t("Open")+" "+displayName(x)+(x.number?", "+t("number")+" "+x.number:""))}">
-    <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(x.id.startsWith("064-")?x.id:x.id.slice(0,8).toUpperCase())}</span><span>${esc(x.scale || "1:64")}</span></div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true)}<span class="card-figure">${t(caption)}</span></div>
+    <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(catalogNumber(x))}</span><span>${esc(x.scale || "1:64")}</span></div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true)}<span class="card-figure">${t(caption)}</span></div>
     <div class="card-info"><div><p>${meta}</p><h3>${esc(displayName(x))}</h3><p class="team">${secondary}</p></div><span class="arrow" aria-hidden="true">↗</span></div>
-  </button></article>`;
+  </button>${favoriteButton(x)}</article>`;
 }
 function renderGroups(list, field) {
   if (!list.length) return "";
@@ -104,10 +141,12 @@ function update() {
   const records=archiveRecords();
   $("crosslink").hidden=!records.some(x=>x.series==="Super GT"&&x.spec==="GT3");
   const q = $("query").value.toLowerCase().trim().split(/\s+/).filter(Boolean), series = $("series").value, spec = $("spec").value;
-  const list = records.filter(x => (!activeTag || tags[activeTag[0]][1](x) === activeTag[1]) && matchesMode(x,mode) && (!series || x.series === series) && (!spec || x.spec === spec || x.className === spec) && q.every(t => [x.car,x.carZh,x.team,x.id,x.item,x.maker,x.driver,x.event,x.number,"#"+Number(x.number),x.series,x.year,x.spec,x.className,t(x.series)].join(" ").toLowerCase().includes(t)));
+  const list = records.filter(x => (!favoritesOnly || favorites.has(x.id)) && (!activeTag || tags[activeTag[0]][1](x) === activeTag[1]) && matchesMode(x,mode) && (!series || x.series === series) && (!spec || x.spec === spec || x.className === spec) && q.every(t => [x.car,x.carZh,x.team,x.id,x.catalogId,x.item,x.maker,x.driver,x.event,x.number,"#"+Number(x.number),x.series,x.year,x.spec,x.className,t(x.series)].join(" ").toLowerCase().includes(t)));
   if ($("order").value === "year") list.sort((a,b) => b.year-a.year || a.id.localeCompare(b.id));
   $("cards").innerHTML = renderGroups(list, $("group").value);
   $("empty").hidden = list.length !== 0;
+  $("empty-message").textContent=t(favoritesOnly?"No favorites in this view. Select the heart on a car to save it.":"No records match those filters.");
+  $("favorites-only").setAttribute("aria-pressed",String(favoritesOnly));
   $("result-count").textContent = `${String(list.length).padStart(2,"0")} / ${String(records.length).padStart(2,"0")} ${t("RECORDS")}`;
   $("active-tag").hidden = !activeTag;
   $("active-tag-name").textContent = activeTag ? `${t(tags[activeTag[0]][0])}: ${t(activeTag[1])}` : "";
@@ -117,12 +156,14 @@ function update() {
 function reset() {mode="all"; $("query").value=""; $("series").value=""; $("spec").value=""; $("order").value="index";}
 document.querySelectorAll("[data-mode]").forEach(b => b.addEventListener("click", () => {mode=b.dataset.mode; $("series").value=""; $("spec").value=""; update();}));
 $("query").addEventListener("input", update);
+$("favorites-only").addEventListener("click",()=>{favoritesOnly=!favoritesOnly;update();});
+window.addEventListener("storage",event=>{if(event.key===FAVORITES_KEY || event.key===null){favorites=readFavorites();if(favoritesOnly)update();syncFavorites();}});
 ["group","series","spec","order"].forEach(k => $(k).addEventListener("change", update));
 function clearTag() {
   if (activeTag) history.replaceState(null, "", "#archive");
   activeTag = null;
 }
-$("clear").addEventListener("click", () => {clearTag(); reset(); update(); $("query").focus();});
+$("clear").addEventListener("click", () => {favoritesOnly=false;clearTag(); reset(); update(); $("query").focus();});
 $("crosslink").addEventListener("click", () => {clearTag(); reset(); $("series").value="Super GT"; $("spec").value="GT3"; update(); $("archive").scrollIntoView({behavior:"instant"}); $("series").focus({preventScroll:true});});
 function refreshFilters() {
   const rows=archiveRecords();
@@ -133,11 +174,20 @@ function refreshFilters() {
     select.value=[...select.options].some(x=>x.value===saved)?saved:"";
   }
 }
+function driverFlag(code) {
+  if(typeof code!=="string" || !/^[A-Z]{2}$/i.test(code)) return "";
+  const iso=code.toUpperCase();
+  let country=iso;
+  try {country=new Intl.DisplayNames([LANG==="zh"?"zh-Hans":"en"],{type:"region"}).of(iso) || iso;} catch {}
+  const emoji=String.fromCodePoint(...Array.from(iso,letter=>0x1f1e6+letter.charCodeAt(0)-65));
+  return `<span class="driver-flag" title="${esc(country)}" aria-hidden="true">${emoji}</span>`;
+}
 function rows(items, links = true) {
-  return items.filter(([,v])=>v).map(([label,value,key]) => {
+  return items.filter(([,v])=>v).map(([label,value,key,code]) => {
+    const flag=driverFlag(code);
     const content = key && links
-      ? `<a class="object-tag" href="${esc(tagHref(key,value))}" aria-label="${esc(t("Browse by")+" "+t(label)+": "+t(value))}">${esc(t(value))} <span aria-hidden="true">↗</span></a>`
-      : esc(key ? t(value) : value);
+      ? `<a class="object-tag" href="${esc(tagHref(key,value))}" aria-label="${esc(t("Browse by")+" "+t(label)+": "+t(value))}">${flag}${esc(t(value))} <span aria-hidden="true">↗</span></a>`
+      : flag+esc(key ? t(value) : value);
     return `<div><dt>${t(label)}</dt><dd>${content}</dd></div>`;
   }).join("");
 }
@@ -151,26 +201,63 @@ function collectorNote(x) {
 }
 const dialog = $("record");
 let currentRecord=null;
+let currentPhotos=[];
+let showingRecordRoute=false;
+function galleryPhotoLabel(index) {return LANG==="zh"?"查看照片 "+(index+1):"View photo "+(index+1);}
+function gallery(x) {
+  const primary=sessionPhotos.get(x.id) || x.photo;
+  const other=Array.isArray(x.photos)?x.photos.filter(photoPath):[];
+  currentPhotos=primary?[primary,...new Set(other.filter(path=>path!==x.photo && path!==primary))]:[];
+  if(currentPhotos.length<2) return `${objectImage(x)}<p>${t(x.photo?"MODEL PHOTOGRAPH":"INTERPRETIVE PLAN VIEW")}</p>`;
+  return `<div class="gallery-main"><img class="object-photo" src="${esc(primary)}" alt="${esc(x.photoAlt || displayName(x))}"></div>
+    <p class="gallery-caption">${t("MODEL PHOTOGRAPH")} / <span id="gallery-count">1 / ${currentPhotos.length}</span></p>
+    <div class="gallery-thumbs" role="group" aria-label="${t("Model photos")}">
+    ${currentPhotos.map((path,index)=>`<button type="button" data-photo-index="${index}" aria-label="${galleryPhotoLabel(index)}" aria-pressed="${index===0}"><img src="${esc(path)}" alt="" loading="lazy"></button>`).join("")}
+    </div>`;
+}
+function selectGalleryPhoto(index) {
+  const path=currentPhotos[index], main=$("record-content").querySelector(".gallery-main img");
+  if(!path || !main) return;
+  main.src=path;
+  main.alt=displayName(currentRecord)+" — "+galleryPhotoLabel(index);
+  $("gallery-count").textContent=(index+1)+" / "+currentPhotos.length;
+  $("record-content").querySelectorAll("[data-photo-index]").forEach(button=>button.setAttribute("aria-pressed",String(Number(button.dataset.photoIndex)===index)));
+}
 function openRecord(id, previewRecord=null) {
   const x=previewRecord||archiveRecords().find(r=>r.id===id);
   if (!x) return;
   currentRecord=x;
   const related=archiveRecords().find(r=>r.id===x.link);
   const links=x.status!=="draft";
-  $("record-id").textContent=t("OBJECT")+" "+(x.id.startsWith("064-")?x.id:x.id.slice(0,8).toUpperCase())+" / "+t(x.status==="draft"?"DRAFT PREVIEW":isCollected(x)?"PERSONAL COLLECTION":"REFERENCE RECORD");
+  $("record-id").textContent=t("OBJECT")+" "+catalogNumber(x)+" / "+t(x.status==="draft"?"DRAFT PREVIEW":isCollected(x)?"PERSONAL COLLECTION":"REFERENCE RECORD");
   const details = `<div class="metadata">
-    <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Team",x.team,"team"],["Driver",x.driver,"driver"],["Race / season",x.event,"event"],["Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
+    <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Team",x.team,"team"],["Driver",x.driver,"driver",x.driverCountry],["Race / season",x.event,"event"],["Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
     <section><h3>${t("Miniature")}</h3><dl>${rows([["Scale",x.scale || "1:64","scale"],["Model brand",x.maker,"maker"],["Catalogue code",x.item]],links)}</dl>${x.source ? `<a href="${esc(x.source)}">${t("Maker’s reference")} ↗</a>` : ""}</section>
   </div>`;
   const extra = `${x.look ? `<p class="eyebrow">${t("LOOK CLOSER")}</p><p>${esc(x.look)}</p>` : ""}${related ? `<button type="button" class="text-btn" data-related="${related.id}">${t("Compare with")} ${esc(displayName(related))} ↗</button>` : ""}${isCollected(x) || x.status==="draft" ? "" : `<p class="disclosure">${t("Catalogue example. Ownership is unconfirmed; the illustration is not an object photograph.")}</p>`}`;
   $("record-content").innerHTML=`<div class="detail-grid">
-    <div class="detail-plate${x.photo ? " has-photo" : ""}">${objectImage(x)}<p>${t(x.photo ? "MODEL PHOTOGRAPH" : "INTERPRETIVE PLAN VIEW")}</p></div>
-    <div class="detail-main"><p class="eyebrow">${[t(x.series),x.year,raceNumber(x)].filter(Boolean).map(esc).join(" / ")}</p><h2 id="record-title">${esc(displayName(x))}</h2>${collectorNote(x)}${details}</div>
+    <div class="detail-plate${x.photo ? " has-photo" : ""}">${gallery(x)}</div>
+    <div class="detail-main"><p class="eyebrow">${[t(x.series),x.year,raceNumber(x)].filter(Boolean).map(esc).join(" / ")}</p><h2 id="record-title">${esc(displayName(x))}</h2>${links?`<div class="record-actions">${favoriteButton(x,true)} <a class="record-permalink" href="${esc(recordHref(x.id))}">${t("Record link")} ↗</a></div>`:""}${collectorNote(x)}${details}</div>
   </div>${extra ? `<div class="detail-note">${extra}</div>` : ""}`;
   if (!dialog.open) dialog.showModal(); else dialog.scrollTop = 0;
   $("close-record").focus();
 }
-$("cards").addEventListener("click", e => {const b=e.target.closest("[data-record]"); if(b) openRecord(b.dataset.record);});
+$("cards").addEventListener("click", e => {
+  const favorite=e.target.closest("[data-favorite]");
+  if(favorite) {toggleFavorite(favorite.dataset.favorite,favorite);return;}
+  const b=e.target.closest("[data-record]"); if(b) openRecord(b.dataset.record);
+});
+function followRecordRoute() {
+  const id=routeRecordId();
+  if(!id) {
+    if(showingRecordRoute && dialog.open) dialog.close();
+    showingRecordRoute=false;
+    return false;
+  }
+  showingRecordRoute=true;
+  if(!dialog.open || currentRecord?.id!==id) openRecord(id);
+  return true;
+}
 function followTag() {
   const previous = activeTag;
   activeTag = readTag();
@@ -186,6 +273,10 @@ function followTag() {
   }
 }
 $("record-content").addEventListener("click", e => {
+  const favorite=e.target.closest("[data-favorite]");
+  if(favorite) {toggleFavorite(favorite.dataset.favorite,favorite);return;}
+  const photo=e.target.closest("[data-photo-index]");
+  if(photo) {selectGalleryPhoto(Number(photo.dataset.photoIndex));return;}
   const b=e.target.closest("[data-related]");
   if(b) openRecord(b.dataset.related);
   const tag=e.target.closest(".object-tag");
@@ -195,14 +286,22 @@ $("record-content").addEventListener("click", e => {
   }
 });
 $("close-record").addEventListener("click", ()=>dialog.close());
+dialog.addEventListener("close",()=>{
+  showingRecordRoute=false;
+  if(routeRecordId()) {
+    history.replaceState(null,"",activeTag?tagHref(...activeTag):"#archive");
+    $("archive").scrollIntoView({behavior:"instant"});
+    $("archive-title").focus({preventScroll:true});
+  }
+});
 dialog.addEventListener("click", e => {if(e.target===dialog && !e.target.closest("#record-content")) {const b=dialog.getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom) dialog.close();}});
-window.addEventListener("hashchange", followTag);
+window.addEventListener("hashchange",()=>{if(!followRecordRoute()) followTag();});
 $("language").addEventListener("click",()=>{
   LANG=LANG==="en"?"zh":"en";
   translatePage();refreshFilters();update();
   if(dialog.open&&currentRecord)openRecord(currentRecord.id,currentRecord);
 });
 translatePage();refreshFilters();
-if (readTag()) followTag(); else update();
-loadPublicCollection().then(()=>{refreshFilters();update();}).catch(()=>{});
+if (readTag()) followTag(); else {update();followRecordRoute();}
+loadPublicCollection().then(()=>{refreshFilters();update();followRecordRoute();}).catch(()=>{});
 

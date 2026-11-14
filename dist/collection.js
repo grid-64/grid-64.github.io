@@ -2,11 +2,21 @@
 const COLLECTION_REPO = "suyihong20060219-cell/grid64";
 const COLLECTION_BRANCH = "main";
 const INDEX_FILE = "dist/collection/index.json";
+const EDITABLE_RECORD_FIELDS = Object.freeze(["car","carZh","maker","scale","series","spec","className","year","number","event","team","driver","item","acquired","collectionReason","collectionReasonZh"]);
 const publicRecords = new Map();
 const sessionPhotos = new Map();
 const archiveRecords = () => publicRecords.size ? [...publicRecords.values()] : RECORDS;
 function photoPath(value) {
   return typeof value === "string" && /^collection\/photos\/[a-f0-9-]+\.jpg$/.test(value);
+}
+function mergeCollectionEdit(previous, entry) {
+  const record={...previous,id:entry.id};
+  // The form omits intentionally emptied inputs. Only clear the fields it owns.
+  for (const field of EDITABLE_RECORD_FIELDS) {
+    if (Object.hasOwn(entry,field)) record[field]=entry[field];
+    else delete record[field];
+  }
+  return record;
 }
 async function loadPublicCollection() {
   if (location.protocol === "file:") return;
@@ -44,8 +54,12 @@ async function publishRecord(token,entry,photo,baseline) {
   if(!Array.isArray(items)) throw Error("Invalid collection index");
   const pos=items.findIndex(x=>x.id===entry.id);
   if (pos!==-1 && (!baseline || items[pos].revision!==baseline)) throw Error("The record changed on GitHub. Reload before editing it again.");
-  const record={...entry,revision:crypto.randomUUID()};
-  if (photo) record.photo="collection/photos/"+record.revision+".jpg";
+  const record=mergeCollectionEdit(items[pos],entry);
+  record.revision=crypto.randomUUID();
+  if (photo) {
+    record.photo="collection/photos/"+record.revision+".jpg";
+    delete record.thumbnail;
+  }
   if (!photoPath(record.photo)) throw Error("Choose a photo before saving or publishing.");
   if(pos<0) items.push(record);else items[pos]=record;
   const files=[{path:INDEX_FILE,mode:"100644",type:"blob",content:JSON.stringify(items,null,2)+"\n"}];

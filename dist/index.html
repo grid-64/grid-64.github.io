@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="GRID/64 — an independent digital archive of 1:64 racing miniatures.">
 <title>GRID/64 — A miniature motorsport archive</title>
-<link rel="stylesheet" href="style.css?v=5">
-<script defer src="language.js?v=5"></script>
+<link rel="stylesheet" href="style.css?v=6">
+<script defer src="language.js?v=6"></script>
 <script defer src="records.js?v=5"></script>
-<script defer src="collection.js?v=5"></script>
-<script defer src="archive.js?v=5"></script>
-<script defer src="editor.js?v=5"></script>
+<script defer src="collection.js?v=6"></script>
+<script defer src="archive.js?v=6"></script>
+<script defer src="editor.js?v=6"></script>
 </head>
 <body>
 <a class="skip" href="#archive"><span data-i18n="Skip to archive">Skip to archive</span></a>
@@ -48,11 +48,12 @@
 <label><span data-i18n="Series">Series</span> <select id="series"><option value="" data-i18n="Any series">Any series</option><option value="Formula 1">Formula 1</option><option value="IMSA">IMSA</option><option value="Super GT">Super GT</option></select></label>
 <label><span data-i18n="Class / spec">Class / spec</span> <select id="spec"><option value="" data-i18n="Any class / spec">Any class / spec</option><option value="Formula 1">Formula 1</option><option value="GT3">GT3</option><option value="GT500">GT500</option><option value="GT300">GT300</option></select></label>
 <label><span data-i18n="Sort">Sort</span> <select id="order"><option value="index" data-i18n="Archive ID">Archive ID</option><option value="year" data-i18n="Newest race year">Newest race year</option></select></label>
+<button type="button" class="favorites-filter" id="favorites-only" aria-pressed="false"><span aria-hidden="true">♡</span> <span data-i18n="Favorites only">Favorites only</span></button>
 </div>
 <div class="active-tag" id="active-tag" hidden><span id="active-tag-name"></span><a href="#archive" aria-label="Clear related-objects filter" data-label="Clear related-objects filter"><span data-i18n="Clear ×">Clear ×</span></a></div>
 <div class="result-line"><p id="result-count" aria-live="polite"></p><p id="record-status"><span data-i18n="REFERENCE RECORDS / OWNERSHIP UNCONFIRMED">REFERENCE RECORDS / OWNERSHIP UNCONFIRMED</span></p></div>
 <div id="cards"></div>
-<div class="empty" id="empty" hidden><p><span data-i18n="No records match those filters.">No records match those filters.</span></p><button type="button" id="clear"><span data-i18n="Clear filters">Clear filters</span></button></div>
+<div class="empty" id="empty" hidden><p id="empty-message">No records match those filters.</p><button type="button" id="clear">Clear filters</button></div>
 </section>
 <section class="study section" id="study" aria-labelledby="study-title">
 <div class="section-head"><p class="eyebrow"><b>02</b> / <span data-i18n="CURATORIAL NOTES">CURATORIAL NOTES</span></p><h2 id="study-title"><span data-i18n="Field notes">Field notes</span><span>.</span></h2><p><span data-i18n="What survives when a racing car becomes a model? Number, colour, wing and silhouette are the starting points for reading each object.">What survives when a racing car becomes a model? Number, colour, wing and silhouette are the starting points for reading each object.</span></p></div>
