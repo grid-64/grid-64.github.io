@@ -523,10 +523,10 @@
   },
   {
     "id": "b9203e6c-b7f9-5629-a7d2-2bf14c5c61b8",
-    "revision": "33e3e5ee-0d33-521a-9bb1-bb04b268f6c3",
+    "revision": "93fd6bc1-e36b-4435-bd60-626c3baa7d8b",
     "catalogId": "F1-008",
-    "car": "F1 model 08",
-    "carZh": "F1 模型 08",
+    "car": "Ferrari SF-23",
+    "carZh": "法拉利 SF-23",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -536,14 +536,70 @@
       "collection/photos/19e31a4d-bf71-54e4-a906-1b023f509da2.jpg",
       "collection/photos/34bc1c24-517e-522b-9659-73a2dd94c148.jpg",
       "collection/photos/7215f2e2-fb6e-5566-8545-82e5780c3227.jpg"
+    ],
+    "spec": "Formula 1",
+    "team": "Scuderia Ferrari",
+    "teamZh": "法拉利车队",
+    "year": 2023,
+    "number": "16",
+    "driver": "Charles Leclerc",
+    "driverZh": "夏尔·勒克莱尔",
+    "driverCountry": "MC",
+    "maker": "BBR",
+    "acquired": "2025-12",
+    "seasonSummary": "Leclerc finished fifth in the 2023 drivers’ championship with 206 points, six Grand Prix podiums and five poles. He started from pole in Las Vegas and reclaimed second from Sergio Pérez on the final lap. Two reference photographs show a later SF-23 display car with updated sponsor graphics.",
+    "seasonSummaryZh": "勒克莱尔在 2023 年拿到 5 个大奖赛杆位和 6 次正赛领奖台，以 206 分排名车手积分榜第五。拉斯维加斯站，他从杆位发车，末圈超越塞尔吉奥·佩雷兹拿到第二。图库中有两张是后来换上新赞助图案的 SF-23 展示车。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-008-ref-01.jpg",
+        "caption": "Close-up of the 2026 Clarke Quay SF-23 show car in Singapore, with updated sponsor graphics.",
+        "captionZh": "2026 年新加坡克拉码头的 SF-23 展示车特写，可见更新后的赞助图案。"
+      },
+      {
+        "src": "collection/photos/f1-008-ref-02.jpg",
+        "caption": "Front view of the No. 16 SF-23 show car at Clarke Quay.",
+        "captionZh": "克拉码头展出的 16 号 SF-23 正面。"
+      },
+      {
+        "src": "collection/photos/f1-008-ref-03.jpg",
+        "caption": "Charles Leclerc’s No. 16 Ferrari SF-23 on track in 2023.",
+        "captionZh": "勒克莱尔驾驶 16 号法拉利 SF-23 参加 2023 赛季比赛。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.formula1.com/en/latest/article/first-look-ferrari-reveal-their-2023-sf-23-f1-car-at-maranello.5WjlGOI2Lcxo6EzGcsOuHC",
+        "label": "F1 · SF-23 launch",
+        "labelZh": "F1 · SF-23 发布"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2023/drivers/CHALEC01/charles-leclerc",
+        "label": "F1 · Leclerc’s 2023 results",
+        "labelZh": "F1 · 勒克莱尔 2023 年成绩"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2023/awards/pole-positions",
+        "label": "F1 · 2023 pole positions",
+        "labelZh": "F1 · 2023 年杆位记录"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/leclerc-disappointed-to-miss-out-on-las-vegas-victory-but-insists-p2-was-the.3icIukWlu5GVjsV3JEqnBZ",
+        "label": "F1 · Las Vegas Grand Prix",
+        "labelZh": "F1 · 拉斯维加斯大奖赛"
+      },
+      {
+        "url": "https://www.visitsingapore.com/whats-happening/all-happenings/events/singapore-grand-prix-season/",
+        "label": "Singapore Tourism Board · Clarke Quay event",
+        "labelZh": "新加坡旅游局 · 克拉码头活动"
+      }
     ]
   },
   {
     "id": "6d9c752d-d762-572d-be37-9f1c3a6a50fa",
-    "revision": "164bc4b6-1eb1-5af6-8821-da533693d7f7",
+    "revision": "d387a29f-93eb-4ab2-babe-2ce809569d7b",
     "catalogId": "F1-009",
-    "car": "F1 model 09",
-    "carZh": "F1 模型 09",
+    "car": "Mercedes-AMG F1 W17 E PERFORMANCE",
+    "carZh": "梅赛德斯-AMG F1 W17 E PERFORMANCE",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -553,14 +609,67 @@
       "collection/photos/c1994479-8b54-5cd1-bcdb-184035185af2.jpg",
       "collection/photos/1b5d35e6-fa15-5abf-9efd-7c9b904e71c5.jpg",
       "collection/photos/8b2c0f23-ae84-52f4-a6e4-2aa46695af4d.jpg"
+    ],
+    "spec": "Formula 1",
+    "team": "Mercedes-AMG PETRONAS F1 Team",
+    "teamZh": "梅赛德斯-AMG 马石油 F1 车队",
+    "event": "Chinese Grand Prix · Shanghai",
+    "eventZh": "中国大奖赛 · 上海",
+    "year": 2026,
+    "number": "12",
+    "driver": "Kimi Antonelli",
+    "driverZh": "基米·安东内利",
+    "driverCountry": "IT",
+    "maker": "Minichamps",
+    "acquired": "2026-10",
+    "seasonSummary": "On 14 March 2026, Antonelli earned his first Grand Prix pole in Shanghai with a 1:32.064, becoming the youngest Grand Prix polesitter. He won his first Grand Prix the next day. On 1 November, third place in Mexico City secured the drivers’ title. At 20 years and 68 days, he became the youngest Formula 1 world champion.",
+    "seasonSummaryZh": "2026 年 3 月 14 日，安东内利在上海以 1:32.064 拿到生涯首个大奖赛杆位，成为 F1 最年轻的大奖赛杆位得主。第二天，他拿下生涯首场大奖赛胜利。11 月 1 日，他凭墨西哥城站第三名提前锁定车手冠军，以 20 岁零 68 天成为 F1 历史上最年轻的世界冠军。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-009-ref-01.jpg",
+        "caption": "Antonelli with the Italian flag after clinching the world title in Mexico City.",
+        "captionZh": "安东内利在墨西哥城锁定世界冠军后手持意大利国旗。"
+      },
+      {
+        "src": "collection/photos/f1-009-ref-02.jpg",
+        "caption": "Side view of Antonelli’s Mercedes W17 on track.",
+        "captionZh": "安东内利驾驶梅赛德斯 W17 的赛道侧拍。"
+      },
+      {
+        "src": "collection/photos/f1-009-ref-03.jpg",
+        "caption": "Antonelli celebrates his first Grand Prix win with Mercedes in Shanghai.",
+        "captionZh": "安东内利在上海与梅赛德斯车队庆祝生涯首场大奖赛胜利。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.mercedesamgf1.com/news/mercedes-amg-f1-2026-challenger-w17-revealed",
+        "label": "Mercedes · W17 launch",
+        "labelZh": "梅赛德斯 · W17 发布"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/antonelli-beats-russell-to-become-f1s-youngest-ever-grand-prix-polesitter-in.54Dx0kX9QiRCnSgIsxR71t",
+        "label": "F1 · Shanghai qualifying",
+        "labelZh": "F1 · 上海站排位赛"
+      },
+      {
+        "url": "https://www.mercedesamgf1.com/reports/race-report-history-made-as-kimi-takes-first-win-in-1-2",
+        "label": "Mercedes · First win in Shanghai",
+        "labelZh": "梅赛德斯 · 上海正赛首胜"
+      },
+      {
+        "url": "https://www.mercedesamgf1.com/reports/race-report-kimi-antonelli-becomes-youngest-ever-world-champion-with-mexico-podium",
+        "label": "Mercedes · Title clinched in Mexico City",
+        "labelZh": "梅赛德斯 · 墨西哥城站锁定世界冠军"
+      }
     ]
   },
   {
     "id": "299d114c-5f2f-5b7b-bf9d-0db97f3ee6e0",
-    "revision": "4905d236-198b-597c-8e34-6378b9706462",
+    "revision": "5bda3fba-d2cf-41f3-a3bd-84eed985eb73",
     "catalogId": "F1-010",
-    "car": "F1 model 10",
-    "carZh": "F1 模型 10",
+    "car": "Kick Sauber C44",
+    "carZh": "索伯 C44",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -571,14 +680,70 @@
       "collection/photos/a050cbd6-42f4-5226-a97c-9ec1ed9171a1.jpg",
       "collection/photos/e98b1879-0339-57a1-a456-9c067fd2addf.jpg",
       "collection/photos/384c5f44-bc70-5200-885a-c6eaabbb40df.jpg"
+    ],
+    "spec": "Formula 1",
+    "number": "24",
+    "driver": "Zhou Guanyu",
+    "driverZh": "周冠宇",
+    "driverCountry": "CN",
+    "event": "Chinese Grand Prix · Shanghai",
+    "eventZh": "中国大奖赛 · 上海",
+    "year": 2024,
+    "team": "Stake F1 Team Kick Sauber",
+    "teamZh": "Stake Kick 索伯 F1 车队",
+    "maker": "Hot Wheels",
+    "makerZh": "风火轮",
+    "acquired": "2025-09",
+    "collectionReason": "I collected the C44 because it marks Zhou Guanyu’s third F1 season and his last with Sauber. What makes it special to me is that he finished his first home Grand Prix in Shanghai in this car.",
+    "collectionReasonZh": "我收藏这辆 C44，是因为它代表周冠宇的第三个 F1 赛季，也是他在索伯的最后一个赛季。最有纪念意义的是，他开着这款赛车第一次在家乡上海完成 F1 正赛。",
+    "seasonSummary": "On 21 April 2024, Zhou became the first Chinese driver to start the Chinese Grand Prix. He finished 14th in the race after taking ninth in Saturday’s Sprint. After the race he was allowed to park on the Shanghai starting grid in front of his home crowd. His only points that season came with eighth place in Qatar.",
+    "seasonSummaryZh": "2024 年 4 月 21 日，周冠宇成为首位参加中国大奖赛正赛的中国车手。他周六冲刺赛第九，周日正赛第十四。赛后他获准把车停在上海赛道的发车格上，向主场车迷致意。他在该赛季的积分来自卡塔尔站第八名。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-010-ref-01.jpg",
+        "caption": "Zhou’s green-and-black No. 24 Kick Sauber C44 on track.",
+        "captionZh": "周冠宇驾驶绿黑涂装的 24 号索伯 C44 行驶在赛道上。"
+      },
+      {
+        "src": "collection/photos/f1-010-ref-02.jpg",
+        "caption": "Another trackside view of the C44 in its black-and-green livery.",
+        "captionZh": "黑绿涂装索伯 C44 的另一张赛道照片。"
+      },
+      {
+        "src": "collection/photos/f1-010-ref-03.jpg",
+        "caption": "Zhou takes in the moment after his first home Grand Prix in Shanghai.",
+        "captionZh": "首次完成上海主场大奖赛后，周冠宇在赛道上难掩激动。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.formula1.com/en/latest/article/first-look-kick-sauber-show-off-dazzling-livery-with-a-slew-of-changes-to.7tUcB0jd4VIdbGNbDmP1Pv",
+        "label": "F1 · C44 launch",
+        "labelZh": "F1 · C44 发布"
+      },
+      {
+        "url": "https://www.zhou-guanyu.com/en/news/detail/223",
+        "label": "Zhou Guanyu · Shanghai race report",
+        "labelZh": "周冠宇官网 · 上海站赛报"
+      },
+      {
+        "url": "https://www.fia.com/events/fia-formula-one-world-championship/season-2024/chinese-grand-prix/race-classification",
+        "label": "FIA · Chinese Grand Prix classification",
+        "labelZh": "FIA · 中国大奖赛正赛成绩"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2024/drivers/GUAZHO01/guanyu-zhou",
+        "label": "F1 · Zhou’s 2024 results",
+        "labelZh": "F1 · 周冠宇 2024 年成绩"
+      }
     ]
   },
   {
     "id": "a64e92cb-6857-5228-bdf4-618ffa094e77",
-    "revision": "81568669-1ddf-5fad-9f58-1f193c97cec4",
+    "revision": "ddc810c4-9f0e-441c-b167-e55149602a97",
     "catalogId": "F1-011",
-    "car": "F1 model 11",
-    "carZh": "F1 模型 11",
+    "car": "Alfa Romeo C43",
+    "carZh": "阿尔法·罗密欧 C43",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -588,14 +753,55 @@
       "collection/photos/77f2ade5-19a4-5a4b-bed4-f4568ad9a58d.jpg",
       "collection/photos/df20e194-6d5b-5b38-82bd-4597295b7ee8.jpg",
       "collection/photos/5e041a75-dcc3-5145-baa2-83a09d8a31d6.jpg"
+    ],
+    "spec": "Formula 1",
+    "number": "24",
+    "driver": "Zhou Guanyu",
+    "driverZh": "周冠宇",
+    "driverCountry": "CN",
+    "year": 2023,
+    "team": "Alfa Romeo F1 Team Stake",
+    "teamZh": "阿尔法·罗密欧 Stake F1 车队",
+    "maker": "MINI GT",
+    "acquired": "2026-05",
+    "seasonSummary": "The red-and-black C43 was Zhou’s car in his second season as a Formula 1 race driver. He finished ninth in Australia, Spain and Qatar, scoring six points and finishing 18th in the drivers’ standings.",
+    "seasonSummaryZh": "红黑涂装的 C43 是周冠宇进入 F1 正式席位第二年的赛车。他在澳大利亚、西班牙和卡塔尔三站都拿到第九，全年积 6 分，位列车手积分榜第十八。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-011-ref-01.jpg",
+        "caption": "Side view of Zhou’s No. 24 Alfa Romeo C43 in its red-and-black livery.",
+        "captionZh": "周冠宇 24 号阿尔法·罗密欧 C43 的红黑涂装侧面。"
+      },
+      {
+        "src": "collection/photos/f1-011-ref-02.jpg",
+        "caption": "The C43 on track, with another Alfa Romeo in the background.",
+        "captionZh": "行驶在赛道上的 C43，背景里还有一辆阿尔法·罗密欧。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.formula1.com/en/latest/article/first-look-alfa-romeo-show-off-2023-c43-f1-car-with-striking-new-livery.3eyobBgMrif9zCCJat7zTK",
+        "label": "F1 · C43 launch",
+        "labelZh": "F1 · C43 发布"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2023/drivers/GUAZHO01/guanyu-zhou",
+        "label": "F1 · Zhou’s 2023 results",
+        "labelZh": "F1 · 周冠宇 2023 年成绩"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2023/drivers",
+        "label": "F1 · 2023 drivers’ standings",
+        "labelZh": "F1 · 2023 年车手积分榜"
+      }
     ]
   },
   {
     "id": "0ce9ecfd-e587-5d17-9529-84aa9c3e3864",
-    "revision": "ff986255-ca01-569d-a1e1-50eb46542d57",
+    "revision": "dae22768-bea7-443b-99fd-e70bf1cef6f2",
     "catalogId": "F1-012",
-    "car": "F1 model 12",
-    "carZh": "F1 模型 12",
+    "car": "Mercedes-AMG F1 W11 EQ Performance",
+    "carZh": "梅赛德斯-AMG F1 W11 EQ Performance",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -606,14 +812,62 @@
       "collection/photos/6c4d052e-b6e5-5265-b124-8fa7274ebee2.jpg",
       "collection/photos/11b7f10b-66e7-5170-8416-8368224700d4.jpg",
       "collection/photos/e3bc5ea1-51be-5b87-9e34-a28a190db769.jpg"
+    ],
+    "spec": "Formula 1",
+    "team": "Mercedes-AMG PETRONAS F1 Team",
+    "teamZh": "梅赛德斯-AMG 马石油 F1 车队",
+    "year": 2020,
+    "number": "44",
+    "driver": "Lewis Hamilton",
+    "driverZh": "刘易斯·汉密尔顿",
+    "driverCountry": "GB",
+    "maker": "Tarmac Works",
+    "acquired": "2025-07",
+    "collectionReason": "I collected the W11 because of how dominant it was and because this is the car in which Hamilton won his seventh world title.",
+    "collectionReasonZh": "我收藏 W11，是因为这款车在赛场上的统治力，也因为汉密尔顿驾驶它拿到了自己的第七个世界冠军。",
+    "seasonSummary": "Hamilton won 11 of the 17 Grands Prix in 2020, took ten poles and finished with 347 points. He sealed his seventh drivers’ title by winning the Turkish Grand Prix. Mercedes took 13 wins with the W11, which featured Dual-Axis Steering (DAS).",
+    "seasonSummaryZh": "2020 年赛季共 17 场大奖赛，汉密尔顿拿到 11 胜、10 个杆位和 347 分，并在赢下土耳其大奖赛后锁定个人第七个车手冠军。配备双轴转向系统（DAS）的 W11 为梅赛德斯车队共赢得 13 场正赛。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-012-ref-01.jpg",
+        "caption": "Hamilton’s No. 44 W11 on wet tyres in the rain.",
+        "captionZh": "汉密尔顿的 44 号 W11 装着湿地胎在雨中行驶。"
+      },
+      {
+        "src": "collection/photos/f1-012-ref-02.jpg",
+        "caption": "Overhead view of the Mercedes crew around Hamilton’s No. 44 in the pit lane.",
+        "captionZh": "从上方俯瞰维修区里围着汉密尔顿 44 号车的梅赛德斯技师。"
+      },
+      {
+        "src": "collection/photos/f1-012-ref-03.jpg",
+        "caption": "Hamilton celebrates his seventh world title at the 2020 Turkish Grand Prix.",
+        "captionZh": "汉密尔顿在 2020 年土耳其大奖赛庆祝第七个世界冠军。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.mercedesamgf1.com/news/nine-times-champions-the-story-of-mercedes-constructors-championship-success",
+        "label": "Mercedes · W11 and the 2020 season",
+        "labelZh": "梅赛德斯 · W11 与 2020 赛季"
+      },
+      {
+        "url": "https://www.mercedesamgf1.com/news/world-drivers-champions-how-kimi-added-his-name-to-the-list-of-mercedes-winners",
+        "label": "Mercedes · Hamilton’s seventh title",
+        "labelZh": "梅赛德斯 · 汉密尔顿的第七冠"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2020/drivers",
+        "label": "F1 · 2020 drivers’ standings",
+        "labelZh": "F1 · 2020 年车手积分榜"
+      }
     ]
   },
   {
     "id": "da709866-f1dd-5ab5-ae34-0c4b5498b448",
-    "revision": "fc51d386-a933-53bf-b9aa-ff2b30ee2b42",
+    "revision": "d57b829c-cbae-4c01-a62c-1650c4610839",
     "catalogId": "F1-013",
-    "car": "F1 model 13",
-    "carZh": "F1 模型 13",
+    "car": "Red Bull Racing RB19",
+    "carZh": "红牛车队 RB19",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -623,6 +877,54 @@
       "collection/photos/3a75200d-7b3d-53b2-942d-13411e1616eb.jpg",
       "collection/photos/3cacb0fa-0aea-595c-9201-3bcf7c3b6629.jpg",
       "collection/photos/746594fb-4e8a-5b41-a746-9ef4e2e29bb1.jpg"
+    ],
+    "spec": "Formula 1",
+    "year": 2023,
+    "number": "1",
+    "driver": "Max Verstappen",
+    "driverZh": "马克斯·维斯塔潘",
+    "driverCountry": "NL",
+    "team": "Oracle Red Bull Racing",
+    "teamZh": "甲骨文红牛车队",
+    "maker": "MINI GT",
+    "acquired": "2025-08",
+    "collectionReason": "I collected the RB19 because winning 21 out of 22 Grands Prix is an extraordinary record. That level of dominance is what makes the car stand out to me.",
+    "collectionReasonZh": "我收藏 RB19，是因为它在 22 场正赛里赢了 21 场。这样的统治力，让这台车在我的收藏里格外突出。",
+    "seasonSummary": "The RB19 won 21 of 22 Grands Prix in 2023. Verstappen won 19 and Sergio Pérez won two. The only race Red Bull did not win was Singapore, where Ferrari’s Carlos Sainz took victory. Verstappen ended the season with 575 points and his third drivers’ title.",
+    "seasonSummaryZh": "RB19 在 2023 年 22 场大奖赛正赛中赢下 21 场，其中维斯塔潘赢了 19 场，塞尔吉奥·佩雷兹赢了 2 场。剩下的一场是新加坡站，冠军是法拉利车手卡洛斯·塞恩斯。维斯塔潘最终以 575 分赢得个人第三个车手冠军。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-013-ref-01.jpg",
+        "caption": "An RB19 in spray on a wet track, in front of a packed grandstand.",
+        "captionZh": "红牛 RB19 在湿滑赛道上驶过坐满车迷的看台，车轮溅起水雾。"
+      },
+      {
+        "src": "collection/photos/f1-013-ref-02.jpg",
+        "caption": "Verstappen stands on his No. 1 RB19 while celebrating his 2023 world title.",
+        "captionZh": "维斯塔潘站在 1 号 RB19 上，庆祝 2023 年世界冠军。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.redbullracing.com/int-en/cars/rb19",
+        "label": "Red Bull Racing · RB19",
+        "labelZh": "红牛车队 · RB19"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/in-numbers-the-remarkable-records-verstappen-and-red-bull-broke-during-the.5rU6XbfSRwp1wH9Uzp4RxI",
+        "label": "F1 · Red Bull’s 2023 records",
+        "labelZh": "F1 · 红牛的 2023 年纪录"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2023/races/1219/singapore/race-result",
+        "label": "F1 · 2023 Singapore Grand Prix result",
+        "labelZh": "F1 · 2023 年新加坡大奖赛成绩"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2023/drivers",
+        "label": "F1 · 2023 drivers’ standings",
+        "labelZh": "F1 · 2023 年车手积分榜"
+      }
     ]
   },
   {

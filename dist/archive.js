@@ -127,7 +127,7 @@ function card(x) {
   <button type="button" data-record="${esc(x.id)}" aria-label="${esc(t("Open")+" "+displayName(x)+(x.number?", "+t("number")+" "+x.number:""))}">
     <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(catalogNumber(x))}</span>${x.scale?`<span>${esc(x.scale)}</span>`:""}</div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true)}<span class="card-figure">${t(caption)}</span></div>
     <div class="card-info"><div><p>${meta}</p><h3>${esc(displayName(x))}</h3><p class="team">${secondary}</p></div><span class="arrow" aria-hidden="true">↗</span></div>
-  </button>${favoriteButton(x)}</article>`;
+  </button><div class="card-favorite">${favoriteButton(x)}</div></article>`;
 }
 function renderGroups(list, field) {
   if (!list.length) return "";
