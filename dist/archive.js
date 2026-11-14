@@ -242,6 +242,15 @@ function selectGalleryPhoto(index) {
 function referenceImagePath(path) {
   return typeof path==="string" && /^collection\/photos\/[a-z0-9][a-z0-9-]*\.(?:jpe?g|webp|png)$/i.test(path);
 }
+function referenceImages(x) {
+  return Array.isArray(x.referencePhotos)?x.referencePhotos.filter(image=>image && referenceImagePath(image.src)):[];
+}
+function referenceJump(count) {
+  if(!count) return "";
+  const label=t("View full-size car photos");
+  const accessibleLabel=t("View full-size car photos ({count})").replace("{count}",count);
+  return `<div class="record-photo-actions"><button class="reference-jump" type="button" aria-controls="race-reference" aria-label="${esc(accessibleLabel)}" data-reference-jump><span>${label}</span><span class="reference-jump-count" aria-hidden="true">${count}</span><span class="reference-jump-arrow" aria-hidden="true">↓</span></button></div>`;
+}
 function officialUrl(value) {
   if(typeof value!=="string") return "";
   try {
@@ -249,8 +258,7 @@ function officialUrl(value) {
     return url.protocol==="https:" && !url.username && !url.password ? url.href : "";
   } catch {return "";}
 }
-function referenceSection(x) {
-  const images=Array.isArray(x.referencePhotos)?x.referencePhotos.filter(image=>image && referenceImagePath(image.src)):[];
+function referenceSection(x, images) {
   const sources=(Array.isArray(x.officialSources)?x.officialSources:[]).flatMap(source=>{
     const url=officialUrl(source?.url);
     return url ? [{url,label:localized(source,"label")||t("Official source")}] : [];
@@ -262,16 +270,19 @@ function referenceSection(x) {
     const alt=localized(image,"alt") || caption || displayName(x)+" — "+t("Full-size car photograph");
     const url=officialUrl(image.source), credit=localized(image,"credit");
     const source=url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(credit || t("Image source"))} ↗</a>`:credit?`<span>${esc(credit)}</span>`:"";
+    const licenseUrl=officialUrl(image.license);
+    const license=licenseUrl?`<a href="${esc(licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(localized(image,"licenseLabel") || t("Image license"))} ↗</a>`:"";
+    const attribution=[source,license].filter(Boolean).join(" · ");
     return `<figure class="reference-figure">
-      <a class="reference-image" href="${esc(image.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(image.src)}" alt="${esc(alt)}" loading="lazy" decoding="async"></a>
-      <figcaption><span class="reference-number">${String(index+1).padStart(2,"0")}</span><div>${caption?`<p>${esc(caption)}</p>`:""}${source?`<p class="reference-credit">${source}</p>`:""}</div></figcaption>
+      <a class="reference-image" href="${esc(image.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(image.src)}" alt="${esc(alt)}" ${index ? 'loading="lazy"' : ""} decoding="async"></a>
+      <figcaption><span class="reference-number">${String(index+1).padStart(2,"0")}</span><div>${caption?`<p>${esc(caption)}</p>`:""}${attribution?`<p class="reference-credit">${attribution}</p>`:""}</div></figcaption>
     </figure>`;
   }).join("");
-  return `<section class="race-reference" aria-labelledby="race-reference-title">
+  return `<section class="race-reference" id="race-reference" aria-labelledby="race-reference-title">
     <p class="eyebrow">${t("RACE CONTEXT")}</p>
-    <h3 id="race-reference-title">${t("Full-size car reference")}</h3>
-    ${summary?`<p class="season-summary">${esc(summary)}</p>`:""}
+    <h3 id="race-reference-title"${images.length?' tabindex="-1"':""}>${t(images.length?"Full-size car photos":"Full-size car reference")}</h3>
     ${gallery?`<div class="reference-strip">${gallery}</div>`:""}
+    ${summary?`<p class="season-summary">${esc(summary)}</p>`:""}
     ${sources.length?`<div class="race-sources"><h4>${t("Official sources")}</h4><ul>${sources.map(source=>`<li><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)} ↗</a></li>`).join("")}</ul></div>`:""}
   </section>`;
 }
@@ -279,6 +290,7 @@ function openRecord(id, previewRecord=null) {
   const x=previewRecord||archiveRecords().find(r=>r.id===id);
   if (!x) return;
   currentRecord=x;
+  const refImages=referenceImages(x);
   const related=archiveRecords().find(r=>r.id===x.link);
   const links=x.status!=="draft";
   $("record-id").textContent=t("OBJECT")+" "+catalogNumber(x)+" / "+t(x.status==="draft"?"DRAFT PREVIEW":isCollected(x)?"PERSONAL COLLECTION":"REFERENCE RECORD");
@@ -287,10 +299,10 @@ function openRecord(id, previewRecord=null) {
     <section><h3>${t("Miniature")}</h3><dl>${rows([["Scale",x.scale || t("To be confirmed"),x.scale?"scale":null],["Model brand",x.maker,"maker",null,localized(x,"maker")],["Catalogue code",x.item]],links)}</dl>${x.source ? `<a href="${esc(x.source)}">${t("Maker’s reference")} ↗</a>` : ""}</section>
   </div>`;
   const extra = `${x.look ? `<p class="eyebrow">${t("LOOK CLOSER")}</p><p>${esc(x.look)}</p>` : ""}${related ? `<button type="button" class="text-btn" data-related="${related.id}">${t("Compare with")} ${esc(displayName(related))} ↗</button>` : ""}${isCollected(x) || x.status==="draft" ? "" : `<p class="disclosure">${t("Catalogue example. Ownership is unconfirmed; the illustration is not an object photograph.")}</p>`}`;
-  $("record-content").innerHTML=`<div class="detail-grid">
+  $("record-content").innerHTML=`${referenceJump(refImages.length)}<div class="detail-grid">
     <div class="detail-plate${x.photo ? " has-photo" : ""}">${gallery(x)}</div>
     <div class="detail-main"><p class="eyebrow">${[t(x.series),x.year,raceNumber(x)].filter(Boolean).map(esc).join(" / ")}</p><h2 id="record-title">${esc(displayName(x))}</h2>${links?`<div class="record-actions">${favoriteButton(x,true)} <a class="record-permalink" href="${esc(recordHref(x.id))}">${t("Record link")} ↗</a></div>`:""}${collectorNote(x)}${details}</div>
-  </div>${referenceSection(x)}${extra ? `<div class="detail-note">${extra}</div>` : ""}`;
+  </div>${referenceSection(x,refImages)}${extra ? `<div class="detail-note">${extra}</div>` : ""}`;
   if (!dialog.open) dialog.showModal(); else dialog.scrollTop = 0;
   $("close-record").focus();
 }
@@ -325,6 +337,13 @@ function followTag() {
   }
 }
 $("record-content").addEventListener("click", e => {
+  if(e.target.closest("[data-reference-jump]")) {
+    const section=$("race-reference"), heading=$("race-reference-title");
+    const bar=dialog.querySelector(".dialog-bar");
+    heading.focus({preventScroll:true});
+    dialog.scrollTo({top:dialog.scrollTop+section.getBoundingClientRect().top-dialog.getBoundingClientRect().top-bar.offsetHeight,behavior:"instant"});
+    return;
+  }
   const favorite=e.target.closest("[data-favorite]");
   if(favorite) {toggleFavorite(favorite.dataset.favorite,favorite);return;}
   const photo=e.target.closest("[data-photo-index]");

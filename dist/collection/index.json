@@ -166,12 +166,12 @@
   },
   {
     "id": "d0bb5ae5-7085-5b97-a4fd-0a26d90a137d",
-    "revision": "1378cf95-29de-4ab2-9613-ec7c5d065636",
+    "revision": "19c5e90f-0477-4f75-b12a-18f3f5bfbaf3",
     "catalogId": "F1-003",
     "car": "Ferrari SF-24",
     "carZh": "法拉利 SF-24",
     "series": "Formula 1",
-    "scale": null,
+    "scale": "1:24",
     "status": "collected",
     "photo": "collection/photos/67a896c9-6743-57f2-9a7d-00639a1af7f6.jpg",
     "thumbnail": "collection/photos/a6b1b594-c0f1-5d49-a183-43ab6ad3a9ff.jpg",
@@ -193,8 +193,8 @@
     "event": "Monaco Grand Prix",
     "eventZh": "摩纳哥大奖赛",
     "acquired": "2025-11",
-    "photoAlt": "Ferrari SF-24 No. 16 model with Charles Leclerc’s red-and-white helmet",
-    "photoAltZh": "法拉利 SF-24 16 号模型，车内是勒克莱尔的红白头盔",
+    "photoAlt": "Bburago 1:24 Ferrari SF-24 No. 16 model with Charles Leclerc’s red-and-white helmet",
+    "photoAltZh": "比美高 1:24 法拉利 SF-24 16 号模型，车内是勒克莱尔的红白头盔",
     "collectionReason": "The special helmet in the cockpit is what makes this model stand out for me. It reminds me of when Leclerc finally won his home Grand Prix, becoming the first Monegasque driver to win it in the Formula 1 World Championship era.",
     "collectionReasonZh": "这台车最吸引我的细节是驾驶舱里的摩纳哥站特别版头盔。它让我想起勒克莱尔第一次在家乡夺冠，也成为 F1 世界锦标赛历史上首位赢得摩纳哥大奖赛的本土车手。",
     "seasonSummary": "Leclerc won from pole in Monaco on 26 May 2024. He was the first Monegasque winner there in the F1 World Championship era and the first since Louis Chiron won the pre-championship race in 1931. He also won at Monza and in Austin, finishing third in the 2024 drivers’ standings with 356 points.",
@@ -313,12 +313,12 @@
   },
   {
     "id": "a09a890f-cad3-523b-9070-d8c7808b39ee",
-    "revision": "6b3f2a30-1869-5465-a600-268dbb307541",
+    "revision": "168dd858-d9da-4079-b7ac-930a6eebf4e3",
     "catalogId": "F1-005",
-    "car": "F1 model 05",
-    "carZh": "F1 模型 05",
+    "car": "Alfa Romeo C42",
+    "carZh": "阿尔法·罗密欧 C42",
     "series": "Formula 1",
-    "scale": "1:64",
+    "scale": "1:43",
     "status": "collected",
     "photo": "collection/photos/53778c3b-c94e-5baa-91e1-3d2474957613.jpg",
     "thumbnail": "collection/photos/cbe7066b-80c9-548b-b177-45e7f4282533.jpg",
@@ -326,16 +326,69 @@
       "collection/photos/5cc4df73-a23a-50e7-ac6c-db4db9e3fbb2.jpg",
       "collection/photos/259e0b86-65a6-55db-a938-eeac620cc7e7.jpg",
       "collection/photos/99c868a7-8395-5374-8eb6-955babc8c0da.jpg"
+    ],
+    "spec": "Formula 1",
+    "maker": "Bburago",
+    "makerZh": "比美高",
+    "year": 2022,
+    "number": "24",
+    "driver": "Zhou Guanyu",
+    "driverZh": "周冠宇",
+    "driverCountry": "CN",
+    "team": "Alfa Romeo F1 Team ORLEN",
+    "teamZh": "阿尔法·罗密欧 ORLEN F1 车队",
+    "event": "Bahrain Grand Prix",
+    "eventZh": "巴林大奖赛",
+    "acquired": "2024-02",
+    "photoAlt": "Bburago 1:43 Alfa Romeo C42 No. 24 model in red and white",
+    "photoAltZh": "比美高 1:43 阿尔法·罗密欧 C42 24 号红白涂装模型",
+    "collectionReason": "This is the car Zhou Guanyu drove in his first Formula 1 race, the first Grand Prix start by a Chinese driver. That milestone makes it special to me, and I’ve always liked the look of the red-and-white C42.",
+    "collectionReasonZh": "这是周冠宇参加首场 F1 正赛时驾驶的赛车，也见证了中国车手第一次登上 F1 正赛发车格。我觉得这个起点很有纪念意义，也很喜欢 C42 的红白涂装和车身造型。",
+    "seasonSummary": "Zhou drove the No. 24 C42 for Alfa Romeo F1 Team ORLEN, a Swiss-based Sauber operation racing under the Italian Alfa Romeo name. On 20 March 2022 he finished tenth on debut in Bahrain and earned one point. His best finish that season was eighth in Canada, and he ended his rookie year with six points.",
+    "seasonSummaryZh": "周冠宇驾驶 24 号 C42 代表阿尔法·罗密欧 ORLEN F1 车队参赛。车队由瑞士欣维尔的索伯运营，以意大利品牌阿尔法·罗密欧的名义参赛。2022 年 3 月 20 日，他在巴林首秀拿到第十和一个积分。该赛季最佳成绩是加拿大站第八，新秀赛季共拿到 6 分。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-005-ref-01.jpg",
+        "caption": "Zhou Guanyu in the cockpit behind the Alfa Romeo’s red halo.",
+        "captionZh": "周冠宇在驾驶舱里，身前是阿尔法·罗密欧的红色 Halo。"
+      },
+      {
+        "src": "collection/photos/f1-005-ref-02.jpg",
+        "caption": "Zhou’s No. 24 Alfa Romeo C42 on track.",
+        "captionZh": "周冠宇驾驶 24 号阿尔法·罗密欧 C42 行驶在赛道上。"
+      },
+      {
+        "src": "collection/photos/f1-005-ref-03.jpg",
+        "caption": "Zhou beside the C42 at the Circuit de Barcelona-Catalunya.",
+        "captionZh": "周冠宇与 C42 在巴塞罗那-加泰罗尼亚赛道。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.formula1.com/en/latest/article/zhou-says-scoring-point-on-debut-is-something-i-would-only-have-dreamed-of.3vGyl6Geuvk4BGsdi6eJrQ",
+        "label": "F1 · Zhou’s debut in Bahrain",
+        "labelZh": "F1 · 周冠宇的巴林首秀"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2022/drivers/GUAZHO01/guanyu-zhou",
+        "label": "F1 · Zhou’s 2022 race results",
+        "labelZh": "F1 · 周冠宇 2022 年分站成绩"
+      },
+      {
+        "url": "https://www.fia.com/sites/default/files/2022_sgp_media_guide.pdf",
+        "label": "FIA · 2022 team and driver guide",
+        "labelZh": "FIA · 2022 年车队与车手资料"
+      }
     ]
   },
   {
     "id": "dcc53693-364d-5eca-a79f-0f8bffd41e22",
-    "revision": "48a5cdda-669c-5f91-beb9-fa6d17e442fb",
+    "revision": "e753cf5b-18b6-4208-a313-dc256d4208bc",
     "catalogId": "F1-006",
-    "car": "F1 model 06",
-    "carZh": "F1 模型 06",
+    "car": "Ferrari SF-26",
+    "carZh": "法拉利 SF-26",
     "series": "Formula 1",
-    "scale": "1:64",
+    "scale": "1:43",
     "status": "collected",
     "photo": "collection/photos/eba27656-a7ff-5b9c-895b-312f8d9ba1eb.jpg",
     "thumbnail": "collection/photos/9a8360bc-56bf-5647-87d4-7a26b640a723.jpg",
@@ -343,14 +396,69 @@
       "collection/photos/e263d12a-cb04-5df1-be53-824ba212f455.jpg",
       "collection/photos/a07117ff-6de4-506e-9830-ffddb99da490.jpg",
       "collection/photos/efc1ad50-5712-585a-a261-c5295f389531.jpg"
+    ],
+    "spec": "Formula 1",
+    "maker": "Bburago",
+    "makerZh": "比美高",
+    "year": 2026,
+    "number": "16",
+    "driver": "Charles Leclerc",
+    "driverZh": "夏尔·勒克莱尔",
+    "driverCountry": "MC",
+    "team": "Scuderia Ferrari",
+    "teamZh": "法拉利车队",
+    "event": "British Grand Prix · Silverstone",
+    "eventZh": "英国大奖赛 · 银石",
+    "acquired": "2026-11",
+    "photoAlt": "Bburago 1:43 Ferrari SF-26 No. 16 model",
+    "photoAltZh": "比美高 1:43 法拉利 SF-26 16 号模型",
+    "collectionReason": "Two details make this car stand out in my collection: Leclerc won at Silverstone in the SF-26, and Ferrari’s rotating rear wing was one of the designs that caught my eye when the 2026 rules changed.",
+    "collectionReasonZh": "这台车有两个地方让我印象很深。一是勒克莱尔开着 SF-26 在银石夺冠，二是 2026 年规则大改后，法拉利拿出了很吸引我注意的翻转式尾翼。",
+    "seasonSummary": "The SF-26 was Scuderia Ferrari HP’s entry under the 2026 rules, which introduced active front and rear wings. Ferrari trialled a rear-wing flap that rotates upside down in straight-line mode, then raced it in Miami. Red Bull and McLaren also developed their own rotating-wing solutions. On 5 July, Leclerc won the British Grand Prix at Silverstone in the No. 16 car, ahead of George Russell and Lewis Hamilton.",
+    "seasonSummaryZh": "SF-26 是法拉利车队为 2026 年新规打造的赛车。新规引入可主动调节的前翼和尾翼。法拉利试验了能在直道模式下翻转的尾翼翼片，并在迈阿密赛事中使用。红牛与迈凯伦也分别研发了各自的旋转翼方案。7 月 5 日，勒克莱尔驾驶 16 号车在银石赢得英国大奖赛，领先乔治·拉塞尔与刘易斯·汉密尔顿。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-006-ref-01.jpg",
+        "caption": "Leclerc’s No. 16 Ferrari SF-26 on track.",
+        "captionZh": "勒克莱尔驾驶 16 号法拉利 SF-26 行驶在赛道上。"
+      },
+      {
+        "src": "collection/photos/f1-006-ref-02.jpg",
+        "caption": "Leclerc celebrates on the SF-26 after winning at Silverstone on 5 July 2026.",
+        "captionZh": "2026 年 7 月 5 日，勒克莱尔在银石夺冠后站在 SF-26 上庆祝。",
+        "credit": "Bryn Lennon / Formula 1 via Getty Images",
+        "source": "https://www.gettyimages.at/detail/nachrichtenfoto/race-winner-charles-leclerc-of-monaco-and-scuderia-nachrichtenfoto/2284755050"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.formula1.com/en/results/2026/races/1289/aa/race-result",
+        "label": "F1 · 2026 British Grand Prix result",
+        "labelZh": "F1 · 2026 英国大奖赛成绩"
+      },
+      {
+        "url": "https://corp.formula1.com/f1-2026-regulations-terminology-update/",
+        "label": "F1 · 2026 regulations",
+        "labelZh": "F1 · 2026 年技术规则"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/tech-analysis-a-rotating-wing-and-unusual-vane-why-ferraris-radical-rear-has.3IPT6RNelw3Tt74qPO5Jqh",
+        "label": "F1 · Ferrari’s rotating rear-wing flap",
+        "labelZh": "F1 · 法拉利翻转式尾翼解析"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/why-mclaren-have-named-their-rotating-wing-the-h-wing.DYMNboAlZ2j5EGSLkbrbU",
+        "label": "F1 · How the rotating wings evolved",
+        "labelZh": "F1 · 翻转式尾翼的发展"
+      }
     ]
   },
   {
     "id": "d42a98fc-8d64-5d83-92ff-c0c823d2dfde",
-    "revision": "e1b7d019-efbc-5385-af89-8a719d36e6b9",
+    "revision": "7012d917-370d-4085-8e9a-20bbceb72cb1",
     "catalogId": "F1-007",
-    "car": "F1 model 07",
-    "carZh": "F1 模型 07",
+    "car": "Haas VF-25",
+    "carZh": "哈斯 VF-25",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -360,6 +468,57 @@
       "collection/photos/45837343-7c4c-539f-bc79-9b8adb37f7fa.jpg",
       "collection/photos/5d1ab3c3-1440-5319-afc7-bf3cedd62e71.jpg",
       "collection/photos/8a5f7ae9-c774-5677-b0c9-2c75887f1329.jpg"
+    ],
+    "spec": "Formula 1",
+    "year": 2025,
+    "maker": "Spark",
+    "number": "31",
+    "driver": "Esteban Ocon",
+    "driverZh": "埃斯特班·奥康",
+    "driverCountry": "FR",
+    "team": "MoneyGram Haas F1 Team",
+    "teamZh": "MoneyGram 哈斯 F1 车队",
+    "event": "Japanese Grand Prix · Suzuka",
+    "eventZh": "日本大奖赛 · 铃鹿",
+    "photoAlt": "Spark 1:64 Haas VF-25 No. 31 model with the Suzuka cherry blossom livery",
+    "photoAltZh": "Spark 1:64 哈斯 VF-25 31 号铃鹿樱花涂装模型",
+    "collectionReason": "The cherry blossoms are the main reason I collected this one. I love how the pink graphics look against the black-and-white Haas, and this model represents Esteban Ocon’s No. 31 car.",
+    "collectionReasonZh": "我主要是为了这套樱花涂装收藏这辆车。粉色樱花放在哈斯的黑白车身上特别好看，而且这是奥康的 31 号车。",
+    "seasonSummary": "Haas brought a cherry blossom livery to Suzuka for the 2025 Japanese Grand Prix. Ocon finished 18th in the No. 31 car, while teammate Oliver Bearman finished tenth in the No. 87 car with the same livery. On 4 November 2026, Haas confirmed that Ocon would not race for the team again that season.",
+    "seasonSummaryZh": "哈斯为 2025 年日本大奖赛带来铃鹿樱花特别涂装。奥康驾驶 31 号车获得第 18，同样使用这套涂装的队友奥利弗·贝尔曼驾驶 87 号车获得第 10。2026 年 11 月 4 日，哈斯确认奥康不会再代表车队出战该赛季剩余分站。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-007-ref-01.jpg",
+        "caption": "Oliver Bearman’s No. 87 sister car in the same Sakura livery beneath Suzuka’s Ferris wheel.",
+        "captionZh": "队友奥利弗·贝尔曼的 87 号车驶过铃鹿摩天轮，使用同一套樱花涂装。"
+      },
+      {
+        "src": "collection/photos/f1-007-ref-02.jpg",
+        "caption": "Bearman’s No. 87 VF-25 on track in the shared cherry blossom livery.",
+        "captionZh": "贝尔曼驾驶同样采用樱花涂装的 87 号 VF-25 在赛道上行驶。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.haasf1team.com/news/japanese-grand-prix-preview-2",
+        "label": "Haas · Suzuka Sakura livery",
+        "labelZh": "哈斯 · 铃鹿樱花涂装"
+      },
+      {
+        "url": "https://www.haasf1team.com/news/japanese-grand-prix-race-recap-5",
+        "label": "Haas · 2025 Japanese Grand Prix recap",
+        "labelZh": "哈斯 · 2025 日本大奖赛战报"
+      },
+      {
+        "url": "https://www.haasf1team.com/news/team-statement-driver-update-0",
+        "label": "Haas · November 2026 driver update",
+        "labelZh": "哈斯 · 2026 年 11 月车手公告"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:2025_Japan_GP_-_Haas_-_Esteban_Ocon_-_FP2.jpg",
+        "label": "Photo reference · Ocon’s No. 31 at Suzuka (Liauzh, CC BY-SA 4.0)",
+        "labelZh": "实车照片 · 奥康的铃鹿 31 号车（Liauzh，CC BY-SA 4.0）"
+      }
     ]
   },
   {

@@ -2,6 +2,7 @@
 const COLLECTION_REPO = "suyihong20060219-cell/grid64";
 const COLLECTION_BRANCH = "main";
 const INDEX_FILE = "dist/collection/index.json";
+const PUBLIC_INDEX_VERSION = "9";
 const EDITABLE_RECORD_FIELDS = Object.freeze(["car","carZh","maker","scale","series","spec","className","year","number","event","team","driver","item","acquired","collectionReason","collectionReasonZh"]);
 const publicRecords = new Map();
 const sessionPhotos = new Map();
@@ -20,7 +21,9 @@ function mergeCollectionEdit(previous, entry) {
 }
 async function loadPublicCollection() {
   if (location.protocol === "file:") return;
-  const response = await fetch("./collection/index.json",{cache:"no-cache",signal:AbortSignal.timeout(8000)});
+  // Collection edits can publish independently of the frontend bundle.
+  const query = new URLSearchParams({v:PUBLIC_INDEX_VERSION,load:Date.now().toString(36)});
+  const response = await fetch("./collection/index.json?"+query,{cache:"no-store",signal:AbortSignal.timeout?.(8000)});
   if (!response.ok) throw Error("Collection index could not be loaded");
   const items = await response.json();
   if (!Array.isArray(items)) throw Error("Invalid collection index");
