@@ -1,12 +1,12 @@
 "use strict";
 const ZH = {
 "Skip to archive":"跳到收藏索引","GRID 64 home":"GRID/64 首页","Main navigation":"主导航","Index":"收藏索引","Field notes":"研究笔记","Add collection item":"新增藏品","PROTOTYPE 01":"档案原型 01",
-"A miniature motorsport archive.":"1:64 赛车模型档案。","Explore the index":"浏览收藏","PLATE 01":"图版 01","PLAN VIEW / ILLUSTRATION":"俯视示意图","OPEN WHEEL / STUDY 01":"开放式车轮／研究 01","FIG. 01 / SCALE STUDY":"图 01／比例研究","CURATED BY SU YIHONG":"苏益宏 策划","TO GATHER — PUBLISHING & NARRATIVE":"TO GATHER — 出版与叙述",
-"OBJECT RECORDS":"藏品档案","The grid":"收藏索引","One scale, different racing worlds. Find a miniature by chassis, team, race number or model code.":"同一比例，不同赛场。可按车型、车队、车号或模型货号查找。",
+"A miniature motorsport archive.":"赛车模型档案。","Explore the index":"浏览收藏","PLATE 01":"图版 01","PLAN VIEW / ILLUSTRATION":"俯视示意图","OPEN WHEEL / STUDY 01":"开放式车轮／研究 01","FIG. 01 / SCALE STUDY":"图 01／比例研究","CURATED BY SU YIHONG":"苏益宏 策划","TO GATHER — PUBLISHING & NARRATIVE":"TO GATHER — 出版与叙述",
+"OBJECT RECORDS":"藏品档案","The grid":"收藏索引","Different scales, different racing worlds. Find a miniature by chassis, team, race number or model code.":"不同比例，不同赛场。可按车型、车队、车号或模型货号查找。",
 "Archive view":"档案浏览方式","All":"全部","Formula 1":"F1","Search the archive":"搜索收藏","Group by":"分组方式","No grouping":"不分组","Model brand":"模型品牌","Race series":"赛事","Race category":"赛车类别","Series":"赛事","Any series":"不限赛事","Class / spec":"组别／规格","Any class / spec":"不限组别／规格","Sort":"排序","Archive ID":"档案编号","Newest race year":"最新赛季",
 "Clear ×":"清除 ×","Clear related-objects filter":"清除关联藏品筛选","No records match those filters.":"没有符合条件的藏品。","Clear filters":"清除筛选","RECORDS":"件档案","PERSONAL COLLECTION":"个人收藏","COLLECTION & REFERENCE RECORDS":"个人收藏与参考档案","REFERENCE RECORDS / OWNERSHIP UNCONFIRMED":"参考档案／入藏未确认","Unclassified":"未分类","record":"件","records":"件",
 "CURATORIAL NOTES":"策展笔记","What survives when a racing car becomes a model? Number, colour, wing and silhouette are the starting points for reading each object.":"当赛车变成模型，哪些特征被保留下来？车号、颜色、尾翼和轮廓，是阅读每件藏品的起点。",
-"COLLECTION METHOD":"收藏方法","One scale. Different rules.":"同一比例，不同规则。","Keep the scale constant and place the models next to one another. Start with the overall silhouette, then look for what identifies a specific race entry: the number panel, livery or small changes to the body.":"让模型保持相同比例，并排观察。先看整体轮廓，再看能辨认具体参赛版本的细节：车号板、涂装或车身的细微变化。",
+"COLLECTION METHOD":"收藏方法","Different scales. Different rules.":"不同比例，不同规则。","Place models next to one another and note their individual scales. Start with the overall silhouette, then look for what identifies a specific race entry: the number panel, livery or small changes to the body.":"将模型并排观察，并标明各自的比例。先看整体轮廓，再看能辨认具体参赛版本的细节：车号板、涂装或车身的细微变化。",
 "The archive keeps the full-size car and the physical miniature in separate records within each entry. A racing season is not the model’s release date; a manufacturer’s catalogue number is not the number printed on the car.":"每份档案分别记录实车和实体模型。参赛赛季与模型发售日期是两回事；模型厂的货号也不同于车身上的车号。",
 "See GT3 entries within Super GT":"查看 Super GT 中的 GT3 赛车","Design references":"设计参考","04 READINGS":"4 项参考","01 / VISUAL RHYTHM":"01／视觉节奏","02 / ACCESS":"02／档案检索","03 / OBJECT DATA":"03／藏品资料","04 / COMPARISON":"04／并置比较",
 "OFF+BRAND’s case study informed the oversized type and short, race-inspired transitions.":"参考 OFF+BRAND 案例中的大字号和短促的赛车式转场。","Search and browsing lead to a stable object record. GRID/64 pairs quick filters with a detail view.":"检索和浏览都能进入单件档案。本网站将快速筛选与单件详情结合。","Separate the model code and scale from the race car, season and event represented.":"模型货号和比例，与其呈现的赛车、赛季和赛事分开记录。","Francis Alÿs’s collection of reproductions suggests how repetition can help viewers notice variation.":"Francis Alÿs 将多件复制品并置，让观众更容易辨认细微变化。",
@@ -22,11 +22,14 @@ function translatePage() {
   document.querySelectorAll("[data-i18n]").forEach(el=>{el.textContent=t(el.dataset.i18n);});
   document.querySelectorAll("[data-label]").forEach(el=>el.setAttribute("aria-label",t(el.dataset.label)));
   document.querySelectorAll("[data-placeholder]").forEach(el=>el.setAttribute("placeholder",t(el.dataset.placeholder)));
-  const button=document.getElementById("language");
-  button.textContent=LANG==="en"?"中文":"EN";
-  button.lang=LANG==="en"?"zh-Hans":"en";
-  button.setAttribute("aria-label",LANG==="en"?"切换到中文":"Switch to English");
+  for (const id of ["language","record-language"]) {
+    const button=document.getElementById(id);
+    button.textContent=LANG==="en"?"中文":"EN";
+    button.lang=LANG==="en"?"zh-Hans":"en";
+    button.setAttribute("aria-label",LANG==="en"?"切换到中文":"Switch to English");
+  }
 }
 Object.assign(ZH,{"Complete the required fields.":"请填写所有必填项。","Open the HTTPS website to publish.":"请打开 HTTPS 网站进行发布。","Collector’s note":"收藏者笔记"});
 Object.assign(ZH,{"Discard draft":"丢弃草稿","Discard this local draft?":"确定丢弃这份本机草稿？","This browser could not remove the draft.":"浏览器无法删除这份草稿。"});
 Object.assign(ZH,{"Favorite":"收藏","Favorites only":"只看收藏","Add to favorites":"添加到收藏","Saved to favorites":"已收藏","Remove from favorites":"取消收藏","No favorites in this view. Select the heart on a car to save it.":"当前分类没有收藏。点按车型卡片上的爱心即可收藏。","Model photos":"模型照片","Record link":"档案链接"});
+Object.assign(ZH,{"RACE CONTEXT":"赛事背景","Full-size car reference":"实车参考","Full-size car photograph":"实车照片","Image source":"图片来源","Official sources":"官方资料","Official source":"官方来源"});

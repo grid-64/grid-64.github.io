@@ -1,12 +1,12 @@
 [
   {
     "id": "51d4caf9-665a-51d1-a1c0-fb503ca9ff3e",
-    "revision": "90a9849b-07f6-5324-b31c-bd20560eccf3",
+    "revision": "d10928d8-ceee-4568-abd7-e28404af3e33",
     "catalogId": "F1-001",
-    "car": "F1 model 01",
-    "carZh": "F1 模型 01",
+    "car": "Ferrari SF90",
+    "carZh": "法拉利 SF90",
     "series": "Formula 1",
-    "scale": "1:64",
+    "scale": "1:24",
     "status": "collected",
     "photo": "collection/photos/75650a5e-8415-53af-a3ef-8f00bd7c76ad.jpg",
     "thumbnail": "collection/photos/b1bf7bd1-2127-5b37-9710-98b251a92f26.jpg",
@@ -14,6 +14,76 @@
       "collection/photos/b8b02ed3-ec31-501b-a5f5-337056b7e383.jpg",
       "collection/photos/c154fe28-a35d-5a10-a1ff-36a68da648a1.jpg",
       "collection/photos/c45572f4-788d-5583-88ce-4c582def0382.jpg"
+    ],
+    "year": 2019,
+    "spec": "Formula 1",
+    "number": "16",
+    "team": "Scuderia Ferrari",
+    "teamZh": "法拉利车队",
+    "driver": "Charles Leclerc",
+    "driverZh": "夏尔·勒克莱尔",
+    "driverCountry": "MC",
+    "photoAlt": "1:24 Ferrari SF90 model in Charles Leclerc’s No. 16 livery",
+    "photoAltZh": "夏尔·勒克莱尔 16 号法拉利 SF90 的 1:24 模型",
+    "collectionReason": "Charles Leclerc is my favourite driver. I collected the SF90 because it’s the car he drove to his first Formula 1 win, at Spa, and to his first win at Ferrari’s home race, at Monza. Both came in his first season with Ferrari, which makes this model special to me.",
+    "collectionReasonZh": "勒克莱尔是我最喜欢的车手。我收藏这辆 SF90，是因为他开着它在斯帕拿到了 F1 生涯首胜，随后又在蒙扎首次赢下法拉利的主场比赛。这两场胜利都发生在他加盟法拉利的第一年，所以这辆模型对我很有纪念意义。",
+    "seasonSummary": "In his first season with Scuderia Ferrari, Leclerc earned his maiden F1 win at the Belgian Grand Prix on 1 September and won again at Monza on 8 September, Ferrari’s first home victory since 2010. He finished fourth in the drivers’ championship with 264 points, two wins, seven poles and ten podiums. Ferrari took second in the constructors’ championship with 504 points.",
+    "seasonSummaryZh": "2019 年是勒克莱尔效力法拉利的首个赛季。9 月 1 日，他在斯帕举行的比利时大奖赛拿下 F1 生涯首胜。9 月 8 日，他又在蒙扎赢得意大利大奖赛，为法拉利带来自 2010 年以来的首场主场胜利。他以 264 分位列车手积分榜第四，全年收获 2 胜、7 个杆位和 10 次领奖台。法拉利以 504 分获车队亚军。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-001-ref-01.jpg",
+        "caption": "Leclerc’s No. 16 Ferrari SF90, front three-quarter view.",
+        "captionZh": "勒克莱尔的 16 号法拉利 SF90，前侧视角。"
+      },
+      {
+        "src": "collection/photos/f1-001-ref-02.jpg",
+        "caption": "Leclerc’s SF90 alongside the kerb.",
+        "captionZh": "勒克莱尔驾驶 SF90 驶过路肩。"
+      },
+      {
+        "src": "collection/photos/f1-001-ref-03.jpg",
+        "caption": "Leclerc holding a Grand Prix trophy on the podium.",
+        "captionZh": "勒克莱尔在领奖台上捧起大奖赛奖杯。",
+        "credit": "Sky Sport F1 (on-image mark)",
+        "creditZh": "Sky Sport F1（画面标识）"
+      },
+      {
+        "src": "collection/photos/f1-001-ref-04.jpg",
+        "caption": "Leclerc raises one finger while wearing his Ferrari helmet.",
+        "captionZh": "勒克莱尔戴着法拉利头盔，举起一根手指。"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.formula1.com/en/latest/article/ferrari-launch-their-2019-challenger.4z0KLNggQgttafVaVrOLnO",
+        "label": "F1 · Ferrari SF90 launch",
+        "labelZh": "F1 · 法拉利 SF90 发布"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/leclerc-holds-off-hamilton-to-take-emotional-maiden-grand-prix-victory.7peJjlJIqpoCQC8cT24u23",
+        "label": "F1 · Belgian Grand Prix race report",
+        "labelZh": "F1 · 比利时大奖赛战报"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/race-report-highlight-italian-grand-prix-2019.20aaFWDlFBaXWeCuimUnpR",
+        "label": "F1 · Italian Grand Prix race report",
+        "labelZh": "F1 · 意大利大奖赛战报"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/ive-learned-so-much-from-vettel-in-dream-debut-season-leclerc.57eVMnhJyOA4xzxe7aKz8a",
+        "label": "F1 · Leclerc’s first Ferrari season",
+        "labelZh": "F1 · 勒克莱尔的法拉利首季"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2019/drivers",
+        "label": "F1 · 2019 drivers’ standings",
+        "labelZh": "F1 · 2019 车手积分榜"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2019/team",
+        "label": "F1 · 2019 constructors’ standings",
+        "labelZh": "F1 · 2019 车队积分榜"
+      }
     ]
   },
   {

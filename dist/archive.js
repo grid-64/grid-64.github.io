@@ -82,9 +82,17 @@ const readTag = () => {
 const matchesMode = (x, m) => m === "all" || (m === "f1" && x.series === "Formula 1") || (m === "gt3" && x.spec === "GT3") || (m === "sgt" && x.series === "Super GT");
 const isCollected = x => x.status === "collected";
 const objectImage = (x, preview = false) => x.photo
-  ? `<img class="object-photo" src="${esc(sessionPhotos.get(x.id) || (preview && x.thumbnail ? x.thumbnail : x.photo))}" alt="${esc(x.photoAlt || displayName(x))}" ${preview ? 'loading="lazy"' : ""}>`
+  ? `<img class="object-photo" src="${esc(sessionPhotos.get(x.id) || (preview && x.thumbnail ? x.thumbnail : x.photo))}" alt="${esc(localized(x,"photoAlt") || displayName(x))}" ${preview ? 'loading="lazy"' : ""}>`
   : diagram(x);
 function displayName(x) {return LANG==="zh" && x.carZh ? x.carZh : x.car;}
+function localized(x, field) {return LANG==="zh" && x[field+"Zh"] ? x[field+"Zh"] : x[field];}
+function tagLabel(key,value) {
+  if (LANG==="zh" && (key==="team" || key==="driver")) {
+    const translation=archiveRecords().find(x=>x[key]===value && x[key+"Zh"]);
+    if (translation) return translation[key+"Zh"];
+  }
+  return t(value);
+}
 function raceNumber(x) {return x.number ? "#"+x.number : "";}
 function catalogNumber(x) {return x.catalogId || (x.id.startsWith("064-") ? x.id : x.id.slice(0,8).toUpperCase());}
 function favoriteButton(x, detail=false) {
@@ -114,7 +122,7 @@ function toggleFavorite(id, button) {
 function card(x) {
   const caption=x.photo ? "MODEL PHOTOGRAPH" : "PLAN VIEW / ILLUSTRATION";
   const meta=[t(x.series),x.spec===x.series?"":t(x.spec),x.year].filter(Boolean).map(esc).join(" · ");
-  const secondary=[x.team || x.maker,raceNumber(x)].filter(Boolean).map(esc).join(" / ");
+  const secondary=[localized(x,"team") || x.maker,raceNumber(x)].filter(Boolean).map(esc).join(" / ");
   return `<article class="card">
   <button type="button" data-record="${esc(x.id)}" aria-label="${esc(t("Open")+" "+displayName(x)+(x.number?", "+t("number")+" "+x.number:""))}">
     <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(catalogNumber(x))}</span><span>${esc(x.scale || "1:64")}</span></div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true)}<span class="card-figure">${t(caption)}</span></div>
@@ -141,7 +149,7 @@ function update() {
   const records=archiveRecords();
   $("crosslink").hidden=!records.some(x=>x.series==="Super GT"&&x.spec==="GT3");
   const q = $("query").value.toLowerCase().trim().split(/\s+/).filter(Boolean), series = $("series").value, spec = $("spec").value;
-  const list = records.filter(x => (!favoritesOnly || favorites.has(x.id)) && (!activeTag || tags[activeTag[0]][1](x) === activeTag[1]) && matchesMode(x,mode) && (!series || x.series === series) && (!spec || x.spec === spec || x.className === spec) && q.every(t => [x.car,x.carZh,x.team,x.id,x.catalogId,x.item,x.maker,x.driver,x.event,x.number,"#"+Number(x.number),x.series,x.year,x.spec,x.className,t(x.series)].join(" ").toLowerCase().includes(t)));
+  const list = records.filter(x => (!favoritesOnly || favorites.has(x.id)) && (!activeTag || tags[activeTag[0]][1](x) === activeTag[1]) && matchesMode(x,mode) && (!series || x.series === series) && (!spec || x.spec === spec || x.className === spec) && q.every(word => [x.car,x.carZh,x.team,x.teamZh,x.id,x.catalogId,x.item,x.maker,x.driver,x.driverZh,x.event,x.number,"#"+Number(x.number),x.series,x.year,x.spec,x.className,t(x.series)].join(" ").toLowerCase().includes(word)));
   if ($("order").value === "year") list.sort((a,b) => b.year-a.year || a.id.localeCompare(b.id));
   $("cards").innerHTML = renderGroups(list, $("group").value);
   $("empty").hidden = list.length !== 0;
@@ -149,7 +157,7 @@ function update() {
   $("favorites-only").setAttribute("aria-pressed",String(favoritesOnly));
   $("result-count").textContent = `${String(list.length).padStart(2,"0")} / ${String(records.length).padStart(2,"0")} ${t("RECORDS")}`;
   $("active-tag").hidden = !activeTag;
-  $("active-tag-name").textContent = activeTag ? `${t(tags[activeTag[0]][0])}: ${t(activeTag[1])}` : "";
+  $("active-tag-name").textContent = activeTag ? `${t(tags[activeTag[0]][0])}: ${tagLabel(...activeTag)}` : "";
   $("record-status").textContent = list.length === 0 ? "" : list.every(isCollected) ? t("PERSONAL COLLECTION") : list.some(isCollected) ? t("COLLECTION & REFERENCE RECORDS") : t("REFERENCE RECORDS / OWNERSHIP UNCONFIRMED");
   document.querySelectorAll("[data-mode]").forEach(b => {b.hidden=b.dataset.mode!=="all"&&!records.some(x=>matchesMode(x,b.dataset.mode));b.setAttribute("aria-pressed",String(b.dataset.mode===mode));});
 }
@@ -183,11 +191,12 @@ function driverFlag(code) {
   return `<span class="driver-flag" title="${esc(country)}" aria-hidden="true">${emoji}</span>`;
 }
 function rows(items, links = true) {
-  return items.filter(([,v])=>v).map(([label,value,key,code]) => {
+  return items.filter(([,v])=>v).map(([label,value,key,code,display]) => {
     const flag=driverFlag(code);
+    const shown=display || (key ? t(value) : value);
     const content = key && links
-      ? `<a class="object-tag" href="${esc(tagHref(key,value))}" aria-label="${esc(t("Browse by")+" "+t(label)+": "+t(value))}">${flag}${esc(t(value))} <span aria-hidden="true">↗</span></a>`
-      : flag+esc(key ? t(value) : value);
+      ? `<a class="object-tag" href="${esc(tagHref(key,value))}" aria-label="${esc(t("Browse by")+" "+t(label)+": "+shown)}">${flag}${esc(shown)} <span aria-hidden="true">↗</span></a>`
+      : flag+esc(shown);
     return `<div><dt>${t(label)}</dt><dd>${content}</dd></div>`;
   }).join("");
 }
@@ -209,7 +218,7 @@ function gallery(x) {
   const other=Array.isArray(x.photos)?x.photos.filter(photoPath):[];
   currentPhotos=primary?[primary,...new Set(other.filter(path=>path!==x.photo && path!==primary))]:[];
   if(currentPhotos.length<2) return `${objectImage(x)}<p>${t(x.photo?"MODEL PHOTOGRAPH":"INTERPRETIVE PLAN VIEW")}</p>`;
-  return `<div class="gallery-main"><img class="object-photo" src="${esc(primary)}" alt="${esc(x.photoAlt || displayName(x))}"></div>
+  return `<div class="gallery-main"><img class="object-photo" src="${esc(primary)}" alt="${esc(localized(x,"photoAlt") || displayName(x))}"></div>
     <p class="gallery-caption">${t("MODEL PHOTOGRAPH")} / <span id="gallery-count">1 / ${currentPhotos.length}</span></p>
     <div class="gallery-thumbs" role="group" aria-label="${t("Model photos")}">
     ${currentPhotos.map((path,index)=>`<button type="button" data-photo-index="${index}" aria-label="${galleryPhotoLabel(index)}" aria-pressed="${index===0}"><img src="${esc(path)}" alt="" loading="lazy"></button>`).join("")}
@@ -223,6 +232,42 @@ function selectGalleryPhoto(index) {
   $("gallery-count").textContent=(index+1)+" / "+currentPhotos.length;
   $("record-content").querySelectorAll("[data-photo-index]").forEach(button=>button.setAttribute("aria-pressed",String(Number(button.dataset.photoIndex)===index)));
 }
+function referenceImagePath(path) {
+  return typeof path==="string" && /^collection\/photos\/[a-z0-9][a-z0-9-]*\.(?:jpe?g|webp|png)$/i.test(path);
+}
+function officialUrl(value) {
+  if(typeof value!=="string") return "";
+  try {
+    const url=new URL(value);
+    return url.protocol==="https:" && !url.username && !url.password ? url.href : "";
+  } catch {return "";}
+}
+function referenceSection(x) {
+  const images=Array.isArray(x.referencePhotos)?x.referencePhotos.filter(image=>image && referenceImagePath(image.src)):[];
+  const sources=(Array.isArray(x.officialSources)?x.officialSources:[]).flatMap(source=>{
+    const url=officialUrl(source?.url);
+    return url ? [{url,label:localized(source,"label")||t("Official source")}] : [];
+  });
+  const summary=localized(x,"seasonSummary");
+  if(!images.length && !sources.length && !summary) return "";
+  const gallery=images.map((image,index)=>{
+    const caption=localized(image,"caption");
+    const alt=localized(image,"alt") || caption || displayName(x)+" — "+t("Full-size car photograph");
+    const url=officialUrl(image.source), credit=localized(image,"credit");
+    const source=url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(credit || t("Image source"))} ↗</a>`:credit?`<span>${esc(credit)}</span>`:"";
+    return `<figure class="reference-figure">
+      <a class="reference-image" href="${esc(image.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(image.src)}" alt="${esc(alt)}" loading="lazy" decoding="async"></a>
+      <figcaption><span class="reference-number">${String(index+1).padStart(2,"0")}</span><div>${caption?`<p>${esc(caption)}</p>`:""}${source?`<p class="reference-credit">${source}</p>`:""}</div></figcaption>
+    </figure>`;
+  }).join("");
+  return `<section class="race-reference" aria-labelledby="race-reference-title">
+    <p class="eyebrow">${t("RACE CONTEXT")}</p>
+    <h3 id="race-reference-title">${t("Full-size car reference")}</h3>
+    ${summary?`<p class="season-summary">${esc(summary)}</p>`:""}
+    ${gallery?`<div class="reference-strip">${gallery}</div>`:""}
+    ${sources.length?`<div class="race-sources"><h4>${t("Official sources")}</h4><ul>${sources.map(source=>`<li><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)} ↗</a></li>`).join("")}</ul></div>`:""}
+  </section>`;
+}
 function openRecord(id, previewRecord=null) {
   const x=previewRecord||archiveRecords().find(r=>r.id===id);
   if (!x) return;
@@ -231,14 +276,14 @@ function openRecord(id, previewRecord=null) {
   const links=x.status!=="draft";
   $("record-id").textContent=t("OBJECT")+" "+catalogNumber(x)+" / "+t(x.status==="draft"?"DRAFT PREVIEW":isCollected(x)?"PERSONAL COLLECTION":"REFERENCE RECORD");
   const details = `<div class="metadata">
-    <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Team",x.team,"team"],["Driver",x.driver,"driver",x.driverCountry],["Race / season",x.event,"event"],["Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
+    <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Team",x.team,"team",null,localized(x,"team")],["Driver",x.driver,"driver",x.driverCountry,localized(x,"driver")],["Race / season",x.event,"event"],["Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
     <section><h3>${t("Miniature")}</h3><dl>${rows([["Scale",x.scale || "1:64","scale"],["Model brand",x.maker,"maker"],["Catalogue code",x.item]],links)}</dl>${x.source ? `<a href="${esc(x.source)}">${t("Maker’s reference")} ↗</a>` : ""}</section>
   </div>`;
   const extra = `${x.look ? `<p class="eyebrow">${t("LOOK CLOSER")}</p><p>${esc(x.look)}</p>` : ""}${related ? `<button type="button" class="text-btn" data-related="${related.id}">${t("Compare with")} ${esc(displayName(related))} ↗</button>` : ""}${isCollected(x) || x.status==="draft" ? "" : `<p class="disclosure">${t("Catalogue example. Ownership is unconfirmed; the illustration is not an object photograph.")}</p>`}`;
   $("record-content").innerHTML=`<div class="detail-grid">
     <div class="detail-plate${x.photo ? " has-photo" : ""}">${gallery(x)}</div>
     <div class="detail-main"><p class="eyebrow">${[t(x.series),x.year,raceNumber(x)].filter(Boolean).map(esc).join(" / ")}</p><h2 id="record-title">${esc(displayName(x))}</h2>${links?`<div class="record-actions">${favoriteButton(x,true)} <a class="record-permalink" href="${esc(recordHref(x.id))}">${t("Record link")} ↗</a></div>`:""}${collectorNote(x)}${details}</div>
-  </div>${extra ? `<div class="detail-note">${extra}</div>` : ""}`;
+  </div>${referenceSection(x)}${extra ? `<div class="detail-note">${extra}</div>` : ""}`;
   if (!dialog.open) dialog.showModal(); else dialog.scrollTop = 0;
   $("close-record").focus();
 }
@@ -296,11 +341,20 @@ dialog.addEventListener("close",()=>{
 });
 dialog.addEventListener("click", e => {if(e.target===dialog && !e.target.closest("#record-content")) {const b=dialog.getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom) dialog.close();}});
 window.addEventListener("hashchange",()=>{if(!followRecordRoute()) followTag();});
-$("language").addEventListener("click",()=>{
+function switchLanguage() {
   LANG=LANG==="en"?"zh":"en";
   translatePage();refreshFilters();update();
-  if(dialog.open&&currentRecord)openRecord(currentRecord.id,currentRecord);
-});
+  if(dialog.open && currentRecord) {
+    const position=dialog.scrollTop;
+    const photo=dialog.querySelector('[data-photo-index][aria-pressed="true"]');
+    openRecord(currentRecord.id,currentRecord);
+    if (photo && Number(photo.dataset.photoIndex)>0) selectGalleryPhoto(Number(photo.dataset.photoIndex));
+    dialog.scrollTop=position;
+    $("record-language").focus({preventScroll:true});
+  }
+}
+$("language").addEventListener("click",switchLanguage);
+$("record-language").addEventListener("click",switchLanguage);
 translatePage();refreshFilters();
 if (readTag()) followTag(); else {update();followRecordRoute();}
 loadPublicCollection().then(()=>{refreshFilters();update();followRecordRoute();}).catch(()=>{});

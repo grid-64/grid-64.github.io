@@ -86,6 +86,24 @@ dialog{width:min(890px,calc(100% - 24px));max-height:calc(100dvh - 30px);backgro
 .gallery-thumbs button[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
 .gallery-thumbs img{display:block;width:100%;height:40px;object-fit:contain}
 .driver-flag{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+.race-reference{padding:22px;border-top:1px solid #44515a;background:#171f25}
+.race-reference>.eyebrow{color:var(--accent)}
+.race-reference h3{margin:4px 0 0;font-size:clamp(23px,3.2vw,35px);line-height:1.1;letter-spacing:-.035em}
+.season-summary{max-width:68ch;margin:11px 0 0;color:#d3dfe5;font-size:14px;white-space:pre-line}
+.dialog-actions{display:flex;align-items:center;gap:8px}
+.dialog-actions #record-language{min-width:44px;width:auto;padding:0 8px;font:inherit}
+.reference-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,195px),1fr));gap:10px;margin-top:16px}
+.reference-figure{margin:0;min-width:0;border:1px solid #45535c;background:#212a30}
+.reference-image{display:block;aspect-ratio:16/10;background:#141a1f}
+.reference-image img{width:100%;height:100%;object-fit:contain}
+.reference-figure figcaption{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;padding:9px 10px;font-size:12px;line-height:1.4;color:#edf3f7;overflow-wrap:anywhere}
+.reference-number,.race-sources h4{color:var(--accent);font:11px/1.4 var(--mono);text-transform:uppercase}
+.reference-credit{margin-top:3px;color:#b5c1c9;font-size:11px}
+.reference-credit a,.race-sources a{text-underline-offset:3px}
+.race-sources{margin-top:17px}
+.race-sources ul{display:flex;flex-wrap:wrap;list-style:none;padding:0;margin:7px 0 0;gap:7px}
+.race-sources a{display:block;padding:6px 8px;border:1px solid #576571;font-size:12px}
+@media(max-width:670px){.race-reference{padding:16px}.reference-strip{grid-template-columns:repeat(auto-fit,minmax(min(100%,145px),1fr))}}
 @media(max-width:370px){.card .favorite-button{top:27px;right:4px}}
 @media(max-width:850px){.editor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:670px){.top{grid-template-columns:1fr auto;grid-template-rows:53px auto;height:auto;padding-bottom:7px;row-gap:0}.top nav{grid-row:2;grid-column:1/-1;justify-content:flex-start}.top nav a{padding:5px 0}.header-tools{grid-row:1;grid-column:2}.header-tools button{padding:6px 8px}.detail-main .metadata{gap:10px}}
