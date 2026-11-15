@@ -89,7 +89,8 @@
     "makerZh": "比美高",
     "acquired": "2025-08",
     "milestone": "Leclerc’s first F1 win",
-    "milestoneZh": "勒克莱尔 F1 首胜"
+    "milestoneZh": "勒克莱尔 F1 首胜",
+    "previewPhoto": "collection/photos/preview-51d4caf9-665a-51d1-a1c0-fb503ca9ff3e.webp"
   },
   {
     "id": "88d7f598-959b-5117-b130-7399c7c4aade",
@@ -164,7 +165,8 @@
         "label": "F1 · Charles Leclerc biography",
         "labelZh": "F1 · 夏尔·勒克莱尔车手资料"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-88d7f598-959b-5117-b130-7399c7c4aade.webp"
   },
   {
     "id": "d0bb5ae5-7085-5b97-a4fd-0a26d90a137d",
@@ -246,7 +248,8 @@
       }
     ],
     "milestone": "Leclerc’s first home win",
-    "milestoneZh": "勒克莱尔主场首胜"
+    "milestoneZh": "勒克莱尔主场首胜",
+    "previewPhoto": "collection/photos/preview-d0bb5ae5-7085-5b97-a4fd-0a26d90a137d.webp"
   },
   {
     "id": "15e9295c-38a7-5deb-9f01-4d258ead90d5",
@@ -315,7 +318,8 @@
       }
     ],
     "milestone": "Leclerc’s first F1 points",
-    "milestoneZh": "勒克莱尔 F1 首分"
+    "milestoneZh": "勒克莱尔 F1 首分",
+    "previewPhoto": "collection/photos/preview-15e9295c-38a7-5deb-9f01-4d258ead90d5.webp"
   },
   {
     "id": "a09a890f-cad3-523b-9070-d8c7808b39ee",
@@ -387,7 +391,8 @@
       }
     ],
     "milestone": "First Chinese F1 race start",
-    "milestoneZh": "中国车手 F1 首秀"
+    "milestoneZh": "中国车手 F1 首秀",
+    "previewPhoto": "collection/photos/preview-a09a890f-cad3-523b-9070-d8c7808b39ee.webp"
   },
   {
     "id": "dcc53693-364d-5eca-a79f-0f8bffd41e22",
@@ -459,7 +464,8 @@
         "label": "F1 · How the rotating wings evolved",
         "labelZh": "F1 · 翻转式尾翼的发展"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-dcc53693-364d-5eca-a79f-0f8bffd41e22.webp"
   },
   {
     "id": "d42a98fc-8d64-5d83-92ff-c0c823d2dfde",
@@ -527,7 +533,8 @@
         "label": "Photo reference · Ocon’s No. 31 at Suzuka (Liauzh, CC BY-SA 4.0)",
         "labelZh": "实车照片 · 奥康的铃鹿 31 号车（Liauzh，CC BY-SA 4.0）"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-d42a98fc-8d64-5d83-92ff-c0c823d2dfde.webp"
   },
   {
     "id": "b9203e6c-b7f9-5629-a7d2-2bf14c5c61b8",
@@ -600,7 +607,8 @@
         "label": "Singapore Tourism Board · Clarke Quay event",
         "labelZh": "新加坡旅游局 · 克拉码头活动"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-b9203e6c-b7f9-5629-a7d2-2bf14c5c61b8.webp"
   },
   {
     "id": "6d9c752d-d762-572d-be37-9f1c3a6a50fa",
@@ -670,7 +678,8 @@
         "label": "Mercedes · Title clinched in Mexico City",
         "labelZh": "梅赛德斯 · 墨西哥城站锁定世界冠军"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-6d9c752d-d762-572d-be37-9f1c3a6a50fa.webp"
   },
   {
     "id": "299d114c-5f2f-5b7b-bf9d-0db97f3ee6e0",
@@ -746,7 +755,8 @@
       }
     ],
     "milestone": "Zhou’s home debut",
-    "milestoneZh": "周冠宇主场首秀"
+    "milestoneZh": "周冠宇主场首秀",
+    "previewPhoto": "collection/photos/preview-299d114c-5f2f-5b7b-bf9d-0db97f3ee6e0.webp"
   },
   {
     "id": "a64e92cb-6857-5228-bdf4-618ffa094e77",
@@ -804,7 +814,8 @@
         "label": "F1 · 2023 drivers’ standings",
         "labelZh": "F1 · 2023 年车手积分榜"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-a64e92cb-6857-5228-bdf4-618ffa094e77.webp"
   },
   {
     "id": "0ce9ecfd-e587-5d17-9529-84aa9c3e3864",
@@ -870,7 +881,8 @@
         "label": "F1 · 2020 drivers’ standings",
         "labelZh": "F1 · 2020 年车手积分榜"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-0ce9ecfd-e587-5d17-9529-84aa9c3e3864.webp"
   },
   {
     "id": "da709866-f1dd-5ab5-ae34-0c4b5498b448",
@@ -935,7 +947,8 @@
         "label": "F1 · 2023 drivers’ standings",
         "labelZh": "F1 · 2023 年车手积分榜"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-da709866-f1dd-5ab5-ae34-0c4b5498b448.webp"
   },
   {
     "id": "cdb79d1f-a1a8-5ad1-9268-a714ca511909",
@@ -1012,7 +1025,8 @@
         "label": "Red Bull Racing · Ford partnership",
         "labelZh": "红牛车队 · 福特合作"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-cdb79d1f-a1a8-5ad1-9268-a714ca511909.webp"
   },
   {
     "id": "f8912023-a729-5825-9390-292371349745",
@@ -1087,7 +1101,8 @@
         "label": "F1 · Ayrton Senna",
         "labelZh": "F1 · 埃尔顿·塞纳"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-f8912023-a729-5825-9390-292371349745.webp"
   },
   {
     "id": "ad7650a3-2509-5469-94a5-a7145a5961d8",
@@ -1165,7 +1180,8 @@
         "label": "F1 · 2025 race winners",
         "labelZh": "F1 · 2025 年分站正赛冠军"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-ad7650a3-2509-5469-94a5-a7145a5961d8.webp"
   },
   {
     "id": "c983eda5-02e8-53c1-bc14-4f9f343a14cf",
@@ -1243,7 +1259,8 @@
       }
     ],
     "milestone": "Hand-customized",
-    "milestoneZh": "亲手改制"
+    "milestoneZh": "亲手改制",
+    "previewPhoto": "collection/photos/preview-c983eda5-02e8-53c1-bc14-4f9f343a14cf.webp"
   },
   {
     "id": "d2289b96-ce8e-5ec9-99f2-8bdefca10855",
@@ -1324,7 +1341,8 @@
         "label": "LPGA · Lily Muni He",
         "labelZh": "LPGA · 何沐妮"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-d2289b96-ce8e-5ec9-99f2-8bdefca10855.webp"
   },
   {
     "id": "bac04856-6584-5a25-bdbe-969c7e328e05",
@@ -1397,7 +1415,8 @@
       }
     ],
     "milestone": "Norris’s first world title",
-    "milestoneZh": "诺里斯首个世界冠军"
+    "milestoneZh": "诺里斯首个世界冠军",
+    "previewPhoto": "collection/photos/preview-bac04856-6584-5a25-bdbe-969c7e328e05.webp"
   },
   {
     "id": "d8f548b9-4898-58f4-bad2-48a770030f2e",
@@ -1480,7 +1499,8 @@
         "label": "F1 · How Gasly won in the AT01",
         "labelZh": "F1 · 加斯利如何驾驶 AT01 夺冠"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-d8f548b9-4898-58f4-bad2-48a770030f2e.webp"
   },
   {
     "id": "b318d8f9-47cf-5692-becd-d760c794b378",
@@ -1554,14 +1574,15 @@
         "label": "FIA · Mayländer and the F1 safety fleet",
         "labelZh": "FIA · 梅兰德与 F1 安全车辆"
       }
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-b318d8f9-47cf-5692-becd-d760c794b378.webp"
   },
   {
     "id": "fe6c6a64-0091-55e0-8573-89eede0014b2",
-    "revision": "6d1b01cd-cbd4-4438-8187-3a1a55d2d8e8",
+    "revision": "8e352c15-2c22-4801-a1d8-144171632bbf",
     "catalogId": "SGT-001",
-    "car": "Super GT model 01",
-    "carZh": "Super GT 车模 01",
+    "car": "Subaru BRZ GT300",
+    "carZh": "斯巴鲁 BRZ GT300",
     "series": "Super GT",
     "status": "collected",
     "photo": "collection/photos/f3b5a09c-ab71-5759-8819-d15a5f357671.jpg",
@@ -1570,15 +1591,68 @@
       "collection/photos/d1908655-2d82-51ac-8947-5799a1a1242b.jpg",
       "collection/photos/0bb84f5a-e4b9-59f0-8ad5-c7f3eaae2c6d.jpg",
       "collection/photos/3833c3d0-b0e4-518a-a9de-1f38ae4c4540.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-fe6c6a64-0091-55e0-8573-89eede0014b2.webp",
+    "year": 2025,
+    "number": "61",
+    "team": "R&D SPORT",
+    "driver": "Takuto Iguchi / Hideki Yamauchi",
+    "driverZh": "井口卓人／山内英辉",
+    "spec": "GT300",
+    "className": "GT300",
+    "scale": "1:64",
+    "item": "64SGT25061",
+    "maker": "Spark",
+    "acquired": "2026-03",
+    "seasonSummary": "R&D SPORT entered the No. 61 Subaru BRZ GT300 in 2025 for Takuto Iguchi and Hideki Yamauchi. Subaru developed the race car to meet the international roll-cage standard introduced that season.",
+    "seasonSummaryZh": "2025 年，R&D SPORT 以 61 号斯巴鲁 BRZ GT300 参加 Super GT GT300 组别，由井口卓人与山内英辉搭档驾驶。赛车按当年引入的 FIA 国际防滚架标准开发。",
+    "officialSources": [
+      {
+        "label": "2025 Super GT entry",
+        "labelZh": "Super GT 官方参赛档案",
+        "url": "https://supergt.net/team_detail/2025-round7-rd-sport"
+      },
+      {
+        "label": "Subaru’s 2025 programme",
+        "labelZh": "斯巴鲁 2025 年赛车计划",
+        "url": "https://www.subaru.co.jp/news-en/2025_01_10_174142/"
+      },
+      {
+        "label": "Spark 1:64 in the official Super GT shop",
+        "labelZh": "Super GT 官方商店的 Spark 1:64 模型",
+        "url": "https://supergt-square.com/official-shop/64sgt25061/"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:Subaru_brz_GT300_No,61_2025_Suzuka.jpg",
+        "credit": "Ysys3455 / Wikimedia Commons",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "sourceOnly": true,
+        "caption": "The 2025 Subaru BRZ GT300 at Suzuka.",
+        "captionZh": "2025 年在铃鹿赛道拍摄的斯巴鲁 BRZ GT300。"
+      },
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:Osaka_Auto_Messe_2025_(128)_-_No.61_SUBARU_BRZ_R%26D_SPORT_in_2025_SUPER_GT.jpg",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons · resized",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "src": "collection/photos/race-sgt001-2-ref.webp",
+        "creditZh": "Tokumeigakarinoaoshima／Wikimedia Commons · 已缩放",
+        "caption": "The No. 61 on display at Osaka Auto Messe 2025.",
+        "captionZh": "2025 年大阪改装车展展出的 61 号赛车。"
+      }
+    ],
+    "driverCountry": "JP"
   },
   {
     "id": "19b5edeb-8aad-5e2e-a8f8-3db0354ab173",
-    "revision": "c4fd9e14-35c5-4927-acd5-26c6efad2cea",
+    "revision": "087fc1d6-b303-4807-9042-34051e5841cb",
     "catalogId": "SGT-002",
-    "car": "Super GT model 02",
-    "carZh": "Super GT 车模 02",
-    "series": "Super GT",
+    "car": "Goodsmile Mercedes-AMG GT3 · Spa 24H",
+    "carZh": "Goodsmile 梅赛德斯-AMG GT3 · 斯帕 24 小时",
+    "series": "GT World Challenge Europe",
     "status": "collected",
     "photo": "collection/photos/d4a575f5-af79-532b-abe0-a73bc02decb0.jpg",
     "thumbnail": "collection/photos/571a42ef-0653-5f8d-996b-1a7f262178fe.jpg",
@@ -1586,14 +1660,59 @@
       "collection/photos/ab996268-061d-50ab-9f30-60e7e04caab9.jpg",
       "collection/photos/79658f52-835b-5dea-9d65-cde1196b9089.jpg",
       "collection/photos/376903d6-94a4-529f-b660-9533d3bd4dd0.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-19b5edeb-8aad-5e2e-a8f8-3db0354ab173.webp",
+    "year": 2025,
+    "number": "00",
+    "team": "GOODSMILE RACING",
+    "driver": "Nobuteru Taniguchi / Tatsuya Kataoka / Kamui Kobayashi",
+    "driverZh": "谷口信辉／片冈龙也／小林可梦伟",
+    "spec": "GT3",
+    "className": "Pro Cup",
+    "event": "CrowdStrike 24 Hours of Spa",
+    "eventZh": "斯帕 24 小时耐力赛",
+    "maker": "Spark",
+    "acquired": "2025-12",
+    "collectionReason": "I follow Goodsmile Racing in Super GT, and I wanted its special red-and-white Spa livery in my collection.",
+    "collectionReasonZh": "Goodsmile Racing 是我很喜欢的一支 Super GT 车队，所以也想收藏他们到比利时参加斯帕 24 小时耐力赛时用的红白特别涂装。",
+    "seasonSummary": "The No. 00 Mercedes-AMG GT3 ran in the Pro Cup at the 2025 Spa 24 Hours, a round of the GT World Challenge Europe Endurance Cup. Kamui Kobayashi joined regular Goodsmile drivers Nobuteru Taniguchi and Tatsuya Kataoka.",
+    "seasonSummaryZh": "00 号梅赛德斯-AMG GT3 参加了 2025 年斯帕 24 小时耐力赛职业组。这一站属于 GT 世界挑战赛欧洲耐力杯。除了车队常规搭档谷口信辉、片冈龙也，这场比赛还有小林可梦伟加入。",
+    "officialSources": [
+      {
+        "label": "Goodsmile’s Spa programme",
+        "labelZh": "Goodsmile 斯帕参赛特辑",
+        "url": "https://special.goodsmile.info/spa24_2025/en/"
+      },
+      {
+        "label": "Official race entry list",
+        "labelZh": "赛事官方参赛名单",
+        "url": "https://www.gt-world-challenge-europe.com/documents/notice/9530/478-685f0876826879040ac4671b-27-06-2025-21-09.pdf"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://special.goodsmile.info/spa24_2025/images/gallery/raceweek_gidson_28.jpg",
+        "credit": "Drew Gibson / GOODSMILE RACING",
+        "caption": "The No. 00 AMG at Spa-Francorchamps during race week.",
+        "captionZh": "00 号赛车在斯帕赛道行驶。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://special.goodsmile.info/spa24_2025/images/gallery/raceweek_gidson_7.jpg",
+        "credit": "Drew Gibson / GOODSMILE RACING",
+        "caption": "A trackside look at the red-and-white Spa livery.",
+        "captionZh": "赛道边拍摄的红白斯帕特别涂装。"
+      }
+    ],
+    "driverCountry": "JP"
   },
   {
     "id": "37f577c0-f5c2-5dfc-9797-7d3464cc5291",
-    "revision": "a9a17c13-9dd7-462f-9b31-71a52dd00912",
+    "revision": "6a30bd78-b092-4f7d-85e6-af75feaad751",
     "catalogId": "SGT-003",
-    "car": "Super GT model 03",
-    "carZh": "Super GT 车模 03",
+    "car": "KeePer CERUMO GR Supra GT500",
+    "carZh": "KeePer CERUMO 丰田 GR Supra GT500",
     "series": "Super GT",
     "status": "collected",
     "photo": "collection/photos/6d208998-0532-5537-b9c5-36d7035a4c37.jpg",
@@ -1602,14 +1721,56 @@
       "collection/photos/71b8ce8b-5261-58e1-b7b7-ce23860a9b7e.jpg",
       "collection/photos/35a3e0c2-8931-580e-bf2f-f0b090511841.jpg",
       "collection/photos/f22ec6fc-1290-501f-b052-819ab3d53b73.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-37f577c0-f5c2-5dfc-9797-7d3464cc5291.webp",
+    "number": "38",
+    "team": "TGR TEAM KeePer CERUMO",
+    "driver": "Hiroaki Ishiura / Toshiki Oyu",
+    "driverZh": "石浦宏明／大汤都史树",
+    "spec": "GT500",
+    "className": "GT500",
+    "maker": "Spark",
+    "acquired": "2026-05",
+    "collectionReason": "The Toyota Supra is one of my favourite road cars, which is why I collected its GT500 counterpart.",
+    "collectionReasonZh": "丰田 Supra 是我最喜欢的街车之一，所以也想收藏它在 GT500 赛场上的版本。",
+    "seasonSummary": "KeePer was the title sponsor of TGR TEAM KeePer CERUMO. Hiroaki Ishiura and Toshiki Oyu drove the blue-and-white No. 38 GR Supra GT500 in both 2024 and 2025. The reference photographs show the 2025 car.",
+    "seasonSummaryZh": "KeePer 是 TGR TEAM KeePer CERUMO 的冠名赞助商。石浦宏明与大汤都史树在 2024、2025 两年都驾驶这支车队的 38 号蓝白 GR Supra GT500。这里的真车照片拍于 2025 年，车模对应年份可再用盒底货号核对。",
+    "officialSources": [
+      {
+        "label": "2025 Cerumo entry announcement",
+        "labelZh": "CERUMO 2025 年参赛公告",
+        "url": "https://cerumo.co.jp/pdf/newsrelease20250312.pdf"
+      },
+      {
+        "label": "2024 Toyota entry list",
+        "labelZh": "丰田 2024 年参赛名单",
+        "url": "https://toyotagazooracing.com/jp/supergt/teamdriver/2024/"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://toyotagazooracing.com/-/media/TMC/tgr/jpn/contents/motorsports/driver/images/2025/gt-038.jpg",
+        "credit": "TOYOTA GAZOO Racing",
+        "caption": "Toyota’s 2025 photograph of the No. 38 KeePer CERUMO GR Supra.",
+        "captionZh": "丰田公布的 2025 年 38 号 KeePer CERUMO GR Supra。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://www.as-web.jp/supergt/1238558/attachment/gt005-2",
+        "credit": "auto sport web",
+        "caption": "The No. 38 at Fuji Speedway in 2025.",
+        "captionZh": "2025 年富士赛道上的 38 号赛车。"
+      }
+    ],
+    "driverCountry": "JP"
   },
   {
     "id": "162dc990-61a6-597e-995d-ee105744f0bf",
-    "revision": "ef612935-c00c-4bea-81ef-da11eb15f683",
+    "revision": "16b4040c-faf8-487e-8710-ddde5622f563",
     "catalogId": "SGT-004",
-    "car": "Super GT model 04",
-    "carZh": "Super GT 车模 04",
+    "car": "au TOM'S GR Supra GT500",
+    "carZh": "au TOM'S 丰田 GR Supra GT500",
     "series": "Super GT",
     "status": "collected",
     "photo": "collection/photos/07e25fb3-23e3-5f22-8184-95c166861aff.jpg",
@@ -1619,14 +1780,63 @@
       "collection/photos/517a42f1-e807-58fd-ac4b-78f37e77dcc3.jpg",
       "collection/photos/ace2fac5-858e-5cd9-9adf-a2b9bdd0f32e.jpg",
       "collection/photos/ef7cd266-029d-510b-a7e6-97141dc9f1d3.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-162dc990-61a6-597e-995d-ee105744f0bf.webp",
+    "year": 2024,
+    "number": "36",
+    "team": "TGR TEAM au TOM'S",
+    "driver": "Sho Tsuboi / Kenta Yamashita",
+    "driverZh": "坪井翔／山下健太",
+    "spec": "GT500",
+    "className": "GT500",
+    "maker": "Tomica",
+    "makerZh": "多美卡",
+    "acquired": "2026-05",
+    "collectionReason": "I collected this car because the Toyota Supra is one of my favourite road cars.",
+    "collectionReasonZh": "丰田 Supra 是我很喜欢的街车，所以也收藏了这辆橙白涂装的 GT500 版本。",
+    "seasonSummary": "Sho Tsuboi and Kenta Yamashita won the 2024 GT500 drivers’ championship in the No. 36 GR Supra. TGR TEAM au TOM’S also won the teams’ title, its second in a row.",
+    "seasonSummaryZh": "坪井翔和山下健太驾驶 36 号 GR Supra 赢得 2024 年 GT500 车手总冠军，TGR TEAM au TOM’S 也连续第二年拿下车队总冠军。au 是冠名赞助商，参赛车队为 TOM’S。",
+    "officialSources": [
+      {
+        "label": "Toyota’s Suzuki finale report",
+        "labelZh": "丰田铃鹿收官战战报",
+        "url": "https://toyotagazooracing.com/jp/supergt/release/2024/rd05-race/"
+      },
+      {
+        "label": "Tomica Premium Racing release",
+        "labelZh": "多美卡 Premium Racing 产品公告",
+        "url": "https://www.takaratomy.co.jp/products/tomica/new/2511.htm"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.36_au_TOM%27S_GR_Supra_after_2024_Suzuka_GT_3_Hours_Race_(1).jpg",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons · resized",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "src": "collection/photos/race-sgt004-1-ref.webp",
+        "creditZh": "Tokumeigakarinoaoshima／Wikimedia Commons · 已缩放",
+        "caption": "The No. 36 au TOM’S GR Supra at Suzuka in 2024.",
+        "captionZh": "2024 年铃鹿站的 36 号 au TOM’S GR Supra。"
+      },
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.36_au_TOM%27S_GR_Supra_after_2024_Suzuka_GT_3_Hours_Race_(2).jpg",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "sourceOnly": true,
+        "caption": "A second view of the No. 36 after the Suzuka three-hour race.",
+        "captionZh": "铃鹿三小时赛后拍摄的 36 号车另一角度。"
+      }
+    ],
+    "driverCountry": "JP"
   },
   {
     "id": "86121dbb-2ef1-5b33-911e-cce021dbb701",
-    "revision": "821b945a-e956-4905-9f62-9a10f891de91",
+    "revision": "c69a8982-0e83-4112-87fe-025bd3d899fb",
     "catalogId": "SGT-005",
-    "car": "Super GT model 05",
-    "carZh": "Super GT 车模 05",
+    "car": "Goodsmile Hatsune Miku AMG · 2024",
+    "carZh": "Goodsmile 初音未来 AMG · 2024",
     "series": "Super GT",
     "status": "collected",
     "photo": "collection/photos/0503773c-6805-5e49-af7a-1bab311ff2ef.jpg",
@@ -1636,14 +1846,63 @@
       "collection/photos/0eb45c84-e91a-56cf-ba41-ee78e65ad580.jpg",
       "collection/photos/80c7d8f9-b1be-5f02-8a09-ecbccb4cbc82.jpg",
       "collection/photos/d38f5fc7-4484-589d-a3eb-96c4fbbeacdd.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-86121dbb-2ef1-5b33-911e-cce021dbb701.webp",
+    "year": 2024,
+    "number": "4",
+    "team": "GOODSMILE RACING & TeamUKYO",
+    "driver": "Nobuteru Taniguchi / Tatsuya Kataoka",
+    "driverZh": "谷口信辉／片冈龙也",
+    "spec": "GT3",
+    "className": "GT300",
+    "maker": "Tomica",
+    "makerZh": "多美卡",
+    "acquired": "2026-03",
+    "collectionReason": "The Racing Miku artwork is what draws me to Goodsmile’s cars. I collected the 2024 version for its Hatsune Miku livery.",
+    "collectionReasonZh": "我喜欢 Goodsmile 赛车最醒目的初音未来涂装。Good Smile Company 本身制作手办模型，它把 Racing Miku 放在车身主视觉上，这也是我收藏这个 2024 年版本的原因。",
+    "seasonSummary": "Goodsmile Racing & TeamUKYO entered the No. 4 Mercedes-AMG GT3 in the 2024 Super GT GT300 class for Nobuteru Taniguchi and Tatsuya Kataoka.",
+    "seasonSummaryZh": "2024 年，Goodsmile Racing & TeamUKYO 以 4 号梅赛德斯-AMG GT3 参加 Super GT GT300 组，由谷口信辉与片冈龙也共同驾驶。",
+    "officialSources": [
+      {
+        "label": "Goodsmile’s 2024 team",
+        "labelZh": "Goodsmile 2024 年车队阵容",
+        "url": "https://www.goodsmileracing.com/en/team2024/"
+      },
+      {
+        "label": "Tomica’s 2024 livery model",
+        "labelZh": "多美卡 2024 年涂装版产品公告",
+        "url": "https://www.takaratomy.co.jp/products/tomica/new/2507.htm"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.4_GOODSMILE_HATSUNEMIKU_AMG_after_2024_Suzuka_GT_3_Hours_Race_(1).jpg",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons · resized",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "src": "collection/photos/race-sgt005-1-ref.webp",
+        "creditZh": "Tokumeigakarinoaoshima／Wikimedia Commons · 已缩放",
+        "caption": "Goodsmile’s 2024 No. 4 after the Suzuka three-hour race.",
+        "captionZh": "2024 年铃鹿三小时赛后的 Goodsmile 4 号赛车。"
+      },
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.4_GOODSMILE_HATSUNEMIKU_AMG_after_2024_SUZUKA_GT_300km_RACE_GRAND_FINAL_(1).jpg",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "sourceOnly": true,
+        "caption": "The 2024 Racing Miku livery at the Suzuka season finale.",
+        "captionZh": "2024 年铃鹿收官战上的初音未来涂装。"
+      }
+    ],
+    "driverCountry": "JP"
   },
   {
     "id": "69354d3e-40f3-5af0-b6d5-012ee9459522",
-    "revision": "3a9611a9-fec1-4a38-a3f9-eefda1c88d6e",
+    "revision": "2a22c5db-1762-4fa9-9819-d9fda09ef03c",
     "catalogId": "SGT-006",
-    "car": "Super GT model 06",
-    "carZh": "Super GT 车模 06",
+    "car": "Goodsmile Hatsune Miku AMG · 2020",
+    "carZh": "Goodsmile 初音未来 AMG · 2020",
     "series": "Super GT",
     "status": "collected",
     "photo": "collection/photos/4634dd20-003d-500b-bfa6-d57605287040.jpg",
@@ -1652,7 +1911,56 @@
       "collection/photos/99c8e4c8-f441-5390-9958-4dc7b3639bdf.jpg",
       "collection/photos/a92e2877-2ae1-550f-a575-d4814d74055a.jpg",
       "collection/photos/326a9caa-ca7f-57f9-8bac-49b3450239eb.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-69354d3e-40f3-5af0-b6d5-012ee9459522.webp",
+    "year": 2020,
+    "number": "4",
+    "team": "GOODSMILE RACING & TeamUKYO",
+    "driver": "Nobuteru Taniguchi / Tatsuya Kataoka",
+    "driverZh": "谷口信辉／片冈龙也",
+    "spec": "GT3",
+    "className": "GT300",
+    "made": "2025-12",
+    "milestone": "Self-made model",
+    "milestoneZh": "自制车模",
+    "collectionReason": "I made this model myself in December 2025, using Goodsmile’s 2020 Racing Miku livery as the reference.",
+    "collectionReasonZh": "这辆是我在 2025 年 12 月自己制作的车模，参考的是 Goodsmile 2020 年的初音未来赛车涂装。",
+    "seasonSummary": "Goodsmile Racing & TeamUKYO returned to GT300 in 2020 with the updated Mercedes-AMG GT3. Nobuteru Taniguchi and Tatsuya Kataoka shared the No. 4 car.",
+    "seasonSummaryZh": "2020 年，Goodsmile Racing & TeamUKYO 继续参加 Super GT GT300 组，使用当年升级的梅赛德斯-AMG GT3。谷口信辉与片冈龙也共同驾驶 4 号车。",
+    "officialSources": [
+      {
+        "label": "Goodsmile’s 2020 team",
+        "labelZh": "Goodsmile 2020 年车队阵容",
+        "url": "https://www.goodsmileracing.com/en/team2020/"
+      },
+      {
+        "label": "Suzuka’s official GT300 result",
+        "labelZh": "铃鹿赛道 GT300 官方成绩",
+        "url": "https://www.suzukacircuit.jp/eng/result_s/2020/supergt/0822_gt300_q.pdf"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.4_GOODSMILE_HATSUNEMIKU_AMG_at_2020_FUJIMAKI_GROUP_SUZUKA_300km_(1).jpg",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "sourceOnly": true,
+        "caption": "The 2020 No. 4 Goodsmile Hatsune Miku AMG at Suzuka.",
+        "captionZh": "2020 年铃鹿站的 4 号 Goodsmile 初音未来 AMG。"
+      },
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.4_GOODSMILE_HATSUNEMIKU_AMG_at_2020_FUJIMAKI_GROUP_SUZUKA_300km_(10).jpg",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons · resized",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "src": "collection/photos/race-sgt006-2-ref.webp",
+        "creditZh": "Tokumeigakarinoaoshima／Wikimedia Commons · 已缩放",
+        "caption": "A second view of the 2020 Racing Miku livery at Suzuka.",
+        "captionZh": "2020 年铃鹿站的初音未来涂装另一视角。"
+      }
+    ],
+    "driverCountry": "JP"
   },
   {
     "id": "e34467d3-2afd-58ec-92e0-46e76728693c",
@@ -1669,7 +1977,8 @@
       "collection/photos/4a30db6f-6180-58da-adc2-1a705c4083f6.jpg",
       "collection/photos/1e95d68c-4118-5785-aca6-d7ce8fc702d3.jpg",
       "collection/photos/6ee08cc2-d67e-5304-bde9-d95c1f23169a.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-e34467d3-2afd-58ec-92e0-46e76728693c.webp"
   },
   {
     "id": "c271a644-8725-5aac-8a1d-9d81f2074b9b",
@@ -1685,7 +1994,8 @@
       "collection/photos/1fe07ebc-097f-536a-a54e-8fda6ea1fb08.jpg",
       "collection/photos/df2a7c50-bfc7-5699-9676-37e2bf6793f5.jpg",
       "collection/photos/ef77ba0a-6e32-5ffc-9574-fe6fef6e272c.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-c271a644-8725-5aac-8a1d-9d81f2074b9b.webp"
   },
   {
     "id": "57c4e5af-d866-5c52-9bb6-6f4a103577ff",
@@ -1702,7 +2012,8 @@
       "collection/photos/3d0c2cca-4407-59b3-a728-67f022faebbc.jpg",
       "collection/photos/38619683-2811-5478-9f28-eb0c84b4c6b4.jpg",
       "collection/photos/4c039982-b8b6-562d-8292-79094666a3d7.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-57c4e5af-d866-5c52-9bb6-6f4a103577ff.webp"
   },
   {
     "id": "7b98e164-11d9-50d1-bbce-076880a71d8b",
@@ -1718,7 +2029,8 @@
       "collection/photos/1bea575c-85d4-5718-b4a4-3cdadb11de3c.jpg",
       "collection/photos/7e09ccf5-d433-5d61-ae45-3260fc61a4a0.jpg",
       "collection/photos/961472a9-18f9-575e-a323-e5b7c781f152.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-7b98e164-11d9-50d1-bbce-076880a71d8b.webp"
   },
   {
     "id": "9662691c-21c5-5115-8d55-68ae1564ccea",
@@ -1734,6 +2046,7 @@
       "collection/photos/cf60e0c1-041d-5fd4-8c4c-7dcec8ff9fff.jpg",
       "collection/photos/561c1dad-3e4f-53de-bb6f-522d368a3ab0.jpg",
       "collection/photos/f1a22178-c309-5c9d-9f3b-76af91206e75.jpg"
-    ]
+    ],
+    "previewPhoto": "collection/photos/preview-9662691c-21c5-5115-8d55-68ae1564ccea.webp"
   }
 ]

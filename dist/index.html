@@ -12,11 +12,11 @@ if (location.protocol === "file:") {
   location.replace(archiveUrl.href);
 }
 </script>
-<link rel="stylesheet" href="style.css?v=12">
-<script defer src="language.js?v=11"></script>
+<link rel="stylesheet" href="style.css?v=13">
+<script defer src="language.js?v=12"></script>
 <script defer src="records.js?v=5"></script>
-<script defer src="collection.js?v=12"></script>
-<script defer src="archive.js?v=12"></script>
+<script defer src="collection.js?v=13"></script>
+<script defer src="archive.js?v=13"></script>
 <script defer src="editor.js?v=8"></script>
 </head>
 <body>
@@ -58,7 +58,7 @@ if (location.protocol === "file:") {
 <button type="button" class="favorites-filter" id="favorites-only" aria-pressed="false"><span aria-hidden="true">♡</span> <span data-i18n="Favorites only">Favorites only</span></button>
 </div>
 <div class="active-tag" id="active-tag" hidden><span id="active-tag-name"></span><a href="#archive" aria-label="Clear related-objects filter" data-label="Clear related-objects filter"><span data-i18n="Clear ×">Clear ×</span></a></div>
-<div class="result-line"><p id="result-count" aria-live="polite"></p><p id="record-status"><span data-i18n="REFERENCE RECORDS / OWNERSHIP UNCONFIRMED">REFERENCE RECORDS / OWNERSHIP UNCONFIRMED</span></p></div>
+<div class="result-line"><p id="result-count" aria-live="polite"></p><p id="record-status"></p></div>
 <div id="cards"></div>
 <div class="empty" id="empty" hidden><p id="empty-message">No records match those filters.</p><button type="button" id="clear">Clear filters</button></div>
 </section>

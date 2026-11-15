@@ -134,6 +134,7 @@ dialog{width:min(890px,calc(100% - 24px));max-height:calc(100dvh - 30px);backgro
 .reference-figure{margin:0;min-width:0;border:1px solid #45535c;background:#212a30}
 .reference-image{display:block;aspect-ratio:16/10;background:#141a1f}
 .reference-image img{width:100%;height:100%;object-fit:contain}
+.reference-source-photo{display:block;padding:12px 10px;color:#8eddfa;border-bottom:1px solid #45535c}
 .reference-figure figcaption{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;padding:9px 10px;font-size:12px;line-height:1.4;color:#edf3f7;overflow-wrap:anywhere}
 .reference-number,.race-sources h4{color:var(--accent);font:11px/1.4 var(--mono);text-transform:uppercase}
 .reference-credit{margin-top:3px;color:#b5c1c9;font-size:11px}

@@ -2,7 +2,7 @@
 const COLLECTION_REPO = "suyihong20060219-cell/grid64";
 const COLLECTION_BRANCH = "main";
 const INDEX_FILE = "dist/collection/index.json";
-const PUBLIC_INDEX_VERSION = "12";
+const PUBLIC_INDEX_VERSION = "13";
 const EDITABLE_RECORD_FIELDS = Object.freeze(["car","carZh","maker","scale","series","spec","className","year","number","event","team","driver","item","acquired","collectionReason","collectionReasonZh"]);
 const publicRecords = new Map();
 const sessionPhotos = new Map();
@@ -62,6 +62,7 @@ async function publishRecord(token,entry,photo,baseline) {
   if (photo) {
     record.photo="collection/photos/"+record.revision+".jpg";
     delete record.thumbnail;
+    delete record.previewPhoto;
   }
   if (!photoPath(record.photo)) throw Error("Choose a photo before saving or publishing.");
   if(pos<0) items.push(record);else items[pos]=record;

@@ -83,8 +83,8 @@ const matchesMode = (x, m) => m === "all" || (m === "f1" && x.series === "Formul
 const isCollected = x => x.status === "collected";
 const SAFETY_CAR_SPEC = "Safety Car";
 const isSafetyCar = x => x.spec === SAFETY_CAR_SPEC;
-const objectImage = (x, preview = false) => x.photo
-  ? `<img class="object-photo" src="${esc(sessionPhotos.get(x.id) || (preview && x.thumbnail ? x.thumbnail : x.photo))}" alt="${esc(localized(x,"photoAlt") || displayName(x))}" ${preview ? 'loading="lazy"' : ""}>`
+const objectImage = (x, preview = false, priority = false) => x.photo
+  ? `<img class="object-photo" src="${esc(sessionPhotos.get(x.id) || (preview && (referenceImagePath(x.previewPhoto) ? x.previewPhoto : x.thumbnail)) || x.photo)}" alt="${esc(localized(x,"photoAlt") || displayName(x))}" decoding="async"${preview ? (priority ? ' fetchpriority="high"' : ' loading="lazy"') : ""}>`
   : diagram(x);
 function displayName(x) {return LANG==="zh" && x.carZh ? x.carZh : x.car;}
 function localized(x, field) {return LANG==="zh" && x[field+"Zh"] ? x[field+"Zh"] : x[field];}
@@ -126,7 +126,7 @@ function toggleFavorite(button) {
   }
   syncFavorites(id);
 }
-function card(x) {
+function card(x, priority) {
   const caption=x.photo ? "MODEL PHOTOGRAPH" : "PLAN VIEW / ILLUSTRATION";
   const milestone=localized(x,"milestone");
   const milestoneId="milestone-"+esc(x.id);
@@ -135,7 +135,7 @@ function card(x) {
   const secondary=[localized(x,"team") || localized(x,"maker"),raceNumber(x)].filter(Boolean).map(esc).join(" / ");
   return `<article class="card">
   <button type="button" data-record="${esc(x.id)}" aria-label="${esc(t("Open")+" "+displayName(x)+(x.number?", "+t("number")+" "+x.number:""))}"${milestone ? ` aria-describedby="${milestoneId}"` : ""}>
-    <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(catalogNumber(x))}</span>${x.scale?`<span>${esc(x.scale)}</span>`:""}</div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true)}<span class="card-figure">${t(caption)}</span></div>
+    <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(catalogNumber(x))}</span>${x.scale?`<span>${esc(x.scale)}</span>`:""}</div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true, priority)}<span class="card-figure">${t(caption)}</span></div>
     <div class="card-info"><div><p>${meta}</p><h3>${esc(displayName(x))}</h3><p class="team">${secondary}</p></div><span class="arrow" aria-hidden="true">↗</span></div>
     ${milestoneLabel}
   </button><div class="card-favorite">${favoriteButton(x)}</div></article>`;
@@ -152,7 +152,8 @@ const milestoneResize = typeof ResizeObserver === "function" ? new ResizeObserve
 }) : null;
 function renderGroups(list, field) {
   if (!list.length) return "";
-  const grid = items => `<div class="cards">${items.map(card).join("")}</div>`;
+  let position = 0;
+  const grid = items => `<div class="cards">${items.map(item=>card(item,position++<4)).join("")}</div>`;
   if (!field) return grid(list);
   const groups = new Map();
   for (const record of list) {
@@ -170,7 +171,9 @@ function renderGroups(list, field) {
       ${grid(items)}
     </section>`).join("");
 }
+let archiveReady = false;
 function update() {
+  if (!archiveReady) return;
   const records=archiveRecords();
   $("crosslink").hidden=!records.some(x=>x.series==="Super GT"&&x.spec==="GT3");
   const q = $("query").value.toLowerCase().trim().split(/\s+/).filter(Boolean), series = $("series").value, spec = $("spec").value;
@@ -240,7 +243,7 @@ function collectorNote(x) {
   return `<section class="collector-note" aria-label="${t("Collector’s note")}">
     <h3>${t("Why I collected it")}</h3>
     <p${reason ? "" : ' class="note-pending"'}>${reason ? esc(reason) : t("Personal note not yet recorded.")}</p>
-    <dl>${rows([["Acquired", acquiredLabel(x.acquired)]])}</dl>
+    <dl>${rows([x.made ? ["Made", acquiredLabel(x.made)] : ["Acquired", acquiredLabel(x.acquired)]])}</dl>
   </section>`;
 }
 const dialog = $("record");
@@ -271,7 +274,7 @@ function referenceImagePath(path) {
   return typeof path==="string" && /^collection\/photos\/[a-z0-9][a-z0-9-]*\.(?:jpe?g|webp|png)$/i.test(path);
 }
 function referenceImages(x) {
-  return Array.isArray(x.referencePhotos)?x.referencePhotos.filter(image=>image && referenceImagePath(image.src)):[];
+  return Array.isArray(x.referencePhotos)?x.referencePhotos.filter(image=>image && (referenceImagePath(image.src) || (image.sourceOnly && officialUrl(image.source)))):[];
 }
 function referenceJump(count) {
   if(!count) return "";
@@ -297,12 +300,12 @@ function referenceSection(x, images) {
     const caption=localized(image,"caption");
     const alt=localized(image,"alt") || caption || displayName(x)+" — "+t("Full-size car photograph");
     const url=officialUrl(image.source), credit=localized(image,"credit");
-    const source=url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(credit || t("Image source"))} ↗</a>`:credit?`<span>${esc(credit)}</span>`:"";
+    const source=url && !image.sourceOnly?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(credit || t("Image source"))} ↗</a>`:credit?`<span>${esc(credit)}</span>`:"";
     const licenseUrl=officialUrl(image.license);
     const license=licenseUrl?`<a href="${esc(licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(localized(image,"licenseLabel") || t("Image license"))} ↗</a>`:"";
     const attribution=[source,license].filter(Boolean).join(" · ");
     return `<figure class="reference-figure">
-      <a class="reference-image" href="${esc(image.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(image.src)}" alt="${esc(alt)}" ${index ? 'loading="lazy"' : ""} decoding="async"></a>
+      ${image.sourceOnly ? `<a class="reference-source-photo" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${t("Open original photo")} ↗</a>` : `<a class="reference-image" href="${esc(image.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(image.src)}" alt="${esc(alt)}" loading="lazy" decoding="async"></a>`}
       <figcaption><span class="reference-number">${String(index+1).padStart(2,"0")}</span><div>${caption?`<p>${esc(caption)}</p>`:""}${attribution?`<p class="reference-credit">${attribution}</p>`:""}</div></figcaption>
     </figure>`;
   }).join("");
@@ -410,7 +413,11 @@ function switchLanguage() {
 }
 $("language").addEventListener("click",switchLanguage);
 $("record-language").addEventListener("click",switchLanguage);
-translatePage();refreshFilters();
-if (readTag()) followTag(); else {update();followRecordRoute();}
-loadPublicCollection().then(()=>{refreshFilters();update();followRecordRoute();}).catch(()=>{});
+translatePage();
+$("result-count").textContent=t("Loading collection…");
+loadPublicCollection().catch(()=>{}).then(()=>{
+  archiveReady=true;
+  refreshFilters();
+  if (readTag()) followTag(); else {update();followRecordRoute();}
+});
 
