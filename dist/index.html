@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="GRID/64 — an independent digital archive of racing miniatures.">
 <title>GRID/64 — A miniature motorsport archive</title>
+<script>
+if (location.protocol === "file:") {
+  const archiveUrl = new URL("https://suyihong20060219-cell.github.io/grid64/");
+  archiveUrl.hash = location.hash || "#archive";
+  location.replace(archiveUrl.href);
+}
+</script>
 <link rel="stylesheet" href="style.css?v=12">
 <script defer src="language.js?v=11"></script>
 <script defer src="records.js?v=5"></script>
