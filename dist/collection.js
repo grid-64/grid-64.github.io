@@ -2,7 +2,7 @@
 const COLLECTION_REPO = "suyihong20060219-cell/grid64";
 const COLLECTION_BRANCH = "main";
 const INDEX_FILE = "dist/collection/index.json";
-const PUBLIC_INDEX_VERSION = "9";
+const PUBLIC_INDEX_VERSION = "12";
 const EDITABLE_RECORD_FIELDS = Object.freeze(["car","carZh","maker","scale","series","spec","className","year","number","event","team","driver","item","acquired","collectionReason","collectionReasonZh"]);
 const publicRecords = new Map();
 const sessionPhotos = new Map();

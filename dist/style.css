@@ -20,6 +20,17 @@
 .card-info p{font:10px/1.35 var(--mono);letter-spacing:.025em;text-transform:uppercase;color:#51574e}
 .card-info h3{font-size:clamp(16px,1.85vw,24px);line-height:1.1;letter-spacing:-.045em;margin:5px 0}
 .card-info .team{font:12px/1.35 var(--sans);text-transform:none}
+.card-milestone{display:flex;align-items:center;gap:7px;flex-shrink:0;align-self:stretch;margin:0 10px 10px;padding:6px 8px;background:#171a1d;color:#f9f9f4;font:700 11px/1.25 var(--sans)}
+.card-milestone::before{content:"";flex:none;width:6px;height:6px;background:var(--accent);transform:skew(-12deg)}
+.card-milestone-window{display:block;min-width:0;flex:1}
+.card-milestone-text{display:block;overflow-wrap:anywhere}
+@media(prefers-reduced-motion:no-preference){
+  .card-milestone-window.can-scroll{overflow:hidden}
+  .card-milestone-window.can-scroll .card-milestone-text{width:max-content;white-space:nowrap}
+  .card-milestone-window.is-overflowing .card-milestone-text{animation:card-milestone-slide var(--milestone-duration) ease-in-out infinite alternate}
+  .card-milestone:hover .card-milestone-text{animation-play-state:paused}
+  @keyframes card-milestone-slide{0%,22%{transform:translateX(0)}78%,100%{transform:translateX(var(--milestone-travel))}}
+}
 .arrow{font-size:18px;width:30px;height:30px;display:grid;place-items:center;flex-shrink:0;border:1px solid #cacdc2;transition:background .2s}
 .card [data-record]:hover .arrow{background:var(--accent);border-color:#258aae}
 .empty{border:1px dashed #b7b9ae;padding:30px}.empty button{margin-top:12px}
@@ -86,15 +97,13 @@ dialog{width:min(890px,calc(100% - 24px));max-height:calc(100dvh - 30px);backgro
 .card-info h3,.card-info p,.detail-main h2,.metadata dd{overflow-wrap:anywhere}
 .favorite-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:44px;min-height:44px;padding:8px 12px;border:1px solid #62717d;border-radius:4px;background:#121a21;color:#f4f8fb;cursor:pointer}
 .favorite-detail:hover{background:#243947;border-color:var(--accent)}
-.favorite-button[aria-pressed="true"]{color:#101619;background:var(--accent);border-color:var(--accent)}
-.favorite-button[aria-pressed="true"] svg{fill:currentColor}
+.favorite-button svg{color:#fff;flex-shrink:0}
+.favorite-button[aria-pressed="true"] svg{color:#ff5964;fill:currentColor}
 .card-favorite{position:absolute;z-index:3;inset:0 0 auto;aspect-ratio:1;pointer-events:none}
 .card .favorite-button{position:absolute;right:2px;bottom:2px;display:grid;place-items:center;width:44px;height:44px;padding:0;border:0;background:transparent;color:#f4f8fb;pointer-events:auto}
 .card .favorite-button::before{grid-area:1/1;content:"";width:26px;height:26px;border:1px solid #77838a;border-radius:50%;background:#141a20}
 .card .favorite-button svg{grid-area:1/1;position:relative;width:14px;height:14px}
 .card .favorite-button:hover::before{border-color:var(--accent)}
-.card .favorite-button[aria-pressed="true"]::before{background:var(--accent);border-color:var(--accent)}
-.card .favorite-button[aria-pressed="true"]{color:#101619}
 .card .favorite-button:focus-visible{outline-color:var(--accent);outline-offset:-2px}
 .favorites-filter{display:inline-flex;align-items:center;gap:5px;min-height:34px;padding:4px 8px;border:1px solid #737e80;background:transparent;color:var(--ink);font:700 11px var(--sans)}
 .favorites-filter span:first-child{font-size:16px;line-height:1}
@@ -148,6 +157,8 @@ dialog{width:min(890px,calc(100% - 24px));max-height:calc(100dvh - 30px);backgro
   .card-info h3{font-size:clamp(13px,3.5vw,17px)}
   .card-info p{font-size:9px;letter-spacing:0}
   .card-info .team{font-size:10px}
+  .card-milestone{margin:0 5px 5px;padding:6px 5px;gap:5px;font-size:10px}
+  .card-milestone::before{width:4px;height:4px}
   .card-meta,.card-figure{font-size:8px;letter-spacing:0}
   .card-meta{top:5px;left:4px;right:4px}
   .card-art.has-photo .card-meta span{padding:3px}

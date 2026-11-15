@@ -101,36 +101,55 @@ function favoriteButton(x, detail=false) {
   const saved=favorites.has(x.id);
   return `<button type="button" class="favorite-button${detail?" favorite-detail":""}" data-favorite="${esc(x.id)}" aria-label="${esc(t("Favorite")+": "+displayName(x))}" aria-pressed="${saved}" title="${t(saved?"Remove from favorites":"Add to favorites")}">${heartIcon}${detail?'<span>'+t(saved?"Saved to favorites":"Add to favorites")+'</span>':""}</button>`;
 }
-function syncFavorites() {
+function syncFavorites(id) {
   document.querySelectorAll("[data-favorite]").forEach(button=>{
+    if(id && button.dataset.favorite!==id) return;
     const saved=favorites.has(button.dataset.favorite);
     button.setAttribute("aria-pressed",String(saved));
     button.title=t(saved?"Remove from favorites":"Add to favorites");
     if(button.classList.contains("favorite-detail")) button.querySelector("span").textContent=t(saved?"Saved to favorites":"Add to favorites");
   });
 }
-function toggleFavorite(id, button) {
+function toggleFavorite(button) {
+  const id=button.dataset.favorite;
   if(favorites.has(id)) favorites.delete(id); else favorites.add(id);
   try {localStorage.setItem(FAVORITES_KEY,JSON.stringify([...favorites]));} catch {}
+  // Keep the current card nodes, including focus, when the result set is unchanged.
   if(favoritesOnly) {
+    const position=[...$("cards").querySelectorAll("[data-favorite]")].indexOf(button);
     update();
-    if(!button?.classList.contains("favorite-detail")) {
-      const next=$("cards").querySelector("[data-favorite]");
+    if(position>=0) {
+      const remaining=$("cards").querySelectorAll("[data-favorite]");
+      const next=remaining[Math.min(position,remaining.length-1)];
       (next || $("favorites-only")).focus({preventScroll:true});
     }
   }
-  syncFavorites();
+  syncFavorites(id);
 }
 function card(x) {
   const caption=x.photo ? "MODEL PHOTOGRAPH" : "PLAN VIEW / ILLUSTRATION";
+  const milestone=localized(x,"milestone");
+  const milestoneId="milestone-"+esc(x.id);
+  const milestoneLabel=milestone ? `<span class="card-milestone" id="${milestoneId}" title="${esc(milestone)}"><span class="card-milestone-window${milestoneResize ? " can-scroll" : ""}"><span class="card-milestone-text">${esc(milestone)}</span></span></span>` : "";
   const meta=[t(x.series),x.spec===x.series?"":t(x.spec),x.year].filter(Boolean).map(esc).join(" · ");
   const secondary=[localized(x,"team") || localized(x,"maker"),raceNumber(x)].filter(Boolean).map(esc).join(" / ");
   return `<article class="card">
-  <button type="button" data-record="${esc(x.id)}" aria-label="${esc(t("Open")+" "+displayName(x)+(x.number?", "+t("number")+" "+x.number:""))}">
+  <button type="button" data-record="${esc(x.id)}" aria-label="${esc(t("Open")+" "+displayName(x)+(x.number?", "+t("number")+" "+x.number:""))}"${milestone ? ` aria-describedby="${milestoneId}"` : ""}>
     <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(catalogNumber(x))}</span>${x.scale?`<span>${esc(x.scale)}</span>`:""}</div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true)}<span class="card-figure">${t(caption)}</span></div>
     <div class="card-info"><div><p>${meta}</p><h3>${esc(displayName(x))}</h3><p class="team">${secondary}</p></div><span class="arrow" aria-hidden="true">↗</span></div>
+    ${milestoneLabel}
   </button><div class="card-favorite">${favoriteButton(x)}</div></article>`;
 }
+const milestoneResize = typeof ResizeObserver === "function" ? new ResizeObserver(entries => {
+  for (const {target} of entries) {
+    const distance=target.firstElementChild.scrollWidth-target.clientWidth;
+    target.classList.toggle("is-overflowing",distance>1);
+    if (distance>1) {
+      target.style.setProperty("--milestone-travel",`${-distance}px`);
+      target.style.setProperty("--milestone-duration",`${Math.max(4,2+distance/15)}s`);
+    }
+  }
+}) : null;
 function renderGroups(list, field) {
   if (!list.length) return "";
   const grid = items => `<div class="cards">${items.map(card).join("")}</div>`;
@@ -158,7 +177,9 @@ function update() {
   const list = records.filter(x => (!favoritesOnly || favorites.has(x.id)) && (!activeTag || tags[activeTag[0]][1](x) === activeTag[1]) && matchesMode(x,mode) && (!series || x.series === series) && (!spec || x.spec === spec || x.className === spec) && q.every(word => [x.car,x.carZh,x.team,x.teamZh,x.id,x.catalogId,x.item,x.maker,x.makerZh,x.driver,x.driverZh,x.event,x.eventZh,x.number,"#"+Number(x.number),x.series,x.year,x.spec,x.className,t(x.series),t(x.spec)].join(" ").toLowerCase().includes(word)));
   const sortByYear = $("order").value === "year";
   list.sort((a,b) => Number(isSafetyCar(a))-Number(isSafetyCar(b)) || (sortByYear ? b.year-a.year || a.id.localeCompare(b.id) : 0));
+  milestoneResize?.disconnect();
   $("cards").innerHTML = renderGroups(list, $("group").value);
+  $("cards").querySelectorAll(".card-milestone-window").forEach(label=>milestoneResize?.observe(label));
   $("empty").hidden = list.length !== 0;
   $("empty-message").textContent=t(favoritesOnly?"No favorites in this view. Select the heart on a car to save it.":"No records match those filters.");
   $("favorites-only").setAttribute("aria-pressed",String(favoritesOnly));
@@ -316,7 +337,7 @@ function openRecord(id, previewRecord=null) {
 }
 $("cards").addEventListener("click", e => {
   const favorite=e.target.closest("[data-favorite]");
-  if(favorite) {toggleFavorite(favorite.dataset.favorite,favorite);return;}
+  if(favorite) {toggleFavorite(favorite);return;}
   const b=e.target.closest("[data-record]"); if(b) openRecord(b.dataset.record);
 });
 function followRecordRoute() {
@@ -353,7 +374,7 @@ $("record-content").addEventListener("click", e => {
     return;
   }
   const favorite=e.target.closest("[data-favorite]");
-  if(favorite) {toggleFavorite(favorite.dataset.favorite,favorite);return;}
+  if(favorite) {toggleFavorite(favorite);return;}
   const photo=e.target.closest("[data-photo-index]");
   if(photo) {selectGalleryPhoto(Number(photo.dataset.photoIndex));return;}
   const b=e.target.closest("[data-related]");

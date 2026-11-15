@@ -1,7 +1,7 @@
 [
   {
     "id": "51d4caf9-665a-51d1-a1c0-fb503ca9ff3e",
-    "revision": "8b7f2240-f997-4c27-80b2-05ef4a6ba076",
+    "revision": "712c78d7-1f2f-4bab-9a32-759bb57b9b9f",
     "catalogId": "F1-001",
     "car": "Ferrari SF90",
     "carZh": "法拉利 SF90",
@@ -87,7 +87,9 @@
     ],
     "maker": "Bburago",
     "makerZh": "比美高",
-    "acquired": "2025-08"
+    "acquired": "2025-08",
+    "milestone": "Leclerc’s first F1 win",
+    "milestoneZh": "勒克莱尔 F1 首胜"
   },
   {
     "id": "88d7f598-959b-5117-b130-7399c7c4aade",
@@ -166,7 +168,7 @@
   },
   {
     "id": "d0bb5ae5-7085-5b97-a4fd-0a26d90a137d",
-    "revision": "19c5e90f-0477-4f75-b12a-18f3f5bfbaf3",
+    "revision": "1582345b-172f-4ef1-bd9b-a55472a7b6da",
     "catalogId": "F1-003",
     "car": "Ferrari SF-24",
     "carZh": "法拉利 SF-24",
@@ -242,11 +244,13 @@
         "label": "F1 · 2024 race results",
         "labelZh": "F1 · 2024 赛季分站成绩"
       }
-    ]
+    ],
+    "milestone": "Leclerc’s first home win",
+    "milestoneZh": "勒克莱尔主场首胜"
   },
   {
     "id": "15e9295c-38a7-5deb-9f01-4d258ead90d5",
-    "revision": "9fac4d5a-c228-4826-bbc8-1e542c4562f2",
+    "revision": "615a5e79-2c14-479b-9eab-72bade149f48",
     "catalogId": "F1-004",
     "car": "Sauber C37",
     "carZh": "索伯 C37",
@@ -309,11 +313,13 @@
         "label": "F1 · 2018 drivers’ standings",
         "labelZh": "F1 · 2018 车手积分榜"
       }
-    ]
+    ],
+    "milestone": "Leclerc’s first F1 points",
+    "milestoneZh": "勒克莱尔 F1 首分"
   },
   {
     "id": "a09a890f-cad3-523b-9070-d8c7808b39ee",
-    "revision": "168dd858-d9da-4079-b7ac-930a6eebf4e3",
+    "revision": "3be968d5-0676-4d8c-83ad-a8ca45f665b4",
     "catalogId": "F1-005",
     "car": "Alfa Romeo C42",
     "carZh": "阿尔法·罗密欧 C42",
@@ -379,7 +385,9 @@
         "label": "FIA · 2022 team and driver guide",
         "labelZh": "FIA · 2022 年车队与车手资料"
       }
-    ]
+    ],
+    "milestone": "First Chinese F1 race start",
+    "milestoneZh": "中国车手 F1 首秀"
   },
   {
     "id": "dcc53693-364d-5eca-a79f-0f8bffd41e22",
@@ -666,7 +674,7 @@
   },
   {
     "id": "299d114c-5f2f-5b7b-bf9d-0db97f3ee6e0",
-    "revision": "5bda3fba-d2cf-41f3-a3bd-84eed985eb73",
+    "revision": "5238174c-aa17-4945-865e-28188fac3b91",
     "catalogId": "F1-010",
     "car": "Kick Sauber C44",
     "carZh": "索伯 C44",
@@ -736,7 +744,9 @@
         "label": "F1 · Zhou’s 2024 results",
         "labelZh": "F1 · 周冠宇 2024 年成绩"
       }
-    ]
+    ],
+    "milestone": "Zhou’s home debut",
+    "milestoneZh": "周冠宇主场首秀"
   },
   {
     "id": "a64e92cb-6857-5228-bdf4-618ffa094e77",
@@ -1159,7 +1169,7 @@
   },
   {
     "id": "c983eda5-02e8-53c1-bc14-4f9f343a14cf",
-    "revision": "9d704bbc-1918-498f-8aeb-95c35a001d1d",
+    "revision": "c8352d4c-ca6b-4c47-b69f-4aa909efb88b",
     "catalogId": "F1-017",
     "car": "Ferrari F2004",
     "carZh": "法拉利 F2004",
@@ -1231,7 +1241,9 @@
         "label": "F1 · The F2004 and Schumacher’s 13 wins",
         "labelZh": "F1 · F2004 与舒马赫的 13 胜"
       }
-    ]
+    ],
+    "milestone": "Hand-customized",
+    "milestoneZh": "亲手改制"
   },
   {
     "id": "d2289b96-ce8e-5ec9-99f2-8bdefca10855",
@@ -1316,7 +1328,7 @@
   },
   {
     "id": "bac04856-6584-5a25-bdbe-969c7e328e05",
-    "revision": "c0e5009b-8588-4f68-b7d6-568d618a52ed",
+    "revision": "d9eb1907-0b57-47a7-aa42-de3c0ad024f5",
     "catalogId": "F1-019",
     "car": "McLaren MCL39",
     "carZh": "迈凯伦 MCL39",
@@ -1383,7 +1395,9 @@
         "label": "F1 · 2026 rules change",
         "labelZh": "F1 · 2026 年规则更迭"
       }
-    ]
+    ],
+    "milestone": "Norris’s first world title",
+    "milestoneZh": "诺里斯首个世界冠军"
   },
   {
     "id": "d8f548b9-4898-58f4-bad2-48a770030f2e",
