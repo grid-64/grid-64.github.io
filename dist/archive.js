@@ -81,6 +81,8 @@ const readTag = () => {
 };
 const matchesMode = (x, m) => m === "all" || (m === "f1" && x.series === "Formula 1") || (m === "gt3" && x.spec === "GT3") || (m === "sgt" && x.series === "Super GT");
 const isCollected = x => x.status === "collected";
+const SAFETY_CAR_SPEC = "Safety Car";
+const isSafetyCar = x => x.spec === SAFETY_CAR_SPEC;
 const objectImage = (x, preview = false) => x.photo
   ? `<img class="object-photo" src="${esc(sessionPhotos.get(x.id) || (preview && x.thumbnail ? x.thumbnail : x.photo))}" alt="${esc(localized(x,"photoAlt") || displayName(x))}" ${preview ? 'loading="lazy"' : ""}>`
   : diagram(x);
@@ -139,7 +141,11 @@ function renderGroups(list, field) {
     if (!groups.has(name)) groups.set(name, []);
     groups.get(name).push(record);
   }
-  return [...groups].sort(([a], [b]) => a.localeCompare(b)).map(([name, items], index) =>
+  const groupOrder = ([a], [b]) => {
+    const categoryOrder = field === "spec" ? Number(a === SAFETY_CAR_SPEC)-Number(b === SAFETY_CAR_SPEC) : 0;
+    return categoryOrder || a.localeCompare(b);
+  };
+  return [...groups].sort(groupOrder).map(([name, items], index) =>
     `<section class="record-group" aria-labelledby="group-heading-${index}">
       <div class="group-heading"><h3 id="group-heading-${index}">${esc(tagLabel(field,name))}</h3><span>${items.length} ${t(items.length === 1 ? "record" : "records")}</span></div>
       ${grid(items)}
@@ -149,8 +155,9 @@ function update() {
   const records=archiveRecords();
   $("crosslink").hidden=!records.some(x=>x.series==="Super GT"&&x.spec==="GT3");
   const q = $("query").value.toLowerCase().trim().split(/\s+/).filter(Boolean), series = $("series").value, spec = $("spec").value;
-  const list = records.filter(x => (!favoritesOnly || favorites.has(x.id)) && (!activeTag || tags[activeTag[0]][1](x) === activeTag[1]) && matchesMode(x,mode) && (!series || x.series === series) && (!spec || x.spec === spec || x.className === spec) && q.every(word => [x.car,x.carZh,x.team,x.teamZh,x.id,x.catalogId,x.item,x.maker,x.makerZh,x.driver,x.driverZh,x.event,x.eventZh,x.number,"#"+Number(x.number),x.series,x.year,x.spec,x.className,t(x.series)].join(" ").toLowerCase().includes(word)));
-  if ($("order").value === "year") list.sort((a,b) => b.year-a.year || a.id.localeCompare(b.id));
+  const list = records.filter(x => (!favoritesOnly || favorites.has(x.id)) && (!activeTag || tags[activeTag[0]][1](x) === activeTag[1]) && matchesMode(x,mode) && (!series || x.series === series) && (!spec || x.spec === spec || x.className === spec) && q.every(word => [x.car,x.carZh,x.team,x.teamZh,x.id,x.catalogId,x.item,x.maker,x.makerZh,x.driver,x.driverZh,x.event,x.eventZh,x.number,"#"+Number(x.number),x.series,x.year,x.spec,x.className,t(x.series),t(x.spec)].join(" ").toLowerCase().includes(word)));
+  const sortByYear = $("order").value === "year";
+  list.sort((a,b) => Number(isSafetyCar(a))-Number(isSafetyCar(b)) || (sortByYear ? b.year-a.year || a.id.localeCompare(b.id) : 0));
   $("cards").innerHTML = renderGroups(list, $("group").value);
   $("empty").hidden = list.length !== 0;
   $("empty-message").textContent=t(favoritesOnly?"No favorites in this view. Select the heart on a car to save it.":"No records match those filters.");
@@ -293,15 +300,16 @@ function openRecord(id, previewRecord=null) {
   const refImages=referenceImages(x);
   const related=archiveRecords().find(r=>r.id===x.link);
   const links=x.status!=="draft";
+  const safetyCar=isSafetyCar(x);
   $("record-id").textContent=t("OBJECT")+" "+catalogNumber(x)+" / "+t(x.status==="draft"?"DRAFT PREVIEW":isCollected(x)?"PERSONAL COLLECTION":"REFERENCE RECORD");
   const details = `<div class="metadata">
-    <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Team",x.team,"team",null,localized(x,"team")],["Driver",x.driver,"driver",x.driverCountry,localized(x,"driver")],["Race / season",x.event,"event",null,localized(x,"event")],["Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
+    <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Team",x.team,"team",null,localized(x,"team")],[safetyCar?"Safety car driver":"Driver",x.driver,"driver",x.driverCountry,localized(x,"driver")],["Race / season",x.event,"event",null,localized(x,"event")],[safetyCar?"Role":"Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
     <section><h3>${t("Miniature")}</h3><dl>${rows([["Scale",x.scale || t("To be confirmed"),x.scale?"scale":null],["Model brand",x.maker,"maker",null,localized(x,"maker")],["Catalogue code",x.item]],links)}</dl>${x.source ? `<a href="${esc(x.source)}">${t("Maker’s reference")} ↗</a>` : ""}</section>
   </div>`;
   const extra = `${x.look ? `<p class="eyebrow">${t("LOOK CLOSER")}</p><p>${esc(x.look)}</p>` : ""}${related ? `<button type="button" class="text-btn" data-related="${related.id}">${t("Compare with")} ${esc(displayName(related))} ↗</button>` : ""}${isCollected(x) || x.status==="draft" ? "" : `<p class="disclosure">${t("Catalogue example. Ownership is unconfirmed; the illustration is not an object photograph.")}</p>`}`;
   $("record-content").innerHTML=`${referenceJump(refImages.length)}<div class="detail-grid">
     <div class="detail-plate${x.photo ? " has-photo" : ""}">${gallery(x)}</div>
-    <div class="detail-main"><p class="eyebrow">${[t(x.series),x.year,raceNumber(x)].filter(Boolean).map(esc).join(" / ")}</p><h2 id="record-title">${esc(displayName(x))}</h2>${links?`<div class="record-actions">${favoriteButton(x,true)} <a class="record-permalink" href="${esc(recordHref(x.id))}">${t("Record link")} ↗</a></div>`:""}${collectorNote(x)}${details}</div>
+    <div class="detail-main"><p class="eyebrow">${[t(x.series),safetyCar&&t(SAFETY_CAR_SPEC),x.year,raceNumber(x)].filter(Boolean).map(esc).join(" / ")}</p><h2 id="record-title">${esc(displayName(x))}</h2>${links?`<div class="record-actions">${favoriteButton(x,true)} <a class="record-permalink" href="${esc(recordHref(x.id))}">${t("Record link")} ↗</a></div>`:""}${collectorNote(x)}${details}</div>
   </div>${referenceSection(x,refImages)}${extra ? `<div class="detail-note">${extra}</div>` : ""}`;
   if (!dialog.open) dialog.showModal(); else dialog.scrollTop = 0;
   $("close-record").focus();

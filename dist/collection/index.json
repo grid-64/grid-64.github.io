@@ -1387,10 +1387,10 @@
   },
   {
     "id": "d8f548b9-4898-58f4-bad2-48a770030f2e",
-    "revision": "d06d2254-4426-565d-b35e-2b6bd43a7fca",
+    "revision": "314b686e-67bc-42c7-b46d-2fc1bade2f16",
     "catalogId": "F1-020",
-    "car": "F1 model 20",
-    "carZh": "F1 模型 20",
+    "car": "Alpine A525",
+    "carZh": "阿尔派 A525",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -1400,14 +1400,80 @@
       "collection/photos/4c7d4026-70df-584e-8149-5a9b1e1c3983.jpg",
       "collection/photos/7052d82b-cd69-590f-9360-8b3cb90002fc.jpg",
       "collection/photos/59ce3180-77bd-5da9-957a-2c627f666d60.jpg"
+    ],
+    "spec": "Formula 1",
+    "year": 2025,
+    "maker": "Hot Wheels",
+    "makerZh": "风火轮",
+    "number": "10",
+    "driver": "Pierre Gasly",
+    "driverZh": "皮埃尔·加斯利",
+    "driverCountry": "FR",
+    "team": "BWT Alpine Formula One Team",
+    "teamZh": "BWT 阿尔派 F1 车队",
+    "acquired": "2026-09",
+    "photoAlt": "Hot Wheels 1:64 Alpine A525 No. 10 in Alpine blue and BWT pink",
+    "photoAltZh": "风火轮 1:64 阿尔派 A525 10 号车模，阿尔派蓝与 BWT 粉涂装",
+    "collectionReason": "I’ve liked Gasly since his surprise win at Monza in 2020. I also love the Alpine blue and BWT pink on this model. I’ve seen BWT’s pink across different teams in motorsport, and that combination makes this one easy to spot.",
+    "collectionReasonZh": "我很喜欢加斯利，尤其记得他在 2020 年蒙扎驾驶中游车队的赛车逆袭夺冠。这台模型的阿尔派蓝和 BWT 粉也很好看。我在不同赛车队都见过 BWT 的粉色，这套粉蓝配色一眼就能认出来。",
+    "seasonSummary": "Gasly drove the No. 10 A525 for BWT Alpine in 2025. He scored all 22 of the team’s points and finished 18th in the drivers’ standings, with a best result of sixth at Silverstone. His maiden Grand Prix win came at Monza on 6 September 2020, driving an AlphaTauri-Honda AT01. He held off Carlos Sainz by 0.415 seconds.",
+    "seasonSummaryZh": "2025 年，加斯利代表 BWT 阿尔派驾驶 10 号 A525，以 22 分排名车手积分榜第 18，那也是车队全年的积分。他赛季最佳成绩是银石站第六。加斯利的 F1 首胜是在 2020 年 9 月 6 日的蒙扎，当时他驾驶的是 AlphaTauri 本田动力的 AT01，以 0.415 秒优势守住了对卡洛斯·塞恩斯的领先。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-020-ref-01.jpg",
+        "caption": "Pierre Gasly’s No. 10 Alpine A525 at the 2025 Austrian Grand Prix.",
+        "captionZh": "皮埃尔·加斯利的 10 号阿尔派 A525，拍摄于 2025 年奥地利大奖赛。",
+        "credit": "Lukas Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2025_Nr._10_Gasly.jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0 · resized",
+        "licenseLabelZh": "CC BY-SA 4.0 · 已缩放"
+      },
+      {
+        "src": "collection/photos/f1-020-ref-02.jpg",
+        "caption": "Gasly in the Alpine A525 during qualifying at Monza in 2025.",
+        "captionZh": "加斯利驾驶阿尔派 A525 参加 2025 年蒙扎排位赛。",
+        "credit": "Eustace Bagge",
+        "source": "https://commons.wikimedia.org/wiki/File:Pierre_Gasly_2025_Italian_Grand_Prix_Qualifying.jpg",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseLabel": "CC BY 4.0 · resized",
+        "licenseLabelZh": "CC BY 4.0 · 已缩放"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://media.alpinecars.com/bwt-alpine-formula-one-team-unveils-new-team-colours-for-2025-season-and-rises-higher-on-historic-f175-live-launch-day/?lang=eng",
+        "label": "Alpine · 2025 blue-and-pink livery",
+        "labelZh": "阿尔派 · 2025 年粉蓝涂装"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2025/drivers",
+        "label": "F1 · 2025 drivers’ standings",
+        "labelZh": "F1 · 2025 年车手积分榜"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/end-of-year-report-alpines-best-and-worst-moments-from-2025-and-driver-head.5ia0moLJTj65o1SaXQ0WNg",
+        "label": "F1 · Alpine’s 2025 season",
+        "labelZh": "F1 · 阿尔派 2025 赛季回顾"
+      },
+      {
+        "url": "https://www.formula1.com/en/results/2020/races/1052/italian/race-result",
+        "label": "F1 · Gasly’s 2020 Monza win",
+        "labelZh": "F1 · 加斯利的 2020 年蒙扎首胜"
+      },
+      {
+        "url": "https://www.formula1.com/en/latest/article/how-not-one-but-two-magnussen-incidents-paved-the-way-for-gaslys-maiden-win.1fBWKMzp9mAdoe2GxUunr9",
+        "label": "F1 · How Gasly won in the AT01",
+        "labelZh": "F1 · 加斯利如何驾驶 AT01 夺冠"
+      }
     ]
   },
   {
     "id": "b318d8f9-47cf-5692-becd-d760c794b378",
-    "revision": "b58987d5-38b0-5b4f-b85f-c347d7c747dd",
+    "revision": "9049fa30-abd6-4216-be9d-c1d97f946a0d",
     "catalogId": "F1-021",
-    "car": "F1 model 21",
-    "carZh": "F1 模型 21",
+    "car": "Mercedes-AMG GT Black Series",
+    "carZh": "梅赛德斯-AMG GT Black Series",
     "series": "Formula 1",
     "scale": "1:64",
     "status": "collected",
@@ -1417,6 +1483,63 @@
       "collection/photos/40996931-0126-5f0a-8e65-10005c00ee3f.jpg",
       "collection/photos/363100d8-5b74-5dcd-8d86-edaf0a3c1374.jpg",
       "collection/photos/ed5e8dec-e010-557f-af23-f02c247034cc.jpg"
+    ],
+    "spec": "Safety Car",
+    "year": 2025,
+    "maker": "HappyCar",
+    "driver": "Bernd Mayländer",
+    "driverZh": "贝恩德·梅兰德",
+    "driverCountry": "DE",
+    "event": "United States Grand Prix · Austin",
+    "eventZh": "美国大奖赛 · 奥斯汀",
+    "acquired": "2026-05",
+    "photoAlt": "HappyCar 1:64 Mercedes-AMG GT Black Series F1 Safety Car in the red 500 Grand Prix anniversary livery",
+    "photoAltZh": "HappyCar 1:64 梅赛德斯-AMG GT Black Series F1 安全车模型，红色 500 场大奖赛纪念涂装",
+    "seasonSummary": "This miniature depicts the 500 Grand Prix anniversary livery from Austin in October 2025, marking 500 Grands Prix supplied by Mercedes-AMG since 1996. The GT Black Series served from 2022 through July 2026, with its last deployment at Spa. The GT 63 PRO 4MATIC+ took over at the Hungarian Grand Prix. German driver Bernd Mayländer has driven the FIA Formula 1 Safety Car since 2000. Race Control sends it out when an incident or dangerous conditions require the race to be neutralised. It leads the field at a controlled speed, with overtaking generally prohibited, while marshals clear the hazard. The photographs show the same safety-car model at Suzuka and Shanghai. Mercedes’ Austin gallery shows the exact anniversary livery on the miniature.",
+    "seasonSummaryZh": "模型还原的是 2025 年 10 月奥斯汀站的「500 场大奖赛」纪念涂装，纪念梅赛德斯-AMG 自 1996 年以来第 500 次为大奖赛提供安全车。GT Black Series 从 2022 年服役至 2026 年 7 月，最后一次出动是在斯帕。GT 63 PRO 4MATIC+ 从匈牙利站接替它。德国车手贝恩德·梅兰德自 2000 年起驾驶 F1 官方安全车。出现事故或危险状况时，赛事控制中心会派出安全车，让赛车以受控速度跟随，通常禁止超车，让赛道工作人员处理险情。两张照片拍的是同款安全车在铃鹿和上海的实车，模型对应的纪念涂装可在梅赛德斯的奥斯汀图集中查看。",
+    "referencePhotos": [
+      {
+        "src": "collection/photos/f1-021-ref-01.jpg",
+        "caption": "The Mercedes-AMG GT Black Series Safety Car at Suzuka in April 2025, in its regular red CrowdStrike livery.",
+        "captionZh": "2025 年 4 月铃鹿站的梅赛德斯-AMG GT Black Series 安全车，采用常规红色 CrowdStrike 涂装。",
+        "credit": "Liauzh",
+        "source": "https://commons.wikimedia.org/wiki/File:2025_Japan_GP_-_Safety_Car_-_Race.jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0 · resized",
+        "licenseLabelZh": "CC BY-SA 4.0 · 已缩放"
+      },
+      {
+        "src": "collection/photos/f1-021-ref-02.jpg",
+        "caption": "The Mercedes-AMG Safety Car between two Medical Cars at the 2026 Chinese Grand Prix in Shanghai.",
+        "captionZh": "2026 年上海中国大奖赛，梅赛德斯-AMG 安全车位于两辆医疗车之间。",
+        "credit": "Liauzh",
+        "source": "https://commons.wikimedia.org/wiki/File:2026_Chinese_GP_-_Safety_Car_%26_Medical_Car.jpg",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseLabel": "CC BY 4.0 · resized",
+        "licenseLabelZh": "CC BY 4.0 · 已缩放"
+      }
+    ],
+    "officialSources": [
+      {
+        "url": "https://www.mercedesamgf1.com/news/celebrating-500-races-of-the-mercedes-amg-safety-car",
+        "label": "Mercedes · Austin 500 Grand Prix livery gallery",
+        "labelZh": "梅赛德斯 · 奥斯汀 500 场纪念涂装图集"
+      },
+      {
+        "url": "https://media.mercedes-benz.com/en/article/c5020459-5fff-4f15-a1f4-8851faf1ee2b",
+        "label": "Mercedes-Benz · 2026 safety car replacement",
+        "labelZh": "梅赛德斯-奔驰 · 2026 年安全车换代"
+      },
+      {
+        "url": "https://api.fia.com/news/fia-insights-celebrating-50-years-fia-safety-car-formula-1",
+        "label": "FIA · Safety Car duties and Bernd Mayländer",
+        "labelZh": "FIA · 安全车职责与贝恩德·梅兰德"
+      },
+      {
+        "url": "https://www.fia.com/system/files/auto33_issuu_spreads_3.pdf",
+        "label": "FIA · Mayländer and the F1 safety fleet",
+        "labelZh": "FIA · 梅兰德与 F1 安全车辆"
+      }
     ]
   }
 ]

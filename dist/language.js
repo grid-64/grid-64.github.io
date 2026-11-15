@@ -35,3 +35,4 @@ Object.assign(ZH,{"Favorite":"收藏","Favorites only":"只看收藏","Add to fa
 Object.assign(ZH,{"RACE CONTEXT":"赛事背景","Full-size car reference":"实车参考","Full-size car photograph":"实车照片","Image source":"图片来源","Official sources":"官方资料","Official source":"官方来源"});
 Object.assign(ZH,{"View full-size car photos":"查看实车照片","View full-size car photos ({count})":"查看实车照片（{count} 张）","Full-size car photos":"实车照片","Image license":"图片许可"});
 Object.assign(ZH,{"To be confirmed":"待确认"});
+Object.assign(ZH,{"Safety Car":"安全车","Safety car driver":"安全车驾驶员","Role":"车辆角色"});
