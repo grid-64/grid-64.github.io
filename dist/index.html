@@ -13,10 +13,10 @@ if (location.protocol === "file:") {
 }
 </script>
 <link rel="stylesheet" href="style.css?v=13">
-<script defer src="language.js?v=13"></script>
+<script defer src="language.js?v=14"></script>
 <script defer src="records.js?v=5"></script>
 <script defer src="collection.js?v=13"></script>
-<script defer src="archive.js?v=14"></script>
+<script defer src="archive.js?v=15"></script>
 <script defer src="editor.js?v=8"></script>
 </head>
 <body>
@@ -46,7 +46,7 @@ if (location.protocol === "file:") {
 <div class="section-head"><p class="eyebrow"><b>01</b> / <span data-i18n="OBJECT RECORDS">OBJECT RECORDS</span></p><h2 id="archive-title" tabindex="-1"><span data-i18n="The grid">The grid</span><span>.</span></h2><p><span data-i18n="Different scales, different racing worlds. Find a miniature by chassis, team, race number or model code.">Different scales, different racing worlds. Find a miniature by chassis, team, race number or model code.</span></p></div>
 <div class="controls">
 <div class="tabs" role="group" aria-label="Archive view" data-label="Archive view">
-<button type="button" data-mode="all" aria-pressed="true"><span data-i18n="All">All</span></button><button type="button" data-mode="f1" aria-pressed="false"><span data-i18n="Formula 1">Formula 1</span></button><button type="button" data-mode="gt3" aria-pressed="false">GT3</button><button type="button" data-mode="sgt" aria-pressed="false">Super GT</button>
+<button type="button" data-mode="all" aria-pressed="true"><span data-i18n="All">All</span></button><button type="button" data-mode="f1" aria-pressed="false"><span data-i18n="Formula 1">Formula 1</span></button><button type="button" data-mode="gt3" aria-pressed="false">GT3</button><button type="button" data-mode="sgt" aria-pressed="false">Super GT</button><button type="button" data-mode="rally" aria-pressed="false"><span data-i18n="Rally">Rally</span></button>
 </div>
 <label class="search"><span aria-hidden="true">⌕</span><input id="query" type="search" aria-label="Search the archive" data-label="Search the archive" placeholder="Search the archive" data-placeholder="Search the archive"></label>
 </div>
@@ -90,7 +90,7 @@ if (location.protocol === "file:") {
 <label><span data-i18n="Chinese name (optional)">Chinese name (optional)</span><input name="carZh" maxlength="100" lang="zh-Hans"></label>
 <label><span data-i18n="Model brand">Model brand</span><input name="maker" required maxlength="80" list="model-brands"><datalist id="model-brands"></datalist></label>
 <label><span data-i18n="Scale">Scale</span><input name="scale" required maxlength="20" value="1:64"></label>
-<label><span data-i18n="Race series">Race series</span><input name="series" required maxlength="80" list="race-series"><datalist id="race-series"><option value="Formula 1"></option><option value="Super GT"></option><option value="IMSA"></option></datalist></label>
+<label><span data-i18n="Race series">Race series</span><input name="series" required maxlength="80" list="race-series"><datalist id="race-series"><option value="Formula 1"></option><option value="Super GT"></option><option value="IMSA"></option><option value="Rally"></option></datalist></label>
 <label><span data-i18n="Specification">Specification</span><input name="spec" maxlength="80" list="race-specs"><datalist id="race-specs"><option value="Formula 1"></option><option value="GT3"></option><option value="GT500"></option><option value="GT300"></option><option value="Safety Car" data-i18n="Safety Car">Safety Car</option></datalist></label>
 <label><span data-i18n="Series class">Series class</span><input name="className" maxlength="80"></label>
 <label><span data-i18n="Race year">Race year</span><input name="year" type="number" inputmode="numeric" min="1886" max="2100"></label>

@@ -79,7 +79,7 @@ const readTag = () => {
   const pair = [...new URLSearchParams(location.hash.slice(9))][0];
   return pair && Object.hasOwn(tags, pair[0]) && pair[1] ? pair : null;
 };
-const matchesMode = (x, m) => m === "all" || (m === "f1" && x.series === "Formula 1") || (m === "gt3" && x.spec === "GT3") || (m === "sgt" && x.series === "Super GT");
+const matchesMode = (x, m) => m === "all" || (m === "f1" && x.series === "Formula 1") || (m === "gt3" && x.spec === "GT3") || (m === "sgt" && x.series === "Super GT") || (m === "rally" && x.series === "Rally");
 const isCollected = x => x.status === "collected";
 const SAFETY_CAR_SPEC = "Safety Car";
 const isSafetyCar = x => x.spec === SAFETY_CAR_SPEC;

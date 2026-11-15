@@ -2278,5 +2278,103 @@
       }
     ],
     "driverCountry": "JP"
+  },
+  {
+    "id": "6dc83d30-3364-5b2e-96d7-2ec2e8ad5866",
+    "revision": "3bfb9d0e-6630-4117-b312-224f6c9968e3",
+    "catalogId": "RLY-001",
+    "car": "Rally model 01",
+    "carZh": "拉力赛车模 01",
+    "series": "Rally",
+    "status": "collected",
+    "photo": "collection/photos/f0658c8a-23aa-56e7-a95e-c80e212b1eed.jpg",
+    "previewPhoto": "collection/photos/43d10623-1183-5ff7-a9e9-007ee9d99403.webp",
+    "photos": [
+      "collection/photos/eeea0472-060d-5d1b-ab4c-bedc82849026.jpg",
+      "collection/photos/df05f9e8-62cb-5b03-b381-772a2337e510.jpg",
+      "collection/photos/42991543-d784-57d6-a5f4-8d69098a4318.jpg"
+    ]
+  },
+  {
+    "id": "ee3f9b11-be2c-59ec-934c-d5ac5a9f757c",
+    "revision": "c258ed6c-8194-4d0b-8908-5d952939bd76",
+    "catalogId": "RLY-002",
+    "car": "Rally model 02",
+    "carZh": "拉力赛车模 02",
+    "series": "Rally",
+    "status": "collected",
+    "photo": "collection/photos/026edfd5-6cba-52d8-862f-57c75679f16f.jpg",
+    "previewPhoto": "collection/photos/3b7bd36e-143a-5353-ab5c-3d1efcf9827d.webp",
+    "photos": [
+      "collection/photos/b404aef6-0b57-5d40-b75b-b2c28acfd8b7.jpg",
+      "collection/photos/791fa6ba-7899-5bd4-a884-37b1a8739f7e.jpg",
+      "collection/photos/6982408d-9d79-51e9-a6c3-390df5b35008.jpg"
+    ]
+  },
+  {
+    "id": "318a68c0-4b64-5da7-bd4d-9914292c1e47",
+    "revision": "4ac620ce-6c17-45a9-a1d2-a05701be998f",
+    "catalogId": "RLY-003",
+    "car": "Rally model 03",
+    "carZh": "拉力赛车模 03",
+    "series": "Rally",
+    "status": "collected",
+    "photo": "collection/photos/db8ae421-3981-56f9-8496-1961efe7c763.jpg",
+    "previewPhoto": "collection/photos/49a7c91f-8624-5ed8-b2d4-05c20e8cf973.webp",
+    "photos": [
+      "collection/photos/ff41c043-b7e4-53e3-a63a-153417cb19e9.jpg",
+      "collection/photos/182dc669-f1a0-5db2-9eb5-af7942a7ef9b.jpg",
+      "collection/photos/d2aa228c-3aa6-5a4a-9bfe-3c53458f6407.jpg"
+    ]
+  },
+  {
+    "id": "7b06ba0b-09a5-590b-a534-2d1b47c743a6",
+    "revision": "8b1b68f8-669b-460f-aaef-bff4c6ca23dd",
+    "catalogId": "RLY-004",
+    "car": "Rally model 04",
+    "carZh": "拉力赛车模 04",
+    "series": "Rally",
+    "status": "collected",
+    "photo": "collection/photos/62a1ad3a-5833-5cfd-b092-75b5536e4382.jpg",
+    "previewPhoto": "collection/photos/e38c417a-6b2d-5fd7-b373-fd0016216a57.webp",
+    "photos": [
+      "collection/photos/c22a0a97-4e0a-5ff1-94d9-17d013c47d2d.jpg",
+      "collection/photos/718e5a18-32c3-508f-b0b5-5ce23e2868d8.jpg",
+      "collection/photos/95c439a1-d13d-5782-ae62-b271f7b58ce6.jpg",
+      "collection/photos/186f9570-d7d9-5c07-8032-f32063f1eea4.jpg"
+    ]
+  },
+  {
+    "id": "62ed2d93-8310-52ef-b8a9-a4683e356e55",
+    "revision": "724eb731-3c65-402c-860a-1e3856db07ee",
+    "catalogId": "RLY-005",
+    "car": "Rally model 05",
+    "carZh": "拉力赛车模 05",
+    "series": "Rally",
+    "status": "collected",
+    "photo": "collection/photos/3666de8d-dd98-5169-afe9-a368502b0bba.jpg",
+    "previewPhoto": "collection/photos/e0c2aeaa-a9a4-59a7-a3e9-a38f92449ef9.webp",
+    "photos": [
+      "collection/photos/b2921c95-8de5-5e55-8ac0-7bd9b84f379c.jpg",
+      "collection/photos/99205617-a8a4-5aee-9495-2403216326d1.jpg",
+      "collection/photos/1e5aa64c-5bad-57c0-bf18-a4dee720508c.jpg",
+      "collection/photos/8f2a4fed-a500-5035-92bd-6db7f6a6f2a0.jpg"
+    ]
+  },
+  {
+    "id": "835bbf18-16b9-5310-8262-03f6ac3e6456",
+    "revision": "4bf2ef33-1039-4e4c-8c7a-614ac5196a9b",
+    "catalogId": "RLY-006",
+    "car": "Rally model 06",
+    "carZh": "拉力赛车模 06",
+    "series": "Rally",
+    "status": "collected",
+    "photo": "collection/photos/556ca37a-f137-5988-aa38-6444031e172d.jpg",
+    "previewPhoto": "collection/photos/80319715-d082-558a-9274-e5fd7a682b6c.webp",
+    "photos": [
+      "collection/photos/cef5e0c6-5999-5de3-832e-b1e80bb1eb10.jpg",
+      "collection/photos/98256a8e-c023-58db-84c7-87cf6b7292a9.jpg",
+      "collection/photos/d2633034-3b6d-5d64-8848-f76861dbaa78.jpg"
+    ]
   }
 ]
