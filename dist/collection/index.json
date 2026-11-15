@@ -1555,5 +1555,185 @@
         "labelZh": "FIA · 梅兰德与 F1 安全车辆"
       }
     ]
+  },
+  {
+    "id": "fe6c6a64-0091-55e0-8573-89eede0014b2",
+    "revision": "6d1b01cd-cbd4-4438-8187-3a1a55d2d8e8",
+    "catalogId": "SGT-001",
+    "car": "Super GT model 01",
+    "carZh": "Super GT 车模 01",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/f3b5a09c-ab71-5759-8819-d15a5f357671.jpg",
+    "thumbnail": "collection/photos/d895d7db-14fd-5341-83ad-43ae174f4a36.jpg",
+    "photos": [
+      "collection/photos/d1908655-2d82-51ac-8947-5799a1a1242b.jpg",
+      "collection/photos/0bb84f5a-e4b9-59f0-8ad5-c7f3eaae2c6d.jpg",
+      "collection/photos/3833c3d0-b0e4-518a-a9de-1f38ae4c4540.jpg"
+    ]
+  },
+  {
+    "id": "19b5edeb-8aad-5e2e-a8f8-3db0354ab173",
+    "revision": "c4fd9e14-35c5-4927-acd5-26c6efad2cea",
+    "catalogId": "SGT-002",
+    "car": "Super GT model 02",
+    "carZh": "Super GT 车模 02",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/d4a575f5-af79-532b-abe0-a73bc02decb0.jpg",
+    "thumbnail": "collection/photos/571a42ef-0653-5f8d-996b-1a7f262178fe.jpg",
+    "photos": [
+      "collection/photos/ab996268-061d-50ab-9f30-60e7e04caab9.jpg",
+      "collection/photos/79658f52-835b-5dea-9d65-cde1196b9089.jpg",
+      "collection/photos/376903d6-94a4-529f-b660-9533d3bd4dd0.jpg"
+    ]
+  },
+  {
+    "id": "37f577c0-f5c2-5dfc-9797-7d3464cc5291",
+    "revision": "a9a17c13-9dd7-462f-9b31-71a52dd00912",
+    "catalogId": "SGT-003",
+    "car": "Super GT model 03",
+    "carZh": "Super GT 车模 03",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/6d208998-0532-5537-b9c5-36d7035a4c37.jpg",
+    "thumbnail": "collection/photos/cab9bff4-41c2-502c-9da4-86d60c250119.jpg",
+    "photos": [
+      "collection/photos/71b8ce8b-5261-58e1-b7b7-ce23860a9b7e.jpg",
+      "collection/photos/35a3e0c2-8931-580e-bf2f-f0b090511841.jpg",
+      "collection/photos/f22ec6fc-1290-501f-b052-819ab3d53b73.jpg"
+    ]
+  },
+  {
+    "id": "162dc990-61a6-597e-995d-ee105744f0bf",
+    "revision": "ef612935-c00c-4bea-81ef-da11eb15f683",
+    "catalogId": "SGT-004",
+    "car": "Super GT model 04",
+    "carZh": "Super GT 车模 04",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/07e25fb3-23e3-5f22-8184-95c166861aff.jpg",
+    "thumbnail": "collection/photos/5aaebc69-03ab-5b2a-b1db-1d1eebe0c116.jpg",
+    "photos": [
+      "collection/photos/de206e28-b67d-5551-bc8a-5f3acbf8c398.jpg",
+      "collection/photos/517a42f1-e807-58fd-ac4b-78f37e77dcc3.jpg",
+      "collection/photos/ace2fac5-858e-5cd9-9adf-a2b9bdd0f32e.jpg",
+      "collection/photos/ef7cd266-029d-510b-a7e6-97141dc9f1d3.jpg"
+    ]
+  },
+  {
+    "id": "86121dbb-2ef1-5b33-911e-cce021dbb701",
+    "revision": "821b945a-e956-4905-9f62-9a10f891de91",
+    "catalogId": "SGT-005",
+    "car": "Super GT model 05",
+    "carZh": "Super GT 车模 05",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/0503773c-6805-5e49-af7a-1bab311ff2ef.jpg",
+    "thumbnail": "collection/photos/f9469d62-ee5e-5603-99e8-186b8becd567.jpg",
+    "photos": [
+      "collection/photos/b288e509-ccf0-5867-9f9d-8f346b83bebc.jpg",
+      "collection/photos/0eb45c84-e91a-56cf-ba41-ee78e65ad580.jpg",
+      "collection/photos/80c7d8f9-b1be-5f02-8a09-ecbccb4cbc82.jpg",
+      "collection/photos/d38f5fc7-4484-589d-a3eb-96c4fbbeacdd.jpg"
+    ]
+  },
+  {
+    "id": "69354d3e-40f3-5af0-b6d5-012ee9459522",
+    "revision": "3a9611a9-fec1-4a38-a3f9-eefda1c88d6e",
+    "catalogId": "SGT-006",
+    "car": "Super GT model 06",
+    "carZh": "Super GT 车模 06",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/4634dd20-003d-500b-bfa6-d57605287040.jpg",
+    "thumbnail": "collection/photos/55dbe8af-48ab-5240-8030-170a65cc55a7.jpg",
+    "photos": [
+      "collection/photos/99c8e4c8-f441-5390-9958-4dc7b3639bdf.jpg",
+      "collection/photos/a92e2877-2ae1-550f-a575-d4814d74055a.jpg",
+      "collection/photos/326a9caa-ca7f-57f9-8bac-49b3450239eb.jpg"
+    ]
+  },
+  {
+    "id": "e34467d3-2afd-58ec-92e0-46e76728693c",
+    "revision": "03397c62-4bf6-43c7-a844-d5e202deed17",
+    "catalogId": "SGT-007",
+    "car": "Super GT model 07",
+    "carZh": "Super GT 车模 07",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/41d5c46e-314e-5bfc-86ab-bfc9e60e47dd.jpg",
+    "thumbnail": "collection/photos/8571ad1b-372c-5e2a-ab17-be3908b93351.jpg",
+    "photos": [
+      "collection/photos/f78aeb4a-0e40-5c88-bc34-071ae892f487.jpg",
+      "collection/photos/4a30db6f-6180-58da-adc2-1a705c4083f6.jpg",
+      "collection/photos/1e95d68c-4118-5785-aca6-d7ce8fc702d3.jpg",
+      "collection/photos/6ee08cc2-d67e-5304-bde9-d95c1f23169a.jpg"
+    ]
+  },
+  {
+    "id": "c271a644-8725-5aac-8a1d-9d81f2074b9b",
+    "revision": "2e380d57-0736-45a9-8045-f9faf381f3b1",
+    "catalogId": "SGT-008",
+    "car": "Super GT model 08",
+    "carZh": "Super GT 车模 08",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/33c9ba5b-d38b-56fa-990f-96c2ffa780af.jpg",
+    "thumbnail": "collection/photos/b54b5f36-c80a-5a14-866a-815c8816e597.jpg",
+    "photos": [
+      "collection/photos/1fe07ebc-097f-536a-a54e-8fda6ea1fb08.jpg",
+      "collection/photos/df2a7c50-bfc7-5699-9676-37e2bf6793f5.jpg",
+      "collection/photos/ef77ba0a-6e32-5ffc-9574-fe6fef6e272c.jpg"
+    ]
+  },
+  {
+    "id": "57c4e5af-d866-5c52-9bb6-6f4a103577ff",
+    "revision": "2f7eb0ee-2a81-4acb-a6a6-f44829fe7b58",
+    "catalogId": "SGT-009",
+    "car": "Super GT model 09",
+    "carZh": "Super GT 车模 09",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/e2f8c2b6-a805-5619-ac0c-1653aa060033.jpg",
+    "thumbnail": "collection/photos/d49fd4a0-43ac-57b2-a721-1bb549ff0813.jpg",
+    "photos": [
+      "collection/photos/4cc914da-66ea-541d-abd8-ddb1634001d9.jpg",
+      "collection/photos/3d0c2cca-4407-59b3-a728-67f022faebbc.jpg",
+      "collection/photos/38619683-2811-5478-9f28-eb0c84b4c6b4.jpg",
+      "collection/photos/4c039982-b8b6-562d-8292-79094666a3d7.jpg"
+    ]
+  },
+  {
+    "id": "7b98e164-11d9-50d1-bbce-076880a71d8b",
+    "revision": "a3b6b3a5-5820-47d1-ad3e-b23e363cf77f",
+    "catalogId": "SGT-010",
+    "car": "Super GT model 10",
+    "carZh": "Super GT 车模 10",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/92381882-a2a2-5d64-a64f-9bc0d151208f.jpg",
+    "thumbnail": "collection/photos/9091e528-e0ac-513a-9595-f79421b406f8.jpg",
+    "photos": [
+      "collection/photos/1bea575c-85d4-5718-b4a4-3cdadb11de3c.jpg",
+      "collection/photos/7e09ccf5-d433-5d61-ae45-3260fc61a4a0.jpg",
+      "collection/photos/961472a9-18f9-575e-a323-e5b7c781f152.jpg"
+    ]
+  },
+  {
+    "id": "9662691c-21c5-5115-8d55-68ae1564ccea",
+    "revision": "d22d45f1-405d-4e14-aacf-19e3f2e5d1c8",
+    "catalogId": "SGT-011",
+    "car": "Super GT model 11",
+    "carZh": "Super GT 车模 11",
+    "series": "Super GT",
+    "status": "collected",
+    "photo": "collection/photos/33497038-9eec-510c-9498-1a38ae88dfa1.jpg",
+    "thumbnail": "collection/photos/33c07cef-f65d-5928-9897-ae08cff4eded.jpg",
+    "photos": [
+      "collection/photos/cf60e0c1-041d-5fd4-8c4c-7dcec8ff9fff.jpg",
+      "collection/photos/561c1dad-3e4f-53de-bb6f-522d368a3ab0.jpg",
+      "collection/photos/f1a22178-c309-5c9d-9f3b-76af91206e75.jpg"
+    ]
   }
 ]
