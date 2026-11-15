@@ -1964,11 +1964,11 @@
   },
   {
     "id": "e34467d3-2afd-58ec-92e0-46e76728693c",
-    "revision": "03397c62-4bf6-43c7-a844-d5e202deed17",
+    "revision": "9c770663-4ce7-4c2b-9486-6c0f60ef5653",
     "catalogId": "SGT-007",
-    "car": "Super GT model 07",
-    "carZh": "Super GT 车模 07",
-    "series": "Super GT",
+    "car": "TKRI Matsunaga Construction AMG GT3 · Marin Kitagawa",
+    "carZh": "TKRI 松永建设 AMG GT3 · 喜多川海梦",
+    "series": "ENEOS Super Taikyu Series",
     "status": "collected",
     "photo": "collection/photos/41d5c46e-314e-5bfc-86ab-bfc9e60e47dd.jpg",
     "thumbnail": "collection/photos/8571ad1b-372c-5e2a-ab17-be3908b93351.jpg",
@@ -1978,14 +1978,65 @@
       "collection/photos/1e95d68c-4118-5785-aca6-d7ce8fc702d3.jpg",
       "collection/photos/6ee08cc2-d67e-5304-bde9-d95c1f23169a.jpg"
     ],
-    "previewPhoto": "collection/photos/preview-e34467d3-2afd-58ec-92e0-46e76728693c.webp"
+    "previewPhoto": "collection/photos/preview-e34467d3-2afd-58ec-92e0-46e76728693c.webp",
+    "year": 2026,
+    "number": "23",
+    "team": "TKRI",
+    "spec": "GT3",
+    "className": "ST-X",
+    "event": "Suzuka 5 Hours",
+    "eventZh": "铃鹿 5 小时耐力赛",
+    "driver": "DAISUKE / Tatsuya Kataoka / Yuhki Nakayama / Yuya Motojima",
+    "driverZh": "DAISUKE／片冈龙也／中山友贵／元嶋佑弥",
+    "maker": "Kilo",
+    "made": "2026-08",
+    "milestone": "Hand-customized",
+    "milestoneZh": "自制车模",
+    "collectionReason": "Marin Kitagawa is one of my favourite anime characters. I stripped a Kilo base model and reworked it in August 2026 to recreate the pink livery.",
+    "collectionReasonZh": "喜多川海梦是我很喜欢的动漫角色。2026 年 8 月，我把 Kilo 底模原有的涂装脱掉，自己改制成这版粉色喜多川海梦涂装。",
+    "seasonSummary": "The No. 23 TKRI Matsunaga Construction AMG GT3 debuted its pink My Dress-Up Darling collaboration at the second round of the 2026 ENEOS Super Taikyu Series, the Suzuka 5 Hours. The team’s report ties the livery to the anime’s second season and a summer event in Iwatsuki. Tatsuya Kataoka, who also raced for Goodsmile, established the TKRI programme and drove the car in ST-X.",
+    "seasonSummaryZh": "23 号 TKRI 松永建设 AMG GT3 在 2026 年 ENEOS 日本超级耐久系列赛第二站铃鹿 5 小时赛首次亮相这款粉色涂装，联动《更衣人偶坠入爱河》第二季和岩槻的夏季活动。TKRI 由 Goodsmile 车手片冈龙也发起，他也驾驶这辆车参加 ST-X 组别。",
+    "officialSources": [
+      {
+        "url": "https://supertaikyu.com/teams/2026_023.html",
+        "label": "Official TKRI team and driver entry",
+        "labelZh": "超级耐久官方车队与车手名单"
+      },
+      {
+        "url": "https://supertaikyu.com/teamrelease/files/tkri_2026_r2.pdf",
+        "label": "TKRI’s Suzuka 5 Hours race report",
+        "labelZh": "TKRI 铃鹿 5 小时战报"
+      },
+      {
+        "url": "https://supertaikyu.com/teamrelease/files/TKRI_2026-01.pdf",
+        "label": "TKRI’s 2026 programme",
+        "labelZh": "TKRI 2026 年参赛计划"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://supertaikyu.com/teamrelease/files/tkri_2026_r2.pdf#page=1",
+        "credit": "TKRI / Super Taikyu",
+        "caption": "Suzuka race report with the No. 23 in the new livery.",
+        "captionZh": "铃鹿站战报中的 23 号喜多川海梦赛车。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://www.as-web.jp/domestic/1308663",
+        "credit": "auto sport web",
+        "caption": "Launch photographs of the Marin Kitagawa livery at Suzuka.",
+        "captionZh": "铃鹿站首次亮相的粉色喜多川海梦涂装。"
+      }
+    ],
+    "driverCountry": "JP"
   },
   {
     "id": "c271a644-8725-5aac-8a1d-9d81f2074b9b",
-    "revision": "2e380d57-0736-45a9-8045-f9faf381f3b1",
+    "revision": "032bbe19-464d-4ac6-8ab8-0e7563348047",
     "catalogId": "SGT-008",
-    "car": "Super GT model 08",
-    "carZh": "Super GT 车模 08",
+    "car": "Goodsmile Hatsune Miku AMG · 2025",
+    "carZh": "Goodsmile 初音未来 AMG · 2025",
     "series": "Super GT",
     "status": "collected",
     "photo": "collection/photos/33c9ba5b-d38b-56fa-990f-96c2ffa780af.jpg",
@@ -1995,14 +2046,54 @@
       "collection/photos/df2a7c50-bfc7-5699-9676-37e2bf6793f5.jpg",
       "collection/photos/ef77ba0a-6e32-5ffc-9574-fe6fef6e272c.jpg"
     ],
-    "previewPhoto": "collection/photos/preview-c271a644-8725-5aac-8a1d-9d81f2074b9b.webp"
+    "previewPhoto": "collection/photos/preview-c271a644-8725-5aac-8a1d-9d81f2074b9b.webp",
+    "year": 2025,
+    "number": "4",
+    "team": "GOODSMILE RACING & TeamUKYO",
+    "spec": "GT3",
+    "className": "GT300",
+    "driver": "Nobuteru Taniguchi / Tatsuya Kataoka",
+    "driverZh": "谷口信辉／片冈龙也",
+    "maker": "Spark",
+    "acquired": "2026-03",
+    "seasonSummary": "Goodsmile Racing & TeamUKYO entered the No. 4 Mercedes-AMG GT3 for Nobuteru Taniguchi and Tatsuya Kataoka in the 2025 Super GT GT300 season.",
+    "seasonSummaryZh": "2025 年，Goodsmile Racing & TeamUKYO 以 4 号梅赛德斯-AMG GT3 参加 Super GT GT300 组，由谷口信辉与片冈龙也搭档驾驶。",
+    "officialSources": [
+      {
+        "url": "https://supergt.net/en/team_detail/2025-goodsmile-racing-teamukyo",
+        "label": "Official 2025 Super GT team entry",
+        "labelZh": "Super GT 2025 年官方参赛档案"
+      },
+      {
+        "url": "https://supergt.net/wp-content/uploads/2025/02/021701-02-3.pdf",
+        "label": "2025 season entry list",
+        "labelZh": "2025 年赛事报名表"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://supergt.net/en/team_detail/2025-goodsmile-racing-teamukyo",
+        "credit": "Super GT",
+        "caption": "Official team photograph of the 2025 No. 4 AMG.",
+        "captionZh": "2025 年 4 号 AMG 官方车队照片。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://www.goodsmileracing.com/en/gt25-01/",
+        "credit": "GOODSMILE RACING",
+        "caption": "Goodsmile’s Okayama opening-round report and photo coverage.",
+        "captionZh": "Goodsmile 冈山开幕站战报及照片。"
+      }
+    ],
+    "driverCountry": "JP"
   },
   {
     "id": "57c4e5af-d866-5c52-9bb6-6f4a103577ff",
-    "revision": "2f7eb0ee-2a81-4acb-a6a6-f44829fe7b58",
+    "revision": "e38c4d97-593c-440a-af48-8fe4ded35e7b",
     "catalogId": "SGT-009",
-    "car": "Super GT model 09",
-    "carZh": "Super GT 车模 09",
+    "car": "Goodsmile Hatsune Miku AMG · 2026",
+    "carZh": "Goodsmile 初音未来 AMG · 2026",
     "series": "Super GT",
     "status": "collected",
     "photo": "collection/photos/e2f8c2b6-a805-5619-ac0c-1653aa060033.jpg",
@@ -2013,14 +2104,64 @@
       "collection/photos/38619683-2811-5478-9f28-eb0c84b4c6b4.jpg",
       "collection/photos/4c039982-b8b6-562d-8292-79094666a3d7.jpg"
     ],
-    "previewPhoto": "collection/photos/preview-57c4e5af-d866-5c52-9bb6-6f4a103577ff.webp"
+    "previewPhoto": "collection/photos/preview-57c4e5af-d866-5c52-9bb6-6f4a103577ff.webp",
+    "year": 2026,
+    "number": "4",
+    "team": "GOODSMILE RACING & TeamUKYO",
+    "spec": "GT3",
+    "className": "GT300",
+    "driver": "Nobuteru Taniguchi / Tatsuya Kataoka",
+    "driverZh": "谷口信辉／片冈龙也",
+    "maker": "Kilo",
+    "made": "2026-06",
+    "milestone": "Hand-customized",
+    "milestoneZh": "自制车模",
+    "collectionReason": "I wanted the 2026 Racing Miku car before a factory model was available. I stripped a Kilo base model, repainted it and applied waterslide decals in June 2026.",
+    "collectionReasonZh": "真车亮相后，我很想收藏这款 2026 年初音未来涂装。当时还没有现成的正式发售车模，我就在 2026 年 6 月把 Kilo 底模脱漆、重新喷漆，再贴上水贴，自己改制了一辆。",
+    "seasonSummary": "The 2026 No. 4 Mercedes-AMG GT3 is entered by Goodsmile Racing & TeamUKYO for Nobuteru Taniguchi and Tatsuya Kataoka in Super GT’s GT300 class.",
+    "seasonSummaryZh": "2026 年，Goodsmile Racing & TeamUKYO 继续使用 4 号梅赛德斯-AMG GT3 参加 Super GT GT300 组，仍由谷口信辉和片冈龙也搭档驾驶。",
+    "officialSources": [
+      {
+        "url": "https://supergt.net/en/teams_and_drivers?gt_class=gt300&series=2026",
+        "label": "2026 official Super GT team and driver list",
+        "labelZh": "Super GT 2026 年官方车队与车手名单"
+      },
+      {
+        "url": "https://supergt.net/wp-content/uploads/2026/03/021901-02-4.pdf",
+        "label": "2026 entry list with car specification",
+        "labelZh": "2026 年参赛名单及车辆规格"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.4_GOODSMILE_HATSUNEMIKU_AMG_after_2026_SUZUKA_GT_300km_%281%29.jpg",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons · resized",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licenseLabel": "CC0 1.0",
+        "creditZh": "Tokumeigakarinoaoshima / Wikimedia Commons · 已缩放",
+        "src": "collection/photos/race-sgt009-1-ref.webp",
+        "caption": "The 2026 Racing Miku Mercedes at Suzuka.",
+        "captionZh": "2026 年铃鹿站的初音未来梅赛德斯-AMG。"
+      },
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.4_GOODSMILE_HATSUNEMIKU_AMG_after_2026_SUZUKA_GT_300km.jpg",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons · resized",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licenseLabel": "CC0 1.0",
+        "creditZh": "Tokumeigakarinoaoshima / Wikimedia Commons · 已缩放",
+        "src": "collection/photos/race-sgt009-2-ref.webp",
+        "caption": "Another photograph of the 2026 No. 4 at Suzuka.",
+        "captionZh": "2026 年铃鹿站的 4 号车另一视角。"
+      }
+    ],
+    "driverCountry": "JP"
   },
   {
     "id": "7b98e164-11d9-50d1-bbce-076880a71d8b",
-    "revision": "a3b6b3a5-5820-47d1-ad3e-b23e363cf77f",
+    "revision": "ee8c08aa-ec84-416c-b443-fe8303ee3e55",
     "catalogId": "SGT-010",
-    "car": "Super GT model 10",
-    "carZh": "Super GT 车模 10",
+    "car": "ENEOS SUSTINA Lexus RC F GT500",
+    "carZh": "ENEOS SUSTINA 雷克萨斯 RC F GT500",
     "series": "Super GT",
     "status": "collected",
     "photo": "collection/photos/92381882-a2a2-5d64-a64f-9bc0d151208f.jpg",
@@ -2030,14 +2171,57 @@
       "collection/photos/7e09ccf5-d433-5d61-ae45-3260fc61a4a0.jpg",
       "collection/photos/961472a9-18f9-575e-a323-e5b7c781f152.jpg"
     ],
-    "previewPhoto": "collection/photos/preview-7b98e164-11d9-50d1-bbce-076880a71d8b.webp"
+    "previewPhoto": "collection/photos/preview-7b98e164-11d9-50d1-bbce-076880a71d8b.webp",
+    "number": "6",
+    "team": "LEXUS TEAM LeMans ENEOS",
+    "spec": "GT500",
+    "className": "GT500",
+    "driver": "Kazuya Oshima / Yuji Kunimoto",
+    "driverZh": "大嶋和也／国本雄资",
+    "maker": "Kyosho",
+    "makerZh": "京商",
+    "acquired": "2026-02",
+    "seasonSummary": "The RC F marking, orange ENEOS SUSTINA livery and No. 6 identify LEXUS TEAM LeMans ENEOS. Kazuya Oshima and Yuji Kunimoto drove this entry in 2014 and 2015. The model’s exact season and its attribution to Kyosho can be checked against its packaging or underside.",
+    "seasonSummaryZh": "从车身的 RC F 徽标、橙色 ENEOS SUSTINA 涂装和 6 号车号，可辨认出这是 LEXUS TEAM LeMans ENEOS 的雷克萨斯 RC F GT500。2014、2015 两年都由大嶋和也与国本雄资搭档驾驶。模型品牌按收藏者回忆暂记为京商，确切赛季和型号待核对车底或包装。",
+    "officialSources": [
+      {
+        "url": "https://toyotagazooracing.com/archive/ms/jp/gt/racereport/1401-okayama-02.html",
+        "label": "Lexus’s 2014 Okayama qualifying report",
+        "labelZh": "雷克萨斯 2014 年冈山站排位战报"
+      },
+      {
+        "url": "https://toyotagazooracing.com/archive/ms/jp/gt/2015-lexus-team-lemans-eneos.html",
+        "label": "Lexus’s 2015 team and driver entry",
+        "labelZh": "雷克萨斯 2015 年车队与车手档案"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.6_ENEOS_SUSTINA_RC_F_at_2014_SUPER_GT_SUZUKA_TEST_%283%29.JPG",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons · resized",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licenseLabel": "CC0 1.0",
+        "creditZh": "Tokumeigakarinoaoshima / Wikimedia Commons · 已缩放",
+        "src": "collection/photos/race-sgt010-1-ref.webp",
+        "caption": "The No. 6 RC F at the 2014 Suzuka test.",
+        "captionZh": "2014 年铃鹿官方测试中的 6 号 RC F。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://toyotagazooracing.com/archive/ms/jp/gt/image/team/2015/eneos-sustina-rcf.jpg",
+        "credit": "Lexus Racing",
+        "caption": "Lexus’s photograph of the 2015 No. 6 RC F.",
+        "captionZh": "雷克萨斯公布的 2015 年 6 号 RC F。"
+      }
+    ],
+    "driverCountry": "JP"
   },
   {
     "id": "9662691c-21c5-5115-8d55-68ae1564ccea",
-    "revision": "d22d45f1-405d-4e14-aacf-19e3f2e5d1c8",
+    "revision": "71e7bc40-6dd7-49de-8fb9-815acbb02469",
     "catalogId": "SGT-011",
-    "car": "Super GT model 11",
-    "carZh": "Super GT 车模 11",
+    "car": "S Road MOLA Nissan GT-R NISMO GT500",
+    "carZh": "S Road MOLA 日产 GT-R NISMO GT500",
     "series": "Super GT",
     "status": "collected",
     "photo": "collection/photos/33497038-9eec-510c-9498-1a38ae88dfa1.jpg",
@@ -2047,6 +2231,52 @@
       "collection/photos/561c1dad-3e4f-53de-bb6f-522d368a3ab0.jpg",
       "collection/photos/f1a22178-c309-5c9d-9f3b-76af91206e75.jpg"
     ],
-    "previewPhoto": "collection/photos/preview-9662691c-21c5-5115-8d55-68ae1564ccea.webp"
+    "previewPhoto": "collection/photos/preview-9662691c-21c5-5115-8d55-68ae1564ccea.webp",
+    "number": "46",
+    "team": "MOLA",
+    "spec": "GT500",
+    "className": "GT500",
+    "driver": "Satoshi Motoyama / Masataka Yanagida",
+    "driverZh": "本山哲／柳田真孝",
+    "maker": "Kyosho",
+    "makerZh": "京商",
+    "acquired": "2026-06",
+    "seasonSummary": "The silver-and-red No. 46 is the S Road MOLA Nissan GT-R NISMO GT500. The roof rail carries the names of Satoshi Motoyama and Masataka Yanagida, who raced together in 2014 and 2015. The comparison photographs identify their own years while the miniature’s exact season is pending.",
+    "seasonSummaryZh": "银红涂装的 46 号车是 MOLA 车队的 S Road 日产 GT-R NISMO GT500。车模车窗上沿印有本山哲与柳田真孝，两人于 2014、2015 年搭档驾驶这辆赛车。对照照片分别注明年份，车模对应赛季待进一步确认。",
+    "officialSources": [
+      {
+        "url": "https://europe.nissannews.com/en-GB/releases/nissan-announces-2014-motorsports-activities-united-kingdom",
+        "label": "Nissan’s 2014 Super GT programme",
+        "labelZh": "日产 2014 年 Super GT 参赛计划"
+      },
+      {
+        "url": "https://global.nissannews.com/en/channels/2015?lang=en-US&selectedTabId=2015-photos&sortOrder=PublishedDescending",
+        "label": "Nissan’s 2015 team news and imagery",
+        "labelZh": "日产 2015 年赛事报道及图片"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.46_S_Road_MOLA_GT-R_at_2014_pokka_sapporo_1000km_%2812%29.JPG",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons · resized",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licenseLabel": "CC0 1.0",
+        "creditZh": "Tokumeigakarinoaoshima / Wikimedia Commons · 已缩放",
+        "src": "collection/photos/race-sgt011-1-ref.webp",
+        "caption": "The No. 46 during the 2014 Suzuka 1000 km weekend.",
+        "captionZh": "2014 年铃鹿 1000 公里赛周末的 46 号赛车。"
+      },
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:No.46_S_Road_MOLA_GT-R_at_2015_International_Suzuka_1000km.JPG",
+        "credit": "Tokumeigakarinoaoshima / Wikimedia Commons · resized",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "creditZh": "Tokumeigakarinoaoshima / Wikimedia Commons · 已缩放",
+        "src": "collection/photos/race-sgt011-2-ref.webp",
+        "caption": "The No. 46 in the garage at the 2015 Suzuka 1000 km.",
+        "captionZh": "2015 年铃鹿 1000 公里赛期间，车库里的 46 号赛车。"
+      }
+    ],
+    "driverCountry": "JP"
   }
 ]
