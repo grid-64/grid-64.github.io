@@ -1648,7 +1648,7 @@
   },
   {
     "id": "19b5edeb-8aad-5e2e-a8f8-3db0354ab173",
-    "revision": "087fc1d6-b303-4807-9042-34051e5841cb",
+    "revision": "956a3e90-eb76-4422-9f25-7b670fc9ba38",
     "catalogId": "SGT-002",
     "car": "Goodsmile Mercedes-AMG GT3 · Spa 24H",
     "carZh": "Goodsmile 梅赛德斯-AMG GT3 · 斯帕 24 小时",
@@ -1705,11 +1705,12 @@
         "captionZh": "赛道边拍摄的红白斯帕特别涂装。"
       }
     ],
-    "driverCountry": "JP"
+    "driverCountry": "JP",
+    "scale": "1:64"
   },
   {
     "id": "37f577c0-f5c2-5dfc-9797-7d3464cc5291",
-    "revision": "6a30bd78-b092-4f7d-85e6-af75feaad751",
+    "revision": "2ef39bf8-d622-4a78-9a95-19e801f2ebd3",
     "catalogId": "SGT-003",
     "car": "KeePer CERUMO GR Supra GT500",
     "carZh": "KeePer CERUMO 丰田 GR Supra GT500",
@@ -1763,11 +1764,12 @@
         "captionZh": "2025 年富士赛道上的 38 号赛车。"
       }
     ],
-    "driverCountry": "JP"
+    "driverCountry": "JP",
+    "scale": "1:64"
   },
   {
     "id": "162dc990-61a6-597e-995d-ee105744f0bf",
-    "revision": "16b4040c-faf8-487e-8710-ddde5622f563",
+    "revision": "404c70f6-1459-497c-a4ad-66721e86c572",
     "catalogId": "SGT-004",
     "car": "au TOM'S GR Supra GT500",
     "carZh": "au TOM'S 丰田 GR Supra GT500",
@@ -1829,11 +1831,12 @@
         "captionZh": "铃鹿三小时赛后拍摄的 36 号车另一角度。"
       }
     ],
-    "driverCountry": "JP"
+    "driverCountry": "JP",
+    "scale": "1:64"
   },
   {
     "id": "86121dbb-2ef1-5b33-911e-cce021dbb701",
-    "revision": "c69a8982-0e83-4112-87fe-025bd3d899fb",
+    "revision": "b02b675e-66f2-443b-822e-5722c0c8be76",
     "catalogId": "SGT-005",
     "car": "Goodsmile Hatsune Miku AMG · 2024",
     "carZh": "Goodsmile 初音未来 AMG · 2024",
@@ -1895,11 +1898,12 @@
         "captionZh": "2024 年铃鹿收官战上的初音未来涂装。"
       }
     ],
-    "driverCountry": "JP"
+    "driverCountry": "JP",
+    "scale": "1:64"
   },
   {
     "id": "69354d3e-40f3-5af0-b6d5-012ee9459522",
-    "revision": "2a22c5db-1762-4fa9-9819-d9fda09ef03c",
+    "revision": "80d05be1-d841-4a7d-9d1e-9c8bc066a976",
     "catalogId": "SGT-006",
     "car": "Goodsmile Hatsune Miku AMG · 2020",
     "carZh": "Goodsmile 初音未来 AMG · 2020",
@@ -1960,11 +1964,12 @@
         "captionZh": "2020 年铃鹿站的初音未来涂装另一视角。"
       }
     ],
-    "driverCountry": "JP"
+    "driverCountry": "JP",
+    "scale": "1:64"
   },
   {
     "id": "e34467d3-2afd-58ec-92e0-46e76728693c",
-    "revision": "9c770663-4ce7-4c2b-9486-6c0f60ef5653",
+    "revision": "41f4dbf4-7b10-4d54-aca5-daac60270bf3",
     "catalogId": "SGT-007",
     "car": "TKRI Matsunaga Construction AMG GT3 · Marin Kitagawa",
     "carZh": "TKRI 松永建设 AMG GT3 · 喜多川海梦",
@@ -2029,11 +2034,12 @@
         "captionZh": "铃鹿站首次亮相的粉色喜多川海梦涂装。"
       }
     ],
-    "driverCountry": "JP"
+    "driverCountry": "JP",
+    "scale": "1:64"
   },
   {
     "id": "c271a644-8725-5aac-8a1d-9d81f2074b9b",
-    "revision": "032bbe19-464d-4ac6-8ab8-0e7563348047",
+    "revision": "13c5b262-fe61-4b8f-8be9-51acaa315a55",
     "catalogId": "SGT-008",
     "car": "Goodsmile Hatsune Miku AMG · 2025",
     "carZh": "Goodsmile 初音未来 AMG · 2025",
@@ -2086,11 +2092,12 @@
         "captionZh": "Goodsmile 冈山开幕站战报及照片。"
       }
     ],
-    "driverCountry": "JP"
+    "driverCountry": "JP",
+    "scale": "1:64"
   },
   {
     "id": "57c4e5af-d866-5c52-9bb6-6f4a103577ff",
-    "revision": "e38c4d97-593c-440a-af48-8fe4ded35e7b",
+    "revision": "5dc1bfd6-6126-4d0f-83e0-c16f2f2e9bcf",
     "catalogId": "SGT-009",
     "car": "Goodsmile Hatsune Miku AMG · 2026",
     "carZh": "Goodsmile 初音未来 AMG · 2026",
@@ -2154,11 +2161,12 @@
         "captionZh": "2026 年铃鹿站的 4 号车另一视角。"
       }
     ],
-    "driverCountry": "JP"
+    "driverCountry": "JP",
+    "scale": "1:64"
   },
   {
     "id": "7b98e164-11d9-50d1-bbce-076880a71d8b",
-    "revision": "ee8c08aa-ec84-416c-b443-fe8303ee3e55",
+    "revision": "6b315a56-c9e7-430b-938e-870815389646",
     "catalogId": "SGT-010",
     "car": "ENEOS SUSTINA Lexus RC F GT500",
     "carZh": "ENEOS SUSTINA 雷克萨斯 RC F GT500",
@@ -2214,11 +2222,12 @@
         "captionZh": "雷克萨斯公布的 2015 年 6 号 RC F。"
       }
     ],
-    "driverCountry": "JP"
+    "driverCountry": "JP",
+    "scale": "1:64"
   },
   {
     "id": "9662691c-21c5-5115-8d55-68ae1564ccea",
-    "revision": "71e7bc40-6dd7-49de-8fb9-815acbb02469",
+    "revision": "69289fa8-cea4-440d-bf52-ced7303dd221",
     "catalogId": "SGT-011",
     "car": "S Road MOLA Nissan GT-R NISMO GT500",
     "carZh": "S Road MOLA 日产 GT-R NISMO GT500",
@@ -2277,7 +2286,8 @@
         "captionZh": "2015 年铃鹿 1000 公里赛期间，车库里的 46 号赛车。"
       }
     ],
-    "driverCountry": "JP"
+    "driverCountry": "JP",
+    "scale": "1:64"
   },
   {
     "id": "6dc83d30-3364-5b2e-96d7-2ec2e8ad5866",
@@ -2486,7 +2496,7 @@
   },
   {
     "id": "7b06ba0b-09a5-590b-a534-2d1b47c743a6",
-    "revision": "dea0437d-9c4f-4a82-b964-84c49d8e5390",
+    "revision": "70d178bc-e512-4931-b47f-22757411cb56",
     "catalogId": "RLY-004",
     "car": "Audi A3 Rally Car · Pegasus 3",
     "carZh": "奥迪 A3 拉力赛车 ·《飞驰人生3》",
@@ -2536,11 +2546,12 @@
         "caption": "The No. 20 film car kicking up dust on gravel.",
         "captionZh": "20 号电影赛车在砂石路上扬起尘土。"
       }
-    ]
+    ],
+    "scale": "1:64"
   },
   {
     "id": "62ed2d93-8310-52ef-b8a9-a4683e356e55",
-    "revision": "20750ff9-145e-4a98-8687-4f43f6c1e4cc",
+    "revision": "9b02546d-b64a-4fee-89f9-350965919e6b",
     "catalogId": "RLY-005",
     "car": "Mitsubishi Carisma GT Evolution IV",
     "carZh": "三菱 Lancer Evolution IV · Carisma GT",
@@ -2604,7 +2615,8 @@
         "captionZh": "伯恩斯驾驶同款 Evolution IV 参加 1998 年葡萄牙拉力赛。"
       }
     ],
-    "link": "835bbf18-16b9-5310-8262-03f6ac3e6456"
+    "link": "835bbf18-16b9-5310-8262-03f6ac3e6456",
+    "scale": "1:64"
   },
   {
     "id": "835bbf18-16b9-5310-8262-03f6ac3e6456",
@@ -2672,11 +2684,11 @@
   },
   {
     "id": "6c0a3fa3-3013-56a9-9bbb-ae9aeb9eabcc",
-    "revision": "f6822e0a-1ac5-4d6e-8b2e-ea4d83bd4268",
+    "revision": "d7a47383-d1e2-484e-8bb9-c89be3153c5f",
     "catalogId": "WEC-001",
     "album": "WEC",
-    "car": "Blue and red Ferrari",
-    "carZh": "蓝红涂装法拉利",
+    "car": "Ferrari 296 GT3 · Verstappen.com Racing",
+    "carZh": "法拉利 296 GT3 · Verstappen.com Racing",
     "status": "collected",
     "photo": "collection/photos/baad6283-070e-57ac-bfe2-120a8efbc5f2.jpg",
     "previewPhoto": "collection/photos/11dc8d1c-72d4-5793-bdd7-3ec7580e2395.webp",
@@ -2685,15 +2697,64 @@
       "collection/photos/38e13349-1c63-5832-a7b7-90c50786284a.jpg",
       "collection/photos/8edda1e5-d2cf-574e-a52e-215ba8782e15.jpg"
     ],
-    "number": "31"
+    "number": "31",
+    "scale": "1:64",
+    "series": "Nürburgring Langstrecken-Serie",
+    "year": 2025,
+    "spec": "GT3",
+    "className": "SP9",
+    "event": "NLS 9 · Nürburgring Nordschleife",
+    "eventZh": "纽北耐力系列赛第 9 站",
+    "team": "Emil Frey Racing / Verstappen.com Racing",
+    "driver": "Max Verstappen / Chris Lulham",
+    "driverZh": "马克斯·维斯塔潘／克里斯·卢勒姆",
+    "maker": "Sky Model",
+    "acquired": "2026-07",
+    "collectionReason": "I follow Formula 1 and support Ferrari, so seeing Verstappen race a Ferrari on the Nordschleife made this model worth collecting for me.",
+    "collectionReasonZh": "我看 F1，也是法拉利车迷。维斯塔潘开着法拉利跑纽北，这个组合对我来说很值得收藏。",
+    "seasonSummary": "Verstappen tested a Ferrari 296 GT3 on the Nordschleife in May 2025 while preparing for a future Nürburgring 24-hour entry. The No. 31 in this livery represents his September GT3 race debut. He and Chris Lulham won the four-hour NLS 9 race overall in the car run by Emil Frey Racing.",
+    "seasonSummaryZh": "2025 年 5 月，维斯塔潘在纽北测试法拉利 296 GT3，为日后参加纽北 24 小时赛做准备。这件模型的 31 号涂装对应他同年 9 月的 GT3 正赛首秀。他与克里斯·卢勒姆驾驶 Emil Frey Racing 运营的赛车，赢得了 NLS 第 9 站四小时赛的全场冠军。",
+    "officialSources": [
+      {
+        "url": "https://news.verstappen.com/en/article/5958",
+        "label": "Verstappen.com’s NLS 9 race report",
+        "labelZh": "维斯塔潘官网的 NLS 第 9 站赛报"
+      },
+      {
+        "url": "https://news.verstappen.com/en/article/5810",
+        "label": "Verstappen on his May Nordschleife test",
+        "labelZh": "维斯塔潘谈 5 月的纽北测试"
+      },
+      {
+        "url": "https://news.verstappen.com/pdf/2025/2025-09-27_NLS9_Qualifying.pdf",
+        "label": "Official NLS 9 qualifying classification",
+        "labelZh": "NLS 第 9 站官方排位成绩"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://news.verstappen.com/img/2025/N%C3%BCrburgring_Langstrecken-Serie%2C_Nordschleife/H62A6434-26b.jpg",
+        "credit": "Verstappen.com",
+        "caption": "The No. 31 Ferrari in the Nürburgring pit lane during NLS 9.",
+        "captionZh": "NLS 第 9 站期间，31 号法拉利停在纽博格林维修区。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://news.verstappen.com/img/2025/N%C3%BCrburgring_Langstrecken-Serie%2C_Nordschleife/NLS9-A_DK5302-1-13b.jpg",
+        "credit": "Verstappen.com",
+        "caption": "Chris Lulham and Max Verstappen with the No. 31 Ferrari after winning NLS 9.",
+        "captionZh": "卢勒姆和维斯塔潘在 NLS 第 9 站夺冠后与 31 号法拉利合影。"
+      }
+    ]
   },
   {
     "id": "beb5ebe6-4d55-5948-8912-190d89b56075",
-    "revision": "c996df80-aeb1-45d0-8307-f6fff4e3848d",
+    "revision": "1e5db4e7-bc94-42ed-b40c-bc32a4ddf410",
     "catalogId": "WEC-002",
     "album": "WEC",
-    "car": "Blue Porsche 911",
-    "carZh": "蓝色保时捷 911",
+    "car": "Porsche 911 GT3 R · Chip Hart Racing livery",
+    "carZh": "保时捷 911 GT3 R · Chip Hart Racing 涂装",
     "status": "collected",
     "photo": "collection/photos/6d4439ed-181c-5c77-b84a-638b6ec63912.jpg",
     "previewPhoto": "collection/photos/444cbfd3-c76c-5922-99f0-2d05a6b06376.webp",
@@ -2703,15 +2764,71 @@
       "collection/photos/945c8e53-bf60-5ace-a8d3-ee7fec4a0c0e.jpg",
       "collection/photos/a38ab047-1ac6-5a82-9bab-e16769bc9c21.jpg"
     ],
-    "number": "90"
+    "number": "90",
+    "scale": "1:64",
+    "series": "FIA WEC",
+    "event": "24 Hours of Le Mans",
+    "eventZh": "勒芒 24 小时耐力赛",
+    "year": 2025,
+    "spec": "GT3",
+    "className": "LMGT3",
+    "team": "Manthey",
+    "driver": "Antares Au / Loek Hartog / Klaus Bachler",
+    "driverZh": "Antares Au／洛克·哈托格／克劳斯·巴赫勒",
+    "maker": "Trends Hobby",
+    "acquired": "2026-05",
+    "source": "https://archiv.herpa.de/product-datasheet/06d9dcd709996bea015481f2c62fcd31/create",
+    "collectionReason": "The Porsche in the opening Daytona scene of F1 The Movie caught my attention. I wanted a miniature of the racing 911 that carries that blue livery into a real endurance race.",
+    "collectionReasonZh": "《F1：狂飙飞车》开头的戴通纳片段让我记住了这辆蓝色保时捷。我想收藏一辆把电影里的涂装带上真实耐力赛赛道的 911。",
+    "seasonSummary": "The opening Daytona scene of F1 The Movie used Wright Motorsports’ No. 120 Porsche 911 GT3 R (992). At Le Mans in 2025, Manthey raced another 992-generation 911 GT3 R in the blue Chip Hart Racing movie livery, wearing No. 90. Antares Au, Loek Hartog and Klaus Bachler finished sixth in LMGT3.",
+    "seasonSummaryZh": "电影开场的戴通纳片段使用了 Wright Motorsports 的 120 号保时捷 911 GT3 R（992）。到了 2025 年勒芒，Manthey 把蓝色 Chip Hart Racing 电影涂装带到了 90 号同代 911 GT3 R 上。Antares Au、洛克·哈托格和克劳斯·巴赫勒取得 LMGT3 组第六。",
+    "officialSources": [
+      {
+        "url": "https://www.manthey-racing.com/second-consecutive-lmgt3-victory-manthey-24-hours-le-mans",
+        "label": "Manthey’s 2025 Le Mans race report",
+        "labelZh": "Manthey 的 2025 年勒芒战报"
+      },
+      {
+        "url": "https://www.imsa.com/news/2025/06/27/it-may-be-f1-the-movie-but-imsa-guest-stars/",
+        "label": "IMSA on the Daytona film shoot",
+        "labelZh": "IMSA 的戴通纳电影拍摄报道"
+      },
+      {
+        "url": "https://www.herpa.de/en/buy-products/cars-trucks/trends-hobby",
+        "label": "Herpa’s Trends Hobby brand page",
+        "labelZh": "Herpa 的 Trends Hobby 品牌页"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "src": "collection/photos/race-wec002-1.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:24H_Le_Mans_2025_Nr._90_(3).jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "credit": "Lukas Raich / Wikimedia Commons · resized",
+        "creditZh": "Lukas Raich / Wikimedia Commons · 已缩放",
+        "caption": "The No. 90 Manthey Porsche in the Chip Hart Racing livery at Le Mans in 2025.",
+        "captionZh": "2025 年勒芒，90 号 Manthey 保时捷披着 Chip Hart Racing 电影涂装。"
+      },
+      {
+        "src": "collection/photos/race-wec002-2.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:2025_24_Hours_of_Le_Mans_(54917595415).jpg",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseLabel": "CC BY 4.0",
+        "credit": "Mickael Le rouzic / Wikimedia Commons · resized",
+        "creditZh": "Mickael Le rouzic / Wikimedia Commons · 已缩放",
+        "caption": "Side profile of the No. 90 with its blue body and pink wing endplates.",
+        "captionZh": "90 号车的侧面，蓝色车身和粉色尾翼端板清晰可见。"
+      }
+    ]
   },
   {
     "id": "acbb0871-91c3-5540-ae2b-d3530ca897f9",
-    "revision": "7de90b05-e1cd-4826-9e6d-c9b6af9ad1a4",
+    "revision": "dd16e65e-d812-419e-b941-2d6316ac409d",
     "catalogId": "WEC-003",
     "album": "WEC",
-    "car": "Porsche 911 GT3 R · Rexy",
-    "carZh": "保时捷 911 GT3 R · Rexy",
+    "car": "Porsche 911 RSR-19 · Rexy",
+    "carZh": "保时捷 911 RSR-19 · Rexy",
     "status": "collected",
     "photo": "collection/photos/e1f31654-493f-58ca-a8a4-66dce4e2c6fb.jpg",
     "previewPhoto": "collection/photos/7de38625-dc9e-5f6b-899e-06f9cf1954ad.webp",
@@ -2722,11 +2839,60 @@
       "collection/photos/86f6bf64-c604-5a0e-a350-0218a47bd63f.jpg"
     ],
     "number": "56",
-    "spec": "GT3"
+    "spec": "GTE",
+    "scale": "1:64",
+    "series": "FIA WEC",
+    "event": "24 Hours of Le Mans",
+    "eventZh": "勒芒 24 小时耐力赛",
+    "year": 2023,
+    "className": "LMGTE Am",
+    "team": "Project 1–AO",
+    "driver": "PJ Hyett / Gunnar Jeannette / Matteo Cairoli",
+    "driverZh": "PJ·海厄特／贡纳尔·让内特／马泰奥·凯罗利",
+    "maker": "Spark",
+    "acquired": "2026-11",
+    "collectionReason": "AO’s dinosaur liveries were everywhere on my feed, and the models kept getting more expensive. I found Rexy at a price I was happy with and bought a separate transporter to display with it.",
+    "collectionReasonZh": "AO 的恐龙涂装在社交媒体上很火，模型也越卖越贵。我等到了合适的价格才入手这辆 Rexy，又单独买了一辆运输车搭配展示。",
+    "seasonSummary": "Project 1 and AO Racing entered the No. 56 Porsche 911 RSR-19 in LMGTE Am at the 2023 Le Mans centenary. The green Rexy livery made its Le Mans debut there. The car led the class for several hours and finished seventh in class after a late mechanical issue.",
+    "seasonSummaryZh": "2023 年勒芒百年赛，Project 1 与 AO Racing 联手派出 56 号保时捷 911 RSR-19 参加 LMGTE Am 组，绿色 Rexy 涂装也首次亮相勒芒。赛车曾领跑组别数小时，最后一小时遇到机械故障，最终获得组别第七。",
+    "officialSources": [
+      {
+        "url": "https://aoracing.com/rexy-revels-in-international-fame-at-24-hours-of-le-mans/",
+        "label": "AO Racing’s Rexy race report",
+        "labelZh": "AO Racing 的 Rexy 勒芒赛报"
+      },
+      {
+        "url": "https://assets.lemans.org/explorer/pdf/courses/2023/24-heures-du-mans/infos-course/liste-engages-24h-infos-course.pdf",
+        "label": "2023 Le Mans official entry list",
+        "labelZh": "2023 年勒芒官方参赛名单"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "src": "collection/photos/race-wec003-1.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Porsche_911_RSR_-_PJ_Hyett,_Gunnar_Jeanette_%26_Matteo_Cairoli_exits_Dunlop_Chicane_at_the_2023_Le_Mans_(53366662566).jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "licenseLabel": "CC BY-SA 2.0",
+        "credit": "Martin Lee / Wikimedia Commons · resized",
+        "creditZh": "Martin Lee / Wikimedia Commons · 已缩放",
+        "caption": "Rexy exits the Dunlop Chicane at the 2023 24 Hours of Le Mans.",
+        "captionZh": "Rexy 驶出 2023 年勒芒的邓禄普减速弯。"
+      },
+      {
+        "src": "collection/photos/race-wec003-2.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:Porsche_911_RSR_-_PJ_Hyett,_Gunnar_Jeanette_%26_Matteo_Cairoli_during_the_pitwalk_at_the_2023_Le_Mans_(53467008642).jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "licenseLabel": "CC BY-SA 2.0",
+        "credit": "Martin Lee / Wikimedia Commons · resized",
+        "creditZh": "Martin Lee / Wikimedia Commons · 已缩放",
+        "caption": "Rexy’s teeth, green bodywork and orange GTE Am number panel during the pit walk.",
+        "captionZh": "维修区开放时拍下的 Rexy，露着一排恐龙牙齿，车侧贴着橙色 GTE Am 号牌。"
+      }
+    ]
   },
   {
     "id": "cc1773b5-055b-5c6a-9efa-0729c7df8f24",
-    "revision": "e06a3566-18b2-4686-912b-e74acf37426b",
+    "revision": "24e483a8-205a-41a8-8c01-d1e8c0e8f409",
     "catalogId": "WEC-004",
     "album": "WEC",
     "car": "Ford Mustang GT3 · IKIGAI",
@@ -2740,11 +2906,57 @@
       "collection/photos/cab538a4-0685-53ba-bf08-791552901624.jpg"
     ],
     "number": "88",
-    "spec": "GT3"
+    "spec": "GT3",
+    "scale": "1:64",
+    "series": "FIA WEC",
+    "event": "24 Hours of Le Mans",
+    "eventZh": "勒芒 24 小时耐力赛",
+    "year": 2024,
+    "className": "LMGT3",
+    "team": "Proton Competition",
+    "driver": "Dennis Olsen / Giorgio Roda / Mikkel O. Pedersen",
+    "driverZh": "丹尼斯·奥尔森／乔治奥·罗达／米克尔·O. 佩德森",
+    "maker": "Elowen Art",
+    "acquired": "2026-09",
+    "collectionReason": "The story behind this black-and-gold Mustang was what drew me to it. The No. 88 earned the Mustang GT3’s first Le Mans podium on the car’s debut there.",
+    "collectionReasonZh": "我收这辆黑金 Mustang，是因为它的勒芒故事。88 号车在 Mustang GT3 第一次跑勒芒时就站上了领奖台。",
+    "seasonSummary": "The black-and-gold IKIGAI No. 88 belongs to Proton Competition. Dennis Olsen, Giorgio Roda and Mikkel O. Pedersen finished third in LMGT3 at the 2024 24 Hours of Le Mans, the Mustang GT3’s debut at the event.",
+    "seasonSummaryZh": "这辆黑金 IKIGAI 涂装的 88 号车由 Proton Competition 运营。丹尼斯·奥尔森、乔治奥·罗达和米克尔·O. 佩德森在 2024 年勒芒拿到 LMGT3 组第三，那是 Mustang GT3 首次参加勒芒。",
+    "officialSources": [
+      {
+        "url": "https://www.multimaticmotorsports.com/mustang-gt3-scores-podium-on-le-mans-debut/",
+        "label": "Multimatic’s 2024 Le Mans podium report",
+        "labelZh": "Multimatic 的 2024 年勒芒领奖台报道"
+      },
+      {
+        "url": "https://www.multimaticmotorsports.com/new-livery-debuts-for-mustang-gt3-proton-competition-imsa-and-wec-cars/",
+        "label": "Proton’s 2024 Mustang livery and driver line-up",
+        "labelZh": "Proton 的 2024 年 Mustang 涂装与车手名单"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www.multimaticmotorsports.com/wp-content/uploads/2024/06/le-mans-2024-gt3-01.jpg",
+        "credit": "Multimatic Motorsports",
+        "caption": "The black-and-gold No. 88 Mustang at the 2024 24 Hours of Le Mans.",
+        "captionZh": "黑金色 88 号 Mustang 驶过 2024 年勒芒赛道。"
+      },
+      {
+        "src": "collection/photos/race-wec004-2.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:2024_24_Hours_of_Le_Mans_(54094633444).jpg",
+        "license": "https://creativecommons.org/licenses/by/2.0/",
+        "licenseLabel": "CC BY 2.0",
+        "credit": "Mickael Le rouzic / Wikimedia Commons · resized",
+        "creditZh": "Mickael Le rouzic / Wikimedia Commons · 已缩放",
+        "caption": "Proton Competition’s No. 88 in traffic at the 2024 24 Hours of Le Mans.",
+        "captionZh": "2024 年勒芒比赛中，Proton Competition 的 88 号车穿行在车阵中。"
+      }
+    ]
   },
   {
     "id": "17cd4852-986c-50e4-986f-462b4e8e85ec",
-    "revision": "0358b735-2778-498c-8fbf-f0f88aa582f7",
+    "revision": "b0ddcf4b-51e9-4eac-b1c4-1103a5b00799",
     "catalogId": "WEC-005",
     "album": "WEC",
     "car": "BMW M3 Touring 24H",
@@ -2759,11 +2971,53 @@
       "collection/photos/278fa6d7-8b2d-5c5f-905c-65ba66685592.jpg"
     ],
     "number": "81",
-    "className": "SPX"
+    "className": "SPX",
+    "scale": "1:64",
+    "series": "Nürburgring Langstrecken-Serie",
+    "year": 2026,
+    "event": "NLS 2 · Nürburgring Nordschleife",
+    "eventZh": "纽北耐力系列赛第 2 站",
+    "team": "BMW M Motorsport / Schubert Motorsport",
+    "driver": "Jens Klingmann / Ugo de Wilde",
+    "driverZh": "延斯·克林曼／乌戈·德维尔德",
+    "maker": "NEO",
+    "acquired": "2026-07",
+    "collectionReason": "I like that so many fans took an April Fools’ post seriously enough for the M3 Touring race car to exist. The original comments became part of the livery, and that is the version I wanted to keep.",
+    "collectionReasonZh": "最有意思的是，一条愚人节玩笑居然让车迷催出了一辆真实赛车。我想收藏的就是贴满当年车迷留言的这版涂装。",
+    "seasonSummary": "BMW teased an M3 Touring race car on April Fools’ Day in 2025. Strong fan interest helped turn it into a real car. The launch livery incorporates fans’ comments into the white graphics. Jens Klingmann and Ugo de Wilde won SPX on the No. 81’s race debut in NLS 2 in March 2026.",
+    "seasonSummaryZh": "宝马在 2025 年愚人节发布了 M3 Touring 赛车的设想。车迷反响热烈，宝马随后真的造了出来，并把车迷留言做成首发涂装的白色图案。2026 年 3 月，延斯·克林曼与乌戈·德维尔德驾驶 81 号车在 NLS 第 2 站首秀，赢得 SPX 组冠军。",
+    "officialSources": [
+      {
+        "url": "https://www.bmw-m.com/en/topics/magazine-article-pool/the-m3-touring-24h-story.html",
+        "label": "BMW’s account of the April Fools’ post and fan-comment livery",
+        "labelZh": "宝马对愚人节企划与车迷留言涂装的记录"
+      },
+      {
+        "url": "https://www.press.bmwgroup.com/global/article/detail/T0456509EN/nls%3A-spectacular-racing-debut-for-the-bmw-m3-touring-24h-%E2%80%93-rowe-racing-wins-with-the-bmw-m4-gt3-evo",
+        "label": "BMW’s NLS debut race report",
+        "labelZh": "宝马的 NLS 首秀战报"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/topics/magazine-article-pool/2026/the-bmw-m3-touring-24h-story/bmw-m-magazine-story-of-m3-touring-24h-08-16x9-ig.jpg",
+        "credit": "BMW M Motorsport",
+        "caption": "The No. 81 M3 Touring 24H in traffic during its NLS race debut.",
+        "captionZh": "81 号 M3 Touring 24H 在 NLS 首秀中与其他赛车同场竞技。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/topics/magazine-article-pool/2026/the-bmw-m3-touring-24h-story/bmw-m-magazine-story-of-m3-touring-24h-06-16x9-zi.jpg",
+        "credit": "BMW M Motorsport",
+        "caption": "Side view of the launch livery with its white fan comments and “We Built It” lettering.",
+        "captionZh": "首发涂装的侧面，白色车迷留言与车门上的「We Built It」清晰可见。"
+      }
+    ]
   },
   {
     "id": "2916f136-da00-5a91-bcbc-2852194df3b7",
-    "revision": "274b7fbf-61fa-4623-8e28-ffafbe1fadc0",
+    "revision": "de90bb1e-d4a0-49ea-901e-e9e5af4e2fae",
     "catalogId": "WEC-006",
     "album": "WEC",
     "car": "Ferrari 499P",
@@ -2777,11 +3031,66 @@
       "collection/photos/a75f86ea-fff8-5574-9c6d-732370c1d72c.jpg"
     ],
     "number": "51",
-    "spec": "Hypercar"
+    "spec": "Hypercar",
+    "scale": "1:64",
+    "series": "FIA WEC",
+    "event": "24 Hours of Le Mans",
+    "eventZh": "勒芒 24 小时耐力赛",
+    "year": 2024,
+    "team": "Ferrari AF Corse",
+    "driver": "Alessandro Pier Guidi / James Calado / Antonio Giovinazzi",
+    "driverZh": "亚历山德罗·皮尔·圭迪／詹姆斯·卡拉多／安东尼奥·吉奥维纳兹",
+    "maker": "Bburago",
+    "makerZh": "比美高",
+    "acquired": "2026-01",
+    "source": "https://www.bburago.com/en-at/products/ferrari-499p-51-1-64-2024-con-teca-espositiva",
+    "collectionReason": "As a Ferrari fan I wanted a model of the No. 51 that began this run of Le Mans wins. During a frustrating stretch for Ferrari in Formula 1, the endurance results gave me something to celebrate.",
+    "collectionReasonZh": "作为法拉利车迷，我想收一辆开启勒芒连胜的 51 号车。看这几年 F1 有些憋屈，耐力赛的成绩反而给了我不少安慰。",
+    "seasonSummary": "Ferrari returned to the top class at Le Mans after 50 years in 2023 and won outright with No. 51. This Bburago model depicts the 2024 version of that entry, when Pier Guidi, Calado and Giovinazzi took third overall. The No. 50 won in 2024 and AF Corse’s No. 83 won in 2025, giving the 499P three straight Le Mans victories.",
+    "seasonSummaryZh": "2023 年，法拉利时隔 50 年重返勒芒最高组别，51 号车拿下全场冠军。这件比美高模型对应同一车组的 2024 年版本，当年皮尔·圭迪、卡拉多与吉奥维纳兹取得全场第三。2024 年的冠军是 50 号，2025 年轮到 AF Corse 的 83 号，499P 由此完成勒芒三连冠。",
+    "officialSources": [
+      {
+        "url": "https://www.ferrari.com/content/dam/ferrari-fcom/old/pdf/296_Speciale_Piloti_Ferrari_Tailor_Made_GBR.pdf",
+        "label": "Ferrari on its 2023 return and 2024 win",
+        "labelZh": "法拉利对 2023 年回归和 2024 年夺冠的回顾"
+      },
+      {
+        "url": "https://www.fiawec.com/en/news/breaking-news-no-50-ferrari-wins-le-mans/8012",
+        "label": "FIA WEC’s 2024 Le Mans race report",
+        "labelZh": "FIA WEC 的 2024 年勒芒战报"
+      },
+      {
+        "url": "https://www.fiawec.com/en/news/ferrari-et-manthey-remportent-les-24-heures-du-mans/8374",
+        "label": "FIA WEC on the 499P’s third consecutive Le Mans win",
+        "labelZh": "FIA WEC 的 499P 勒芒三连冠报道"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "src": "collection/photos/race-wec006-1.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:2024_24_Hours_of_Le_Mans_(54093436587).jpg",
+        "license": "https://creativecommons.org/licenses/by/2.0/",
+        "licenseLabel": "CC BY 2.0",
+        "credit": "Mickael Le rouzic / Wikimedia Commons · resized",
+        "creditZh": "Mickael Le rouzic / Wikimedia Commons · 已缩放",
+        "caption": "The No. 51 Ferrari 499P in profile at the 2024 24 Hours of Le Mans.",
+        "captionZh": "2024 年勒芒，51 号法拉利 499P 的侧面视角。"
+      },
+      {
+        "src": "collection/photos/race-wec006-2.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:2024_24_Hours_of_Le_Mans_(54094634574).jpg",
+        "license": "https://creativecommons.org/licenses/by/2.0/",
+        "licenseLabel": "CC BY 2.0",
+        "credit": "Mickael Le rouzic / Wikimedia Commons · resized",
+        "creditZh": "Mickael Le rouzic / Wikimedia Commons · 已缩放",
+        "caption": "A rear three-quarter view of the No. 51 Ferrari on track at Le Mans in 2024.",
+        "captionZh": "2024 年勒芒赛道上，从侧后方拍下的 51 号法拉利。"
+      }
+    ]
   },
   {
     "id": "d9090e5e-5c9d-59fa-8a51-f9412d1423c7",
-    "revision": "f4873154-64ff-4608-a26d-80314feaedda",
+    "revision": "b9dc7f00-d28f-4acf-87e8-23564c9de43b",
     "catalogId": "WEC-007",
     "album": "WEC",
     "car": "Ferrari 499P",
@@ -2795,11 +3104,12 @@
       "collection/photos/0d779fb6-2106-593a-b436-958e8f5a234e.jpg"
     ],
     "number": "83",
-    "spec": "Hypercar"
+    "spec": "Hypercar",
+    "scale": "1:64"
   },
   {
     "id": "27faad94-8877-513a-a0f2-a0cab507f2c6",
-    "revision": "45d9d737-9cc2-498e-898f-80689a54577c",
+    "revision": "fbbd86f8-3d5a-4b35-b165-aac4908f0d46",
     "catalogId": "WEC-008",
     "album": "WEC",
     "car": "BMW M Hybrid V8 · iQOO",
@@ -2812,11 +3122,12 @@
       "collection/photos/3f17fc75-cee1-596f-bb3e-d5fcb33943d6.jpg",
       "collection/photos/2387594a-8439-5c1f-afb9-6abb2651886a.jpg"
     ],
-    "spec": "Hypercar"
+    "spec": "Hypercar",
+    "scale": "1:64"
   },
   {
     "id": "a084fe8e-cc28-55c1-bb56-d1fb34cdec7e",
-    "revision": "3638c211-6114-4501-b4bb-8d97b31f7e46",
+    "revision": "839f22fa-5e9b-4327-9b8f-07f1cb3b96a7",
     "catalogId": "WEC-009",
     "album": "WEC",
     "car": "Mazda 787B",
@@ -2831,11 +3142,12 @@
       "collection/photos/3c9d4822-f8e2-5b8a-a28f-76a264f1cc2b.jpg"
     ],
     "number": "55",
-    "spec": "Group C"
+    "spec": "Group C",
+    "scale": "1:64"
   },
   {
     "id": "a98dcbe2-5437-5935-a0d5-3d7a97f5664e",
-    "revision": "eaa395d0-c8f4-4546-bd6c-1d8d164b4852",
+    "revision": "231c50e0-f49a-4f93-9dfe-6bebfc7c3f71",
     "catalogId": "WEC-010",
     "album": "WEC",
     "car": "BMW M4 GT3 · Schaeffler",
@@ -2850,11 +3162,12 @@
       "collection/photos/f958fc11-6755-59d8-b01d-3bf8da7c89f9.jpg"
     ],
     "number": "11",
-    "spec": "GT3"
+    "spec": "GT3",
+    "scale": "1:64"
   },
   {
     "id": "edeeb367-64e0-57f4-969e-62ab41d4284e",
-    "revision": "20f4b70b-cbaa-41af-8c98-97699945f628",
+    "revision": "55a3c14c-dbff-444b-ac1b-9fd88f01b1a6",
     "catalogId": "WEC-011",
     "album": "WEC",
     "car": "Lamborghini Huracán GT3 · EDAG",
@@ -2869,11 +3182,12 @@
       "collection/photos/e43a0e20-8ca4-5337-b283-b0a5c99bb76e.jpg"
     ],
     "number": "94",
-    "spec": "GT3"
+    "spec": "GT3",
+    "scale": "1:64"
   },
   {
     "id": "f3f60930-3d20-5b27-bfcb-bbc1b4fe8aa5",
-    "revision": "128e5b8a-0570-42fb-bdda-31e283104717",
+    "revision": "a609a531-7a53-41ad-9107-a2c51d3df326",
     "catalogId": "WEC-012",
     "album": "WEC",
     "car": "Porsche 911 GT3 R · Roxy",
@@ -2887,11 +3201,12 @@
       "collection/photos/55aa174e-d66e-58e0-9d11-e39c4d683410.jpg"
     ],
     "number": "77",
-    "spec": "GT3"
+    "spec": "GT3",
+    "scale": "1:64"
   },
   {
     "id": "1133eb19-5e4f-54c8-8bfb-a35a8b72b291",
-    "revision": "a361a5a2-6a75-4657-8ac4-84538c91082b",
+    "revision": "fa37376c-60ea-435d-961f-e2b2cbb6d56b",
     "catalogId": "WEC-013",
     "album": "WEC",
     "car": "BMW M4 GT3 · FIST",
@@ -2905,11 +3220,12 @@
       "collection/photos/e9ebadd3-afca-5646-a797-7b5a49ac5ab4.jpg"
     ],
     "number": "90",
-    "spec": "GT3"
+    "spec": "GT3",
+    "scale": "1:64"
   },
   {
     "id": "e8b85fce-d1d3-5be9-8e45-35cdc5ec3611",
-    "revision": "527de8c1-b3ce-489c-9b1a-c122bba37fce",
+    "revision": "bf878d1a-17d7-4c22-ac75-b30fece56089",
     "catalogId": "WEC-014",
     "album": "WEC",
     "car": "Yellow Corvette",
@@ -2921,6 +3237,7 @@
       "collection/photos/90ea2dd3-c76d-577f-8791-898552431a95.jpg",
       "collection/photos/c76da03c-f3ca-59fd-a246-731a5713e0f5.jpg",
       "collection/photos/126a5e7d-0f54-549c-bf72-ea449face806.jpg"
-    ]
+    ],
+    "scale": "1:64"
   }
 ]
