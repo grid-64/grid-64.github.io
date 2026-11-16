@@ -80,7 +80,8 @@ const readTag = () => {
   const pair = [...new URLSearchParams(location.hash.slice(9))][0];
   return pair && Object.hasOwn(tags, pair[0]) && pair[1] ? pair : null;
 };
-const matchesMode = (x, m) => m === "all" || (m === "f1" && x.series === "Formula 1") || (m === "gt3" && x.spec === "GT3") || (m === "sgt" && x.series === "Super GT") || (m === "rally" && x.series === "Rally") || (m === "wec" && x.album === "WEC");
+const albumModes = {wec: "WEC", others: "Others"};
+const matchesMode = (x, m) => m === "all" || (m === "f1" && x.series === "Formula 1") || (m === "gt3" && x.spec === "GT3") || (m === "sgt" && x.series === "Super GT") || (m === "rally" && x.series === "Rally") || (Object.hasOwn(albumModes, m) && x.album === albumModes[m]);
 const isCollected = x => x.status === "collected";
 const SAFETY_CAR_SPEC = "Safety Car";
 const isSafetyCar = x => x.spec === SAFETY_CAR_SPEC;
@@ -191,7 +192,8 @@ function update() {
   $("active-tag").hidden = !activeTag;
   $("active-tag-name").textContent = activeTag ? `${t(tags[activeTag[0]][0])}: ${tagLabel(...activeTag)}` : "";
   $("record-status").textContent = list.length === 0 ? "" : list.every(isCollected) ? t("PERSONAL COLLECTION") : list.some(isCollected) ? t("COLLECTION & REFERENCE RECORDS") : t("REFERENCE RECORDS / OWNERSHIP UNCONFIRMED");
-  const activeMode = activeTag?.[0] === "album" && activeTag[1] === "WEC" ? "wec" : mode;
+  const albumMode = activeTag?.[0] === "album" && Object.keys(albumModes).find(key => albumModes[key] === activeTag[1]);
+  const activeMode = albumMode || mode;
   document.querySelectorAll("[data-mode]").forEach(b => {b.hidden=b.dataset.mode!=="all"&&!records.some(x=>matchesMode(x,b.dataset.mode));b.setAttribute("aria-pressed",String(b.dataset.mode===activeMode));});
 }
 function reset() {mode="all"; $("query").value=""; $("series").value=""; $("spec").value=""; $("order").value="index";}

@@ -3605,5 +3605,98 @@
         "captionZh": "2025 年戴通纳 24 小时耐力赛中，黄色 4 号科尔维特驶过劳力士广告墙。"
       }
     ]
+  },
+  {
+    "id": "2ba554f0-e806-5581-9da2-0da93746f863",
+    "revision": "7d47ea35-e987-496c-8518-3cb8f3f01e01",
+    "catalogId": "OTHERS-001",
+    "album": "Others",
+    "car": "Subaru WRX STI",
+    "carZh": "斯巴鲁 WRX STI",
+    "status": "collected",
+    "number": "88",
+    "scale": "1:64",
+    "photo": "collection/photos/25e43757-83ad-5ce4-9ffd-4a3dcbe98c45.jpg",
+    "previewPhoto": "collection/photos/e828acd2-56e6-53c3-a747-44d83d839930.webp",
+    "photos": [
+      "collection/photos/d1856813-9575-5b89-af1b-7e9a9f609ea2.jpg",
+      "collection/photos/fca27967-4433-5b5b-ae3e-3aa5f44dc890.jpg",
+      "collection/photos/61c0fd14-6a79-586d-999a-94b3f236573e.jpg"
+    ]
+  },
+  {
+    "id": "762e81b3-5170-5131-be4b-1787c8c2baa5",
+    "revision": "3a88c65e-3567-4276-aa28-6fce0624cdcc",
+    "catalogId": "OTHERS-002",
+    "album": "Others",
+    "car": "Honda NSX GT3 · Evangelion Unit-02",
+    "carZh": "本田 NSX GT3 · EVA 2 号机",
+    "status": "collected",
+    "number": "02",
+    "scale": "1:64",
+    "photo": "collection/photos/d619a366-d160-5816-8dac-9df2325b8e07.jpg",
+    "previewPhoto": "collection/photos/ad7bc4cb-f251-5574-b5ec-4236a9618390.webp",
+    "photos": [
+      "collection/photos/af26ca0c-85bf-5e07-be9f-5092658daf7f.jpg",
+      "collection/photos/9c5681a9-48fe-55c9-aa40-38b5b5e70978.jpg",
+      "collection/photos/12e85c27-2f8e-5623-a5cb-c118d11590e6.jpg",
+      "collection/photos/38b66698-fb71-56ad-8fb3-09496b69897b.jpg"
+    ],
+    "spec": "GT3"
+  },
+  {
+    "id": "bef5d835-1733-5c31-8216-b73bdbdce878",
+    "revision": "c4913603-dfa7-465c-a89f-b04b844a863c",
+    "catalogId": "OTHERS-003",
+    "album": "Others",
+    "car": "Audi R8 LMS · Apex Predator",
+    "carZh": "奥迪 R8 LMS · Apex Predator",
+    "status": "collected",
+    "number": "16",
+    "scale": "1:64",
+    "photo": "collection/photos/71dd01fa-d844-5a93-b7da-2afc7fddeb7b.jpg",
+    "previewPhoto": "collection/photos/124bbc2e-0e93-5096-a598-62248d721e38.webp",
+    "photos": [
+      "collection/photos/571b0a4c-485e-54a4-b5dd-1f581ed7e609.jpg",
+      "collection/photos/1876fd49-0916-5f54-99dd-4f5e11e92747.jpg",
+      "collection/photos/f494efd8-e78b-5089-b2b5-bdc30bea0cbb.jpg"
+    ]
+  },
+  {
+    "id": "de5524dc-599b-53b3-b6c6-1e45e0ac76fe",
+    "revision": "8cc90e3f-b1c8-4240-9503-95c6ab201371",
+    "catalogId": "OTHERS-004",
+    "album": "Others",
+    "car": "Lynk & Co 03 TCR · Cyan Racing",
+    "carZh": "领克 03 TCR · Cyan Racing",
+    "status": "collected",
+    "number": "68",
+    "scale": "1:64",
+    "photo": "collection/photos/eed9fbd5-512d-5aca-a0c7-7825d9c69eaf.jpg",
+    "previewPhoto": "collection/photos/7f82116d-efe3-5093-99a8-80f0469fe37a.webp",
+    "photos": [
+      "collection/photos/0c330fa3-3408-5725-8f8b-dfd27e3c803d.jpg",
+      "collection/photos/58075144-a8e5-5a25-b22a-46d6384df7ab.jpg",
+      "collection/photos/fc785b7a-72ea-5970-a43f-99d941a8a290.jpg"
+    ],
+    "spec": "TCR"
+  },
+  {
+    "id": "e6c51697-4513-5819-88ec-fc8dbf7c723c",
+    "revision": "73d043c7-2eed-43e1-8ba7-84b75ab0bc88",
+    "catalogId": "OTHERS-005",
+    "album": "Others",
+    "car": "Hongqi H6",
+    "carZh": "红旗 H6",
+    "status": "collected",
+    "number": "66",
+    "scale": "1:64",
+    "photo": "collection/photos/6e30c8f8-e025-5b41-b487-7ba7235e59b3.jpg",
+    "previewPhoto": "collection/photos/ff875ccf-0675-59c8-8cc2-c2716afde002.webp",
+    "photos": [
+      "collection/photos/9c2a1f69-5129-5d53-be8c-9582733e2bb7.jpg",
+      "collection/photos/bcd62d73-919d-5284-a467-67de4a6fceb2.jpg",
+      "collection/photos/77989e76-1919-531b-ae86-95ac7731df84.jpg"
+    ]
   }
 ]

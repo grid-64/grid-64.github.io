@@ -1,7 +1,7 @@
 "use strict";
 const ZH = {
 "Loading collection…":"正在加载收藏…","Made":"制作时间","Open original photo":"打开原始照片","24 Hours of Spa":"斯帕 24 小时耐力赛","Pro Cup":"职业组",
-"Base model brand":"底模品牌","ENEOS Super Taikyu Series":"ENEOS 日本超级耐久系列赛","Rally":"拉力赛","WEC album":"WEC 相簿","Photo album":"相簿","Group C":"C 组","Film car":"电影赛车","Group A":"A 组","World Rally Car":"世界拉力赛车",
+"Base model brand":"底模品牌","ENEOS Super Taikyu Series":"ENEOS 日本超级耐久系列赛","Rally":"拉力赛","WEC album":"WEC 相簿","Photo album":"相簿","Others":"其他","Group C":"C 组","Film car":"电影赛车","Group A":"A 组","World Rally Car":"世界拉力赛车",
 "Skip to archive":"跳到收藏索引","GRID 64 home":"GRID/64 首页","Main navigation":"主导航","Index":"收藏索引","Field notes":"研究笔记","Add collection item":"新增藏品","PROTOTYPE 01":"档案原型 01",
 "A miniature motorsport archive.":"赛车模型档案。","Explore the index":"浏览收藏","PLATE 01":"图版 01","PLAN VIEW / ILLUSTRATION":"俯视示意图","OPEN WHEEL / STUDY 01":"开放式车轮／研究 01","FIG. 01 / SCALE STUDY":"图 01／比例研究","CURATED BY SU YIHONG":"苏益宏 策划","TO GATHER — PUBLISHING & NARRATIVE":"TO GATHER — 出版与叙述",
 "OBJECT RECORDS":"藏品档案","The grid":"收藏索引","Different scales, different racing worlds. Find a miniature by chassis, team, race number or model code.":"不同比例，不同赛场。可按车型、车队、车号或模型货号查找。",
