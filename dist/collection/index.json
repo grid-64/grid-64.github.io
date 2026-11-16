@@ -3608,11 +3608,11 @@
   },
   {
     "id": "2ba554f0-e806-5581-9da2-0da93746f863",
-    "revision": "7d47ea35-e987-496c-8518-3cb8f3f01e01",
+    "revision": "76e937db-b954-4f31-ad2e-3402c5a5179d",
     "catalogId": "OTHERS-001",
     "album": "Others",
-    "car": "Subaru WRX STI",
-    "carZh": "斯巴鲁 WRX STI",
+    "car": "Subaru WRX NBR Challenge 2024",
+    "carZh": "斯巴鲁 WRX NBR Challenge 2024",
     "status": "collected",
     "number": "88",
     "scale": "1:64",
@@ -3622,15 +3622,52 @@
       "collection/photos/d1856813-9575-5b89-af1b-7e9a9f609ea2.jpg",
       "collection/photos/fca27967-4433-5b5b-ae3e-3aa5f44dc890.jpg",
       "collection/photos/61c0fd14-6a79-586d-999a-94b3f236573e.jpg"
+    ],
+    "year": 2024,
+    "series": "Nürburgring 24 Hours",
+    "className": "SP4T",
+    "team": "Subaru Tecnica International",
+    "teamZh": "斯巴鲁 STI",
+    "driver": "Carlo van Dam / Tim Schrick / Kota Sasaki / Rintaro Kubo",
+    "driverZh": "卡洛·范达姆／蒂姆·施里克／佐佐木孝太／久保凛太郎",
+    "maker": "Kyosho",
+    "makerZh": "京商",
+    "item": "Mini Car & Book No. 24",
+    "acquired": "2026-03",
+    "source": "https://dc.kyosho.com/en/kyosho-minicar-book23-24-en",
+    "collectionReason": "I’ve always liked Subaru. This miniature came with No. 24 of Kyosho’s Mini Car & Book series.",
+    "collectionReasonZh": "我本来就喜欢斯巴鲁，这辆是买京商《Mini Car & Book》第 24 期时随书附带的车模。",
+    "seasonSummary": "STI developed this WRX S4-based race car for the Nürburgring 24 Hours. The No. 88 car won SP4T in 2024, Subaru’s first win in that class.",
+    "seasonSummaryZh": "STI 以 WRX S4 为基础，为纽博格林 24 小时耐力赛开发了这台赛车。88 号车在 2024 年拿下 SP4T 组冠军，也是斯巴鲁首次赢得该组别。",
+    "officialSources": [
+      {
+        "url": "https://www.subaru.co.jp/news-en/2024_06_05_154618/",
+        "label": "Subaru on its first SP4T win",
+        "labelZh": "斯巴鲁的 SP4T 首胜公告"
+      },
+      {
+        "url": "https://www.subaru-msm.com/2024/nbr/column/2",
+        "label": "Subaru/STI’s race report",
+        "labelZh": "斯巴鲁 STI 赛后报告"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www.subaru.co.jp/img/news/main_l_2024-06-04-153405.jpg",
+        "credit": "Subaru Corporation",
+        "caption": "The No. 88 WRX NBR Challenge in Subaru’s 2024 class-win announcement.",
+        "captionZh": "斯巴鲁发布 SP4T 组夺冠消息时配发的 88 号 WRX 赛车照。"
+      }
     ]
   },
   {
     "id": "762e81b3-5170-5131-be4b-1787c8c2baa5",
-    "revision": "3a88c65e-3567-4276-aa28-6fce0624cdcc",
+    "revision": "bd10be26-bcfc-4c53-b518-69e2b66668d7",
     "catalogId": "OTHERS-002",
     "album": "Others",
-    "car": "Honda NSX GT3 · Evangelion Unit-02",
-    "carZh": "本田 NSX GT3 · EVA 2 号机",
+    "car": "Honda NSX GT3 Evo22 · EVA Unit-02",
+    "carZh": "本田 NSX GT3 Evo22 · EVA 二号机",
     "status": "collected",
     "number": "02",
     "scale": "1:64",
@@ -3642,15 +3679,56 @@
       "collection/photos/12e85c27-2f8e-5623-a5cb-c118d11590e6.jpg",
       "collection/photos/38b66698-fb71-56ad-8fb3-09496b69897b.jpg"
     ],
-    "spec": "GT3"
+    "spec": "GT3",
+    "maker": "XCarToys",
+    "makerZh": "拓意",
+    "acquired": "2025-11",
+    "source": "https://www.eva-info.jp/21736",
+    "collectionReason": "I’m a fan of Evangelion, and I particularly like the red and yellow of Unit-02. That livery is the reason I collected this NSX.",
+    "collectionReasonZh": "我喜欢《新世纪福音战士》，尤其喜欢二号机的红黄配色。这套涂装就是我收这辆 NSX 的原因。",
+    "seasonSummary": "The chrome-red Unit-02 livery is a special edition of the XCarToys and POP RACE model. Its full-size inspiration was KCMG’s No. 202 Honda NSX GT3, which raced in purple and green Unit-01 colours at the 2023 Super Taikyu SUGO round, finishing fourth in ST-X.",
+    "seasonSummaryZh": "镀铬红色的二号机是拓意与 POP RACE 合作的模型特别涂装。它的实车原型是 KCMG 的 202 号本田 NSX GT3。实车在 2023 年日本超级耐久赛菅生站使用紫绿初号机涂装，取得 ST-X 组第四。",
+    "officialSources": [
+      {
+        "url": "https://www.eva-info.jp/21736",
+        "label": "Evangelion’s Unit-02 model announcement",
+        "labelZh": "EVA 官方二号机模型发布"
+      },
+      {
+        "url": "https://www.kcmg.com.hk/?p=11654",
+        "label": "KCMG’s entry at SUGO",
+        "labelZh": "KCMG 菅生站参赛公告"
+      },
+      {
+        "url": "https://motorsports.jaf.or.jp/results/search/2023/race/2023-6003-7",
+        "label": "JAF’s official SUGO results",
+        "labelZh": "JAF 菅生站官方赛果"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www.eva-info.jp/cab/wp-content/uploads/2024/05/info1re-2.jpg",
+        "credit": "Evangelion Information / POP RACE",
+        "caption": "Official product photographs of the chrome-red Unit-02 miniature.",
+        "captionZh": "镀铬红色 EVA 二号机车模的官方产品照。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/893297/0437ab2b805e69645a5fa59decd41a13_243bc97f7b57ab7f55dd82653036f603.jpg?width=605",
+        "credit": "Evangelion Racing Media",
+        "caption": "The real No. 202 in its purple and green Unit-01 colours on the SUGO grid.",
+        "captionZh": "实车原型 202 号以紫绿初号机涂装亮相菅生站发车区。"
+      }
+    ]
   },
   {
     "id": "bef5d835-1733-5c31-8216-b73bdbdce878",
-    "revision": "c4913603-dfa7-465c-a89f-b04b844a863c",
+    "revision": "57fbfdf0-d9d3-47d7-91cc-64ce2ededb8a",
     "catalogId": "OTHERS-003",
     "album": "Others",
-    "car": "Audi R8 LMS · Apex Predator",
-    "carZh": "奥迪 R8 LMS · Apex Predator",
+    "car": "Audi R8 LMS GT3 evo II · DarwinPRO",
+    "carZh": "奥迪 R8 LMS GT3 evo II · 达尔文",
     "status": "collected",
     "number": "16",
     "scale": "1:64",
@@ -3660,11 +3738,38 @@
       "collection/photos/571b0a4c-485e-54a4-b5dd-1f581ed7e609.jpg",
       "collection/photos/1876fd49-0916-5f54-99dd-4f5e11e92747.jpg",
       "collection/photos/f494efd8-e78b-5089-b2b5-bdc30bea0cbb.jpg"
+    ],
+    "year": 2026,
+    "series": "China Endurance Championship",
+    "spec": "GT3",
+    "className": "GT3 Pro-Am",
+    "team": "Apex 33R HAR",
+    "driver": "Zhang Huilin / Song Jiajun / Chen Fangping",
+    "driverZh": "张慧林／宋佳骏／陈方平",
+    "event": "Shanghai season opener",
+    "eventZh": "上海揭幕战",
+    "maker": "KILO Works",
+    "source": "https://www.sina.cn/news/detail/5288836733081443.html",
+    "collectionReason": "My family has driven the same Audi since I was born. That’s what made me want to keep an Audi race car in the collection.",
+    "collectionReasonZh": "从我出生到现在，家里一直开的是同一辆奥迪，所以我对这个牌子有特别的好感，也想收藏一辆奥迪赛车。",
+    "seasonSummary": "The olive-green DarwinPRO collaboration is known as Ride of the Valkyries. The No. 16 Audi ran in the 2026 China Endurance Championship opener in Shanghai, where Apex 33R HAR finished second in Pro-Am.",
+    "seasonSummaryZh": "这套军绿色达尔文联名涂装叫「女武神之骑」。16 号奥迪确实参加了 2026 年 CEC 中国汽车耐力锦标赛上海揭幕战，并为 Apex 33R HAR 拿到 Pro-Am 组亚军。",
+    "officialSources": [
+      {
+        "url": "https://www.sina.cn/news/detail/5288836733081443.html",
+        "label": "DarwinPRO livery reveal",
+        "labelZh": "达尔文「女武神之骑」涂装发布"
+      },
+      {
+        "url": "https://www.sina.cn/news/detail/5297122450608259.html",
+        "label": "Harmony Racing’s Shanghai race report and photographs",
+        "labelZh": "和谐赛车上海揭幕战战报及现场照片"
+      }
     ]
   },
   {
     "id": "de5524dc-599b-53b3-b6c6-1e45e0ac76fe",
-    "revision": "8cc90e3f-b1c8-4240-9503-95c6ab201371",
+    "revision": "7972f11a-1b97-4602-80cc-927cbc85d7dc",
     "catalogId": "OTHERS-004",
     "album": "Others",
     "car": "Lynk & Co 03 TCR · Cyan Racing",
@@ -3679,15 +3784,63 @@
       "collection/photos/58075144-a8e5-5a25-b22a-46d6384df7ab.jpg",
       "collection/photos/fc785b7a-72ea-5970-a43f-99d941a8a290.jpg"
     ],
-    "spec": "TCR"
+    "spec": "TCR",
+    "year": 2020,
+    "series": "WTCR",
+    "team": "Cyan Racing Lynk & Co",
+    "driver": "Yann Ehrlacher",
+    "driverZh": "扬·埃赫拉舍",
+    "maker": "XCarToys",
+    "makerZh": "拓意",
+    "acquired": "2025-10",
+    "milestone": "Chinese race car · Back-to-back WTCR doubles",
+    "milestoneZh": "中国赛车 · WTCR 连续两年双冠",
+    "source": "https://zhongchou.modian.com/item/117073.html",
+    "collectionReason": "What makes this one stand out to me is seeing a Chinese race car win at world level, then come back and do it again.",
+    "collectionReasonZh": "这辆吸引我的地方，是中国品牌的赛车能在世界房车赛上夺冠，而且第二年又赢了一次。",
+    "seasonSummary": "France’s Yann Ehrlacher drove the No. 68 Lynk & Co. In both 2020 and 2021, he won the FIA WTCR drivers’ title and Cyan Racing Lynk & Co won the teams’ title. Ma Qinghua joined the Lynk & Co WTCR line-up in 2022.",
+    "seasonSummaryZh": "68 号领克由法国车手扬·埃赫拉舍驾驶。2020 和 2021 年，他连续两年拿下 FIA WTCR 车手冠军，领克 Cyan Racing 也连续两年赢得车队冠军。中国车手马青骅于 2022 年加入领克的 WTCR 阵容。",
+    "officialSources": [
+      {
+        "url": "https://www.cyanracing.com/news/2020/11/15/cyan-racing-and-yann-ehrlacher-crowned-world-champions-with-lynk-and-co",
+        "label": "Cyan Racing’s 2020 title report",
+        "labelZh": "Cyan Racing 2020 双冠战报"
+      },
+      {
+        "url": "https://www.cyanracing.com/news/2021/11/28/lynk-and-co-cyan-racing-and-yann-ehrlacher-crowned-2021-touring-car-world-champions",
+        "label": "Cyan Racing’s 2021 title defence",
+        "labelZh": "Cyan Racing 2021 双冠卫冕战报"
+      },
+      {
+        "url": "https://www.cyanracing.com/news/2022/03/08/world-champions-yann-ehrlacher-and-yvan-muller-completes-lynk-and-co-cyan-racing-wtcr-line-up",
+        "label": "Cyan Racing’s 2022 driver line-up",
+        "labelZh": "领克 Cyan Racing 2022 车手阵容"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://images.autosport.pt/2020/11/yann-ehrlacher.jpg",
+        "credit": "AutoSport Portugal",
+        "caption": "The No. 68 Lynk & Co 03 TCR in its title-winning 2020 WTCR season.",
+        "captionZh": "68 号领克 03 TCR 在 2020 年 WTCR 冠军赛季的赛道照。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://www.touringcartimes.com/img/2020/11/Ehrlacher_Race2_Aragon_201115_27638-scaled.jpg?fit=crop&fm=pjpg&h=442&q=80&w=785",
+        "credit": "TouringCarTimes",
+        "caption": "Yann Ehrlacher celebrates his 2020 WTCR title at Aragón.",
+        "captionZh": "扬·埃赫拉舍在阿拉贡庆祝 2020 年 WTCR 车手冠军。"
+      }
+    ]
   },
   {
     "id": "e6c51697-4513-5819-88ec-fc8dbf7c723c",
-    "revision": "73d043c7-2eed-43e1-8ba7-84b75ab0bc88",
+    "revision": "d4833e85-dda6-47ba-8c61-ed629fcf273a",
     "catalogId": "OTHERS-005",
     "album": "Others",
-    "car": "Hongqi H6",
-    "carZh": "红旗 H6",
+    "car": "Hongqi H6 · CEC",
+    "carZh": "红旗 H6 · CEC 厂商杯",
     "status": "collected",
     "number": "66",
     "scale": "1:64",
@@ -3697,6 +3850,53 @@
       "collection/photos/9c2a1f69-5129-5d53-be8c-9582733e2bb7.jpg",
       "collection/photos/bcd62d73-919d-5284-a467-67de4a6fceb2.jpg",
       "collection/photos/77989e76-1919-531b-ae86-95ac7731df84.jpg"
+    ],
+    "year": 2024,
+    "series": "China Endurance Championship",
+    "className": "Manufacturer Cup",
+    "team": "Autohome Hongqi Racing",
+    "teamZh": "汽车之家红旗赛车队",
+    "driver": "Chen Jialong / Wang Tao / Liang Qi",
+    "driverZh": "陈佳龙／王涛／梁奇",
+    "maker": "XCarToys",
+    "makerZh": "拓意",
+    "acquired": "2026-03",
+    "collectionReason": "Chinese race cars are a rare subject in my collection, but the real reason I picked this one was the number. I wear 66 on my basketball team too.",
+    "collectionReasonZh": "我觉得国产赛车的车模比较少见，但真正让我决定收下它的是 66 号。我在篮球队也穿 66 号球衣。",
+    "seasonSummary": "Autohome Hongqi Racing introduced the No. 66 H6 in the 2024 China Endurance Championship. The car won its debut in Chengdu and finished its first Manufacturer Cup season with five wins from five events.",
+    "seasonSummaryZh": "汽车之家红旗赛车队在 2024 年 CEC 中国汽车耐力锦标赛启用了 66 号红旗 H6。它在成都揭幕战首秀即夺冠，最终在厂商杯首个赛季拿下五站全胜。",
+    "officialSources": [
+      {
+        "url": "https://www.autohome.com.cn/tuning/202405/1296888.html",
+        "label": "Autohome Racing’s H6 launch",
+        "labelZh": "汽车之家车队的红旗 H6 赛车发布"
+      },
+      {
+        "url": "https://www.autohome.com.cn/tuning/202405/1297150.html",
+        "label": "Autohome Racing’s Chengdu report",
+        "labelZh": "汽车之家红旗赛车队成都战报"
+      },
+      {
+        "url": "https://chejiahao.autohome.com.cn/info/17951291",
+        "label": "Autohome Racing’s five-win season review",
+        "labelZh": "汽车之家红旗赛车队五站全胜回顾"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www2.autoimg.cn/newsdfs/g31/M04/7F/9E/620x0_1_autohomecar__ChxoHmZHQUqAEJc0ABl1NC75WDw383.jpg",
+        "credit": "Autohome Racing",
+        "caption": "The No. 66 H6 alongside its Hongqi team-mate at the 2024 Chengdu season opener.",
+        "captionZh": "2024 年成都揭幕站，66 号红旗 H6 与队友赛车同框。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://car2.autoimg.cn/cardfs/product/g31/M07/C5/97/autohomecar__ChxoHWZUNjmAFNpVACCwYHS2Vm4894.jpg",
+        "credit": "Autohome Racing",
+        "caption": "Rear three-quarter view of the full-size Hongqi H6 CEC race car.",
+        "captionZh": "红旗 H6 CEC 实车的后侧视角。"
+      }
     ]
   }
 ]
