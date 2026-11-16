@@ -12,7 +12,7 @@ if (location.protocol === "file:") {
   location.replace(archiveUrl.href);
 }
 </script>
-<link rel="stylesheet" href="style.css?v=14">
+<link rel="stylesheet" href="style.css?v=15">
 <script defer src="language.js?v=16"></script>
 <script defer src="records.js?v=5"></script>
 <script defer src="collection.js?v=13"></script>
@@ -21,12 +21,12 @@ if (location.protocol === "file:") {
 </head>
 <body>
 <a class="skip" href="#archive"><span data-i18n="Skip to archive">Skip to archive</span></a>
-<header class="top" id="top">
+<header class="landing" id="top">
+<div class="top">
 <a class="brand" href="#top" aria-label="GRID 64 home" data-label="GRID 64 home"><i></i> GRID<span>/</span>64</a>
 <nav aria-label="Main navigation" data-label="Main navigation"><a href="#archive"><span data-i18n="Index">Index</span></a><a href="#study"><span data-i18n="Field notes">Field notes</span></a></nav>
 <div class="header-tools"><button type="button" id="open-editor" data-i18n="Add collection item">Add collection item</button><button type="button" id="language" lang="zh-Hans" aria-label="切换到中文">中文</button></div>
-</header>
-<main>
+</div>
 <section class="hero" aria-labelledby="hero-title">
 <div class="hero-grid" aria-hidden="true"></div>
 <div class="hero-info">
@@ -42,6 +42,8 @@ if (location.protocol === "file:") {
 </div>
 <div class="hero-strip"><span><span data-i18n="FIG. 01 / SCALE STUDY">FIG. 01 / SCALE STUDY</span></span><span>FORMULA 1 <em>·</em> GT3 <em>·</em> SUPER GT</span><span><span data-i18n="CURATED BY SU YIHONG">CURATED BY SU YIHONG</span></span></div>
 </section>
+</header>
+<main>
 <section class="archive section" id="archive" aria-labelledby="archive-title">
 <div class="section-head"><p class="eyebrow"><b>01</b> / <span data-i18n="OBJECT RECORDS">OBJECT RECORDS</span></p><h2 id="archive-title" tabindex="-1"><span data-i18n="The grid">The grid</span><span>.</span></h2><p><span data-i18n="Different scales, different racing worlds. Find a miniature by chassis, team, race number or model code.">Different scales, different racing worlds. Find a miniature by chassis, team, race number or model code.</span></p></div>
 <div class="controls">

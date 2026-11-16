@@ -3472,11 +3472,11 @@
   },
   {
     "id": "1133eb19-5e4f-54c8-8bfb-a35a8b72b291",
-    "revision": "fa37376c-60ea-435d-961f-e2b2cbb6d56b",
+    "revision": "61a3343d-46b0-4dfd-a960-b578e8cacfae",
     "catalogId": "WEC-013",
     "album": "WEC",
-    "car": "BMW M4 GT3 · FIST",
-    "carZh": "宝马 M4 GT3 · FIST",
+    "car": "BMW M4 GT3 EVO · FIST Team AAI",
+    "carZh": "宝马 M4 GT3 EVO · FIST Team AAI",
     "status": "collected",
     "photo": "collection/photos/72e2170d-6c13-545c-8171-43abb1a8cbe4.jpg",
     "previewPhoto": "collection/photos/d6ce3cdd-25fc-5a45-98d4-49893d559e1e.webp",
@@ -3487,15 +3487,64 @@
     ],
     "number": "90",
     "spec": "GT3",
-    "scale": "1:64"
+    "scale": "1:64",
+    "team": "FIST Team AAI",
+    "series": "China GT",
+    "className": "GT3 Pro-Am",
+    "year": 2025,
+    "driver": "Lin Yu / Erik Johansson",
+    "driverZh": "林宇／埃里克·约翰松",
+    "event": "China GT · Shanghai",
+    "eventZh": "China GT 中国超级跑车锦标赛 · 上海",
+    "maker": "MINI GT",
+    "item": "MGT01215",
+    "acquired": "2026-09",
+    "source": "https://minigt.tsm-models.com/index.php?action=product-detail&id=2205",
+    "collectionReason": "I like this blue livery and that it raced in China GT. When FIST announced its withdrawal after the Shanghai crash, I wanted a model to remember the team’s time in the series.",
+    "collectionReasonZh": "我喜欢这套蓝色涂装，也喜欢它来自国内的 China GT。听到 FIST 在上海站事故后宣布退出赛事，我更想收下这辆车，给这段参赛经历留个纪念。",
+    "seasonSummary": "Lin Yu and Erik Johansson won both 2025 Shanghai season-opening races in FIST Team AAI’s No. 90 BMW. In September 2026, following a separate Shanghai crash involving the team’s No. 91, FIST announced that it would withdraw from China GT pending an independent, public investigation and a formal response.",
+    "seasonSummaryZh": "2025 年 China GT 上海揭幕站，林宇和埃里克·约翰松驾驶 FIST Team AAI 的 90 号宝马赢得两回合比赛。2026 年 9 月，车队的 91 号赛车在上海站发生事故后，FIST 宣布退出 China GT，直至独立调查完成并公开，且赛事方作出正式答复。",
+    "officialSources": [
+      {
+        "url": "https://www.topspeedchina.com/EVENT/GTzhongguobei/2025/0427/1307.html",
+        "label": "China GT Shanghai opening race report",
+        "labelZh": "China GT 上海揭幕站首回合战报"
+      },
+      {
+        "url": "https://www.topspeedchina.com/EVENT/GTzhongguobei/2025/0428/1308.html",
+        "label": "China GT Shanghai second race report",
+        "labelZh": "China GT 上海揭幕站第二回合战报"
+      },
+      {
+        "url": "https://www.ithome.com/0/998/886.htm",
+        "label": "FIST withdrawal statement as published by IT Home",
+        "labelZh": "FIST 退赛声明 · IT之家转载"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www.topspeedchina.com/uploads/allimg/250427/2-25042G13T0T9.jpg",
+        "credit": "Top Speed Shanghai / China GT",
+        "caption": "The No. 90 FIST BMW at the 2025 China GT opener in Shanghai.",
+        "captionZh": "90 号 FIST 宝马驶过 2025 年 China GT 上海揭幕站赛道。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://image.rcfans.com/portal/202603/10/175845ufmz9fvxhx10ekyz.jpg",
+        "credit": "RCFans",
+        "caption": "The No. 90 FIST BMW outside its China GT garage.",
+        "captionZh": "90 号 FIST 宝马停在 China GT 车库前。"
+      }
+    ]
   },
   {
     "id": "e8b85fce-d1d3-5be9-8e45-35cdc5ec3611",
-    "revision": "bf878d1a-17d7-4c22-ac75-b30fece56089",
+    "revision": "d7299cc7-0d91-4138-9cee-09d6e51bd71e",
     "catalogId": "WEC-014",
     "album": "WEC",
-    "car": "Yellow Corvette",
-    "carZh": "黄色科尔维特",
+    "car": "Chevrolet Corvette Z06 GT3.R",
+    "carZh": "雪佛兰科尔维特 Z06 GT3.R",
     "status": "collected",
     "photo": "collection/photos/6af294e9-0b5d-578b-9284-8aa16460cbdd.jpg",
     "previewPhoto": "collection/photos/c1c7baee-f77c-5349-a42c-65f39c78fb31.webp",
@@ -3504,6 +3553,57 @@
       "collection/photos/c76da03c-f3ca-59fd-a246-731a5713e0f5.jpg",
       "collection/photos/126a5e7d-0f54-549c-bf72-ea449face806.jpg"
     ],
-    "scale": "1:64"
+    "scale": "1:64",
+    "team": "Corvette Racing by Pratt Miller Motorsports",
+    "series": "IMSA",
+    "spec": "GT3",
+    "className": "GTD PRO",
+    "year": 2025,
+    "number": "4",
+    "driver": "Tommy Milner / Nicky Catsburg / Nico Varrone",
+    "driverZh": "汤米·米尔纳／尼基·卡茨堡／尼科·瓦罗内",
+    "event": "Rolex 24 at Daytona",
+    "eventZh": "戴通纳 24 小时耐力赛",
+    "maker": "MINI GT",
+    "item": "MGT01197",
+    "acquired": "2026-08",
+    "source": "https://minigt.tsm-models.com/index.php?action=product-detail&id=2123",
+    "collectionReason": "What stayed with me was the yellow Corvette trading blows with two BMWs at Daytona, and Tommy Milner sticking his left arm out of the window to give one of them the middle finger. I wanted a model of the car from that moment.",
+    "collectionReasonZh": "我记得这辆黄色科尔维特在戴通纳和两辆宝马缠斗了很久。后来米尔纳把左手伸出车窗，冲其中一辆比了个中指。这个画面让我想把那辆车收下来。",
+    "seasonSummary": "In the closing hours of the 2025 Rolex 24 at Daytona, Tommy Milner was fighting Paul Miller Racing’s No. 1 BMW for the GTD PRO lead when the team’s No. 48 BMW got between them. After contact, the broadcast caught Milner gesturing at the No. 48. The No. 4 Corvette finished seventh in GTD PRO.",
+    "seasonSummaryZh": "2025 年戴通纳 24 小时耐力赛进入最后几小时时，汤米·米尔纳驾驶 4 号科尔维特与 Paul Miller Racing 的 1 号宝马争夺 GTD PRO 组领先，48 号宝马随后加入缠斗。发生碰撞后，转播拍到米尔纳伸出左手向 48 号车比中指。4 号车最终位列组别第七。",
+    "officialSources": [
+      {
+        "url": "https://www.imsa.com/news/2025/january/21/63rd-rolex-24-at-daytona-gtd-pro-and-gtd-team-by-team",
+        "label": "IMSA’s official entry guide",
+        "labelZh": "IMSA 官方参赛阵容"
+      },
+      {
+        "url": "https://www.imsa.com/wp-content/uploads/sites/32/2025/02/04/2025_IWSC_OfficialResults_Rolex24.pdf",
+        "label": "IMSA official race classification",
+        "labelZh": "IMSA 官方完赛排名"
+      },
+      {
+        "url": "https://www.imsa.com/videos/part-1-2025-rolex-24-at-daytona-race-broadcast",
+        "label": "IMSA race broadcast, Part 4",
+        "labelZh": "IMSA 正赛转播回放 · 第四段"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www.jalopnik.com/jalopnik/images/9356945985556da6de79abaf99120560.jpg",
+        "credit": "IMSA race broadcast / Jalopnik",
+        "caption": "The broadcast caught Tommy Milner extending his left arm from the cockpit after the clash with the No. 48 BMW.",
+        "captionZh": "IMSA 转播截图。与 48 号宝马交锋后，汤米·米尔纳从驾驶舱伸出左手比中指。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://hips.hearstapps.com/hmg-prod/images/the-corvette-racing-by-pratt-miller-motorsports-corvette-news-photo-1738009035.pjpeg?resize=1000:*",
+        "credit": "Road & Track",
+        "caption": "The yellow No. 4 Corvette passes the Rolex signage during the 2025 Daytona 24.",
+        "captionZh": "2025 年戴通纳 24 小时耐力赛中，黄色 4 号科尔维特驶过劳力士广告墙。"
+      }
+    ]
   }
 ]
