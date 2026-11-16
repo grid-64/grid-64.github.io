@@ -31,6 +31,18 @@
   .card-milestone:hover .card-milestone-text{animation-play-state:paused}
   @keyframes card-milestone-slide{0%,22%{transform:translateX(0)}78%,100%{transform:translateX(var(--milestone-travel))}}
 }
+/* Draw the directional controls independently of the system's emoji fonts. */
+.direction-icon{
+  --arrow-shape:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.45' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M2 8h11m-4-4 4 4-4 4'/%3E%3C/svg%3E");
+  display:inline-block;width:1em;height:1em;flex:none;vertical-align:-.14em;
+  background-color:currentColor;forced-color-adjust:none;
+  -webkit-mask:var(--arrow-shape) center/contain no-repeat;
+  mask:var(--arrow-shape) center/contain no-repeat
+}
+.direction-up-right{transform:rotate(-45deg)}
+.direction-down-right{transform:rotate(45deg)}
+.direction-up{transform:rotate(-90deg)}
+.direction-down{transform:rotate(90deg)}
 .arrow{font-size:18px;width:30px;height:30px;display:grid;place-items:center;flex-shrink:0;border:1px solid #cacdc2;transition:background .2s}
 .card [data-record]:hover .arrow{background:var(--accent);border-color:#258aae}
 .empty{border:1px dashed #b7b9ae;padding:30px}.empty button{margin-top:12px}

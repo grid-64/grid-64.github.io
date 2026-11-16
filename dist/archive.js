@@ -137,7 +137,7 @@ function card(x, priority) {
   return `<article class="card">
   <button type="button" data-record="${esc(x.id)}" aria-label="${esc(t("Open")+" "+displayName(x)+(x.number?", "+t("number")+" "+x.number:""))}"${milestone ? ` aria-describedby="${milestoneId}"` : ""}>
     <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(catalogNumber(x))}</span>${x.scale?`<span>${esc(x.scale)}</span>`:""}</div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true, priority)}<span class="card-figure">${t(caption)}</span></div>
-    <div class="card-info"><div><p>${meta}</p><h3>${esc(displayName(x))}</h3><p class="team">${secondary}</p></div><span class="arrow" aria-hidden="true">↗</span></div>
+    <div class="card-info"><div><p>${meta}</p><h3>${esc(displayName(x))}</h3><p class="team">${secondary}</p></div><span class="arrow" aria-hidden="true"><span class="direction-icon direction-up-right" aria-hidden="true"></span></span></div>
     ${milestoneLabel}
   </button><div class="card-favorite">${favoriteButton(x)}</div></article>`;
 }
@@ -228,7 +228,7 @@ function rows(items, links = true) {
     const flag=driverFlag(code);
     const shown=display || (key ? t(value) : value);
     const content = key && links
-      ? `<a class="object-tag" href="${esc(tagHref(key,value))}" aria-label="${esc(t("Browse by")+" "+t(label)+": "+shown)}">${flag}${esc(shown)} <span aria-hidden="true">↗</span></a>`
+      ? `<a class="object-tag" href="${esc(tagHref(key,value))}" aria-label="${esc(t("Browse by")+" "+t(label)+": "+shown)}">${flag}${esc(shown)} <span class="direction-icon direction-up-right" aria-hidden="true"></span></a>`
       : flag+esc(shown);
     return `<div><dt>${t(label)}</dt><dd>${content}</dd></div>`;
   }).join("");
@@ -282,7 +282,7 @@ function referenceJump(count) {
   if(!count) return "";
   const label=t("View full-size car photos");
   const accessibleLabel=t("View full-size car photos ({count})").replace("{count}",count);
-  return `<div class="record-photo-actions"><button class="reference-jump" type="button" aria-controls="race-reference" aria-label="${esc(accessibleLabel)}" data-reference-jump><span>${label}</span><span class="reference-jump-count" aria-hidden="true">${count}</span><span class="reference-jump-arrow" aria-hidden="true">↓</span></button></div>`;
+  return `<div class="record-photo-actions"><button class="reference-jump" type="button" aria-controls="race-reference" aria-label="${esc(accessibleLabel)}" data-reference-jump><span>${label}</span><span class="reference-jump-count" aria-hidden="true">${count}</span><span class="direction-icon direction-down reference-jump-arrow" aria-hidden="true"></span></button></div>`;
 }
 function officialUrl(value) {
   if(typeof value!=="string") return "";
@@ -302,12 +302,12 @@ function referenceSection(x, images) {
     const caption=localized(image,"caption");
     const alt=localized(image,"alt") || caption || displayName(x)+" — "+t("Full-size car photograph");
     const url=officialUrl(image.source), credit=localized(image,"credit");
-    const source=url && !image.sourceOnly?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(credit || t("Image source"))} ↗</a>`:credit?`<span>${esc(credit)}</span>`:"";
+    const source=url && !image.sourceOnly?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(credit || t("Image source"))} <span class="direction-icon direction-up-right" aria-hidden="true"></span></a>`:credit?`<span>${esc(credit)}</span>`:"";
     const licenseUrl=officialUrl(image.license);
-    const license=licenseUrl?`<a href="${esc(licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(localized(image,"licenseLabel") || t("Image license"))} ↗</a>`:"";
+    const license=licenseUrl?`<a href="${esc(licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(localized(image,"licenseLabel") || t("Image license"))} <span class="direction-icon direction-up-right" aria-hidden="true"></span></a>`:"";
     const attribution=[source,license].filter(Boolean).join(" · ");
     return `<figure class="reference-figure">
-      ${image.sourceOnly ? `<a class="reference-source-photo" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${t("Open original photo")} ↗</a>` : `<a class="reference-image" href="${esc(image.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(image.src)}" alt="${esc(alt)}" loading="lazy" decoding="async"></a>`}
+      ${image.sourceOnly ? `<a class="reference-source-photo" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${t("Open original photo")} <span class="direction-icon direction-up-right" aria-hidden="true"></span></a>` : `<a class="reference-image" href="${esc(image.src)}" target="_blank" rel="noopener noreferrer"><img src="${esc(image.src)}" alt="${esc(alt)}" loading="lazy" decoding="async"></a>`}
       <figcaption><span class="reference-number">${String(index+1).padStart(2,"0")}</span><div>${caption?`<p>${esc(caption)}</p>`:""}${attribution?`<p class="reference-credit">${attribution}</p>`:""}</div></figcaption>
     </figure>`;
   }).join("");
@@ -316,7 +316,7 @@ function referenceSection(x, images) {
     <h3 id="race-reference-title"${images.length?' tabindex="-1"':""}>${t(images.length?"Full-size car photos":"Full-size car reference")}</h3>
     ${gallery?`<div class="reference-strip">${gallery}</div>`:""}
     ${summary?`<p class="season-summary">${esc(summary)}</p>`:""}
-    ${sources.length?`<div class="race-sources"><h4>${t("Official sources")}</h4><ul>${sources.map(source=>`<li><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)} ↗</a></li>`).join("")}</ul></div>`:""}
+    ${sources.length?`<div class="race-sources"><h4>${t("Official sources")}</h4><ul>${sources.map(source=>`<li><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)} <span class="direction-icon direction-up-right" aria-hidden="true"></span></a></li>`).join("")}</ul></div>`:""}
   </section>`;
 }
 function openRecord(id, previewRecord=null) {
@@ -330,12 +330,12 @@ function openRecord(id, previewRecord=null) {
   $("record-id").textContent=t("OBJECT")+" "+catalogNumber(x)+" / "+t(x.status==="draft"?"DRAFT PREVIEW":isCollected(x)?"PERSONAL COLLECTION":"REFERENCE RECORD");
   const details = `<div class="metadata">
     <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Photo album",x.album,"album"],["Team",x.team,"team",null,localized(x,"team")],[safetyCar?"Safety car driver":"Driver",x.driver,"driver",x.driverCountry,localized(x,"driver")],["Race / season",x.event,"event",null,localized(x,"event")],[safetyCar?"Role":"Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
-    <section><h3>${t("Miniature")}</h3><dl>${rows([["Scale",x.scale || t("To be confirmed"),x.scale?"scale":null],[x.made?"Base model brand":"Model brand",x.maker,"maker",null,localized(x,"maker")],["Catalogue code",x.item]],links)}</dl>${x.source ? `<a href="${esc(x.source)}">${t("Maker’s reference")} ↗</a>` : ""}</section>
+    <section><h3>${t("Miniature")}</h3><dl>${rows([["Scale",x.scale || t("To be confirmed"),x.scale?"scale":null],[x.made?"Base model brand":"Model brand",x.maker,"maker",null,localized(x,"maker")],["Catalogue code",x.item]],links)}</dl>${x.source ? `<a href="${esc(x.source)}">${t("Maker’s reference")} <span class="direction-icon direction-up-right" aria-hidden="true"></span></a>` : ""}</section>
   </div>`;
-  const extra = `${x.look ? `<p class="eyebrow">${t("LOOK CLOSER")}</p><p>${esc(x.look)}</p>` : ""}${related ? `<button type="button" class="text-btn" data-related="${related.id}">${t("Compare with")} ${esc(displayName(related))} ↗</button>` : ""}${isCollected(x) || x.status==="draft" ? "" : `<p class="disclosure">${t("Catalogue example. Ownership is unconfirmed; the illustration is not an object photograph.")}</p>`}`;
+  const extra = `${x.look ? `<p class="eyebrow">${t("LOOK CLOSER")}</p><p>${esc(x.look)}</p>` : ""}${related ? `<button type="button" class="text-btn" data-related="${related.id}">${t("Compare with")} ${esc(displayName(related))} <span class="direction-icon direction-up-right" aria-hidden="true"></span></button>` : ""}${isCollected(x) || x.status==="draft" ? "" : `<p class="disclosure">${t("Catalogue example. Ownership is unconfirmed; the illustration is not an object photograph.")}</p>`}`;
   $("record-content").innerHTML=`${referenceJump(refImages.length)}<div class="detail-grid">
     <div class="detail-plate${x.photo ? " has-photo" : ""}">${gallery(x)}</div>
-    <div class="detail-main"><p class="eyebrow">${[t(x.series),safetyCar&&t(SAFETY_CAR_SPEC),x.year,raceNumber(x)].filter(Boolean).map(esc).join(" / ")}</p><h2 id="record-title">${esc(displayName(x))}</h2>${links?`<div class="record-actions">${favoriteButton(x,true)} <a class="record-permalink" href="${esc(recordHref(x.id))}">${t("Record link")} ↗</a></div>`:""}${collectorNote(x)}${details}</div>
+    <div class="detail-main"><p class="eyebrow">${[t(x.series),safetyCar&&t(SAFETY_CAR_SPEC),x.year,raceNumber(x)].filter(Boolean).map(esc).join(" / ")}</p><h2 id="record-title">${esc(displayName(x))}</h2>${links?`<div class="record-actions">${favoriteButton(x,true)} <a class="record-permalink" href="${esc(recordHref(x.id))}">${t("Record link")} <span class="direction-icon direction-up-right" aria-hidden="true"></span></a></div>`:""}${collectorNote(x)}${details}</div>
   </div>${referenceSection(x,refImages)}${extra ? `<div class="detail-note">${extra}</div>` : ""}`;
   if (!dialog.open) dialog.showModal(); else dialog.scrollTop = 0;
   $("close-record").focus();

@@ -3090,11 +3090,11 @@
   },
   {
     "id": "d9090e5e-5c9d-59fa-8a51-f9412d1423c7",
-    "revision": "b9dc7f00-d28f-4acf-87e8-23564c9de43b",
+    "revision": "8fabb9c4-3c69-45ad-b921-ee4116a2a1ac",
     "catalogId": "WEC-007",
     "album": "WEC",
-    "car": "Ferrari 499P",
-    "carZh": "法拉利 499P",
+    "car": "Ferrari 499P · AF Corse",
+    "carZh": "法拉利 499P · AF Corse",
     "status": "collected",
     "photo": "collection/photos/445d8e17-9713-5ddc-a5db-c7726166335a.jpg",
     "previewPhoto": "collection/photos/af1cb28e-b867-5261-8ea6-f4f0fcdaf95d.webp",
@@ -3105,11 +3105,67 @@
     ],
     "number": "83",
     "spec": "Hypercar",
-    "scale": "1:64"
+    "scale": "1:64",
+    "series": "FIA WEC",
+    "event": "24 Hours of Le Mans",
+    "eventZh": "勒芒 24 小时耐力赛",
+    "year": 2024,
+    "team": "AF Corse",
+    "driver": "Robert Kubica / Robert Shwartzman / Yifei Ye",
+    "driverZh": "罗伯特·库比卡／罗伯特·施瓦茨曼／叶一飞",
+    "maker": "Bburago",
+    "makerZh": "比美高",
+    "acquired": "2026-05",
+    "source": "https://www.bburago.com/en-de/products/ferrari-499p-83-1-64-2024-con-teca-espositiva",
+    "milestone": "First Chinese Le Mans winner",
+    "milestoneZh": "中国车手勒芒首冠",
+    "collectionReason": "As a Chinese racing fan, I wanted to collect the yellow No. 83 because of what Yifei Ye achieved in it. Seeing a Chinese driver take the overall win at Le Mans for the first time made the car especially meaningful to me.",
+    "collectionReasonZh": "我收这辆黄色 83 号，最主要是为了纪念叶一飞。第一次看到中国车手赢得勒芒全场冠军，作为中国赛车迷，我觉得这辆车特别值得留在收藏里。",
+    "seasonSummary": "This Bburago miniature depicts the 2024 livery of the AF Corse No. 83. The following year, in Ferrari’s third season back in the top class, Yifei Ye, Robert Kubica and Phil Hanson won the 2025 24 Hours of Le Mans outright in the No. 83 Ferrari 499P. Ye became the first Chinese driver to win the race overall.",
+    "seasonSummaryZh": "这件比美高模型对应 AF Corse 83 号车的 2024 年涂装。次年是法拉利回归勒芒最高组别的第三年，叶一飞、罗伯特·库比卡与菲尔·汉森驾驶 83 号 499P 赢得 2025 年勒芒全场冠军。叶一飞成为首位拿到勒芒全场总冠军的中国车手。",
+    "officialSources": [
+      {
+        "url": "https://www.fiawec.com/en/news/ye-ive-been-dreaming-of-this-moment-for-11-years/8379",
+        "label": "FIA WEC on Yifei Ye’s historic Le Mans win",
+        "labelZh": "FIA WEC 记录叶一飞的勒芒首冠"
+      },
+      {
+        "url": "https://www.fiawec.com/en/news/breaking-news-83-af-corse-wins-le-mans/8373",
+        "label": "2025 Le Mans race result",
+        "labelZh": "2025 年勒芒冠军战报"
+      },
+      {
+        "url": "https://assets.lemans.org/explorer/pdf/courses/2024/24-heures-du-mans/entry-list-24-heures-du-mans-2024.pdf",
+        "label": "2024 Le Mans entry list",
+        "labelZh": "2024 年勒芒参赛名单"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "src": "collection/photos/race-wec007-1.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:AF_Corse_-_Ferrari_499P_-83_(53815938430).jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "licenseLabel": "CC BY-SA 2.0",
+        "credit": "Kevin Decherf / Wikimedia Commons · resized",
+        "creditZh": "Kevin Decherf / Wikimedia Commons · 已缩放",
+        "caption": "The yellow AF Corse No. 83 in its 2024 Le Mans livery, as shown on the model.",
+        "captionZh": "2024 年勒芒的黄色 83 号 AF Corse 赛车，涂装与这件模型对应。"
+      },
+      {
+        "src": "collection/photos/race-wec007-2.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:24H_Le_Mans_2025_Winning_picture_of_car_83.jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "credit": "Lukas Raich / Wikimedia Commons · resized",
+        "creditZh": "Lukas Raich / Wikimedia Commons · 已缩放",
+        "caption": "Yifei Ye, Robert Kubica and Phil Hanson celebrate on the No. 83 after taking overall victory at Le Mans in 2025.",
+        "captionZh": "叶一飞、罗伯特·库比卡与菲尔·汉森站在 83 号车上庆祝 2025 年勒芒全场夺冠。"
+      }
+    ]
   },
   {
     "id": "27faad94-8877-513a-a0f2-a0cab507f2c6",
-    "revision": "fbbd86f8-3d5a-4b35-b165-aac4908f0d46",
+    "revision": "a7126385-4724-4de6-a4f2-0dbd9a5d90a2",
     "catalogId": "WEC-008",
     "album": "WEC",
     "car": "BMW M Hybrid V8 · iQOO",
@@ -3123,11 +3179,60 @@
       "collection/photos/2387594a-8439-5c1f-afb9-6abb2651886a.jpg"
     ],
     "spec": "Hypercar",
-    "scale": "1:64"
+    "scale": "1:64",
+    "series": "FIA WEC",
+    "event": "24 Hours of Le Mans",
+    "eventZh": "勒芒 24 小时耐力赛",
+    "year": 2024,
+    "number": "15",
+    "team": "BMW M Team WRT",
+    "driver": "Raffaele Marciello / Dries Vanthoor / Marco Wittmann",
+    "driverZh": "拉斐尔·马尔切洛／德里斯·范索尔／马尔科·维特曼",
+    "maker": "MINI GT",
+    "item": "MGT01219",
+    "acquired": "2026-11",
+    "collectionReason": "The large iQOO logo was the first thing I noticed. Seeing a Chinese phone brand so prominently on a Le Mans prototype is what drew me to this one.",
+    "collectionReasonZh": "车头那个很大的 iQOO 标识一下就吸引了我。中国手机品牌出现在勒芒原型赛车这么显眼的位置，让我自然会多关注这辆车。",
+    "seasonSummary": "This is the blue-and-white No. 15 Hypercar entered by BMW M Team WRT at Le Mans in 2024. It qualified sixth and retired after an accident in the race. The three drivers were Raffaele Marciello, Dries Vanthoor and Marco Wittmann.",
+    "seasonSummaryZh": "这件模型对应 BMW M Team WRT 在 2024 年勒芒派出的蓝白色 15 号 Hypercar。马尔切洛、范索尔与维特曼组成车组，从第六位发车，正赛因事故退赛。",
+    "officialSources": [
+      {
+        "url": "https://www.press.bmwgroup.com/global/article/attachment/T0443131EN/618118",
+        "label": "BMW’s 2024 Le Mans qualifying report",
+        "labelZh": "宝马的 2024 年勒芒排位赛报"
+      },
+      {
+        "url": "https://www.press.bmwgroup.com/global/article/attachment/T0443161EN/618181",
+        "label": "BMW’s 2024 Le Mans race report",
+        "labelZh": "宝马的 2024 年勒芒正赛战报"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "src": "collection/photos/race-wec008-1.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:15BMWMHYBRIDV8LEMANS2024.jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseLabel": "CC BY-SA 4.0",
+        "credit": "ACBE25 / Wikimedia Commons · resized",
+        "creditZh": "ACBE25 / Wikimedia Commons · 已缩放",
+        "caption": "The No. 15 BMW M Hybrid V8 on track at Le Mans in 2024.",
+        "captionZh": "15 号宝马 M Hybrid V8 在 2024 年勒芒赛道上。"
+      },
+      {
+        "src": "collection/photos/race-wec008-2.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:BMW_M_Team_WRT_-_BMW_M_Hybrid_V8_-15_(53814571652).jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "licenseLabel": "CC BY-SA 2.0",
+        "credit": "Kevin Decherf / Wikimedia Commons · resized",
+        "creditZh": "Kevin Decherf / Wikimedia Commons · 已缩放",
+        "caption": "The iQOO logo and blue-and-white graphics on the side of the No. 15 BMW.",
+        "captionZh": "15 号宝马侧面的 iQOO 标识和蓝白图案。"
+      }
+    ]
   },
   {
     "id": "a084fe8e-cc28-55c1-bb56-d1fb34cdec7e",
-    "revision": "839f22fa-5e9b-4327-9b8f-07f1cb3b96a7",
+    "revision": "cd3f94df-9aea-4687-a6cb-bb7f08b859ba",
     "catalogId": "WEC-009",
     "album": "WEC",
     "car": "Mazda 787B",
@@ -3143,11 +3248,51 @@
     ],
     "number": "55",
     "spec": "Group C",
-    "scale": "1:64"
+    "scale": "1:64",
+    "series": "World Sportscar Championship",
+    "year": 1991,
+    "event": "24 Hours of Le Mans",
+    "eventZh": "勒芒 24 小时耐力赛",
+    "team": "Mazdaspeed",
+    "driver": "Volker Weidler / Johnny Herbert / Bertrand Gachot",
+    "driverZh": "福尔克·魏德勒／约翰尼·赫伯特／贝特朗·加绍",
+    "maker": "XCarToys",
+    "makerZh": "拓意",
+    "acquired": "2025-12",
+    "collectionReason": "What I love most about the 787B is the sound of its rotary engine. I already like Japanese cars, and I wanted a reminder of a type of engine that has gradually faded from the tracks.",
+    "collectionReasonZh": "我最喜欢 787B 的地方是转子引擎的声浪。我本来就喜欢日系车，也想收藏一辆能记住这种逐渐淡出赛场的引擎的模型。",
+    "seasonSummary": "The orange-and-green No. 55 won the 1991 24 Hours of Le Mans with Weidler, Herbert and Gachot. Its four-rotor engine powered the first Japanese car to take overall victory at Le Mans.",
+    "seasonSummaryZh": "1991 年，魏德勒、赫伯特和加绍驾驶橙绿涂装的 55 号 787B 赢得勒芒全场冠军。这辆四转子赛车也为日本厂商拿下了首个勒芒全场冠军。",
+    "officialSources": [
+      {
+        "url": "https://www.mazda.com/en/experience/mspr/motorsports/lemans/mazda787b/",
+        "label": "Mazda’s 787B and winning crew archive",
+        "labelZh": "马自达的 787B 与冠军车组档案"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www.mazda.com/content/mazda/corporate/mazda-com/en/experience/mspr/motorsports/lemans/mazda787b/_jcr_content/root/container/container_541810326/teaser_1647833824/pcVideo.coreimg.jpeg/1770270197886/img01-ts-2103300411240000.jpeg",
+        "credit": "Mazda Motor Corporation",
+        "caption": "Mazda’s archive photograph of the Renown-liveried 787B on track.",
+        "captionZh": "马自达档案中的 787B 赛道照片，车身带有 RENOWN 涂装。"
+      },
+      {
+        "src": "collection/photos/race-wec009-2.webp",
+        "source": "https://commons.wikimedia.org/wiki/File:R%C3%A9tromobile_2011_-_Mazda_787B_Le_Mans_-_1991_-_001.jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "licenseLabel": "CC BY-SA 3.0",
+        "credit": "Thesupermat / Wikimedia Commons · resized",
+        "creditZh": "Thesupermat / Wikimedia Commons · 已缩放",
+        "caption": "The 1991 Le Mans-winning No. 55 Mazda 787B on display at Rétromobile in 2011.",
+        "captionZh": "曾在 1991 年夺冠的 55 号 787B，摄于 2011 年巴黎 Rétromobile 展会。"
+      }
+    ]
   },
   {
     "id": "a98dcbe2-5437-5935-a0d5-3d7a97f5664e",
-    "revision": "231c50e0-f49a-4f93-9dfe-6bebfc7c3f71",
+    "revision": "5b395fb9-9523-4e9c-b876-e700c8c567a3",
     "catalogId": "WEC-010",
     "album": "WEC",
     "car": "BMW M4 GT3 · Schaeffler",
@@ -3163,15 +3308,63 @@
     ],
     "number": "11",
     "spec": "GT3",
-    "scale": "1:64"
+    "scale": "1:64",
+    "series": "DTM",
+    "year": 2024,
+    "event": "Zandvoort · Race 2",
+    "eventZh": "赞德沃特站第二回合",
+    "team": "Schubert Motorsport",
+    "driver": "Marco Wittmann",
+    "driverZh": "马尔科·维特曼",
+    "driverCountry": "DE",
+    "made": "2026-04",
+    "milestone": "Self-made model",
+    "milestoneZh": "自制车模",
+    "collectionReason": "This is one of the builds I’m happiest with. I recreated the metallic green paint and the blacked-out right headlight that gives my model its ‘one-eyed BMW’ look. I also wanted it to tell the story of Wittmann’s comeback at Zandvoort.",
+    "collectionReasonZh": "这是我最满意的自制车模之一。我还原了金属绿车漆，也重现了右前灯被黑色胶带遮住的细节，做出我记忆里的「独眼宝马」。我想把维特曼在赞德沃特那场逆转也留在这件模型里。",
+    "seasonSummary": "Marco Wittmann started 14th in Schubert Motorsport’s No. 11 Schaeffler BMW and won the Sunday 2024 DTM race at Zandvoort. He extended his opening stint, and a late stop set him up to take the lead on fresher tyres.",
+    "seasonSummaryZh": "2024 年 DTM 赞德沃特站周日第二回合，马尔科·维特曼驾驶 Schubert Motorsport 的 11 号舍弗勒宝马从第 14 位起步。他延长了首段比赛，较晚进站后用更新的轮胎完成反超，最终夺冠。",
+    "officialSources": [
+      {
+        "url": "https://www.dtm.com/de/news/Von-Platz-14-zum-Sieg-Wittmann-Wahnsinn-in-Zandvoort",
+        "label": "DTM’s Zandvoort comeback report",
+        "labelZh": "DTM 的赞德沃特逆转战报"
+      },
+      {
+        "url": "https://www.press.bmwgroup.com/global/article/attachment/T0442960EN/617664",
+        "label": "BMW’s 2024 Zandvoort race report",
+        "labelZh": "宝马的 2024 年赞德沃特战报"
+      },
+      {
+        "url": "https://www.bmw-m.com/en/fastlane/motorsport/discover/news-stories/dtm-bmw-m4-gt3-zandvoort-marco-wittmann-win.html",
+        "label": "BMW’s Zandvoort feature and photo gallery",
+        "labelZh": "宝马的赞德沃特图文战报"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/motorsport/News_und_Stories/dtm_zandvoort/Header_hoch.jpg",
+        "credit": "BMW M Motorsport",
+        "caption": "Marco Wittmann celebrates on his No. 11 Schaeffler BMW at Zandvoort in 2024.",
+        "captionZh": "2024 年赞德沃特站，维特曼站在 11 号舍弗勒宝马车上庆祝。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://cdn-3.motorsport.com/images/amp/0rGm7Ld2/s6/marco-wittmann-schubert-motors.jpg",
+        "credit": "Autosport / Motorsport.com",
+        "caption": "A rear three-quarter view of the metallic green No. 11 on track at Zandvoort.",
+        "captionZh": "从侧后方拍下的 11 号金属绿宝马，摄于赞德沃特赛道。"
+      }
+    ]
   },
   {
     "id": "edeeb367-64e0-57f4-969e-62ab41d4284e",
-    "revision": "55a3c14c-dbff-444b-ac1b-9fd88f01b1a6",
+    "revision": "11e700d8-9281-4177-959f-8ab3b66d53c3",
     "catalogId": "WEC-011",
     "album": "WEC",
-    "car": "Lamborghini Huracán GT3 · EDAG",
-    "carZh": "兰博基尼 Huracán GT3 · EDAG",
+    "car": "Lamborghini Huracán GT3 EVO2 · EDAG",
+    "carZh": "兰博基尼 Huracán GT3 EVO2 · EDAG",
     "status": "collected",
     "photo": "collection/photos/c5571b88-f85a-5f81-a7a2-94d35936bef4.jpg",
     "previewPhoto": "collection/photos/770d4067-cb3e-577f-8b2b-09bf5d5754d5.webp",
@@ -3183,11 +3376,46 @@
     ],
     "number": "94",
     "spec": "GT3",
-    "scale": "1:64"
+    "scale": "1:64",
+    "series": "DTM",
+    "year": 2023,
+    "event": "2023 DTM season",
+    "eventZh": "2023 年 DTM 赛季",
+    "team": "SSR Performance",
+    "driver": "Franck Perera",
+    "driverZh": "弗兰克·佩雷拉",
+    "driverCountry": "FR",
+    "maker": "Trends Hobby",
+    "acquired": "2026-05",
+    "seasonSummary": "The fluorescent yellow No. 94 EDAG Lamborghini was driven by Franck Perera for SSR Performance in the 2023 DTM season. Perera led from pole to win the Oschersleben opener, the Huracán GT3 EVO2’s first win.",
+    "seasonSummaryZh": "2023 年 DTM 赛季，弗兰克·佩雷拉为 SSR Performance 驾驶荧光黄 EDAG 涂装的 94 号兰博基尼。他在奥舍斯莱本揭幕战从杆位一路领跑夺冠，拿到 Huracán GT3 EVO2 的首胜。",
+    "officialSources": [
+      {
+        "url": "https://www.lamborghini.com/en-en/motorsport/news/lamborghini-claims-historic-maiden-for-huracan-gt3-evo2-in-dtm-opener-at-oschersleben",
+        "label": "Lamborghini’s Oschersleben report",
+        "labelZh": "兰博基尼的奥舍斯莱本站战报"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://preview.thenewsmarket.com/Previews/lamb/StillAssets/1920x1080/643675_v2.jpg",
+        "credit": "Lamborghini Squadra Corse / The NewsMarket",
+        "caption": "Franck Perera’s No. 94 Huracán GT3 EVO2 at Oschersleben in 2023.",
+        "captionZh": "弗兰克·佩雷拉驾驶 94 号 Huracán GT3 EVO2 参加 2023 年奥舍斯莱本站。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://i.eurosport.com/2023/05/27/3712795-75545828-2560-1440.jpg",
+        "credit": "Eurosport",
+        "caption": "The EDAG-liveried No. 94 during the 2023 DTM opener.",
+        "captionZh": "2023 年 DTM 揭幕战的 EDAG 涂装 94 号车。"
+      }
+    ]
   },
   {
     "id": "f3f60930-3d20-5b27-bfcb-bbc1b4fe8aa5",
-    "revision": "a609a531-7a53-41ad-9107-a2c51d3df326",
+    "revision": "ff5613e5-2849-448f-bc2a-9208f29eae17",
     "catalogId": "WEC-012",
     "album": "WEC",
     "car": "Porsche 911 GT3 R · Roxy",
@@ -3202,7 +3430,45 @@
     ],
     "number": "77",
     "spec": "GT3",
-    "scale": "1:64"
+    "scale": "1:64",
+    "series": "IMSA",
+    "className": "GTD PRO",
+    "team": "AO Racing",
+    "made": "2026-01",
+    "milestone": "Self-made model",
+    "milestoneZh": "自制车模",
+    "collectionReason": "AO Racing’s dinosaur liveries were everywhere, and their models were getting marked up. I decided to make the pink Roxy version myself because the colour and dinosaur graphics are instantly recognisable.",
+    "collectionReasonZh": "AO Racing 的恐龙涂装很火，有段时间相关模型的溢价也很夸张。我干脆自己做了这辆粉色 Roxy。粉色车身和恐龙图案一眼就能认出来。",
+    "seasonSummary": "Roxy is the pink sister livery to Rexy on AO Racing’s No. 77 Porsche 911 GT3 R. It appeared at several IMSA rounds. Its first GTD PRO win came at Laguna Seca in May 2025 with Laurin Heinrich and Klaus Bachler.",
+    "seasonSummaryZh": "Roxy 是 AO Racing 77 号保时捷 911 GT3 R 的粉色恐龙涂装，与绿色 Rexy 是同一个系列。这版涂装在多场 IMSA 比赛中出现过。2025 年 5 月，劳林·海因里希和克劳斯·巴赫勒驾驶它在拉古纳塞卡拿下首个 GTD PRO 组冠军。",
+    "officialSources": [
+      {
+        "url": "https://aoracing.com/roxy-rawrs-to-victory-at-laguna-seca/",
+        "label": "AO Racing on Roxy’s first win",
+        "labelZh": "AO Racing 记录 Roxy 的首胜"
+      },
+      {
+        "url": "https://www.imsa.com/news/2024/07/17/roxy-returns-rexys-prehistoric-pink-sister-to-take-over-at-road-america/",
+        "label": "IMSA’s Roxy livery feature",
+        "labelZh": "IMSA 的 Roxy 涂装报道"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://newsroom.porsche.com/dam/jcr%3A8db92588-5b12-4c5e-95f3-35267abd0ccb/laguna-seca-2025-14.jpg",
+        "credit": "Porsche AG",
+        "caption": "The No. 77 Roxy at Laguna Seca in May 2025.",
+        "captionZh": "2025 年 5 月，77 号粉色 Roxy 在拉古纳塞卡赛道上。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://hips.hearstapps.com/mtg-prod/682e2e9f2eb5f90008c080e5/052-imsa-laguna-seca-2025.jpg",
+        "credit": "HOT ROD",
+        "caption": "Roxy on track during the Laguna Seca weekend in which it won GTD PRO.",
+        "captionZh": "Roxy 在赢得 GTD PRO 组冠军的拉古纳塞卡站驶过赛道。"
+      }
+    ]
   },
   {
     "id": "1133eb19-5e4f-54c8-8bfb-a35a8b72b291",
