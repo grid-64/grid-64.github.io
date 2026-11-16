@@ -2281,10 +2281,10 @@
   },
   {
     "id": "6dc83d30-3364-5b2e-96d7-2ec2e8ad5866",
-    "revision": "3bfb9d0e-6630-4117-b312-224f6c9968e3",
+    "revision": "a275114b-f3cf-4e8a-8d6e-1399c56678b7",
     "catalogId": "RLY-001",
-    "car": "Rally model 01",
-    "carZh": "拉力赛车模 01",
+    "car": "Ford Puma Rally1",
+    "carZh": "福特 Puma Rally1",
     "series": "Rally",
     "status": "collected",
     "photo": "collection/photos/f0658c8a-23aa-56e7-a95e-c80e212b1eed.jpg",
@@ -2293,14 +2293,69 @@
       "collection/photos/eeea0472-060d-5d1b-ab4c-bedc82849026.jpg",
       "collection/photos/df05f9e8-62cb-5b03-b381-772a2337e510.jpg",
       "collection/photos/42991543-d784-57d6-a5f4-8d69098a4318.jpg"
-    ]
+    ],
+    "event": "Rallye Monte-Carlo",
+    "eventZh": "蒙特卡洛拉力赛",
+    "year": 2025,
+    "number": "55",
+    "spec": "Rally1",
+    "team": "M-Sport Ford World Rally Team",
+    "teamZh": "M-Sport 福特世界拉力车队",
+    "driver": "Josh McErlean / Eoin Treacy",
+    "driverZh": "乔什·麦克尔林／欧因·特雷西",
+    "driverCountry": "IE",
+    "maker": "MINI GT",
+    "scale": "1:64",
+    "acquired": "2026-03",
+    "source": "https://minigt.tsm-models.com/index.php?action=product-detail&b_id=&id=2064",
+    "collectionReason": "I collected the Ford, Hyundai and Toyota together to mark the final season of this generation of Rally1. I usually enjoy the stage highlights more than the live broadcast, and I wanted all three cars together as a record of that era.",
+    "collectionReasonZh": "为了纪念这一代 Rally1 赛车谢幕，我把福特、现代和丰田这三款都收齐了。我平时看拉力更喜欢看赛段集锦，这三辆放在一起，正好能留住我喜欢的这个时代。",
+    "seasonSummary": "Josh McErlean and Eoin Treacy finished seventh on their Rally1 debut at Monte Carlo in 2025. The current Rally1 rules run through 2026. The FIA’s WRC27 rules introduce a new generation of Rally1 cars from 2027, cap the price of a tarmac-spec car at €345,000 and aim to make the top class easier to enter.",
+    "seasonSummaryZh": "2025 年蒙特卡洛站，乔什·麦克尔林和欧因·特雷西首次参加 Rally1 级别的比赛，获得全场第七。2026 年是这一代 Rally1 技术规则的最后一个赛季。2027 年起，FIA 将以 WRC27 规则引入新一代 Rally1 赛车，柏油规格赛车的售价上限为 34.5 万欧元，以降低参赛成本、吸引更多参赛方。",
+    "officialSources": [
+      {
+        "url": "https://www.fia.com/events/world-rally-championship/season-2025/93e-rallye-automobile-monte-carlo/classifications",
+        "label": "FIA: 2025 Monte Carlo classification",
+        "labelZh": "FIA 2025 年蒙特卡洛站成绩"
+      },
+      {
+        "url": "https://www.motorsportireland.com/news/mcerlean-monte-carlo-2025-post-event",
+        "label": "Motorsport Ireland’s event recap",
+        "labelZh": "爱尔兰赛车运动协会赛后报道"
+      },
+      {
+        "url": "https://www.fia.com/news/fia-unveils-wrc27-rally1-concept-set-define-next-generation-rally-machinery",
+        "label": "FIA: the 2027 Rally1 technical concept and cost cap",
+        "labelZh": "FIA 公布的 2027 年 Rally1 技术方案和价格上限"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://images.squarespace-cdn.com/content/v1/663b3cf4741ad911571c3637/1737990406459-TMIQE1BS3FX7C2I2BSAZ/HgfvVGXIpFoOVe9olDv8NsP2gqTv0vuG4whCVZzP.jpg",
+        "credit": "Motorsport Ireland",
+        "caption": "McErlean and Treacy in the No. 55 Puma on the 2025 Monte Carlo stages.",
+        "captionZh": "麦克尔林和特雷西的 55 号 Puma 驶过 2025 年蒙特卡洛赛段。"
+      },
+      {
+        "source": "https://commons.wikimedia.org/wiki/File:Josh_McErlean_Rally_Finland_2025_Ouninpohja.jpg",
+        "credit": "Antti Leppänen / Wikimedia Commons · resized",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseLabel": "CC BY 4.0",
+        "creditZh": "Antti Leppänen / Wikimedia Commons · 已缩放",
+        "src": "collection/photos/race-rly001-finland-2025.webp",
+        "caption": "The same crew and No. 55 Puma at Ouninpohja, Rally Finland 2025.",
+        "captionZh": "同一组车手与 55 号 Puma 在 2025 年芬兰拉力赛欧宁波赫亚赛段。"
+      }
+    ],
+    "link": "ee3f9b11-be2c-59ec-934c-d5ac5a9f757c"
   },
   {
     "id": "ee3f9b11-be2c-59ec-934c-d5ac5a9f757c",
-    "revision": "c258ed6c-8194-4d0b-8908-5d952939bd76",
+    "revision": "dad8c84b-8248-450f-8103-fc5873c0e4b4",
     "catalogId": "RLY-002",
-    "car": "Rally model 02",
-    "carZh": "拉力赛车模 02",
+    "car": "Hyundai i20 N Rally1 Hybrid",
+    "carZh": "现代 i20 N Rally1 Hybrid",
     "series": "Rally",
     "status": "collected",
     "photo": "collection/photos/026edfd5-6cba-52d8-862f-57c75679f16f.jpg",
@@ -2309,14 +2364,69 @@
       "collection/photos/b404aef6-0b57-5d40-b75b-b2c28acfd8b7.jpg",
       "collection/photos/791fa6ba-7899-5bd4-a884-37b1a8739f7e.jpg",
       "collection/photos/6982408d-9d79-51e9-a6c3-390df5b35008.jpg"
-    ]
+    ],
+    "event": "Rallye Monte-Carlo",
+    "eventZh": "蒙特卡洛拉力赛",
+    "year": 2024,
+    "number": "11",
+    "spec": "Rally1",
+    "team": "Hyundai Shell Mobis World Rally Team",
+    "teamZh": "现代 Shell Mobis 世界拉力车队",
+    "driver": "Thierry Neuville / Martijn Wydaeghe",
+    "driverZh": "蒂埃里·诺伊维尔／马丁·维达格",
+    "driverCountry": "BE",
+    "maker": "MINI GT",
+    "scale": "1:64",
+    "item": "MGT00871",
+    "acquired": "2026-04",
+    "source": "https://minigt.tsm-models.com/index.php?action=product-detail&id=1587",
+    "milestone": "Bought in South Korea",
+    "milestoneZh": "韩国旅行入手",
+    "collectionReason": "I bought this one on a trip to South Korea. It sits with the Ford and Toyota in my collection as a keepsake from this generation of Rally1.",
+    "collectionReasonZh": "这辆是我去韩国旅行时入手的。我把它和福特、丰田放在一起，纪念这一代 Rally1 赛车。",
+    "seasonSummary": "Belgian crew Thierry Neuville and Martijn Wydaeghe won the opening round of the 2024 WRC in the No. 11 Hyundai. The current Rally1 rules run through 2026. The FIA’s WRC27 rules introduce a new generation of Rally1 cars from 2027, cap the price of a tarmac-spec car at €345,000 and aim to make the top class easier to enter.",
+    "seasonSummaryZh": "2024 年 WRC 揭幕战，比利时车组蒂埃里·诺伊维尔与马丁·维达格驾驶 11 号现代在蒙特卡洛夺冠。2026 年是这一代 Rally1 技术规则的最后一个赛季。2027 年起，FIA 将以 WRC27 规则引入新一代 Rally1 赛车，柏油规格赛车的售价上限为 34.5 万欧元，以降低参赛成本、吸引更多参赛方。",
+    "officialSources": [
+      {
+        "url": "https://www.fia.com/news/wrc-masterful-neuvillewydaeghe-open-2024-campaign-victory-monte-carlo",
+        "label": "FIA: Neuville and Wydaeghe win at Monte Carlo",
+        "labelZh": "FIA 蒙特卡洛夺冠报道"
+      },
+      {
+        "url": "https://www.hyundaimotorgroup.com/en/story/CONT0000000000135106",
+        "label": "Hyundai’s 2024 Monte Carlo photo report",
+        "labelZh": "现代汽车集团蒙特卡洛图文战报"
+      },
+      {
+        "url": "https://www.fia.com/news/fia-unveils-wrc27-rally1-concept-set-define-next-generation-rally-machinery",
+        "label": "FIA: the 2027 Rally1 technical concept and cost cap",
+        "labelZh": "FIA 公布的 2027 年 Rally1 技术方案和价格上限"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000046933/8a4b5734aaec4bcb8e2f02c8a37c2b7f.jpg",
+        "credit": "Hyundai Motor Group",
+        "caption": "Hyundai on a night stage at the 2024 Monte Carlo Rally.",
+        "captionZh": "现代赛车驶过 2024 年蒙特卡洛拉力赛夜间赛段。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000046942/376a76a2180b42a0a3d918ac6d2462d5.jpg",
+        "credit": "Hyundai Motor Group",
+        "caption": "The No. 11 Hyundai and team celebrate the 2024 Monte Carlo win.",
+        "captionZh": "11 号现代赛车与车队在蒙特卡洛庆祝夺冠。"
+      }
+    ],
+    "link": "318a68c0-4b64-5da7-bd4d-9914292c1e47"
   },
   {
     "id": "318a68c0-4b64-5da7-bd4d-9914292c1e47",
-    "revision": "4ac620ce-6c17-45a9-a1d2-a05701be998f",
+    "revision": "f5af8ebc-d7fe-41cf-94be-e3be0c64f5b9",
     "catalogId": "RLY-003",
-    "car": "Rally model 03",
-    "carZh": "拉力赛车模 03",
+    "car": "Toyota GR Yaris Rally1 Hybrid",
+    "carZh": "丰田 GR Yaris Rally1 Hybrid",
     "series": "Rally",
     "status": "collected",
     "photo": "collection/photos/db8ae421-3981-56f9-8496-1961efe7c763.jpg",
@@ -2325,14 +2435,61 @@
       "collection/photos/ff41c043-b7e4-53e3-a63a-153417cb19e9.jpg",
       "collection/photos/182dc669-f1a0-5db2-9eb5-af7942a7ef9b.jpg",
       "collection/photos/d2aa228c-3aa6-5a4a-9bfe-3c53458f6407.jpg"
-    ]
+    ],
+    "event": "Rally Latvia",
+    "eventZh": "拉脱维亚拉力赛",
+    "year": 2024,
+    "number": "69",
+    "spec": "Rally1",
+    "team": "Toyota Gazoo Racing World Rally Team",
+    "teamZh": "丰田 Gazoo Racing 世界拉力车队",
+    "driver": "Kalle Rovanperä / Jonne Halttunen",
+    "driverZh": "卡勒·罗万佩拉／约内·哈尔图宁",
+    "driverCountry": "FI",
+    "maker": "Tarmac Works",
+    "scale": "1:64",
+    "acquired": "2026-05",
+    "source": "https://www.tarmacworks.com/en-sg/collections/new-releases/products/1-64-toyota-gr-yaris-rally1-hybrid-rally-latvia-2024-winner-69-tarmac-works-x-ixo-models-hobby64",
+    "collectionReason": "I collected the Ford, Hyundai and Toyota together to mark the final season of this generation of Rally1. I usually enjoy the stage highlights more than the live broadcast, and I wanted all three cars together as a record of that era.",
+    "collectionReasonZh": "为了纪念这一代 Rally1 赛车谢幕，我把福特、现代和丰田这三款都收齐了。我平时看拉力更喜欢看赛段集锦，这三辆放在一起，正好能留住我喜欢的这个时代。",
+    "seasonSummary": "Kalle Rovanperä and Jonne Halttunen won the 2024 Rally Latvia in the No. 69 GR Yaris. Latvia joined the WRC calendar for the first time that year. The current Rally1 rules run through 2026. The FIA’s WRC27 rules introduce a new generation of Rally1 cars from 2027, cap the price of a tarmac-spec car at €345,000 and aim to make the top class easier to enter.",
+    "seasonSummaryZh": "卡勒·罗万佩拉和约内·哈尔图宁驾驶 69 号 GR Yaris，赢下了 2024 年首次列入 WRC 赛历的拉脱维亚拉力赛。2026 年是这一代 Rally1 技术规则的最后一个赛季。2027 年起，FIA 将以 WRC27 规则引入新一代 Rally1 赛车，柏油规格赛车的售价上限为 34.5 万欧元，以降低参赛成本、吸引更多参赛方。",
+    "officialSources": [
+      {
+        "url": "https://toyotagazooracing.com/wrc/release/2024/rd08-day4/",
+        "label": "Toyota’s Rally Latvia results and gallery",
+        "labelZh": "丰田拉脱维亚拉力赛战报及图集"
+      },
+      {
+        "url": "https://www.fia.com/news/fia-unveils-wrc27-rally1-concept-set-define-next-generation-rally-machinery",
+        "label": "FIA: the 2027 Rally1 technical concept and cost cap",
+        "labelZh": "FIA 公布的 2027 年 Rally1 技术方案和价格上限"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/wrc/images/release/2024/rd08-day3/01.jpg",
+        "credit": "TOYOTA GAZOO Racing",
+        "caption": "The No. 69 GR Yaris on a gravel stage in Latvia.",
+        "captionZh": "69 号 GR Yaris 驶过拉脱维亚站的砂石赛段。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/wrc/images/release/2024/rd08-day4/01.jpg",
+        "credit": "TOYOTA GAZOO Racing",
+        "caption": "Rovanperä and Halttunen celebrate their Rally Latvia win.",
+        "captionZh": "罗万佩拉与哈尔图宁庆祝拿下拉脱维亚站冠军。"
+      }
+    ],
+    "link": "6dc83d30-3364-5b2e-96d7-2ec2e8ad5866"
   },
   {
     "id": "7b06ba0b-09a5-590b-a534-2d1b47c743a6",
-    "revision": "8b1b68f8-669b-460f-aaef-bff4c6ca23dd",
+    "revision": "dea0437d-9c4f-4a82-b964-84c49d8e5390",
     "catalogId": "RLY-004",
-    "car": "Rally model 04",
-    "carZh": "拉力赛车模 04",
+    "car": "Audi A3 Rally Car · Pegasus 3",
+    "carZh": "奥迪 A3 拉力赛车 ·《飞驰人生3》",
     "series": "Rally",
     "status": "collected",
     "photo": "collection/photos/62a1ad3a-5833-5cfd-b092-75b5536e4382.jpg",
@@ -2342,14 +2499,51 @@
       "collection/photos/718e5a18-32c3-508f-b0b5-5ce23e2868d8.jpg",
       "collection/photos/95c439a1-d13d-5782-ae62-b271f7b58ce6.jpg",
       "collection/photos/186f9570-d7d9-5c07-8032-f32063f1eea4.jpg"
+    ],
+    "event": "Pegasus 3",
+    "eventZh": "《飞驰人生3》",
+    "year": 2026,
+    "number": "20",
+    "spec": "Film car",
+    "driver": "Zhang Chi / Sun Yuqiang",
+    "driverZh": "张驰／孙宇强（电影角色）",
+    "maker": "XCarToys",
+    "makerZh": "拓意",
+    "acquired": "2026-05",
+    "collectionReason": "Pegasus 3 is one of the Chinese racing films I’ve enjoyed. I liked seeing the lead car in a Chinese-made miniature, and XCarToys did a good job capturing it.",
+    "collectionReasonZh": "《飞驰人生3》是我比较喜欢的一部国产赛车电影。拓意把主角赛车做成了模型，完成度也不错，所以我把这辆收了下来。",
+    "seasonSummary": "Audi supplied the A3 as the basis for the lead rally car in the 2026 film Pegasus 3. The No. 20 car belongs to the film’s fictional rally story.",
+    "seasonSummaryZh": "这辆 20 号车是一汽奥迪以 A3 为基础打造的《飞驰人生3》主角赛车，片中的拉力赛属于电影剧情。",
+    "officialSources": [
+      {
+        "url": "https://www.audi.cn/zh/audi_brand/news_experience/news20260218.html",
+        "label": "FAW-Audi on the film collaboration",
+        "labelZh": "一汽奥迪与《飞驰人生3》的合作资料"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://www.audi.cn/content/dam/OneWeb/faw_vw/audi_brand/news_experience/2026-02/0218/02.jpg",
+        "credit": "FAW-Audi / Pegasus 3",
+        "caption": "The film’s Audi A3 rally car on a paved stage.",
+        "captionZh": "《飞驰人生3》的奥迪 A3 赛车驶过柏油赛段。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://www.audi.cn/content/dam/OneWeb/faw_vw/audi_brand/news_experience/2026-02/0218/03.jpg",
+        "credit": "FAW-Audi / Pegasus 3",
+        "caption": "The No. 20 film car kicking up dust on gravel.",
+        "captionZh": "20 号电影赛车在砂石路上扬起尘土。"
+      }
     ]
   },
   {
     "id": "62ed2d93-8310-52ef-b8a9-a4683e356e55",
-    "revision": "724eb731-3c65-402c-860a-1e3856db07ee",
+    "revision": "20750ff9-145e-4a98-8687-4f43f6c1e4cc",
     "catalogId": "RLY-005",
-    "car": "Rally model 05",
-    "carZh": "拉力赛车模 05",
+    "car": "Mitsubishi Carisma GT Evolution IV",
+    "carZh": "三菱 Lancer Evolution IV · Carisma GT",
     "series": "Rally",
     "status": "collected",
     "photo": "collection/photos/3666de8d-dd98-5169-afe9-a368502b0bba.jpg",
@@ -2359,14 +2553,65 @@
       "collection/photos/99205617-a8a4-5aee-9495-2403216326d1.jpg",
       "collection/photos/1e5aa64c-5bad-57c0-bf18-a4dee720508c.jpg",
       "collection/photos/8f2a4fed-a500-5035-92bd-6db7f6a6f2a0.jpg"
-    ]
+    ],
+    "event": "Rallye Monte-Carlo",
+    "eventZh": "蒙特卡洛拉力赛",
+    "year": 1998,
+    "number": "2",
+    "spec": "Group A",
+    "team": "Team Mitsubishi Ralliart",
+    "teamZh": "三菱 Ralliart 车队",
+    "driver": "Richard Burns / Robert Reid",
+    "driverZh": "理查德·伯恩斯／罗伯特·里德",
+    "driverCountry": "GB",
+    "maker": "XCarToys",
+    "makerZh": "拓意",
+    "acquired": "2026-07",
+    "collectionReason": "I collected the Mitsubishi and Subaru together to remember their rivalry in the late 1990s. The same Monte Carlo markings on both models tie them to one event.",
+    "collectionReasonZh": "我把三菱和斯巴鲁放在一起收藏，想纪念它们在 90 年代末的对决。两辆模型的车门上都留着同一场蒙特卡洛拉力赛的贴纸。",
+    "seasonSummary": "Richard Burns and Robert Reid finished fifth overall at Monte Carlo in 1998. Their Group A Lancer Evolution IV wore Carisma GT branding, as seen on the model’s doors. The No. 3 Subaru in this collection finished third at the same event.",
+    "seasonSummaryZh": "1998 年蒙特卡洛拉力赛，理查德·伯恩斯和罗伯特·里德驾驶 2 号三菱获得全场第五。这辆 A 组 Lancer Evolution IV 以 Carisma GT 标识参赛，模型车门也保留了这行字。同一场比赛里，收藏中的 3 号斯巴鲁拿到第三。",
+    "officialSources": [
+      {
+        "url": "https://www.rallypedia.com.au/wp-content/uploads/2021/07/199801Unicar.pdf",
+        "label": "Contemporary Monte Carlo Rally report and results",
+        "labelZh": "1998 年蒙特卡洛拉力赛同期报道及成绩"
+      },
+      {
+        "url": "https://www.mitsubishi-motors.com/en/brand/motorsports/wrc/1998/",
+        "label": "Mitsubishi’s 1998 WRC season archive",
+        "labelZh": "三菱 1998 年 WRC 赛季档案"
+      },
+      {
+        "url": "https://rallyazores.blogspot.com/2011/01/rallye-monte-carlo-1998.html",
+        "label": "1998 Monte Carlo photograph archive",
+        "labelZh": "1998 年蒙特卡洛拉力赛照片档案"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmxMw3TpztmX2mY6ZJWoWPDJVNvjzfhJMwl7M0l1lRpQRrRSke7fdrgAu9dXn01ygq5nC_WpH8O0KF-YLOWYyg4tfEz0wRUJESq2NtW-mfjRKPlnwkUxec9ST6faHsQdXh0pFHKsiBODM/s1600/1998+2+1+MONTE+CARLO+%25285%25C2%25BA%2529.JPG",
+        "credit": "RallyAzores photo archive",
+        "caption": "The No. 2 Mitsubishi on snow at Monte Carlo in 1998.",
+        "captionZh": "2 号三菱驶过 1998 年蒙特卡洛拉力赛的雪地赛段。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://www.flickr.com/photos/87428771@N03/8285348918/",
+        "credit": "racing is life / Flickr",
+        "caption": "Burns in the Evolution IV at a different event, the 1998 Rally Portugal.",
+        "captionZh": "伯恩斯驾驶同款 Evolution IV 参加 1998 年葡萄牙拉力赛。"
+      }
+    ],
+    "link": "835bbf18-16b9-5310-8262-03f6ac3e6456"
   },
   {
     "id": "835bbf18-16b9-5310-8262-03f6ac3e6456",
-    "revision": "4bf2ef33-1039-4e4c-8c7a-614ac5196a9b",
+    "revision": "2916c0e6-1fe4-4a0e-8176-c81463e83182",
     "catalogId": "RLY-006",
-    "car": "Rally model 06",
-    "carZh": "拉力赛车模 06",
+    "car": "Subaru Impreza WRC98",
+    "carZh": "斯巴鲁翼豹 Impreza WRC98",
     "series": "Rally",
     "status": "collected",
     "photo": "collection/photos/556ca37a-f137-5988-aa38-6444031e172d.jpg",
@@ -2375,6 +2620,54 @@
       "collection/photos/cef5e0c6-5999-5de3-832e-b1e80bb1eb10.jpg",
       "collection/photos/98256a8e-c023-58db-84c7-87cf6b7292a9.jpg",
       "collection/photos/d2633034-3b6d-5d64-8848-f76861dbaa78.jpg"
-    ]
+    ],
+    "event": "Rallye Monte-Carlo",
+    "eventZh": "蒙特卡洛拉力赛",
+    "year": 1998,
+    "number": "3",
+    "spec": "World Rally Car",
+    "team": "555 Subaru World Rally Team",
+    "teamZh": "555 斯巴鲁世界拉力车队",
+    "driver": "Colin McRae / Nicky Grist",
+    "driverZh": "科林·麦克雷／尼基·格里斯特",
+    "driverCountry": "GB",
+    "maker": "MINI GT",
+    "scale": "1:64",
+    "item": "MGT00975",
+    "acquired": "2025-11",
+    "source": "https://minigt.tsm-models.com/index.php?action=product-detail&b_id=13&id=1700",
+    "collectionReason": "I collected the Mitsubishi and Subaru together to remember their rivalry in the late 1990s. The same Monte Carlo markings on both models tie them to one event.",
+    "collectionReasonZh": "我把三菱和斯巴鲁放在一起收藏，想纪念它们在 90 年代末的对决。两辆模型的车门上都留着同一场蒙特卡洛拉力赛的贴纸。",
+    "seasonSummary": "Colin McRae and Nicky Grist finished third at the 1998 Monte Carlo Rally in this No. 3 Impreza WRC98. Their entry shared the stages with Richard Burns’ No. 2 Mitsubishi, which finished fifth.",
+    "seasonSummaryZh": "科林·麦克雷和尼基·格里斯特驾驶 3 号翼豹 WRC98，在 1998 年蒙特卡洛拉力赛拿到季军。伯恩斯的 2 号三菱与它跑了同一场比赛，最终排名第五。",
+    "officialSources": [
+      {
+        "url": "https://www.rallypedia.com.au/wp-content/uploads/2021/07/199801Unicar.pdf",
+        "label": "Contemporary Monte Carlo Rally report and results",
+        "labelZh": "1998 年蒙特卡洛拉力赛同期报道及成绩"
+      },
+      {
+        "url": "https://rallyazores.blogspot.com/2011/01/rallye-monte-carlo-1998.html",
+        "label": "1998 Monte Carlo photograph archive",
+        "labelZh": "1998 年蒙特卡洛拉力赛照片档案"
+      }
+    ],
+    "referencePhotos": [
+      {
+        "sourceOnly": true,
+        "source": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh54JjInj8Ng0VBLAA73sIV9zjadAkwAZRv3ILg40WrJefr5rCsFte4XIQDrLABcvTmy5w6q5phpAYTta5M0d-9SyJJPD263pxn7GJ61ABDqj-MombT_T40LAO8wgAPXgR4wyOpxwBSJBA/s1600/1998+3+montecarlo0201ln0.jpg",
+        "credit": "RallyAzores photo archive",
+        "caption": "The No. 3 Impreza WRC98 on snow at Monte Carlo in 1998.",
+        "captionZh": "3 号翼豹 WRC98 驶过 1998 年蒙特卡洛拉力赛的雪地赛段。"
+      },
+      {
+        "sourceOnly": true,
+        "source": "https://www.flickr.com/photos/87428771@N03/8025971696/",
+        "credit": "racing is life / Flickr",
+        "caption": "McRae’s Impreza with its auxiliary lights on at the 1998 Monte Carlo Rally.",
+        "captionZh": "麦克雷的翼豹开着辅助灯通过 1998 年蒙特卡洛拉力赛赛段。"
+      }
+    ],
+    "link": "62ed2d93-8310-52ef-b8a9-a4683e356e55"
   }
 ]
