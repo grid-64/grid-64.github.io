@@ -2669,5 +2669,258 @@
       }
     ],
     "link": "62ed2d93-8310-52ef-b8a9-a4683e356e55"
+  },
+  {
+    "id": "6c0a3fa3-3013-56a9-9bbb-ae9aeb9eabcc",
+    "revision": "f6822e0a-1ac5-4d6e-8b2e-ea4d83bd4268",
+    "catalogId": "WEC-001",
+    "album": "WEC",
+    "car": "Blue and red Ferrari",
+    "carZh": "蓝红涂装法拉利",
+    "status": "collected",
+    "photo": "collection/photos/baad6283-070e-57ac-bfe2-120a8efbc5f2.jpg",
+    "previewPhoto": "collection/photos/11dc8d1c-72d4-5793-bdd7-3ec7580e2395.webp",
+    "photos": [
+      "collection/photos/2b305943-4e54-5d04-8a18-031324577d36.jpg",
+      "collection/photos/38e13349-1c63-5832-a7b7-90c50786284a.jpg",
+      "collection/photos/8edda1e5-d2cf-574e-a52e-215ba8782e15.jpg"
+    ],
+    "number": "31"
+  },
+  {
+    "id": "beb5ebe6-4d55-5948-8912-190d89b56075",
+    "revision": "c996df80-aeb1-45d0-8307-f6fff4e3848d",
+    "catalogId": "WEC-002",
+    "album": "WEC",
+    "car": "Blue Porsche 911",
+    "carZh": "蓝色保时捷 911",
+    "status": "collected",
+    "photo": "collection/photos/6d4439ed-181c-5c77-b84a-638b6ec63912.jpg",
+    "previewPhoto": "collection/photos/444cbfd3-c76c-5922-99f0-2d05a6b06376.webp",
+    "photos": [
+      "collection/photos/78ab25e7-34c8-5ced-8a1c-c481c4706921.jpg",
+      "collection/photos/0c992c7f-a208-5852-9d67-41c5ad86fa92.jpg",
+      "collection/photos/945c8e53-bf60-5ace-a8d3-ee7fec4a0c0e.jpg",
+      "collection/photos/a38ab047-1ac6-5a82-9bab-e16769bc9c21.jpg"
+    ],
+    "number": "90"
+  },
+  {
+    "id": "acbb0871-91c3-5540-ae2b-d3530ca897f9",
+    "revision": "7de90b05-e1cd-4826-9e6d-c9b6af9ad1a4",
+    "catalogId": "WEC-003",
+    "album": "WEC",
+    "car": "Porsche 911 GT3 R · Rexy",
+    "carZh": "保时捷 911 GT3 R · Rexy",
+    "status": "collected",
+    "photo": "collection/photos/e1f31654-493f-58ca-a8a4-66dce4e2c6fb.jpg",
+    "previewPhoto": "collection/photos/7de38625-dc9e-5f6b-899e-06f9cf1954ad.webp",
+    "photos": [
+      "collection/photos/bd601375-11b3-56ed-83a9-2e5b1605a9fd.jpg",
+      "collection/photos/7f297920-8cda-5619-a95b-50adc5ea2778.jpg",
+      "collection/photos/8e613fd0-8255-5e2a-87bd-5f809bd35fcb.jpg",
+      "collection/photos/86f6bf64-c604-5a0e-a350-0218a47bd63f.jpg"
+    ],
+    "number": "56",
+    "spec": "GT3"
+  },
+  {
+    "id": "cc1773b5-055b-5c6a-9efa-0729c7df8f24",
+    "revision": "e06a3566-18b2-4686-912b-e74acf37426b",
+    "catalogId": "WEC-004",
+    "album": "WEC",
+    "car": "Ford Mustang GT3 · IKIGAI",
+    "carZh": "福特 Mustang GT3 · IKIGAI",
+    "status": "collected",
+    "photo": "collection/photos/8d464d1c-7f23-529c-a6ac-5dc258934f11.jpg",
+    "previewPhoto": "collection/photos/dca7b1eb-b221-542b-af81-4248818eb4d4.webp",
+    "photos": [
+      "collection/photos/21ca3610-9f03-5e60-b929-5df56156bae6.jpg",
+      "collection/photos/56c8fc8d-e8e8-5298-8477-55a544e97357.jpg",
+      "collection/photos/cab538a4-0685-53ba-bf08-791552901624.jpg"
+    ],
+    "number": "88",
+    "spec": "GT3"
+  },
+  {
+    "id": "17cd4852-986c-50e4-986f-462b4e8e85ec",
+    "revision": "0358b735-2778-498c-8fbf-f0f88aa582f7",
+    "catalogId": "WEC-005",
+    "album": "WEC",
+    "car": "BMW M3 Touring 24H",
+    "carZh": "宝马 M3 Touring 24H",
+    "status": "collected",
+    "photo": "collection/photos/45bf2245-1bb6-59e9-b5ac-77fa72de4514.jpg",
+    "previewPhoto": "collection/photos/3cda9bb5-9a31-5fef-9000-b1333d24f16b.webp",
+    "photos": [
+      "collection/photos/ea2691a5-e9ce-5327-bc6a-8d238792ee99.jpg",
+      "collection/photos/df308d2b-c942-57c2-b668-3819288f8dd4.jpg",
+      "collection/photos/1529fe24-eaf8-59bf-88ab-ce43e5a7e002.jpg",
+      "collection/photos/278fa6d7-8b2d-5c5f-905c-65ba66685592.jpg"
+    ],
+    "number": "81",
+    "className": "SPX"
+  },
+  {
+    "id": "2916f136-da00-5a91-bcbc-2852194df3b7",
+    "revision": "274b7fbf-61fa-4623-8e28-ffafbe1fadc0",
+    "catalogId": "WEC-006",
+    "album": "WEC",
+    "car": "Ferrari 499P",
+    "carZh": "法拉利 499P",
+    "status": "collected",
+    "photo": "collection/photos/9afb0a3c-bc1d-5ed4-a6ce-b80d18b9aef4.jpg",
+    "previewPhoto": "collection/photos/bdef7d46-5065-5b0a-8715-a6e6c748c2a2.webp",
+    "photos": [
+      "collection/photos/e969ee2e-be86-5fde-955a-056ba2e0020b.jpg",
+      "collection/photos/88409995-09fa-5884-9d6c-54cea47f43f2.jpg",
+      "collection/photos/a75f86ea-fff8-5574-9c6d-732370c1d72c.jpg"
+    ],
+    "number": "51",
+    "spec": "Hypercar"
+  },
+  {
+    "id": "d9090e5e-5c9d-59fa-8a51-f9412d1423c7",
+    "revision": "f4873154-64ff-4608-a26d-80314feaedda",
+    "catalogId": "WEC-007",
+    "album": "WEC",
+    "car": "Ferrari 499P",
+    "carZh": "法拉利 499P",
+    "status": "collected",
+    "photo": "collection/photos/445d8e17-9713-5ddc-a5db-c7726166335a.jpg",
+    "previewPhoto": "collection/photos/af1cb28e-b867-5261-8ea6-f4f0fcdaf95d.webp",
+    "photos": [
+      "collection/photos/7afc6874-b53b-51dd-a2ec-c4784c76598b.jpg",
+      "collection/photos/4fa08d3f-b514-5fe8-b361-540f41923e22.jpg",
+      "collection/photos/0d779fb6-2106-593a-b436-958e8f5a234e.jpg"
+    ],
+    "number": "83",
+    "spec": "Hypercar"
+  },
+  {
+    "id": "27faad94-8877-513a-a0f2-a0cab507f2c6",
+    "revision": "45d9d737-9cc2-498e-898f-80689a54577c",
+    "catalogId": "WEC-008",
+    "album": "WEC",
+    "car": "BMW M Hybrid V8 · iQOO",
+    "carZh": "宝马 M Hybrid V8 · iQOO",
+    "status": "collected",
+    "photo": "collection/photos/dd1bfea1-b679-566f-a076-fcb4fe35dd77.jpg",
+    "previewPhoto": "collection/photos/6597531e-1e8a-5b4e-bb3b-8c353850ea2e.webp",
+    "photos": [
+      "collection/photos/a9b30f39-70f6-5328-8a2b-e814a6cdda07.jpg",
+      "collection/photos/3f17fc75-cee1-596f-bb3e-d5fcb33943d6.jpg",
+      "collection/photos/2387594a-8439-5c1f-afb9-6abb2651886a.jpg"
+    ],
+    "spec": "Hypercar"
+  },
+  {
+    "id": "a084fe8e-cc28-55c1-bb56-d1fb34cdec7e",
+    "revision": "3638c211-6114-4501-b4bb-8d97b31f7e46",
+    "catalogId": "WEC-009",
+    "album": "WEC",
+    "car": "Mazda 787B",
+    "carZh": "马自达 787B",
+    "status": "collected",
+    "photo": "collection/photos/e8d27356-207c-5a44-9085-7fdb95bafaf1.jpg",
+    "previewPhoto": "collection/photos/8d84f1f5-54ba-5a11-ab33-e8818de5e24d.webp",
+    "photos": [
+      "collection/photos/3db76fbf-8511-5a93-99d8-b2313d588ab3.jpg",
+      "collection/photos/e798914b-e087-557a-938a-787a8a7145b8.jpg",
+      "collection/photos/1dc3c322-249f-5cd2-a62f-f93244e755c9.jpg",
+      "collection/photos/3c9d4822-f8e2-5b8a-a28f-76a264f1cc2b.jpg"
+    ],
+    "number": "55",
+    "spec": "Group C"
+  },
+  {
+    "id": "a98dcbe2-5437-5935-a0d5-3d7a97f5664e",
+    "revision": "eaa395d0-c8f4-4546-bd6c-1d8d164b4852",
+    "catalogId": "WEC-010",
+    "album": "WEC",
+    "car": "BMW M4 GT3 · Schaeffler",
+    "carZh": "宝马 M4 GT3 · 舍弗勒",
+    "status": "collected",
+    "photo": "collection/photos/2e09d9a5-e039-51a5-9779-c87f949df100.jpg",
+    "previewPhoto": "collection/photos/d7b88eaf-c0c7-5d15-a017-f89d09e9c0d4.webp",
+    "photos": [
+      "collection/photos/35484265-65fa-58e8-97d8-868e82baa402.jpg",
+      "collection/photos/bdaf7f2c-fe9b-533d-8b57-c0952879bfa0.jpg",
+      "collection/photos/8f8b2020-9b08-5631-8435-da6de8848921.jpg",
+      "collection/photos/f958fc11-6755-59d8-b01d-3bf8da7c89f9.jpg"
+    ],
+    "number": "11",
+    "spec": "GT3"
+  },
+  {
+    "id": "edeeb367-64e0-57f4-969e-62ab41d4284e",
+    "revision": "20f4b70b-cbaa-41af-8c98-97699945f628",
+    "catalogId": "WEC-011",
+    "album": "WEC",
+    "car": "Lamborghini Huracán GT3 · EDAG",
+    "carZh": "兰博基尼 Huracán GT3 · EDAG",
+    "status": "collected",
+    "photo": "collection/photos/c5571b88-f85a-5f81-a7a2-94d35936bef4.jpg",
+    "previewPhoto": "collection/photos/770d4067-cb3e-577f-8b2b-09bf5d5754d5.webp",
+    "photos": [
+      "collection/photos/d3ce0117-5258-56b0-b764-29e9f7af1759.jpg",
+      "collection/photos/31bbb7ca-b427-5ab7-a583-b4d8888b0099.jpg",
+      "collection/photos/e5f08adb-b3da-5d5f-88eb-6af052f4e994.jpg",
+      "collection/photos/e43a0e20-8ca4-5337-b283-b0a5c99bb76e.jpg"
+    ],
+    "number": "94",
+    "spec": "GT3"
+  },
+  {
+    "id": "f3f60930-3d20-5b27-bfcb-bbc1b4fe8aa5",
+    "revision": "128e5b8a-0570-42fb-bdda-31e283104717",
+    "catalogId": "WEC-012",
+    "album": "WEC",
+    "car": "Porsche 911 GT3 R · Roxy",
+    "carZh": "保时捷 911 GT3 R · Roxy",
+    "status": "collected",
+    "photo": "collection/photos/2d431f00-2b8c-5bb1-a88d-a36ab106a1c1.jpg",
+    "previewPhoto": "collection/photos/2d392385-03b3-56dc-bfa1-552b9da37cdd.webp",
+    "photos": [
+      "collection/photos/898c85ca-94f5-548f-b738-bbd06f16cbdf.jpg",
+      "collection/photos/028d52e0-e5e8-5c7c-b0d4-cff772e83fa7.jpg",
+      "collection/photos/55aa174e-d66e-58e0-9d11-e39c4d683410.jpg"
+    ],
+    "number": "77",
+    "spec": "GT3"
+  },
+  {
+    "id": "1133eb19-5e4f-54c8-8bfb-a35a8b72b291",
+    "revision": "a361a5a2-6a75-4657-8ac4-84538c91082b",
+    "catalogId": "WEC-013",
+    "album": "WEC",
+    "car": "BMW M4 GT3 · FIST",
+    "carZh": "宝马 M4 GT3 · FIST",
+    "status": "collected",
+    "photo": "collection/photos/72e2170d-6c13-545c-8171-43abb1a8cbe4.jpg",
+    "previewPhoto": "collection/photos/d6ce3cdd-25fc-5a45-98d4-49893d559e1e.webp",
+    "photos": [
+      "collection/photos/0b07eab4-9c91-5854-a893-577b770f8bf4.jpg",
+      "collection/photos/c942f6c9-1783-53e1-b60d-8780b84d4106.jpg",
+      "collection/photos/e9ebadd3-afca-5646-a797-7b5a49ac5ab4.jpg"
+    ],
+    "number": "90",
+    "spec": "GT3"
+  },
+  {
+    "id": "e8b85fce-d1d3-5be9-8e45-35cdc5ec3611",
+    "revision": "527de8c1-b3ce-489c-9b1a-c122bba37fce",
+    "catalogId": "WEC-014",
+    "album": "WEC",
+    "car": "Yellow Corvette",
+    "carZh": "黄色科尔维特",
+    "status": "collected",
+    "photo": "collection/photos/6af294e9-0b5d-578b-9284-8aa16460cbdd.jpg",
+    "previewPhoto": "collection/photos/c1c7baee-f77c-5349-a42c-65f39c78fb31.webp",
+    "photos": [
+      "collection/photos/90ea2dd3-c76d-577f-8791-898552431a95.jpg",
+      "collection/photos/c76da03c-f3ca-59fd-a246-731a5713e0f5.jpg",
+      "collection/photos/126a5e7d-0f54-549c-bf72-ea449face806.jpg"
+    ]
   }
 ]

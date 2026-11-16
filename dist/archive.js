@@ -63,6 +63,7 @@ let favorites = readFavorites();
 const heartIcon = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 8.8c0 3.4-4.4 6.8-8.8 10.2-4.4-3.4-8.8-6.8-8.8-10.2a4.55 4.55 0 0 1 8.8-1.6 4.55 4.55 0 0 1 8.8 1.6Z"/></svg>';
 const tags = {
   series: ["Race series", x => x.series],
+  album: ["Photo album", x => x.album],
   maker: ["Model brand", x => x.maker],
   spec: ["Race category", x => x.spec],
   className: ["Series class", x => x.className],
@@ -79,7 +80,7 @@ const readTag = () => {
   const pair = [...new URLSearchParams(location.hash.slice(9))][0];
   return pair && Object.hasOwn(tags, pair[0]) && pair[1] ? pair : null;
 };
-const matchesMode = (x, m) => m === "all" || (m === "f1" && x.series === "Formula 1") || (m === "gt3" && x.spec === "GT3") || (m === "sgt" && x.series === "Super GT") || (m === "rally" && x.series === "Rally");
+const matchesMode = (x, m) => m === "all" || (m === "f1" && x.series === "Formula 1") || (m === "gt3" && x.spec === "GT3") || (m === "sgt" && x.series === "Super GT") || (m === "rally" && x.series === "Rally") || (m === "wec" && x.album === "WEC");
 const isCollected = x => x.status === "collected";
 const SAFETY_CAR_SPEC = "Safety Car";
 const isSafetyCar = x => x.spec === SAFETY_CAR_SPEC;
@@ -190,10 +191,11 @@ function update() {
   $("active-tag").hidden = !activeTag;
   $("active-tag-name").textContent = activeTag ? `${t(tags[activeTag[0]][0])}: ${tagLabel(...activeTag)}` : "";
   $("record-status").textContent = list.length === 0 ? "" : list.every(isCollected) ? t("PERSONAL COLLECTION") : list.some(isCollected) ? t("COLLECTION & REFERENCE RECORDS") : t("REFERENCE RECORDS / OWNERSHIP UNCONFIRMED");
-  document.querySelectorAll("[data-mode]").forEach(b => {b.hidden=b.dataset.mode!=="all"&&!records.some(x=>matchesMode(x,b.dataset.mode));b.setAttribute("aria-pressed",String(b.dataset.mode===mode));});
+  const activeMode = activeTag?.[0] === "album" && activeTag[1] === "WEC" ? "wec" : mode;
+  document.querySelectorAll("[data-mode]").forEach(b => {b.hidden=b.dataset.mode!=="all"&&!records.some(x=>matchesMode(x,b.dataset.mode));b.setAttribute("aria-pressed",String(b.dataset.mode===activeMode));});
 }
 function reset() {mode="all"; $("query").value=""; $("series").value=""; $("spec").value=""; $("order").value="index";}
-document.querySelectorAll("[data-mode]").forEach(b => b.addEventListener("click", () => {mode=b.dataset.mode; $("series").value=""; $("spec").value=""; update();}));
+document.querySelectorAll("[data-mode]").forEach(b => b.addEventListener("click", () => {if(activeTag?.[0]==="album") clearTag(); mode=b.dataset.mode; $("series").value=""; $("spec").value=""; update();}));
 $("query").addEventListener("input", update);
 $("favorites-only").addEventListener("click",()=>{favoritesOnly=!favoritesOnly;update();});
 window.addEventListener("storage",event=>{if(event.key===FAVORITES_KEY || event.key===null){favorites=readFavorites();if(favoritesOnly)update();syncFavorites();}});
@@ -327,7 +329,7 @@ function openRecord(id, previewRecord=null) {
   const safetyCar=isSafetyCar(x);
   $("record-id").textContent=t("OBJECT")+" "+catalogNumber(x)+" / "+t(x.status==="draft"?"DRAFT PREVIEW":isCollected(x)?"PERSONAL COLLECTION":"REFERENCE RECORD");
   const details = `<div class="metadata">
-    <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Team",x.team,"team",null,localized(x,"team")],[safetyCar?"Safety car driver":"Driver",x.driver,"driver",x.driverCountry,localized(x,"driver")],["Race / season",x.event,"event",null,localized(x,"event")],[safetyCar?"Role":"Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
+    <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Photo album",x.album,"album"],["Team",x.team,"team",null,localized(x,"team")],[safetyCar?"Safety car driver":"Driver",x.driver,"driver",x.driverCountry,localized(x,"driver")],["Race / season",x.event,"event",null,localized(x,"event")],[safetyCar?"Role":"Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
     <section><h3>${t("Miniature")}</h3><dl>${rows([["Scale",x.scale || t("To be confirmed"),x.scale?"scale":null],[x.made?"Base model brand":"Model brand",x.maker,"maker",null,localized(x,"maker")],["Catalogue code",x.item]],links)}</dl>${x.source ? `<a href="${esc(x.source)}">${t("Maker’s reference")} ↗</a>` : ""}</section>
   </div>`;
   const extra = `${x.look ? `<p class="eyebrow">${t("LOOK CLOSER")}</p><p>${esc(x.look)}</p>` : ""}${related ? `<button type="button" class="text-btn" data-related="${related.id}">${t("Compare with")} ${esc(displayName(related))} ↗</button>` : ""}${isCollected(x) || x.status==="draft" ? "" : `<p class="disclosure">${t("Catalogue example. Ownership is unconfirmed; the illustration is not an object photograph.")}</p>`}`;
