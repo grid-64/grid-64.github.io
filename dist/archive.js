@@ -98,7 +98,6 @@ function tagLabel(key,value) {
   return t(value);
 }
 function raceNumber(x) {return x.number ? "#"+x.number : "";}
-function catalogNumber(x) {return x.catalogId || (x.id.startsWith("064-") ? x.id : x.id.slice(0,8).toUpperCase());}
 function favoriteButton(x, detail=false) {
   const saved=favorites.has(x.id);
   return `<button type="button" class="favorite-button${detail?" favorite-detail":""}" data-favorite="${esc(x.id)}" aria-label="${esc(t("Favorite")+": "+displayName(x))}" aria-pressed="${saved}" title="${t(saved?"Remove from favorites":"Add to favorites")}">${heartIcon}${detail?'<span>'+t(saved?"Saved to favorites":"Add to favorites")+'</span>':""}</button>`;
@@ -137,7 +136,7 @@ function card(x, priority) {
   const secondary=[localized(x,"team") || localized(x,"maker"),raceNumber(x)].filter(Boolean).map(esc).join(" / ");
   return `<article class="card">
   <button type="button" data-record="${esc(x.id)}" aria-label="${esc(t("Open")+" "+displayName(x)+(x.number?", "+t("number")+" "+x.number:""))}"${milestone ? ` aria-describedby="${milestoneId}"` : ""}>
-    <div class="card-art${x.photo ? " has-photo" : ""}"><div class="card-meta"><span>${esc(catalogNumber(x))}</span>${x.scale?`<span>${esc(x.scale)}</span>`:""}</div><span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true, priority)}<span class="card-figure">${t(caption)}</span></div>
+    <div class="card-art${x.photo ? " has-photo" : ""}">${x.scale ? `<div class="card-meta"><span>${esc(x.scale)}</span></div>` : ""}<span class="ghost" aria-hidden="true">${esc(x.number)}</span>${objectImage(x, true, priority)}<span class="card-figure">${t(caption)}</span></div>
     <div class="card-info"><div><p>${meta}</p><h3>${esc(displayName(x))}</h3><p class="team">${secondary}</p></div><span class="arrow" aria-hidden="true"><span class="direction-icon direction-up-right" aria-hidden="true"></span></span></div>
     ${milestoneLabel}
   </button><div class="card-favorite">${favoriteButton(x)}</div></article>`;
@@ -173,6 +172,7 @@ function renderGroups(list, field) {
       ${grid(items)}
     </section>`).join("");
 }
+const englishCarOrder = new Intl.Collator("en", {numeric:true, sensitivity:"base"});
 let archiveReady = false;
 function update() {
   if (!archiveReady) return;
@@ -181,7 +181,11 @@ function update() {
   const q = $("query").value.toLowerCase().trim().split(/\s+/).filter(Boolean), series = $("series").value, spec = $("spec").value;
   const list = records.filter(x => (!favoritesOnly || favorites.has(x.id)) && (!activeTag || tags[activeTag[0]][1](x) === activeTag[1]) && matchesMode(x,mode) && (!series || x.series === series) && (!spec || x.spec === spec || x.className === spec) && q.every(word => [x.car,x.carZh,x.team,x.teamZh,x.id,x.catalogId,x.item,x.maker,x.makerZh,x.driver,x.driverZh,x.event,x.eventZh,x.number,"#"+Number(x.number),x.series,x.year,x.spec,x.className,t(x.series),t(x.spec)].join(" ").toLowerCase().includes(word)));
   const sortByYear = $("order").value === "year";
-  list.sort((a,b) => Number(isSafetyCar(a))-Number(isSafetyCar(b)) || (sortByYear ? b.year-a.year || a.id.localeCompare(b.id) : 0));
+  list.sort((a,b) => {
+    const safetyCarOrder = mode === "f1" ? Number(isSafetyCar(a)) - Number(isSafetyCar(b)) : 0;
+    const yearOrder = sortByYear ? Number(b.year || 0) - Number(a.year || 0) : 0;
+    return safetyCarOrder || yearOrder || englishCarOrder.compare(a.car, b.car);
+  });
   milestoneResize?.disconnect();
   $("cards").innerHTML = renderGroups(list, $("group").value);
   $("cards").querySelectorAll(".card-milestone-window").forEach(label=>milestoneResize?.observe(label));
@@ -196,7 +200,7 @@ function update() {
   const activeMode = albumMode || mode;
   document.querySelectorAll("[data-mode]").forEach(b => {b.hidden=b.dataset.mode!=="all"&&!records.some(x=>matchesMode(x,b.dataset.mode));b.setAttribute("aria-pressed",String(b.dataset.mode===activeMode));});
 }
-function reset() {mode="all"; $("query").value=""; $("series").value=""; $("spec").value=""; $("order").value="index";}
+function reset() {mode="all"; $("query").value=""; $("series").value=""; $("spec").value=""; $("order").value="name";}
 document.querySelectorAll("[data-mode]").forEach(b => b.addEventListener("click", () => {if(activeTag?.[0]==="album") clearTag(); mode=b.dataset.mode; $("series").value=""; $("spec").value=""; update();}));
 $("query").addEventListener("input", update);
 $("favorites-only").addEventListener("click",()=>{favoritesOnly=!favoritesOnly;update();});
@@ -329,7 +333,7 @@ function openRecord(id, previewRecord=null) {
   const related=archiveRecords().find(r=>r.id===x.link);
   const links=x.status!=="draft";
   const safetyCar=isSafetyCar(x);
-  $("record-id").textContent=t("OBJECT")+" "+catalogNumber(x)+" / "+t(x.status==="draft"?"DRAFT PREVIEW":isCollected(x)?"PERSONAL COLLECTION":"REFERENCE RECORD");
+  $("record-id").textContent=t(x.status==="draft"?"DRAFT PREVIEW":isCollected(x)?"PERSONAL COLLECTION":"REFERENCE RECORD");
   const details = `<div class="metadata">
     <section><h3>${t("Full-size car")}</h3><dl>${rows([["Race series",x.series,"series"],["Photo album",x.album,"album"],["Team",x.team,"team",null,localized(x,"team")],[safetyCar?"Safety car driver":"Driver",x.driver,"driver",x.driverCountry,localized(x,"driver")],["Race / season",x.event,"event",null,localized(x,"event")],[safetyCar?"Role":"Specification",x.spec,"spec"],["Series class",x.className,"className"]],links)}</dl></section>
     <section><h3>${t("Miniature")}</h3><dl>${rows([["Scale",x.scale || t("To be confirmed"),x.scale?"scale":null],[x.made?"Base model brand":"Model brand",x.maker,"maker",null,localized(x,"maker")],["Catalogue code",x.item]],links)}</dl>${x.source ? `<a href="${esc(x.source)}">${t("Maker’s reference")} <span class="direction-icon direction-up-right" aria-hidden="true"></span></a>` : ""}</section>

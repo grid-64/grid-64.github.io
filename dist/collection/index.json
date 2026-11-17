@@ -1,18 +1,18 @@
 [
   {
     "id": "51d4caf9-665a-51d1-a1c0-fb503ca9ff3e",
-    "revision": "712c78d7-1f2f-4bab-9a32-759bb57b9b9f",
+    "revision": "abe06129-8869-43a5-991e-857a57d5ac30",
     "catalogId": "F1-001",
     "car": "Ferrari SF90",
     "carZh": "法拉利 SF90",
     "series": "Formula 1",
     "scale": "1:24",
     "status": "collected",
-    "photo": "collection/photos/75650a5e-8415-53af-a3ef-8f00bd7c76ad.jpg",
+    "photo": "collection/photos/de85f1a0-eddf-5930-b8cb-2fa71f31d41c.jpg",
     "thumbnail": "collection/photos/b1bf7bd1-2127-5b37-9710-98b251a92f26.jpg",
     "photos": [
-      "collection/photos/b8b02ed3-ec31-501b-a5f5-337056b7e383.jpg",
-      "collection/photos/c154fe28-a35d-5a10-a1ff-36a68da648a1.jpg",
+      "collection/photos/ae11ca7a-bba7-550d-b9d8-e1a3d847e046.jpg",
+      "collection/photos/27ddc1dd-eca2-51e2-a69e-7a44d386f96f.jpg",
       "collection/photos/c45572f4-788d-5583-88ce-4c582def0382.jpg"
     ],
     "year": 2019,
@@ -90,22 +90,22 @@
     "acquired": "2025-08",
     "milestone": "Leclerc’s first F1 win",
     "milestoneZh": "勒克莱尔 F1 首胜",
-    "previewPhoto": "collection/photos/preview-51d4caf9-665a-51d1-a1c0-fb503ca9ff3e.webp"
+    "previewPhoto": "collection/photos/preview-7ca3b4d5-d5bf-573e-a19b-612edda6f2fe.webp"
   },
   {
     "id": "88d7f598-959b-5117-b130-7399c7c4aade",
-    "revision": "278ced69-6177-412e-a07c-b6bc1adef270",
+    "revision": "19172b1f-1748-4f42-aac6-218d25e89a9d",
     "catalogId": "F1-002",
     "car": "Ferrari F1-75",
     "carZh": "法拉利 F1-75",
     "series": "Formula 1",
     "scale": "1:24",
     "status": "collected",
-    "photo": "collection/photos/d5ea8d99-4da4-5e2d-809f-3bd180a511c3.jpg",
+    "photo": "collection/photos/0fddb911-0cd7-5ce7-86f6-539341f7bdba.jpg",
     "thumbnail": "collection/photos/4af2ae55-b341-5de3-a0ba-9034842f228e.jpg",
     "photos": [
-      "collection/photos/8314b3f5-8602-58de-a5a6-b5d0c2260071.jpg",
-      "collection/photos/42c098da-1833-5c88-9f44-6a9d351fa4a3.jpg",
+      "collection/photos/66393868-1310-56b5-8b6f-9a953b517a6f.jpg",
+      "collection/photos/cc31c55d-4658-55db-a158-771e306e331e.jpg",
       "collection/photos/529817e5-31ee-57e5-88e0-c0795f8012d1.jpg"
     ],
     "driver": "Charles Leclerc",
@@ -166,7 +166,7 @@
         "labelZh": "F1 · 夏尔·勒克莱尔车手资料"
       }
     ],
-    "previewPhoto": "collection/photos/preview-88d7f598-959b-5117-b130-7399c7c4aade.webp"
+    "previewPhoto": "collection/photos/preview-93a92a10-6130-5985-af3c-5a1fdc1ddbab.webp"
   },
   {
     "id": "d0bb5ae5-7085-5b97-a4fd-0a26d90a137d",
@@ -3724,7 +3724,7 @@
   },
   {
     "id": "bef5d835-1733-5c31-8216-b73bdbdce878",
-    "revision": "57fbfdf0-d9d3-47d7-91cc-64ce2ededb8a",
+    "revision": "38e8f4b9-2b8d-4b4c-8b5e-ba18afb0e38a",
     "catalogId": "OTHERS-003",
     "album": "Others",
     "car": "Audi R8 LMS GT3 evo II · DarwinPRO",
@@ -3765,7 +3765,8 @@
         "label": "Harmony Racing’s Shanghai race report and photographs",
         "labelZh": "和谐赛车上海揭幕战战报及现场照片"
       }
-    ]
+    ],
+    "acquired": "2026-11"
   },
   {
     "id": "de5524dc-599b-53b3-b6c6-1e45e0ac76fe",

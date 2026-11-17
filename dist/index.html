@@ -12,11 +12,11 @@ if (location.protocol === "file:") {
   location.replace(archiveUrl.href);
 }
 </script>
-<link rel="stylesheet" href="style.css?v=15">
-<script defer src="language.js?v=18"></script>
+<link rel="stylesheet" href="style.css?v=16">
+<script defer src="language.js?v=19"></script>
 <script defer src="records.js?v=5"></script>
 <script defer src="collection.js?v=13"></script>
-<script defer src="archive.js?v=18"></script>
+<script defer src="archive.js?v=19"></script>
 <script defer src="editor.js?v=8"></script>
 </head>
 <body>
@@ -56,7 +56,7 @@ if (location.protocol === "file:") {
 <label><span data-i18n="Group by">Group by</span> <select id="group"><option value="" data-i18n="No grouping">No grouping</option><option value="maker" data-i18n="Model brand">Model brand</option><option value="series" data-i18n="Race series">Race series</option><option value="spec" data-i18n="Race category">Race category</option></select></label>
 <label><span data-i18n="Series">Series</span> <select id="series"><option value="" data-i18n="Any series">Any series</option><option value="Formula 1">Formula 1</option><option value="IMSA">IMSA</option><option value="Super GT">Super GT</option></select></label>
 <label><span data-i18n="Class / spec">Class / spec</span> <select id="spec"><option value="" data-i18n="Any class / spec">Any class / spec</option><option value="Formula 1">Formula 1</option><option value="GT3">GT3</option><option value="GT500">GT500</option><option value="GT300">GT300</option></select></label>
-<label><span data-i18n="Sort">Sort</span> <select id="order"><option value="index" data-i18n="Archive ID">Archive ID</option><option value="year" data-i18n="Newest race year">Newest race year</option></select></label>
+<label><span data-i18n="Sort">Sort</span> <select id="order"><option value="name" data-i18n="Car name A–Z">Car name A–Z</option><option value="year" data-i18n="Newest race year">Newest race year</option></select></label>
 <button type="button" class="favorites-filter" id="favorites-only" aria-pressed="false"><span aria-hidden="true">♡</span> <span data-i18n="Favorites only">Favorites only</span></button>
 </div>
 <div class="active-tag" id="active-tag" hidden><span id="active-tag-name"></span><a href="#archive" aria-label="Clear related-objects filter" data-label="Clear related-objects filter"><span data-i18n="Clear ×">Clear ×</span></a></div>
