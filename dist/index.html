@@ -12,11 +12,12 @@ if (location.protocol === "file:") {
   location.replace(archiveUrl.href);
 }
 </script>
-<link rel="stylesheet" href="style.css?v=16">
-<script defer src="language.js?v=19"></script>
+<link rel="stylesheet" href="style.css?v=17">
+<script defer src="language.js?v=20"></script>
+<script defer src="hero-gallery.js?v=1"></script>
 <script defer src="records.js?v=5"></script>
 <script defer src="collection.js?v=13"></script>
-<script defer src="archive.js?v=19"></script>
+<script defer src="archive.js?v=20"></script>
 <script defer src="editor.js?v=8"></script>
 </head>
 <body>
@@ -35,11 +36,17 @@ if (location.protocol === "file:") {
 <p class="hero-sub"><span data-i18n="A miniature motorsport archive.">A miniature motorsport archive.</span></p>
 <a class="primary" href="#archive"><span data-i18n="Explore the index">Explore the index</span> <span class="direction-icon direction-down-right" aria-hidden="true"></span></a>
 </div>
-<div class="hero-diagram">
-<div class="plate-label"><span><span data-i18n="PLATE 01">PLATE 01</span></span><span><span data-i18n="PLAN VIEW / ILLUSTRATION">PLAN VIEW / ILLUSTRATION</span></span></div>
-<div id="hero-car" aria-hidden="true"></div>
-<div class="plate-label lower"><span>+</span><span><span data-i18n="OPEN WHEEL / STUDY 01">OPEN WHEEL / STUDY 01</span></span><span>+</span></div>
+<section class="hero-gallery" aria-label="Collection photos" data-label="Collection photos">
+<div class="hero-gallery-track">
+<img src="assets/collection-overview-01.webp" srcset="assets/collection-overview-01-640.webp 640w, assets/collection-overview-01.webp 1200w" sizes="(max-width: 495px) 90vw, (max-width: 670px) 445px, 41vw" width="1200" height="900" alt="A close view of Formula 1 and GT miniatures on the display shelf" data-alt="A close view of Formula 1 and GT miniatures on the display shelf" fetchpriority="high">
+<img src="assets/collection-overview-02.webp" srcset="assets/collection-overview-02-640.webp 640w, assets/collection-overview-02.webp 1200w" sizes="(max-width: 495px) 90vw, (max-width: 670px) 445px, 41vw" width="1200" height="900" alt="A wider view of the racing miniature collection across three tiers" data-alt="A wider view of the racing miniature collection across three tiers" fetchpriority="low">
 </div>
+<div class="hero-gallery-controls" hidden>
+<button type="button" class="hero-gallery-toggle" aria-label="Pause photos" data-label="Pause photos"></button>
+<button type="button" class="hero-gallery-dot" aria-label="Show photo 1" data-label="Show photo 1" aria-pressed="true"></button>
+<button type="button" class="hero-gallery-dot" aria-label="Show photo 2" data-label="Show photo 2" aria-pressed="false"></button>
+</div>
+</section>
 <div class="hero-strip"><span><span data-i18n="FIG. 01 / SCALE STUDY">FIG. 01 / SCALE STUDY</span></span><span>FORMULA 1 <em>·</em> GT3 <em>·</em> SUPER GT</span><span><span data-i18n="CURATED BY SU YIHONG">CURATED BY SU YIHONG</span></span></div>
 </section>
 </header>

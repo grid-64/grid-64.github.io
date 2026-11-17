@@ -1,5 +1,6 @@
 "use strict";
 const ZH = {
+"Collection photos":"收藏实拍","Pause photos":"暂停播放照片","Play photos":"自动播放照片","Show photo 1":"显示第 1 张照片","Show photo 2":"显示第 2 张照片","A close view of Formula 1 and GT miniatures on the display shelf":"陈列架上 F1 和 GT 赛车模型的近景","A wider view of the racing miniature collection across three tiers":"三层赛车模型收藏的广角照片",
 "Loading collection…":"正在加载收藏…","Made":"制作时间","Open original photo":"打开原始照片","24 Hours of Spa":"斯帕 24 小时耐力赛","Pro Cup":"职业组",
 "Base model brand":"底模品牌","ENEOS Super Taikyu Series":"ENEOS 日本超级耐久系列赛","Rally":"拉力赛","WEC album":"WEC 相簿","Photo album":"相簿","Others":"其他","Nürburgring 24 Hours":"纽博格林 24 小时耐力赛","China Endurance Championship":"CEC 中国汽车耐力锦标赛","WTCR":"WTCR 世界房车杯","Manufacturer Cup":"厂商杯","Group C":"C 组","Film car":"电影赛车","Group A":"A 组","World Rally Car":"世界拉力赛车",
 "Skip to archive":"跳到收藏索引","GRID 64 home":"GRID/64 首页","Main navigation":"主导航","Index":"收藏索引","Field notes":"研究笔记","Add collection item":"新增藏品","PROTOTYPE 01":"档案原型 01",
@@ -23,6 +24,7 @@ function translatePage() {
   document.title="GRID/64 — "+t("A miniature motorsport archive.");
   document.querySelectorAll("[data-i18n]").forEach(el=>{el.textContent=t(el.dataset.i18n);});
   document.querySelectorAll("[data-label]").forEach(el=>el.setAttribute("aria-label",t(el.dataset.label)));
+  document.querySelectorAll("[data-alt]").forEach(el=>el.alt=t(el.dataset.alt));
   document.querySelectorAll("[data-placeholder]").forEach(el=>el.setAttribute("placeholder",t(el.dataset.placeholder)));
   for (const id of ["language","record-language"]) {
     const button=document.getElementById(id);

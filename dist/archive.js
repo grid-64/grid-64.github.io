@@ -2,7 +2,7 @@
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, x => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[x]);
 let sequence = 0;
-function diagram(o, hero = false) {
+function diagram(o) {
   const id = "car-" + (++sequence), c = o.color, t = o.trim, f = o.kind === "f1";
   const wheels = [91,247].map(x => [87,211].map(y => `<g transform="translate(${x} ${y})"><rect x="-29" y="-17" width="58" height="34" rx="9" fill="#111316" stroke="#555960" stroke-width="1.3"/><rect x="-22" y="-13" width="44" height="26" rx="5" fill="#292c31"/><path d="M-18-9H19M-18 0H19M-18 9H19" stroke="#454850" stroke-width=".9" opacity=".8"/></g>`).join("")).join("");
   const shells = {
@@ -40,7 +40,7 @@ function diagram(o, hero = false) {
   <path d="M293 90V210" stroke="${t}" stroke-width="2.3"/>
   <rect x="168" y="139" width="23" height="22" fill="#eef0ec"/>
   <text x="179.5" y="154.4" fill="#161719" font-size="11" font-family="monospace" font-weight="bold" text-anchor="middle">${o.number}</text>`;
-  return `<svg viewBox="0 45 350 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(hero ? "Illustrative open-wheel racing car, top view" : "Interpretive top-view illustration for "+o.car)}">
+  return `<svg viewBox="0 45 350 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc("Interpretive top-view illustration for "+o.car)}">
   <defs><linearGradient id="${id}-shade" x1="0" y1="0" x2=".27" y2="1"><stop stop-color="${c}"/><stop offset=".49" stop-color="${c}"/><stop offset="1" stop-color="#18202c"/></linearGradient><filter id="${id}-shadow" x="-25%" y="-50%" width="150%" height="200%"><feGaussianBlur stdDeviation="6"/></filter></defs>
   <path d="M12 150H338M91 61V239M247 61V239" fill="none" stroke="currentColor" opacity=".24" stroke-dasharray="3 5"/>
   <path d="M15 68v-7h7m306 0h7v7m0 164v7h-7m-306 0h-7v-7" fill="none" stroke="currentColor" opacity=".68"/>
@@ -48,7 +48,6 @@ function diagram(o, hero = false) {
   ${body}
   </svg>`;
 }
-$("hero-car").innerHTML = diagram({kind:"f1",color:"#4dc7f2",trim:"#bcf0ff",number:"64"},true);
 let mode = "all";
 let activeTag = null;
 let favoritesOnly = false;
