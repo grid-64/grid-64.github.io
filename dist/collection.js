@@ -1,5 +1,6 @@
 "use strict";
-const COLLECTION_REPO = "suyihong20060219-cell/grid64";
+const COLLECTION_REPO = "grid-64/grid-64.github.io";
+const COLLECTION_OWNER = "suyihong20060219-cell";
 const COLLECTION_BRANCH = "main";
 const INDEX_FILE = "dist/collection/index.json";
 const PUBLIC_INDEX_VERSION = "13";
@@ -45,7 +46,7 @@ async function github(token,path,method="GET",data) {
 async function publishRecord(token,entry,photo,baseline) {
   const prefix="/repos/"+COLLECTION_REPO;
   const user=await github(token,"/user");
-  if(user.login?.toLowerCase()!==COLLECTION_REPO.split("/")[0].toLowerCase()) throw Error("The token must belong to the collection owner.");
+  if(user.login?.toLowerCase()!==COLLECTION_OWNER.toLowerCase()) throw Error("The token must belong to the collection owner.");
   const refPath=prefix+"/git/ref/heads/"+COLLECTION_BRANCH;
   const ref=await github(token,refPath);
   const head=ref.object.sha;
