@@ -250,3 +250,26 @@ dialog{width:min(890px,calc(100% - 24px));max-height:calc(100dvh - 30px);backgro
 @media(max-width:670px){
   .hero-gallery{justify-self:center;width:min(100%,445px);margin:6px 0 18px}
 }
+
+/* Personal collection, making and photographic documentation. */
+.concept{background:#151a1c;border-bottom:1px solid var(--line)}
+.concept-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(36px,6vw,96px);align-items:center;max-width:1340px;margin:auto}
+.concept-gallery{width:100%;max-width:510px;margin:0;justify-self:start}
+.concept-gallery .hero-gallery-track{aspect-ratio:1}
+.concept-gallery .hero-gallery-track img{object-fit:cover;object-position:center 60%;min-width:0}
+.concept-gallery .hero-gallery-track img:nth-child(2){object-position:center 70%}
+.concept-caption{font-size:13px;line-height:1.65;color:#b9c3c5;min-height:4.5em;padding:15px 0 8px}
+.concept-gallery .hero-gallery-controls{border-top:1px solid #6399ac5e}
+.gallery-count{margin-right:auto;font:11px var(--mono);color:var(--accent);letter-spacing:.1em}
+.concept-copy .eyebrow{color:#b9c3c5;margin-bottom:20px}
+.concept-copy h2{font-size:clamp(40px,4.9vw,76px);line-height:1.05;letter-spacing:-.065em;font-weight:800;margin-bottom:30px;max-width:9em;text-wrap:balance}
+.concept-period{color:var(--accent)}
+.concept-copy>p:not(.eyebrow){font-size:clamp(16px,1.45vw,20px);line-height:1.75;color:#d0d1ce;max-width:39em}
+.concept-copy>p+p{margin-top:20px}
+:lang(zh-Hans) .concept-copy h2{letter-spacing:-.035em}
+@media(max-width:760px){
+  .concept-layout{grid-template-columns:1fr;gap:36px;max-width:510px}
+  .concept-gallery{width:100%;margin:0}
+  .concept-copy h2{font-size:clamp(36px,8vw,54px);margin-bottom:22px}
+  .concept-copy>p:not(.eyebrow){font-size:16px;line-height:1.85}
+}

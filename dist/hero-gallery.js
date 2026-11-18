@@ -1,11 +1,12 @@
 "use strict";
 
-{
-  const gallery = document.querySelector(".hero-gallery");
+document.querySelectorAll(".hero-gallery").forEach(gallery => {
   const track = gallery.querySelector(".hero-gallery-track");
   const controls = gallery.querySelector(".hero-gallery-controls");
   const toggle = controls.querySelector(".hero-gallery-toggle");
   const dots = [...controls.querySelectorAll(".hero-gallery-dot")];
+  const captions = [...gallery.querySelectorAll("[data-gallery-caption]")];
+  const count = gallery.querySelector(".gallery-count");
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
   let active = 0;
   let playing = !motion.matches;
@@ -40,6 +41,8 @@
     if (index === active) return;
     active = index;
     dots.forEach((dot, i) => dot.setAttribute("aria-pressed", String(i === active)));
+    captions.forEach((caption, i) => { caption.hidden = i !== active; });
+    if (count) count.textContent = `${String(active + 1).padStart(2, "0")} / ${String(dots.length).padStart(2, "0")}`;
   }, {passive: true});
   track.addEventListener("pointerdown", () => setPlaying(false));
   toggle.addEventListener("click", () => setPlaying(!playing));
@@ -78,4 +81,4 @@
 
   setPlaying(playing);
   controls.hidden = false;
-}
+});
