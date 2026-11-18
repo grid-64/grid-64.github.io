@@ -21,9 +21,9 @@ function mergeCollectionEdit(previous, entry) {
 }
 async function loadPublicCollection() {
   if (location.protocol === "file:") return;
-  // Collection edits can publish independently of the frontend bundle.
-  const query = new URLSearchParams({v:PUBLIC_INDEX_VERSION,load:Date.now().toString(36)});
-  const response = await fetch("./collection/index.json?"+query,{cache:"no-store",signal:AbortSignal.timeout?.(8000)});
+  // Revalidate the stable URL so edits stay current and unchanged data can use a 304 response.
+  const query = new URLSearchParams({v:PUBLIC_INDEX_VERSION});
+  const response = await fetch("./collection/index.json?"+query,{cache:"no-cache",signal:AbortSignal.timeout?.(8000)});
   if (!response.ok) throw Error("Collection index could not be loaded");
   const items = await response.json();
   if (!Array.isArray(items)) throw Error("Invalid collection index");

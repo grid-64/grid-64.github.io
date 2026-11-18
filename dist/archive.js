@@ -85,7 +85,7 @@ const isCollected = x => x.status === "collected";
 const SAFETY_CAR_SPEC = "Safety Car";
 const isSafetyCar = x => x.spec === SAFETY_CAR_SPEC;
 const objectImage = (x, preview = false, priority = false) => x.photo
-  ? `<img class="object-photo" src="${esc(sessionPhotos.get(x.id) || (preview && (referenceImagePath(x.previewPhoto) ? x.previewPhoto : x.thumbnail)) || x.photo)}" alt="${esc(localized(x,"photoAlt") || displayName(x))}" decoding="async"${preview ? (priority ? ' fetchpriority="high"' : ' loading="lazy"') : ""}>`
+  ? `<img class="object-photo" src="${esc(sessionPhotos.get(x.id) || (preview && (referenceImagePath(x.previewPhoto) ? x.previewPhoto : x.thumbnail)) || x.photo)}" alt="${esc(localized(x,"photoAlt") || displayName(x))}" decoding="async"${preview ? (priority && location.hash.startsWith("#archive") ? ' fetchpriority="high"' : ' loading="lazy"') : ' fetchpriority="high"'}>`
   : diagram(x);
 function displayName(x) {return LANG==="zh" && x.carZh ? x.carZh : x.car;}
 function localized(x, field) {return LANG==="zh" && x[field+"Zh"] ? x[field+"Zh"] : x[field];}
@@ -201,7 +201,11 @@ function update() {
 }
 function reset() {mode="all"; $("query").value=""; $("series").value=""; $("spec").value=""; $("order").value="name";}
 document.querySelectorAll("[data-mode]").forEach(b => b.addEventListener("click", () => {if(activeTag?.[0]==="album") clearTag(); mode=b.dataset.mode; $("series").value=""; $("spec").value=""; update();}));
-$("query").addEventListener("input", update);
+let searchFrame;
+$("query").addEventListener("input", () => {
+  cancelAnimationFrame(searchFrame);
+  searchFrame=requestAnimationFrame(update);
+});
 $("favorites-only").addEventListener("click",()=>{favoritesOnly=!favoritesOnly;update();});
 window.addEventListener("storage",event=>{if(event.key===FAVORITES_KEY || event.key===null){favorites=readFavorites();if(favoritesOnly)update();syncFavorites();}});
 ["group","series","spec","order"].forEach(k => $(k).addEventListener("change", update));
@@ -263,10 +267,10 @@ function gallery(x) {
   const other=Array.isArray(x.photos)?x.photos.filter(photoPath):[];
   currentPhotos=primary?[primary,...new Set(other.filter(path=>path!==x.photo && path!==primary))]:[];
   if(currentPhotos.length<2) return `${objectImage(x)}<p>${t(x.photo?"MODEL PHOTOGRAPH":"INTERPRETIVE PLAN VIEW")}</p>`;
-  return `<div class="gallery-main"><img class="object-photo" src="${esc(primary)}" alt="${esc(localized(x,"photoAlt") || displayName(x))}"></div>
+  return `<div class="gallery-main"><img class="object-photo" src="${esc(primary)}" alt="${esc(localized(x,"photoAlt") || displayName(x))}" fetchpriority="high" decoding="async"></div>
     <p class="gallery-caption">${t("MODEL PHOTOGRAPH")} / <span id="gallery-count">1 / ${currentPhotos.length}</span></p>
     <div class="gallery-thumbs" role="group" aria-label="${t("Model photos")}">
-    ${currentPhotos.map((path,index)=>`<button type="button" data-photo-index="${index}" aria-label="${galleryPhotoLabel(index)}" aria-pressed="${index===0}"><img src="${esc(path)}" alt="" loading="lazy"></button>`).join("")}
+    ${currentPhotos.map((path,index)=>`<button type="button" data-photo-index="${index}" aria-label="${galleryPhotoLabel(index)}" aria-pressed="${index===0}"><img src="${esc(path)}" alt="" loading="lazy" decoding="async" fetchpriority="low"></button>`).join("")}
     </div>`;
 }
 function selectGalleryPhoto(index) {
